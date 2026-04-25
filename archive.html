@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>素材库索引 - 高考作文素材库</title>
+    <meta name="description" content="高考作文素材库完整索引，按时间倒序排列">
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --bg-secondary: #FBFAF8;
+            --card: #FFFFFF;
+            --text: #3F3F3F;
+            --text-secondary: #6A6A6A;
+            --text-muted: #8A8A8A;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --success: #6FD8C7;
+            --border: #A8A8A8;
+            --border-light: #D8D8D8;
+            --shadow-color: #B5B5B5;
+            --shadow: 5px 5px 0 0 var(--shadow-color);
+            --shadow-lg: 7px 7px 0 0 var(--shadow-color);
+            --radius: 4px;
+            --radius-lg: 8px;
+            --space-2: 8px;
+            --space-3: 12px;
+            --space-4: 16px;
+            --space-6: 24px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: var(--space-4);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: var(--space-6) 0;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: var(--space-6);
+        }
+        
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            margin-bottom: var(--space-2);
+            font-weight: 700;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-4);
+            margin-top: var(--space-4);
+            flex-wrap: wrap;
+        }
+        
+        .nav-link {
+            background: var(--bg);
+            color: var(--text);
+            padding: var(--space-2) var(--space-4);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+            box-shadow: var(--shadow);
+        }
+        
+        .nav-link:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-1px);
+        }
+        
+        .archive-grid {
+            display: grid;
+            gap: var(--space-6);
+        }
+        
+        .date-card {
+            background: var(--card);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+        
+        .date-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 10px 10px 0 0 var(--shadow-color);
+        }
+        
+        .date-header {
+            background: var(--bg-secondary);
+            padding: var(--space-4);
+            border-bottom: 1.5px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+        
+        .date-badge {
+            background: var(--accent);
+            color: var(--text);
+            padding: var(--space-2) var(--space-3);
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .date-stats {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        .material-preview {
+            padding: var(--space-4);
+        }
+        
+        .material-item {
+            display: flex;
+            gap: var(--space-3);
+            padding: var(--space-3);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius);
+            margin-bottom: var(--space-3);
+            transition: all 0.2s;
+        }
+        
+        .material-item:hover {
+            background: var(--bg);
+            border-color: var(--primary);
+        }
+        
+        .material-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .material-icon {
+            flex-shrink: 0;
+            font-size: 1.5rem;
+        }
+        
+        .material-info {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .material-title {
+            font-weight: 600;
+            margin-bottom: var(--space-1);
+            color: var(--text);
+        }
+        
+        .material-meta {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            display: flex;
+            gap: var(--space-2);
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: var(--bg);
+            padding: 2px 8px;
+            border-radius: var(--radius);
+            font-size: 0.8rem;
+        }
+        
+        .view-btn {
+            background: var(--primary);
+            color: var(--text);
+            padding: var(--space-2) var(--space-4);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        
+        .view-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--shadow);
+        }
+        
+        .latest-tag {
+            background: var(--success);
+            color: var(--text);
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        footer {
+            text-align: center;
+            padding: var(--space-6) 0;
+            margin-top: var(--space-6);
+            border-top: 2px solid var(--border);
+            color: var(--text-secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .material-item {
+                flex-direction: column;
+            }
+            
+            .date-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 素材库索引</h1>
+            <p style="color: var(--text-secondary); margin-top: var(--space-2);">所有《人民日报》高考作文素材，按时间倒序排列</p>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">← 返回首页</a>
+            </div>
+        </header>
+        
+        <div class="archive-grid">
+            <!-- 2026-04-25 -->
+            <div class="date-card">
+                <div class="date-header">
+                    <div style="display: flex; align-items: center; gap: var(--space-3);">
+                        <span class="latest-tag">NEW</span>
+                        <span class="date-badge">2026年4月25日</span>
+                    </div>
+                    <div class="date-stats">3篇素材 · 5个主题 · 15+条金句</div>
+                </div>
+                <div class="material-preview">
+                    <div class="material-item">
+                        <div class="material-icon">📖</div>
+                        <div class="material-info">
+                            <div class="material-title">大地书香·文脉传承</div>
+                            <div class="material-meta">
+                                <span class="tag">文化遗产</span>
+                                <span class="tag">阅读与成长</span>
+                                <span class="tag">文化传承</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="material-item">
+                        <div class="material-icon">📚</div>
+                        <div class="material-info">
+                            <div class="material-title">古代书院的读书智慧</div>
+                            <div class="material-meta">
+                                <span class="tag">文化遗产</span>
+                                <span class="tag">读书方法</span>
+                                <span class="tag">传统智慧</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="material-item">
+                        <div class="material-icon">🚀</div>
+                        <div class="material-info">
+                            <div class="material-title">星际航行，携手迈向深空</div>
+                            <div class="material-meta">
+                                <span class="tag">科技·新知</span>
+                                <span class="tag">中国航天</span>
+                                <span class="tag">科技创新</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: var(--space-4); padding-top: 0; text-align: right;">
+                    <a href="2026-04-25/2026-04-25.html" class="view-btn">查看完整素材 →</a>
+                </div>
+            </div>
+            
+            <!-- 2026-04-24 -->
+            <div class="date-card">
+                <div class="date-header">
+                    <span class="date-badge">2026年4月24日</span>
+                    <div class="date-stats">素材整理中</div>
+                </div>
+                <div class="material-preview">
+                    <p style="color: var(--text-muted); text-align: center; padding: var(--space-4);">
+                        该日期的素材正在整理中...
+                    </p>
+                </div>
+                <div style="padding: var(--space-4); padding-top: 0; text-align: right;">
+                    <a href="2026-04-24/2026-04-24.html" class="view-btn" style="opacity: 0.5; cursor: not-allowed;">暂未开放</a>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p><strong>更新时间：</strong>2026年4月25日</p>
+            <p><strong>下次更新：</strong>2026年4月26日 早上8点</p>
+            <p style="margin-top: var(--space-2);"><strong>累计收录：</strong>2天 · 6篇素材</p>
+            <p style="margin-top: var(--space-2); font-size: 0.9rem;">📚 每天积累一点点，高考作文不犯难</p>
+        </footer>
+    </div>
+</body>
+</html>
