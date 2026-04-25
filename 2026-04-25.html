@@ -5,309 +5,338 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026-04-25 高考作文素材（深度分析版）</title>
     <style>
-        /* Orange UI Design Tokens */
+        /* Orange UI Design Tokens - 真实的设计系统 */
         :root {
-            --color-bg: #FFFFFF;
-            --color-text-primary: #1D1D1F;
-            --color-text-secondary: #86868B;
-            --color-text-tertiary: #F5F5F7;
-            --color-accent: #FF6B35;
-            --color-border: #E5E5E7;
-            --color-surface: #F5F5F7;
-            --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-            --spacing-unit: 8px;
-            --radius-sm: 8px;
-            --radius-md: 12px;
-            --radius-lg: 16px;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
-            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+            /* Backgrounds - 原研哉的"空" */
+            --bg: #F7F3EC;
+            --bg-secondary: #FBFAF8;
+            --card: #FFFFFF;
+            
+            /* Text - Dieter Rams 的层次 */
+            --text: #3F3F3F;
+            --text-secondary: #6A6A6A;
+            --text-muted: #8A8A8A;
+            
+            /* Brand Colors - Color with purpose */
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --success: #6FD8C7;
+            --error: #FF998F;
+            
+            /* Neo-Brutalist Structure */
+            --border: #A8A8A8;
+            --border-light: #D8D8D8;
+            --shadow-color: #B5B5B5;
+            --shadow-sm: 3px 3px 0 0 var(--shadow-color);
+            --shadow: 5px 5px 0 0 var(--shadow-color);
+            --shadow-lg: 7px 7px 0 0 var(--shadow-color);
+            
+            /* Spacing (8pt grid) */
+            --space-2: 8px;
+            --space-3: 12px;
+            --space-4: 16px;
+            --space-6: 24px;
+            --space-8: 32px;
+            
+            /* Radius */
+            --radius: 4px;
+            --radius-lg: 8px;
         }
-
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: var(--font-family);
-            background: var(--color-bg);
-            color: var(--color-text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: var(--bg);
+            color: var(--text);
             line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            padding: var(--space-4);
         }
-
+        
         .container {
             max-width: 980px;
             margin: 0 auto;
-            padding: 60px 24px;
         }
-
-        /* Header */
+        
+        /* Header - Neo-Brutalist */
         .header {
+            background: var(--card);
+            border: 1.5px solid var(--border);
+            box-shadow: var(--shadow);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: var(--space-8);
         }
-
+        
         .header h1 {
-            font-size: 48px;
+            font-size: 40px;
             font-weight: 700;
             letter-spacing: -0.5px;
-            margin-bottom: 16px;
-            color: var(--color-text-primary);
+            margin-bottom: var(--space-3);
+            color: var(--text);
         }
-
+        
         .header .meta {
-            font-size: 17px;
-            color: var(--color-text-secondary);
+            font-size: 15px;
+            color: var(--text-secondary);
         }
-
-        /* Article Card */
+        
+        /* Article Card - Neo-Brutalist */
         .article-card {
-            background: var(--color-bg);
+            background: var(--card);
+            border: 1.5px solid var(--border);
+            box-shadow: var(--shadow);
             border-radius: var(--radius-lg);
-            padding: 48px;
-            margin-bottom: 48px;
-            border: 1px solid var(--color-border);
-            box-shadow: var(--shadow-sm);
-            transition: all 0.3s ease;
+            padding: var(--space-8);
+            margin-bottom: var(--space-6);
         }
-
-        .article-card:hover {
-            box-shadow: var(--shadow-md);
-        }
-
+        
         .article-card h2 {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 700;
-            margin-bottom: 24px;
-            color: var(--color-text-primary);
+            margin-bottom: var(--space-4);
+            color: var(--text);
         }
-
+        
         .article-card h3 {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 600;
-            margin-top: 40px;
-            margin-bottom: 16px;
-            color: var(--color-text-primary);
+            margin-top: var(--space-8);
+            margin-bottom: var(--space-4);
+            color: var(--text);
         }
-
+        
         .article-card h4 {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
-            margin-top: 32px;
-            margin-bottom: 12px;
-            color: var(--color-text-primary);
+            margin-top: var(--space-6);
+            margin-bottom: var(--space-3);
+            color: var(--text);
         }
-
-        /* Info Section */
-        .info-section {
-            background: var(--color-surface);
-            border-radius: var(--radius-md);
-            padding: 24px;
-            margin-bottom: 32px;
+        
+        /* Info Box */
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--border-light);
+            border-radius: var(--radius);
+            padding: var(--space-4);
+            margin-bottom: var(--space-6);
         }
-
-        .info-section p {
-            margin-bottom: 8px;
-            color: var(--color-text-secondary);
-        }
-
-        .info-section strong {
-            color: var(--color-text-primary);
-            font-weight: 600;
-        }
-
-        /* Core Argument */
-        .core-argument {
-            background: linear-gradient(135deg, #FFF5F0 0%, #FFF 100%);
-            border-left: 4px solid var(--color-accent);
-            padding: 24px;
-            border-radius: var(--radius-md);
-            margin-bottom: 32px;
-        }
-
-        .core-argument p {
-            margin-bottom: 12px;
-        }
-
-        .core-argument strong {
-            color: var(--color-accent);
-        }
-
-        /* Logic Tree */
-        .logic-tree {
-            background: #1D1D1F;
-            color: #FFF;
-            padding: 24px;
-            border-radius: var(--radius-md);
-            margin-bottom: 32px;
-            overflow-x: auto;
-            font-family: "SF Mono", Monaco, monospace;
+        
+        .info-box p {
+            margin-bottom: var(--space-2);
+            color: var(--text-secondary);
             font-size: 14px;
-            line-height: 1.8;
         }
-
+        
+        .info-box strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+        /* Core Argument - Accent Highlight */
+        .core-argument {
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFFFFF 100%);
+            border-left: 4px solid var(--accent);
+            border-radius: var(--radius);
+            padding: var(--space-6);
+            margin-bottom: var(--space-6);
+            border: 1.5px solid var(--border-light);
+            border-left: 4px solid var(--accent);
+        }
+        
+        .core-argument strong {
+            color: #B8860B;
+        }
+        
+        /* Logic Tree - Dark Code Block */
+        .logic-tree {
+            background: #1A1A1A;
+            color: #F8F8F7;
+            padding: var(--space-6);
+            border-radius: var(--radius);
+            margin-bottom: var(--space-6);
+            overflow-x: auto;
+            font-family: "SF Mono", Monaco, "Courier New", monospace;
+            font-size: 13px;
+            line-height: 1.8;
+            border: 1.5px solid var(--border);
+        }
+        
         .logic-tree pre {
             white-space: pre;
             margin: 0;
         }
-
-        /* Golden Quote */
+        
+        /* Golden Quote - Primary Color */
         .golden-quote {
-            background: linear-gradient(135deg, #F5F5F7 0%, #FFF 100%);
-            border-radius: var(--radius-md);
-            padding: 32px;
-            margin-bottom: 32px;
-            border: 1px solid var(--color-border);
+            background: linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 100%);
+            border: 1.5px solid var(--primary);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            margin-bottom: var(--space-6);
         }
-
+        
         .golden-quote blockquote {
-            font-size: 21px;
+            font-size: 20px;
             font-weight: 500;
-            line-height: 1.4;
-            color: var(--color-text-primary);
-            margin-bottom: 24px;
+            line-height: 1.5;
+            color: var(--text);
+            margin-bottom: var(--space-6);
             font-style: italic;
         }
-
-        .golden-quote .quote-meta {
+        
+        .quote-meta {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-            margin-top: 24px;
+            gap: var(--space-4);
         }
-
-        .golden-quote .quote-item {
-            background: #FFF;
-            padding: 16px;
-            border-radius: var(--radius-sm);
+        
+        .quote-item {
+            background: #FFFFFF;
+            padding: var(--space-4);
+            border-radius: var(--radius);
+            border: 1px solid var(--border-light);
         }
-
-        .golden-quote .quote-item h5 {
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--color-accent);
-            margin-bottom: 8px;
+        
+        .quote-item h5 {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: var(--space-2);
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-
-        .golden-quote .quote-item p {
-            font-size: 15px;
-            color: var(--color-text-secondary);
+        
+        .quote-item p {
+            font-size: 14px;
+            color: var(--text-secondary);
             line-height: 1.5;
         }
-
+        
         /* Usage Section */
         .usage-section {
-            background: #F5F5F7;
-            border-radius: var(--radius-md);
-            padding: 24px;
-            margin-bottom: 24px;
+            background: var(--bg-secondary);
+            border-radius: var(--radius);
+            padding: var(--space-6);
+            margin-bottom: var(--space-4);
+            border: 1px solid var(--border-light);
         }
-
+        
         .usage-section h5 {
             font-size: 16px;
             font-weight: 600;
-            color: var(--color-text-primary);
-            margin-bottom: 12px;
+            color: var(--text);
+            margin-bottom: var(--space-3);
         }
-
+        
         .usage-section p {
             font-size: 15px;
-            color: var(--color-text-secondary);
+            color: var(--text-secondary);
             line-height: 1.6;
         }
-
-        .usage-section .example-box {
-            background: #FFF;
-            padding: 16px;
-            border-radius: var(--radius-sm);
-            margin-top: 12px;
-            border: 1px solid var(--color-border);
-        }
-
-        .usage-section .example-box p {
+        
+        .example-box {
+            background: #FFFFFF;
+            padding: var(--space-4);
+            border-radius: var(--radius);
+            margin-top: var(--space-3);
+            border: 1px solid var(--border-light);
             font-size: 14px;
-            color: var(--color-text-primary);
+            color: var(--text);
+            line-height: 1.7;
         }
-
-        /* Template Section */
+        
+        /* Template Box */
         .template-box {
-            background: #FFF;
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-md);
-            padding: 24px;
-            margin-bottom: 24px;
+            background: #FFFFFF;
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius);
+            padding: var(--space-6);
+            margin-bottom: var(--space-6);
         }
-
+        
         .template-box pre {
-            background: #F5F5F7;
-            padding: 16px;
-            border-radius: var(--radius-sm);
+            background: var(--bg-secondary);
+            padding: var(--space-4);
+            border-radius: var(--radius);
             overflow-x: auto;
-            font-size: 14px;
-            line-height: 1.6;
+            font-size: 13px;
+            line-height: 1.7;
+            font-family: "SF Mono", Monaco, monospace;
+            color: var(--text);
+            border: 1px solid var(--border-light);
         }
-
+        
         /* Original Text */
         .original-text {
-            background: #F5F5F7;
-            border-radius: var(--radius-md);
-            padding: 32px;
-            margin-top: 40px;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            margin-top: var(--space-8);
+            border: 1px solid var(--border-light);
         }
-
-        .original-text h4 {
-            margin-top: 0;
-        }
-
+        
         .original-text p {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 1.8;
-            color: var(--color-text-primary);
+            color: var(--text);
             text-indent: 2em;
-            margin-bottom: 16px;
+            margin-bottom: var(--space-4);
         }
-
+        
         /* Footer */
         .footer {
             text-align: center;
-            padding: 48px 24px;
-            color: var(--color-text-secondary);
-            font-size: 14px;
+            padding: var(--space-8) var(--space-4);
+            color: var(--text-secondary);
+            font-size: 13px;
         }
-
+        
+        /* Badge */
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--text);
+            padding: var(--space-2) var(--space-3);
+            border-radius: var(--radius);
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: var(--space-2);
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
-            .container {
-                padding: 32px 16px;
+            .header {
+                padding: var(--space-6);
             }
-
+            
             .header h1 {
-                font-size: 32px;
+                font-size: 28px;
             }
-
+            
             .article-card {
-                padding: 24px;
+                padding: var(--space-6);
             }
-
+            
             .article-card h2 {
-                font-size: 24px;
+                font-size: 22px;
             }
-
+            
             .golden-quote {
-                padding: 24px;
+                padding: var(--space-6);
             }
-
+            
             .golden-quote blockquote {
-                font-size: 18px;
+                font-size: 16px;
             }
-
-            .golden-quote .quote-meta {
+            
+            .quote-meta {
                 grid-template-columns: 1fr;
             }
         }
@@ -316,15 +345,17 @@
 <body>
     <div class="container">
         <header class="header">
+            <span class="badge">NEW</span>
             <h1>2026-04-25 高考作文素材</h1>
-            <p class="meta">深度分析版 | 人民日报 | 3篇文章</p>
+            <p class="meta">深度分析版 | 《人民日报》 | 3篇文章</p>
         </header>
 
         <main>
+            <!-- 文章1 -->
             <article class="article-card">
                 <h2>📚 文章1：《大地书香·文脉传承》</h2>
                 
-                <div class="info-section">
+                <div class="info-box">
                     <p><strong>版面：</strong>第07版 文化遗产</p>
                     <p><strong>类型：</strong>短评/编者按</p>
                     <p><strong>字数：</strong>约300字</p>
@@ -396,14 +427,15 @@
                     <p>阅读，是读过往，也是读当下。当年轻人捧起《资治通鉴》，当清代藏书楼迎来一位位"藏书人"，古人的智慧写进了今人心灵的"朋友圈"，让我们有定力、有眼光、不焦虑。</p>
                     <p>阅读，是读生活，也是读生活展开的可能。在云南和顺小镇，村民把牛羊放到山上吃草，卷起裤腿跑来图书馆看书；在福建培田古村，家长带着孩子下田插秧，历经500余年风雨的书院迎来一批批青春面孔。"耕"的辛劳、"读"的收获，阅读帮我们把生活的光彩拎得出、拎得动、拎得有滋味。</p>
                     <p>将阅读置于时空的双重象限便会发现，我们从未离开阅读。读有字书，也读无字书，格物致知，诚意正心。让我们在阅读中传承优秀传统，在阅读中锚定未来方向，知行合一，笃行致远。</p>
-                    <p style="text-align: right; margin-top: 24px;">——编  者</p>
+                    <p style="text-align: right; margin-top: 24px; font-size: 14px; color: var(--text-secondary);">——编  者</p>
                 </div>
             </article>
 
+            <!-- 文章2 -->
             <article class="article-card">
                 <h2>📚 文章2：《古代书院的读书智慧》</h2>
                 
-                <div class="info-section">
+                <div class="info-box">
                     <p><strong>作者：</strong>邓洪波（湖南大学岳麓书院）</p>
                     <p><strong>版面：</strong>第07版 文化遗产</p>
                     <p><strong>类型：</strong>文化遗产评论</p>
@@ -492,6 +524,28 @@
                     </div>
                 </div>
 
+                <div class="golden-quote">
+                    <blockquote>"只有掌握了方法，阅读才能真正成为'获取知识、启智增慧、培养道德'的途径。"</blockquote>
+                    <div class="quote-meta">
+                        <div class="quote-item">
+                            <h5>好在哪</h5>
+                            <p>层次分明（知识→智慧→道德），哲理深刻，目标明确</p>
+                        </div>
+                        <div class="quote-item">
+                            <h5>适用话题</h5>
+                            <p>阅读的意义、知识vs智慧、工具vs价值</p>
+                        </div>
+                        <div class="quote-item">
+                            <h5>怎么用</h5>
+                            <p>论证阅读价值，回答"为什么还要读书"</p>
+                        </div>
+                        <div class="quote-item">
+                            <h5>可仿写</h5>
+                            <p>"___才能真正成为'___、___、___'的途径"</p>
+                        </div>
+                    </div>
+                </div>
+
                 <h3>📝 高考作文段落模板</h3>
 
                 <div class="template-box">
@@ -503,10 +557,11 @@
                 </div>
             </article>
 
+            <!-- 文章3 -->
             <article class="article-card">
                 <h2>🚀 文章3：《星际航行，携手迈向深空》</h2>
                 
-                <div class="info-section">
+                <div class="info-box">
                     <p><strong>作者：</strong>余梦洁（中国航天科工集团）</p>
                     <p><strong>版面：</strong>第09版 科技</p>
                     <p><strong>类型：</strong>时评/科技评论</p>
@@ -532,11 +587,33 @@
                         </div>
                         <div class="quote-item">
                             <h5>怎么用</h5>
-                            <p>开头引入或论证创新精神，回答"年纪大了还能追梦吗"</p>
+                            <p>开头引入或论证创新精神</p>
                         </div>
                         <div class="quote-item">
                             <h5>可仿写</h5>
                             <p>"谁道___？___。"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-quote">
+                    <blockquote>"50年来，中国航天从无到有、从小到大，走出了一条自力更生、自主创新的发展道路。"</blockquote>
+                    <div class="quote-meta">
+                        <div class="quote-item">
+                            <h5>好在哪</h5>
+                            <p>四个"从...到..."展现历程，逻辑清晰，精神内核明确</p>
+                        </div>
+                        <div class="quote-item">
+                            <h5>适用话题</h5>
+                            <p>自力更生、创新精神、发展道路</p>
+                        </div>
+                        <div class="quote-item">
+                            <h5>怎么用</h5>
+                            <p>论证发展道路，回答"如何实现从落后到先进"</p>
+                        </div>
+                        <div class="quote-item">
+                            <h5>可仿写</h5>
+                            <p>"从___到___、从___到___，走出了一条___的道路"</p>
                         </div>
                     </div>
                 </div>
@@ -550,7 +627,7 @@
                         </div>
                         <div class="quote-item">
                             <h5>适用话题</h5>
-                            <p>探索精神、科学与人文、理想与现实</p>
+                            <p>探索精神、科学与人文、人类的追求</p>
                         </div>
                         <div class="quote-item">
                             <h5>怎么用</h5>
@@ -591,7 +668,7 @@
         </main>
 
         <footer class="footer">
-            <p>© 2026 高考作文素材库 | 基于 Orange UI 设计系统</p>
+            <p>© 2026 高考作文素材库 | Orange UI Design System</p>
             <p style="margin-top: 8px;">数据来源：《人民日报》电子版 | 深度分析版</p>
         </footer>
     </div>
