@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高考作文素材 - 2026年4月25日</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            /* Backgrounds */
+            --bg: #F7F3EC;
+            --bg-secondary: #FBFAF8;
+            --card: #FFFFFF;
+            
+            /* Text */
+            --text: #3F3F3F;
+            --text-secondary: #6A6A6A;
+            --text-muted: #8A8A8A;
+            
+            /* Brand Colors */
+            --primary: #7BCBFF;
+            --primary-hover: #53B8FF;
+            --accent: #FFE66A;
+            --success: #6FD8C7;
+            --error: #FF998F;
+            
+            /* Borders & Shadows */
+            --border: #A8A8A8;
+            --border-light: #D8D8D8;
+            --shadow-color: #B5B5B5;
+            
+            /* Spacing */
+            --space-1: 4px;
+            --space-2: 8px;
+            --space-3: 12px;
+            --space-4: 16px;
+            --space-6: 24px;
+            
+            /* Neo-Brutalist Shadows */
+            --shadow-sm: 3px 3px 0 0 var(--shadow-color);
+            --shadow: 5px 5px 0 0 var(--shadow-color);
+            --shadow-lg: 7px 7px 0 0 var(--shadow-color);
+            
+            /* Border radius */
+            --radius: 4px;
+            --radius-lg: 8px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: var(--space-4);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            padding: var(--space-6) 0;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: var(--space-6);
+        }
+        
+        h1 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            color: var(--text);
+            margin-bottom: var(--space-2);
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+        }
+        
+        /* Date Badge */
+        .date-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--text);
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius);
+            font-weight: 600;
+            margin-top: var(--space-3);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-4);
+            margin-bottom: var(--space-6);
+        }
+        
+        .stat-card {
+            background: var(--card);
+            padding: var(--space-4);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: var(--space-1);
+        }
+        
+        /* Material Cards */
+        .materials-grid {
+            display: grid;
+            gap: var(--space-6);
+        }
+        
+        .material-card {
+            background: var(--card);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+        
+        .material-header {
+            background: var(--bg-secondary);
+            padding: var(--space-4);
+            border-bottom: 1.5px solid var(--border);
+        }
+        
+        .material-tag {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--text);
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: var(--space-2);
+        }
+        
+        .material-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin: var(--space-2) 0;
+        }
+        
+        .material-source {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .material-body {
+            padding: var(--space-6);
+        }
+        
+        /* Sections */
+        .section {
+            margin-bottom: var(--space-6);
+        }
+        
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: var(--space-3);
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+        
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 1.2em;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        
+        /* Summary Box */
+        .summary-box {
+            background: var(--bg-secondary);
+            padding: var(--space-4);
+            border-left: 4px solid var(--primary);
+            border-radius: var(--radius);
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text);
+        }
+        
+        /* Advantages List */
+        .advantages-list {
+            list-style: none;
+        }
+        
+        .advantages-list li {
+            padding: var(--space-2) 0;
+            padding-left: var(--space-4);
+            position: relative;
+        }
+        
+        .advantages-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: 700;
+        }
+        
+        /* Quotes */
+        .quotes-container {
+            display: grid;
+            gap: var(--space-3);
+        }
+        
+        .quote-card {
+            background: var(--bg);
+            padding: var(--space-4);
+            border: 1.5px solid var(--border-light);
+            border-radius: var(--radius);
+            position: relative;
+        }
+        
+        .quote-card::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--primary);
+            position: absolute;
+            top: var(--space-2);
+            left: var(--space-2);
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+        
+        .quote-text {
+            font-style: italic;
+            color: var(--text);
+            padding-left: var(--space-6);
+            line-height: 1.8;
+        }
+        
+        /* Topics Pills */
+        .topics-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+        
+        .topic-pill {
+            background: var(--bg);
+            color: var(--text);
+            padding: var(--space-2) var(--space-3);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-full);
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        .topic-pill:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-1px);
+        }
+        
+        /* Structure Box */
+        .structure-box {
+            background: var(--bg-secondary);
+            padding: var(--space-4);
+            border-radius: var(--radius);
+            border: 1.5px solid var(--border-light);
+        }
+        
+        .structure-item {
+            margin-bottom: var(--space-3);
+            padding-bottom: var(--space-3);
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .structure-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .structure-label {
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: var(--space-1);
+        }
+        
+        .structure-content {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        /* Core Themes Section */
+        .themes-section {
+            background: var(--card);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            padding: var(--space-6);
+            margin-top: var(--space-6);
+        }
+        
+        .themes-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: var(--space-4);
+            text-align: center;
+        }
+        
+        .themes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-4);
+        }
+        
+        .theme-card {
+            background: var(--bg);
+            padding: var(--space-4);
+            border-radius: var(--radius);
+            border: 1.5px solid var(--border-light);
+            transition: all 0.2s;
+        }
+        
+        .theme-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .theme-title {
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: var(--space-2);
+        }
+        
+        .theme-viewpoint {
+            color: var(--text-secondary);
+            margin-bottom: var(--space-2);
+            font-size: 0.95rem;
+        }
+        
+        .theme-angle {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        /* Usage Section */
+        .usage-section {
+            background: var(--accent);
+            color: var(--text);
+            padding: var(--space-6);
+            border-radius: var(--radius-lg);
+            margin-top: var(--space-6);
+        }
+        
+        .usage-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+        }
+        
+        .usage-grid {
+            display: grid;
+            gap: var(--space-4);
+        }
+        
+        .usage-item {
+            background: rgba(255, 255, 255, 0.9);
+            padding: var(--space-3);
+            border-radius: var(--radius);
+        }
+        
+        .usage-label {
+            font-weight: 600;
+            margin-bottom: var(--space-1);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: var(--space-6) 0;
+            margin-top: var(--space-6);
+            border-top: 2px solid var(--border);
+            color: var(--text-secondary);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: var(--space-2);
+            }
+            
+            .material-body {
+                padding: var(--space-4);
+            }
+            
+            .themes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>📚 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的每日精选</p>
+            <div class="date-badge">2026年4月25日 星期六</div>
+        </header>
+        
+        <!-- Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">篇精选素材</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">个核心主题</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">条金句储备</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">18</div>
+                <div class="stat-label">个适用话题</div>
+            </div>
+        </div>
+        
+        <!-- Materials -->
+        <div class="materials-grid">
+            <!-- Material 1 -->
+            <div class="material-card">
+                <div class="material-header">
+                    <span class="material-tag">文化遗产</span>
+                    <h2 class="material-title">大地书香·文脉传承</h2>
+                    <p class="material-source">《人民日报》2026年4月25日 第07版</p>
+                </div>
+                <div class="material-body">
+                    <div class="section">
+                        <h3 class="section-title">📖 原文概括</h3>
+                        <div class="summary-box">
+                            阅读是读过往也是读当下，是读生活也是读生活展开的可能。从年轻人捧起《资治通鉴》到清代藏书楼迎来"藏书人"，古人的智慧写进了今人心灵的"朋友圈"。在云南和顺小镇，村民放下农活跑来图书馆看书；在福建培田古村，历经500余年风雨的书院迎来青春面孔。"耕"的辛劳、"读"的收获，阅读帮我们把生活的光彩拎得出、拎得动、拎得有滋味。
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">✨ 核心优势</h3>
+                        <ul class="advantages-list">
+                            <li><strong>古今对话</strong>：将传统阅读与现代生活完美结合</li>
+                            <li><strong>生动场景</strong>：和顺小镇、培田古村等具体案例</li>
+                            <li><strong>深层思考</strong>："耕读传统"的现代诠释</li>
+                            <li><strong>情感共鸣</strong>：定力、眼光、不焦虑的时代关切</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">💎 金句储备</h3>
+                        <div class="quotes-container">
+                            <div class="quote-card">
+                                <p class="quote-text">阅读是读过往，也是读当下。当年轻人捧起《资治通鉴》，当清代藏书楼迎来一位位"藏书人"，古人的智慧写进了今人心灵的"朋友圈"，让我们有定力、有眼光、不焦虑。</p>
+                            </div>
+                            <div class="quote-card">
+                                <p class="quote-text">阅读，是读生活，也是读生活展开的可能。在云南和顺小镇，村民把牛羊放到山上吃草，卷起裤腿跑来图书馆看书；在福建培田古村，家长带着孩子下田插秧，历经500余年风雨的书院迎来一批批青春面孔。</p>
+                            </div>
+                            <div class="quote-card">
+                                <p class="quote-text">将阅读置于时空的双重象限便会发现，我们从未离开阅读。读有字书，也读无字书，格物致知，诚意正心。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">🎯 适用话题</h3>
+                        <div class="topics-container">
+                            <span class="topic-pill">阅读与成长</span>
+                            <span class="topic-pill">传统与现代的融合</span>
+                            <span class="topic-pill">文化传承与创新</span>
+                            <span class="topic-pill">青春与经典</span>
+                            <span class="topic-pill">乡村振兴中的文化力量</span>
+                            <span class="topic-pill">耕读文化</span>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">🏗️ 结构方法</h3>
+                        <div class="structure-box">
+                            <div class="structure-item">
+                                <div class="structure-label">三段式论证结构</div>
+                                <div class="structure-content">
+                                    第一层：阅读的时间维度（过往与当下）<br>
+                                    第二层：阅读的空间维度（生活与可能）<br>
+                                    第三层：阅读的哲学升华（有字书与无字书）
+                                </div>
+                            </div>
+                            <div class="structure-item">
+                                <div class="structure-label">对比手法</div>
+                                <div class="structure-content">
+                                    古今对比（《资治通鉴》与年轻人）<br>
+                                    城乡对比（清代藏书楼与和顺小镇）
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Material 2 -->
+            <div class="material-card">
+                <div class="material-header">
+                    <span class="material-tag">文化遗产</span>
+                    <h2 class="material-title">古代书院的读书智慧</h2>
+                    <p class="material-source">《人民日报》2026年4月25日 第07版 | 作者：邓洪波（湖南大学岳麓书院）</p>
+                </div>
+                <div class="material-body">
+                    <div class="section">
+                        <h3 class="section-title">📖 原文概括</h3>
+                        <div class="summary-box">
+                            古代书院的读书智慧对今天有深刻启示。程端礼的《读书分年日程》制定了8岁到20余岁的读书规划；王文清的《读经六法》《读史六法》提供了系统读书方法；皮锡瑞的"读报日记"展现了读书人与时俱进的胸襟。读书需要持之以恒的坚持，需要因材施教的分类，需要切己体察的方法，更需要与时俱进的胸襟。
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">✨ 核心优势</h3>
+                        <ul class="advantages-list">
+                            <li><strong>方法论价值</strong>：提供了具体可操作的读书方法</li>
+                            <li><strong>历史深度</strong>：700年书院智慧的结晶</li>
+                            <li><strong>现实关照</strong>：对全民阅读、书香社会的启示</li>
+                            <li><strong>体系完整</strong>：从计划到方法到实践的完整链条</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">💎 金句储备</h3>
+                        <div class="quotes-container">
+                            <div class="quote-card">
+                                <p class="quote-text">日记教学法的要义，是把读书变成可执行、可检查、可持续的日常功课。程端礼说："日有常守，心力整暇，积日而月，积月而岁。"读书不是一时兴起的雅事，而是日复一日的功夫。</p>
+                            </div>
+                            <div class="quote-card">
+                                <p class="quote-text">今天的全民阅读，不能停留在"读过没有"的层面，而要追求"读懂没有"。只有掌握了方法，阅读才能真正成为"获取知识、启智增慧、培养道德"的途径。</p>
+                            </div>
+                            <div class="quote-card">
+                                <p class="quote-text">从程端礼的"日程空眼簿"到王文清的《读经六法》《读史六法》，再到皮锡瑞的"读报日记"，几个书院的例子告诉我们，读书需要持之以恒的坚持，需要因材施教的分类，需要切己体察的方法，更需要与时俱进的胸襟。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">🎯 适用话题</h3>
+                        <div class="topics-container">
+                            <span class="topic-pill">读书方法与效率</span>
+                            <span class="topic-pill">传统智慧的当代价值</span>
+                            <span class="topic-pill">持之以恒的力量</span>
+                            <span class="topic-pill">方法与创新</span>
+                            <span class="topic-pill">古今读书对话</span>
+                            <span class="topic-pill">书香社会建设</span>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">🏗️ 结构方法</h3>
+                        <div class="structure-box">
+                            <div class="structure-item">
+                                <div class="structure-label">并列式论证结构</div>
+                                <div class="structure-content">
+                                    读书需要"日程化"（程端礼的《读书分年日程》）<br>
+                                    读书需要"方法自觉"（王文清的《读经六法》《读史六法》）<br>
+                                    读书需要"与时俱进"（皮锡瑞的"读报日记"）
+                                </div>
+                            </div>
+                            <div class="structure-item">
+                                <div class="structure-label">古今对比法</div>
+                                <div class="structure-content">
+                                    古代书院方法与现代全民阅读的呼应<br>
+                                    "阅读打卡""读书积分"与"日记教学法"的传承关系
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Material 3 -->
+            <div class="material-card">
+                <div class="material-header">
+                    <span class="material-tag">科技·新知</span>
+                    <h2 class="material-title">星际航行，携手迈向深空</h2>
+                    <p class="material-source">《人民日报》2026年4月25日 第06版 | 作者：王赤（中国科学院院士）</p>
+                </div>
+                <div class="material-body">
+                    <div class="section">
+                        <h3 class="section-title">📖 原文概括</h3>
+                        <div class="summary-box">
+                            中国科学院大学星际航行学院正式成立，标志着我国航天事业从"近地轨道"迈向"深空探测"。从"抵达宇宙"到"理解宇宙"，星际航行既是科技挑战，也是文明挑战。我们需要突破动力、通信、生命保障三大技术难题，培养能探索前沿方向、驾驭复杂系统的领军人才。
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">✨ 核心优势</h3>
+                        <ul class="advantages-list">
+                            <li><strong>时代前沿</strong>：星际航行学院、深空探测等最新科技进展</li>
+                            <li><strong>院士视角</strong>：权威性强，适合作为议论文的论据</li>
+                            <li><strong>国际视野</strong>：全球航天发展格局，体现中国贡献</li>
+                            <li><strong>青春召唤</strong>：期待年轻人以青春之力奔赴星辰大海</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">💎 金句储备</h3>
+                        <div class="quotes-container">
+                            <div class="quote-card">
+                                <p class="quote-text">星际航行，听起来浪漫而壮阔，但其背后潜藏的困难与挑战远超想象。它如同一场跨越星海的超级马拉松，既需要坚定的方向，也需要持久的耐力。</p>
+                            </div>
+                            <div class="quote-card">
+                                <p class="quote-text">我们探索星际，已不再满足于成功抵达目标天体，更致力于破解太阳系形成与演化的奥秘、探寻地外生命的痕迹、追溯宇宙起源的真相。</p>
+                            </div>
+                            <div class="quote-card">
+                                <p class="quote-text">我们期待，更多怀揣航天梦想、兼具报国之志的年轻人，以青春之力奔赴星辰大海，共同树起人类探索太空的新丰碑！</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">🎯 适用话题</h3>
+                        <div class="topics-container">
+                            <span class="topic-pill">科技与梦想</span>
+                            <span class="topic-pill">青春与责任</span>
+                            <span class="topic-pill">中国航天精神</span>
+                            <span class="topic-pill">探索与创新</span>
+                            <span class="topic-pill">国际合作与竞争</span>
+                            <span class="topic-pill">科技强国</span>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">🏗️ 结构方法</h3>
+                        <div class="structure-box">
+                            <div class="structure-item">
+                                <div class="structure-label">递进式论证结构</div>
+                                <div class="structure-content">
+                                    从"抵达宇宙"到"理解宇宙"（认知升级）<br>
+                                    从"科技挑战"到"文明挑战"（问题深化）<br>
+                                    从"专精之能"到"领军之才"（人才培养）
+                                </div>
+                            </div>
+                            <div class="structure-item">
+                                <div class="structure-label">对比手法</div>
+                                <div class="structure-content">
+                                    行星际航行 vs 恒星际航行<br>
+                                    科技挑战 vs 文明挑战<br>
+                                    历史传承 vs 未来展望
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Core Themes -->
+        <div class="themes-section">
+            <h2 class="themes-title">🧠 今日素材核心立意</h2>
+            <div class="themes-grid">
+                <div class="theme-card">
+                    <div class="theme-title">主题一：阅读的时空维度</div>
+                    <div class="theme-viewpoint"><strong>核心观点：</strong>阅读连接过去与现在，融合生活与可能</div>
+                    <div class="theme-angle"><strong>立意角度：</strong>在阅读中寻找文化根基与时代答案</div>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-title">主题二：读书的智慧传承</div>
+                    <div class="theme-viewpoint"><strong>核心观点：</strong>古代书院读书方法对现代的启示</div>
+                    <div class="theme-angle"><strong>立意角度：</strong>传统智慧在现代的转化与应用</div>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-title">主题三：持之以恒的力量</div>
+                    <div class="theme-viewpoint"><strong>核心观点：</strong>读书需要日复一日的功夫积累</div>
+                    <div class="theme-angle"><strong>立意角度：</strong>在日常中坚持，在坚持中成长</div>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-title">主题四：星辰大海的梦想</div>
+                    <div class="theme-viewpoint"><strong>核心观点：</strong>星际航行既是科技挑战也是文明挑战</div>
+                    <div class="theme-angle"><strong>立意角度：</strong>以青春之力奔赴星辰大海</div>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-title">主题五：从抵达到理解</div>
+                    <div class="theme-viewpoint"><strong>核心观点：</strong>人类探索从"抵达宇宙"迈向"理解宇宙"</div>
+                    <div class="theme-angle"><strong>立意角度：</strong>科技创新推动认知升级，探索未知永无止境</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Usage Guide -->
+        <div class="usage-section">
+            <h2 class="usage-title">📝 应用建议</h2>
+            <div class="usage-grid">
+                <div class="usage-item">
+                    <div class="usage-label">组合运用</div>
+                    <div>
+                        <strong>文化类组合：</strong>"大地书香·文脉传承" + "古代书院的读书智慧"<br>
+                        <strong>科技类组合：</strong>"星际航行，携手迈向深空"可单独使用或与其他科技素材组合<br>
+                        <strong>读书主题：</strong>三篇素材都可以用于读书学习相关话题
+                    </div>
+                </div>
+                
+                <div class="usage-item">
+                    <div class="usage-label">转化方向</div>
+                    <div>
+                        从"阅读"延伸到"学习""传承""创新"<br>
+                        从"书院"延伸到"教育""成长""智慧"<br>
+                        从"耕读"延伸到"乡村振兴""文化自信"<br>
+                        从"星际航行"延伸到"梦想""探索""科技强国"<br>
+                        从"深空探测"延伸到"人类命运共同体""文明未来"
+                    </div>
+                </div>
+                
+                <div class="usage-item">
+                    <div class="usage-label">跨话题适用</div>
+                    <div>
+                        <strong>青春梦想：</strong>三个素材都适用于青春、梦想、成长话题<br>
+                        <strong>文化传承：</strong>前两个素材特别适用<br>
+                        <strong>科技发展：</strong>第三个素材特别适用<br>
+                        <strong>学习方法：</strong>第二个素材特别适用<br>
+                        <strong>时代精神：</strong>三个素材都能体现时代特征
+                    </div>
+                </div>
+                
+                <div class="usage-item">
+                    <div class="usage-label">日常积累建议（每天10分钟）</div>
+                    <div>
+                        1. 浏览金句储备，挑选1-2句背下来<br>
+                        2. 看适用话题，思考这个话题你会怎么写<br>
+                        3. 读原文概括，快速获取核心观点
+                    </div>
+                </div>
+                
+                <div class="usage-item">
+                    <div class="usage-label">专题训练建议（每周1次）</div>
+                    <div>
+                        1. 选一个话题，比如"阅读与成长"<br>
+                        2. 找相关素材，从积累的素材中挑选<br>
+                        3. 模仿论证结构，比如用并列式写三个分论点<br>
+                        4. 引用金句，在恰当位置引用《人民日报》的金句
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <p><strong>整理时间：</strong>2026年4月25日</p>
+            <p><strong>素材来源：</strong>《人民日报》2026年4月25日 第06版、第07版</p>
+            <p><strong>素材类型：</strong>文化遗产、科技·新知</p>
+            <p style="margin-top: 12px; font-size: 0.9rem;">📚 每天积累一点点，高考作文不犯难</p>
+        </footer>
+    </div>
+</body>
+</html>

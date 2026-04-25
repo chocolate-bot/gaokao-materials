@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高考作文素材库 | 来自《人民日报》的每日精选</title>
+    <meta name="description" content="每日精选《人民日报》高考作文素材，包括原文概括、金句储备、适用话题、论证方法分析">
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --bg-secondary: #FBFAF8;
+            --card: #FFFFFF;
+            --text: #3F3F3F;
+            --text-secondary: #6A6A6A;
+            --text-muted: #8A8A8A;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --success: #6FD8C7;
+            --border: #A8A8A8;
+            --border-light: #D8D8D8;
+            --shadow-color: #B5B5B5;
+            --shadow: 5px 5px 0 0 var(--shadow-color);
+            --shadow-lg: 7px 7px 0 0 var(--shadow-color);
+            --radius: 4px;
+            --radius-lg: 8px;
+            --space-2: 8px;
+            --space-3: 12px;
+            --space-4: 16px;
+            --space-6: 24px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: var(--space-4);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: var(--space-6) 0;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: var(--space-6);
+        }
+        
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            margin-bottom: var(--space-2);
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+        }
+        
+        .hero {
+            background: var(--accent);
+            color: var(--text);
+            padding: var(--space-6);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-6);
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-3);
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-4);
+            margin-bottom: var(--space-6);
+        }
+        
+        .feature-card {
+            background: var(--card);
+            padding: var(--space-4);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: var(--space-2);
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            margin-bottom: var(--space-2);
+        }
+        
+        .feature-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .latest-section {
+            background: var(--card);
+            padding: var(--space-6);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            margin-bottom: var(--space-6);
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+        }
+        
+        .material-preview {
+            display: grid;
+            gap: var(--space-4);
+        }
+        
+        .material-card {
+            background: var(--bg);
+            padding: var(--space-4);
+            border: 1.5px solid var(--border-light);
+            border-radius: var(--radius);
+            transition: all 0.2s;
+        }
+        
+        .material-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .material-tag {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--text);
+            padding: 4px 12px;
+            border-radius: var(--radius);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: var(--space-2);
+        }
+        
+        .material-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: var(--space-2) 0;
+        }
+        
+        .material-summary {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--text);
+            padding: 12px 24px;
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            box-shadow: var(--shadow);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .btn-center {
+            text-align: center;
+            margin: var(--space-6) 0;
+        }
+        
+        .how-it-works {
+            background: var(--bg-secondary);
+            padding: var(--space-6);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-6);
+        }
+        
+        .steps {
+            display: grid;
+            gap: var(--space-4);
+            margin-top: var(--space-4);
+        }
+        
+        .step {
+            display: flex;
+            gap: var(--space-3);
+        }
+        
+        .step-number {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            color: var(--text);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+        
+        .step-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: var(--space-1);
+        }
+        
+        .step-content p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: var(--space-6) 0;
+            border-top: 2px solid var(--border);
+            color: var(--text-secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 高考作文素材库</h1>
+            <p class="subtitle">来自《人民日报》的每日精选</p>
+        </header>
+        
+        <div class="hero">
+            <h2>每天积累一点点，高考作文不犯难</h2>
+            <p>精选《人民日报》优质素材 · 提炼核心观点 · 整理金句储备 · 分析论证方法</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📖</div>
+                <div class="feature-title">每日更新</div>
+                <div class="feature-desc">每天早上8点自动整理当天《人民日报》素材</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <div class="feature-title">精选提炼</div>
+                <div class="feature-desc">每篇素材包含概括、优势、金句、话题、方法</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-title">针对高考</div>
+                <div class="feature-desc">专门筛选适合高考作文的论证性文章</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <div class="feature-title">实战导向</div>
+                <div class="feature-desc">提供应用建议和使用方法指导</div>
+            </div>
+        </div>
+        
+        <div class="latest-section">
+            <h2 class="section-title">📅 最新素材 - 2026年4月25日</h2>
+            <div class="material-preview">
+                <div class="material-card">
+                    <span class="material-tag">文化遗产</span>
+                    <div class="material-title">大地书香·文脉传承</div>
+                    <p class="material-summary">阅读是读过往也是读当下，是读生活也是读生活展开的可能。从年轻人捧起《资治通鉴》到清代藏书楼迎来"藏书人"，古人的智慧写进了今人心灵的"朋友圈"。</p>
+                </div>
+                
+                <div class="material-card">
+                    <span class="material-tag">文化遗产</span>
+                    <div class="material-title">古代书院的读书智慧</div>
+                    <p class="material-summary">古代书院的读书智慧对今天有深刻启示。程端礼的《读书分年日程》制定了8岁到20余岁的读书规划；王文清的《读经六法》《读史六法》提供了系统读书方法。</p>
+                </div>
+                
+                <div class="material-card">
+                    <span class="material-tag">科技·新知</span>
+                    <div class="material-title">星际航行，携手迈向深空</div>
+                    <p class="material-summary">中国科学院大学星际航行学院正式成立，标志着我国航天事业从"近地轨道"迈向"深空探测"。从"抵达宇宙"到"理解宇宙"，星际航行既是科技挑战，也是文明挑战。</p>
+                </div>
+            </div>
+            
+            <div class="btn-center">
+                <a href="2026-04-25/2026-04-25.html" class="btn">查看完整素材 →</a>
+            </div>
+        </div>
+        
+        <div class="how-it-works">
+            <h2 class="section-title">💡 如何使用这些素材</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>日常积累（每天10分钟）</h3>
+                        <p>浏览金句储备，挑选1-2句背下来；看适用话题，思考你会怎么写；读原文概括，快速获取核心观点。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>专题训练（每周1次）</h3>
+                        <p>选一个话题，找相关素材，模仿论证结构（如并列式），在恰当位置引用《人民日报》的金句。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>考前冲刺（考前1个月）</h3>
+                        <p>按话题整理素材，准备万能论据，背诵核心金句至少20-30句。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p><strong>整理时间：</strong>2026年4月25日</p>
+            <p><strong>素材来源：</strong>《人民日报》电子版</p>
+            <p style="margin-top: 12px;">📚 每天积累一点点，高考作文不犯难</p>
+        </footer>
+    </div>
+</body>
+</html>
