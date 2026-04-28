@@ -1,0 +1,663 @@
+     1|     1|<!DOCTYPE html>
+     2|     2|<html lang="zh-CN">
+     3|     3|<head>
+     4|     4|    <meta charset="UTF-8">
+     5|     5|    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     6|     6|    <title>高考作文素材库 | 来自《人民日报》的每日精选</title>
+     7|     7|    <meta name="description" content="每日精选《人民日报》高考作文素材，包括原文概括、金句储备、适用话题、论证方法分析">
+     8|     8|    <style>
+     9|     9|        /* Orange UI Design Tokens */
+    10|    10|        :root {
+    11|    11|            --bg: #F7F3EC;
+    12|    12|            --bg-secondary: #FBFAF8;
+    13|    13|            --card: #FFFFFF;
+    14|    14|            --text: #3F3F3F;
+    15|    15|            --text-secondary: #6A6A6A;
+    16|    16|            --text-muted: #8A8A8A;
+    17|    17|            --primary: #7BCBFF;
+    18|    18|            --accent: #FFE66A;
+    19|    19|            --success: #6FD8C7;
+    20|    20|            --border: #A8A8A8;
+    21|    21|            --border-light: #D8D8D8;
+    22|    22|            --shadow-color: #B5B5B5;
+    23|    23|            --shadow-sm: 3px 3px 0 0 var(--shadow-color);
+    24|    24|            --shadow: 5px 5px 0 0 var(--shadow-color);
+    25|    25|            --shadow-lg: 7px 7px 0 0 var(--shadow-color);
+    26|    26|            --radius: 4px;
+    27|    27|            --radius-lg: 8px;
+    28|    28|            --space-2: 8px;
+    29|    29|            --space-3: 12px;
+    30|    30|            --space-4: 16px;
+    31|    31|            --space-6: 24px;
+    32|    32|        }
+    33|    33|        
+    34|    34|        * {
+    35|    35|            margin: 0;
+    36|    36|            padding: 0;
+    37|    37|            box-sizing: border-box;
+    38|    38|        }
+    39|    39|        
+    40|    40|        body {
+    41|    41|            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    42|    42|            background: var(--bg);
+    43|    43|            color: var(--text);
+    44|    44|            line-height: 1.6;
+    45|    45|            padding: var(--space-4);
+    46|    46|        }
+    47|    47|        
+    48|    48|        .container {
+    49|    49|            max-width: 1200px;
+    50|    50|            margin: 0 auto;
+    51|    51|        }
+    52|    52|        
+    53|    53|        header {
+    54|    54|            text-align: center;
+    55|    55|            padding: var(--space-6) 0;
+    56|    56|            border-bottom: 2px solid var(--border);
+    57|    57|            margin-bottom: var(--space-6);
+    58|    58|        }
+    59|    59|        
+    60|    60|        h1 {
+    61|    61|            font-size: clamp(1.8rem, 5vw, 3rem);
+    62|    62|            margin-bottom: var(--space-2);
+    63|    63|            font-weight: 700;
+    64|    64|        }
+    65|    65|        
+    66|    66|        .subtitle {
+    67|    67|            color: var(--text-secondary);
+    68|    68|            font-size: clamp(1rem, 2.5vw, 1.2rem);
+    69|    69|        }
+    70|    70|        
+    71|    71|        /* Date Section */
+    72|    72|        .date-section {
+    73|    73|            background: var(--card);
+    74|    74|            border: 1.5px solid var(--border);
+    75|    75|            border-radius: var(--radius-lg);
+    76|    76|            box-shadow: var(--shadow-lg);
+    77|    77|            margin-bottom: var(--space-6);
+    78|    78|            overflow: hidden;
+    79|    79|        }
+    80|    80|        
+    81|    81|        .date-header {
+    82|    82|            background: var(--accent);
+    83|    83|            padding: var(--space-4);
+    84|    84|            display: flex;
+    85|    85|            justify-content: space-between;
+    86|    86|            align-items: center;
+    87|    87|            flex-wrap: wrap;
+    88|    88|            gap: var(--space-2);
+    89|    89|            cursor: pointer;
+    90|    90|            user-select: none;
+    91|    91|        }
+    92|    92|        
+    93|    93|        .date-header:hover {
+    94|    94|            filter: brightness(0.98);
+    95|    95|        }
+    96|    96|        
+    97|    97|        .date-title {
+    98|    98|            display: flex;
+    99|    99|            align-items: center;
+   100|   100|            gap: var(--space-3);
+   101|   101|        }
+   102|   102|        
+   103|   103|        .date-badge {
+   104|   104|            background: var(--text);
+   105|   105|            color: var(--accent);
+   106|   106|            padding: var(--space-2) var(--space-4);
+   107|   107|            border-radius: var(--radius);
+   108|   108|            font-weight: 700;
+   109|   109|            font-size: 1rem;
+   110|   110|        }
+   111|   111|        
+   112|   112|        .latest-tag {
+   113|   113|            background: var(--success);
+   114|   114|            color: var(--text);
+   115|   115|            padding: 4px 12px;
+   116|   116|            border-radius: var(--radius);
+   117|   117|            font-size: 0.75rem;
+   118|   118|            font-weight: 700;
+   119|   119|            text-transform: uppercase;
+   120|   120|        }
+   121|   121|        
+   122|   122|        .date-stats {
+   123|   123|            color: var(--text-secondary);
+   124|   124|            font-size: 0.9rem;
+   125|   125|        }
+   126|   126|        
+   127|   127|        .toggle-icon {
+   128|   128|            font-size: 1.5rem;
+   129|   129|            transition: transform 0.3s;
+   130|   130|        }
+   131|   131|        
+   132|   132|        .toggle-icon.expanded {
+   133|   133|            transform: rotate(180deg);
+   134|   134|        }
+   135|   135|        
+   136|   136|        .date-content {
+   137|   137|            display: none;
+   138|   138|            padding: var(--space-6);
+   139|   139|        }
+   140|   140|        
+   141|   141|        .date-content.expanded {
+   142|   142|            display: block;
+   143|   143|        }
+   144|   144|        
+   145|   145|        /* Material Card */
+   146|   146|        .material-card {
+   147|   147|            background: var(--bg-secondary);
+   148|   148|            border: 1.5px solid var(--border-light);
+   149|   149|            border-radius: var(--radius-lg);
+   150|   150|            margin-bottom: var(--space-4);
+   151|   151|            overflow: hidden;
+   152|   152|        }
+   153|   153|        
+   154|   154|        .material-card:last-child {
+   155|   155|            margin-bottom: 0;
+   156|   156|        }
+   157|   157|        
+   158|   158|        .material-header {
+   159|   159|            background: var(--bg);
+   160|   160|            padding: var(--space-4);
+   161|   161|            border-bottom: 1.5px solid var(--border-light);
+   162|   162|        }
+   163|   163|        
+   164|   164|        .material-tag {
+   165|   165|            display: inline-block;
+   166|   166|            background: var(--primary);
+   167|   167|            color: var(--text);
+   168|   168|            padding: 4px 12px;
+   169|   169|            border-radius: var(--radius);
+   170|   170|            font-size: 0.85rem;
+   171|   171|            font-weight: 600;
+   172|   172|            margin-bottom: var(--space-2);
+   173|   173|        }
+   174|   174|        
+   175|   175|        .material-title {
+   176|   176|            font-size: 1.3rem;
+   177|   177|            font-weight: 700;
+   178|   178|            color: var(--text);
+   179|   179|            margin: var(--space-2) 0;
+   180|   180|        }
+   181|   181|        
+   182|   182|        .material-source {
+   183|   183|            color: var(--text-secondary);
+   184|   184|            font-size: 0.9rem;
+   185|   185|        }
+   186|   186|        
+   187|   187|        .material-body {
+   188|   188|            padding: var(--space-4);
+   189|   189|        }
+   190|   190|        
+   191|   191|        /* Section */
+   192|   192|        .section {
+   193|   193|            margin-bottom: var(--space-4);
+   194|   194|        }
+   195|   195|        
+   196|   196|        .section:last-child {
+   197|   197|            margin-bottom: 0;
+   198|   198|        }
+   199|   199|        
+   200|   200|        .section-title {
+   201|   201|            font-size: 1rem;
+   202|   202|            font-weight: 600;
+   203|   203|            color: var(--text);
+   204|   204|            margin-bottom: var(--space-2);
+   205|   205|            display: flex;
+   206|   206|            align-items: center;
+   207|   207|            gap: var(--space-2);
+   208|   208|        }
+   209|   209|        
+   210|   210|        .section-title::before {
+   211|   211|            content: '';
+   212|   212|            width: 4px;
+   213|   213|            height: 1.2em;
+   214|   214|            background: var(--accent);
+   215|   215|            border-radius: 2px;
+   216|   216|        }
+   217|   217|        
+   218|   218|        /* Summary Box */
+   219|   219|        .summary-box {
+   220|   220|            background: var(--bg);
+   221|   221|            padding: var(--space-3);
+   222|   222|            border-left: 4px solid var(--primary);
+   223|   223|            border-radius: var(--radius);
+   224|   224|            font-size: 0.95rem;
+   225|   225|            line-height: 1.8;
+   226|   226|            color: var(--text);
+   227|   227|        }
+   228|   228|        
+   229|   229|        /* Advantages List */
+   230|   230|        .advantages-list {
+   231|   231|            list-style: none;
+   232|   232|        }
+   233|   233|        
+   234|   234|        .advantages-list li {
+   235|   235|            padding: var(--space-2) 0;
+   236|   236|            padding-left: var(--space-4);
+   237|   237|            position: relative;
+   238|   238|        }
+   239|   239|        
+   240|   240|        .advantages-list li::before {
+   241|   241|            content: '✓';
+   242|   242|            position: absolute;
+   243|   243|            left: 0;
+   244|   244|            color: var(--success);
+   245|   245|            font-weight: 700;
+   246|   246|        }
+   247|   247|        
+   248|   248|        /* Quotes */
+   249|   249|        .quotes-container {
+   250|   250|            display: grid;
+   251|   251|            gap: var(--space-3);
+   252|   252|        }
+   253|   253|        
+   254|   254|        .quote-card {
+   255|   255|            background: var(--bg);
+   256|   256|            padding: var(--space-3);
+   257|   257|            border: 1.5px solid var(--border-light);
+   258|   258|            border-radius: var(--radius);
+   259|   259|            position: relative;
+   260|   260|        }
+   261|   261|        
+   262|   262|        .quote-card::before {
+   263|   263|            content: '"';
+   264|   264|            font-size: 2rem;
+   265|   265|            color: var(--primary);
+   266|   266|            position: absolute;
+   267|   267|            top: var(--space-2);
+   268|   268|            left: var(--space-2);
+   269|   269|            opacity: 0.3;
+   270|   270|            font-family: Georgia, serif;
+   271|   271|        }
+   272|   272|        
+   273|   273|        .quote-text {
+   274|   274|            font-style: italic;
+   275|   275|            color: var(--text);
+   276|   276|            padding-left: var(--space-6);
+   277|   277|            line-height: 1.8;
+   278|   278|            font-size: 0.95rem;
+   279|   279|        }
+   280|   280|        
+   281|   281|        /* Topics */
+   282|   282|        .topics-container {
+   283|   283|            display: flex;
+   284|   284|            flex-wrap: wrap;
+   285|   285|            gap: var(--space-2);
+   286|   286|        }
+   287|   287|        
+   288|   288|        .topic-pill {
+   289|   289|            background: var(--bg);
+   290|   290|            color: var(--text);
+   291|   291|            padding: var(--space-2) var(--space-3);
+   292|   292|            border: 1.5px solid var(--border);
+   293|   293|            border-radius: var(--radius);
+   294|   294|            font-size: 0.85rem;
+   295|   295|        }
+   296|   296|        
+   297|   297|        /* Original Text Section */
+   298|   298|        .original-text-section {
+   299|   299|            margin-top: var(--space-4);
+   300|   300|            border-top: 2px solid var(--border);
+   301|   301|            padding-top: var(--space-4);
+   302|   302|        }
+   303|   303|        
+   304|   304|        .original-text-toggle {
+   305|   305|            background: var(--bg);
+   306|   306|            color: var(--text);
+   307|   307|            padding: var(--space-3) var(--space-4);
+   308|   308|            border: 1.5px solid var(--border);
+   309|   309|            border-radius: var(--radius);
+   310|   310|            cursor: pointer;
+   311|   311|            font-weight: 600;
+   312|   312|            text-align: center;
+   313|   313|            transition: all 0.2s;
+   314|   314|            margin-bottom: var(--space-4);
+   315|   315|        }
+   316|   316|        
+   317|   317|        .original-text-toggle:hover {
+   318|   318|            background: var(--primary);
+   319|   319|            border-color: var(--primary);
+   320|   320|            transform: translateY(-1px);
+   321|   321|        }
+   322|   322|        
+   323|   323|        .original-text-content {
+   324|   324|            display: none;
+   325|   325|            background: var(--bg);
+   326|   326|            padding: var(--space-4);
+   327|   327|            border-radius: var(--radius);
+   328|   328|            border: 1.5px solid var(--border-light);
+   329|   329|            font-size: 0.95rem;
+   330|   330|            line-height: 1.8;
+   331|   331|            max-height: 400px;
+   332|   332|            overflow-y: auto;
+   333|   333|        }
+   334|   334|        
+   335|   335|        .original-text-content.show {
+   336|   336|            display: block;
+   337|   337|        }
+   338|   338|        
+   339|   339|        .original-text-content p {
+   340|   340|            margin-bottom: var(--space-3);
+   341|   341|        }
+   342|   342|        
+   343|   343|        /* Structure Box */
+   344|   344|        .structure-box {
+   345|   345|            background: var(--bg);
+   346|   346|            padding: var(--space-3);
+   347|   347|            border-radius: var(--radius);
+   348|   348|            border: 1.5px solid var(--border-light);
+   349|   349|        }
+   350|   350|        
+   351|   351|        .structure-item {
+   352|   352|            margin-bottom: var(--space-2);
+   353|   353|            padding-bottom: var(--space-2);
+   354|   354|            border-bottom: 1px solid var(--border-light);
+   355|   355|        }
+   356|   356|        
+   357|   357|        .structure-item:last-child {
+   358|   358|            margin-bottom: 0;
+   359|   359|            padding-bottom: 0;
+   360|   360|            border-bottom: none;
+   361|   361|        }
+   362|   362|        
+   363|   363|        .structure-label {
+   364|   364|            font-weight: 600;
+   365|   365|            color: var(--text);
+   366|   366|            margin-bottom: 4px;
+   367|   367|            font-size: 0.9rem;
+   368|   368|        }
+   369|   369|        
+   370|   370|        .structure-content {
+   371|   371|            color: var(--text-secondary);
+   372|   372|            font-size: 0.85rem;
+   373|   373|        }
+   374|   374|        
+   375|   375|        /* Footer */
+   376|   376|        footer {
+   377|   377|            text-align: center;
+   378|   378|            padding: var(--space-6) 0;
+   379|   379|            border-top: 2px solid var(--border);
+   380|   380|            color: var(--text-secondary);
+   381|   381|        }
+   382|   382|        
+   383|   383|        /* Responsive */
+   384|   384|        @media (max-width: 768px) {
+   385|   385|            .date-header {
+   386|   386|                flex-direction: column;
+   387|   387|                align-items: flex-start;
+   388|   388|            }
+   389|   389|            
+   390|   390|            .material-body {
+   391|   391|                padding: var(--space-3);
+   392|   392|            }
+   393|   393|        }
+   394|   394|    </style>
+   395|   395|</head>
+   396|   396|<body>
+   397|   397|    <div class="container">
+   398|   398|        <header>
+   399|   399|            <h1>📚 高考作文素材库</h1>
+   400|   400|            <p class="subtitle">来自《人民日报》的每日精选</p>
+   401|   401|        </header>
+   402|   402|        
+   662|   662|        
+   663|        <!-- 2026-04-25 -->
+   664|        <div class="date-section">
+   665|            <div class="date-header" onclick="toggleDate('2026-04-25')">
+   666|                <div class="date-title">
+   667|                    <span class="latest-tag">NEW</span>
+   668|                    <span class="date-badge">2026年4月25日</span>
+   669|                </div>
+   670|                <div style="display: flex; align-items: center; gap: var(--space-3);">
+   671|                    <span class="date-stats">3篇素材 · 深度分析版</span>
+   672|                    <span class="toggle-icon" id="toggle-2026-04-25">▼</span>
+   673|                </div>
+   674|            </div>
+   675|            
+   676|            <div class="date-content expanded" id="content-2026-04-25">
+   677|                <!-- Material 1 -->
+   678|                <div class="material-card">
+   679|                    <div class="material-header">
+   680|                        <span class="material-tag">文化遗产</span>
+   681|                        <div class="material-title">大地书香·文脉传承</div>
+   682|                        <div class="material-source">《人民日报》2026年4月25日 第07版</div>
+   683|                    </div>
+   684|                    <div class="material-body">
+   685|                        <div class="section">
+   686|                            <div class="section-title">📖 核心论点</div>
+   687|                            <div class="summary-box">
+   688|                                阅读是连接古今的桥梁，通过读有字书和无字书，在传承传统中锚定未来方向。
+   689|                            </div>
+   690|                        </div>
+   691|                        
+   692|                        <div class="section">
+   693|                            <div class="section-title">💎 金句储备</div>
+   694|                            <div class="quotes-container">
+   695|                                <div class="quote-card">
+   696|                                    <p class="quote-text">"古人的智慧写进了今人心灵的'朋友圈'。"</p>
+   697|                                    <div class="quote-meta">
+   698|                                        <span class="topic-tag">传统文化</span>
+   699|                                        <span class="topic-tag">阅读与成长</span>
+   700|                                    </div>
+   701|                                </div>
+   702|                                <div class="quote-card">
+   703|                                    <p class="quote-text">"阅读帮我们把生活的光彩拎得出、拎得动、拎得有滋味。"</p>
+   704|                                    <div class="quote-meta">
+   705|                                        <span class="topic-tag">阅读与生活</span>
+   706|                                        <span class="topic-tag">发现美</span>
+   707|                                    </div>
+   708|                                </div>
+   709|                                <div class="quote-card">
+   710|                                    <p class="quote-text">"读有字书，也读无字书。"</p>
+   711|                                    <div class="quote-meta">
+   712|                                        <span class="topic-tag">知行合一</span>
+   713|                                        <span class="topic-tag">学习方法</span>
+   714|                                    </div>
+   715|                                </div>
+   716|                            </div>
+   717|                        </div>
+   718|                        
+   719|                        <div class="section">
+   720|                            <div class="section-title">🎯 适用话题</div>
+   721|                            <ul class="topics-list">
+   722|                                <li><span class="topic-badge">阅读的意义</span> - 阅读不只是获取信息，更是人格塑造</li>
+   723|                                <li><span class="topic-badge">传统文化</span> - "朋友圈"比喻新颖，贴近年轻人</li>
+   724|                                <li><span class="topic-badge">耕读文化</span> - 和顺小镇、培田古村的生动场景</li>
+   725|                            </ul>
+   726|                        </div>
+   727|                    </div>
+   728|                    <div class="material-footer">
+   729|                        <a href="./2026-04-25.html" class="btn-link">查看深度分析 →</a>
+   730|                    </div>
+   731|                </div>
+   732|
+   733|                <!-- Material 2 -->
+   734|                <div class="material-card">
+   735|                    <div class="material-header">
+   736|                        <span class="material-tag">文化遗产</span>
+   737|                        <div class="material-title">古代书院的读书智慧</div>
+   738|                        <div class="material-source">《人民日报》2026年4月25日 第07版</div>
+   739|                    </div>
+   740|                    <div class="material-body">
+   741|                        <div class="section">
+   742|                            <div class="section-title">📖 核心论点</div>
+   743|                            <div class="summary-box">
+   744|                                古代书院的读书智慧（日程化、方法自觉、与时俱进）对今天的全民阅读有深刻启示。
+   745|                            </div>
+   746|                        </div>
+   747|                        
+   748|                        <div class="section">
+   749|                            <div class="section-title">💎 金句储备</div>
+   750|                            <div class="quotes-container">
+   751|                                <div class="quote-card">
+   752|                                    <p class="quote-text">"日记教学法的要义，是把读书变成可执行、可检查、可持续的日常功课。"</p>
+   753|                                    <div class="quote-meta">
+   754|                                        <span class="topic-tag">目标管理</span>
+   755|                                        <span class="topic-tag">习惯养成</span>
+   756|                                    </div>
+   757|                                </div>
+   758|                                <div class="quote-card">
+   759|                                    <p class="quote-text">"今天的全民阅读，不能停留在'读过没有'的层面，而要追求'读懂没有'。"</p>
+   760|                                    <div class="quote-meta">
+   761|                                        <span class="topic-tag">质量vs数量</span>
+   762|                                        <span class="topic-tag">形式主义</span>
+   763|                                    </div>
+   764|                                </div>
+   765|                                <div class="quote-card">
+   766|                                    <p class="quote-text">"只有掌握了方法，阅读才能真正成为'获取知识、启智增慧、培养道德'的途径。"</p>
+   767|                                    <div class="quote-meta">
+   768|                                        <span class="topic-tag">阅读的意义</span>
+   769|                                        <span class="topic-tag">知识vs智慧</span>
+   770|                                    </div>
+   771|                                </div>
+   772|                            </div>
+   773|                        </div>
+   774|                        
+   775|                        <div class="section">
+   776|                            <div class="section-title">🎯 适用话题</div>
+   777|                            <ul class="topics-list">
+   778|                                <li><span class="topic-badge">读书方法</span> - 日程化、方法自觉、与时俱进</li>
+   779|                                <li><span class="topic-badge">传统文化的价值</span> - 700年前的智慧仍在用</li>
+   780|                                <li><span class="topic-badge">知行合一</span> - "切己体察"落实到行动</li>
+   781|                            </ul>
+   782|                        </div>
+   783|                    </div>
+   784|                    <div class="material-footer">
+   785|                        <a href="./2026-04-25.html" class="btn-link">查看深度分析 →</a>
+   786|                    </div>
+   787|                </div>
+   788|
+   789|                <!-- Material 3 -->
+   790|                <div class="material-card">
+   791|                    <div class="material-header">
+   792|                        <span class="material-tag">科技评论</span>
+   793|                        <div class="material-title">星际航行，携手迈向深空</div>
+   794|                        <div class="material-source">《人民日报》2026年4月25日 第09版</div>
+   795|                    </div>
+   796|                    <div class="material-body">
+   797|                        <div class="section">
+   798|                            <div class="section-title">📖 核心论点</div>
+   799|                            <div class="summary-box">
+   800|                                从东方红一号到天问一号，中国航天从白手起家到自主创新，未来将继续在载人航天、月球探测、火星采样返回等领域迈进深空。
+   801|                            </div>
+   802|                        </div>
+   803|                        
+   804|                        <div class="section">
+   805|                            <div class="section-title">💎 金句储备</div>
+   806|                            <div class="quotes-container">
+   807|                                <div class="quote-card">
+   808|                                    <p class="quote-text">"谁道人生无再少？门前流水尚能西。"</p>
+   809|                                    <div class="quote-meta">
+   810|                                        <span class="topic-tag">青春与梦想</span>
+   811|                                        <span class="topic-tag">创新精神</span>
+   812|                                    </div>
+   813|                                </div>
+   814|                                <div class="quote-card">
+   815|                                    <p class="quote-text">"50年来，中国航天从无到有、从小到大，走出了一条自力更生、自主创新的发展道路。"</p>
+   816|                                    <div class="quote-meta">
+   817|                                        <span class="topic-tag">自力更生</span>
+   818|                                        <span class="topic-tag">发展道路</span>
+   819|                                    </div>
+   820|                                </div>
+   821|                                <div class="quote-card">
+   822|                                    <p class="quote-text">"探索未知，是人类永恒的追求。"</p>
+   823|                                    <div class="quote-meta">
+   824|                                        <span class="topic-tag">探索精神</span>
+   825|                                        <span class="topic-tag">人类的追求</span>
+   826|                                    </div>
+   827|                                </div>
+   828|                            </div>
+   829|                        </div>
+   830|                        
+   831|                        <div class="section">
+   832|                            <div class="section-title">🎯 适用话题</div>
+   833|                            <ul class="topics-list">
+   834|                                <li><span class="topic-badge">自力更生与创新</span> - 从"一穷二白"到"火星探测"</li>
+   835|                                <li><span class="topic-badge">探索未知</span> - 50年航天路的坚持</li>
+   836|                                <li><span class="topic-badge">梦想与坚持</span> - 苏轼诗句的巧妙运用</li>
+   837|                            </ul>
+   838|                        </div>
+   839|                    </div>
+   840|                    <div class="material-footer">
+   841|                        <a href="./2026-04-25.html" class="btn-link">查看深度分析 →</a>
+   842|                    </div>
+   843|                </div>
+   844|            </div>
+   845|        </div>
+   846|
+   847|
+   848|   663|        <!-- 2026-04-24 -->
+   849|   664|        <div class="date-section">
+   850|   665|            <div class="date-header" onclick="toggleDate('2026-04-24')">
+   851|   666|                <div class="date-title">
+   852|   667|                    <span class="date-badge">2026年4月24日</span>
+   853|   668|                </div>
+   854|   669|                <div style="display: flex; align-items: center; gap: var(--space-3);">
+   855|   670|                    <span class="date-stats">3篇素材 · 5个主题 · 10+条金句</span>
+   856|   671|                    <span class="toggle-icon" id="toggle-2026-04-24">▼</span>
+   857|   672|                </div>
+   858|   673|            </div>
+   859|   674|            
+   860|   675|            <div class="date-content" id="content-2026-04-24">
+   861|   676|                <!-- Material 1 -->
+   862|   677|                <div class="material-card">
+   863|   678|                    <div class="material-header">
+   864|   679|                        <span class="material-tag">科技·时评</span>
+   865|   680|                        <div class="material-title">让科技话语权与科研实力共生长</div>
+   866|   681|                        <div class="material-source">《人民日报》2026年4月24日 第05版 | 作者：喻思南</div>
+   867|   682|                    </div>
+   868|   683|                    <div class="material-body">
+   869|   684|                        <div class="section">
+   870|   685|                            <div class="section-title">📖 原文概括</div>
+   871|   686|                            <div class="summary-box">
+   872|   687|                                科技话语权与科研实力需要同步提升。中国科研实力快速崛起，但在国际科技话语权方面仍有提升空间。需要通过主动发声、建强科技期刊、参与国际治理三个层面，实现话语权与科研实力的共生长。
+   873|   688|                            </div>
+   874|   689|                        </div>
+   875|   690|                        
+   876|   691|                        <div class="section">
+   877|   692|                            <div class="section-title">✨ 核心优势</div>
+   878|   693|                            <ul class="advantages-list">
+   879|   694|                                <li><strong>论证结构清晰</strong>：现象→问题→例证→三层对策→升华</li>
+   880|   695|                                <li><strong>数据具体</strong>：用AI领域的具体数据支撑观点</li>
+   881|   696|                                <li><strong>关键词精准</strong>："两头在外""并跑→领跑""高地""主场"</li>
+   882|   697|                                <li><strong>金句丰富</strong>：多个可以直接引用的金句</li>
+   883|   698|                            </ul>
+   884|   699|                        </div>
+   885|   700|                        
+   886|   701|                        <div class="section">
+   887|   702|                            <div class="section-title">💎 金句储备</div>
+   888|   703|                            <div class="quotes-container">
+   889|   704|                                <div class="quote-card">
+   890|   705|                                    <p class="quote-text">科技创新不仅是硬实力的比拼，也是国际话语权的较量。</p>
+   891|   706|                                </div>
+   892|   707|                                <div class="quote-card">
+   893|   708|                                    <p class="quote-text">在自立自强的基础上深化开放合作，这是中国一贯坚持的大道、正道。</p>
+   894|   709|                                </div>
+   895|   710|                                <div class="quote-card">
+   896|   711|                                    <p class="quote-text">实现从科技大国向科技强国的关键一跃。</p>
+   897|   712|                                </div>
+   898|   713|                            </div>
+   899|   714|                        </div>
+   900|   715|                        
+   901|   716|                        <div class="section">
+   902|   717|                            <div class="section-title">🎯 适用话题</div>
+   903|   718|                            <div class="topics-container">
+   904|   719|                                <span class="topic-pill">科技创新与自立自强</span>
+   905|   720|                                <span class="topic-pill">国际话语权</span>
+   906|   721|                                <span class="topic-pill">开放与自主</span>
+   907|   722|                                <span class="topic-pill">评价体系改革</span>
+   908|   723|                                <span class="topic-pill">从大国到强国</span>
+   909|   724|                            </div>
+   910|   725|                        </div>
+   911|   726|                        
+   912|   727|                        <div class="section">
+   913|   728|                            <div class="section-title">🏗️ 结构方法</div>
+   914|   729|                            <div class="structure-box">
+   915|   730|                                <div class="structure-item">
+   916|   731|                                    <div class="structure-label">递进式论证结构</div>
+   917|   732|                                    <div class="structure-content">
+   918|   733|                                        现象引入（两个发布）<br>
+   919|   734|                                        ↓<br>
+   920|   735|                                        问题提出（实力强 vs 话语权弱）<br>
+   921|   736|                                        ↓<br>
+   922|   737|                                        具体例证（AI领域的数据）<br>
