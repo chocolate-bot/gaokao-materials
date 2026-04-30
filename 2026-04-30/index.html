@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-04-30 高考作文素材 | 来自《人民日报》的深度解析</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2D2D2D;
+            --text-light: #666666;
+            --border: #2D2D2D;
+            --shadow: #B5B5B5;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--primary), #5BA3D9);
+            border-radius: 8px;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: white;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        }
+
+        header .subtitle {
+            font-size: 1.2em;
+            color: rgba(255,255,255,0.95);
+            font-weight: 300;
+        }
+
+        /* Article Card */
+        .article-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border: 1.5px solid var(--border);
+        }
+
+        .article-header {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .article-title {
+            font-size: 1.8em;
+            color: var(--text);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .article-meta {
+            color: var(--text-light);
+            font-size: 0.95em;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            color: var(--text);
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 4px solid var(--primary);
+            font-weight: 600;
+        }
+
+        /* Core Argument */
+        .core-argument {
+            background: linear-gradient(135deg, rgba(123, 203, 255, 0.1), rgba(123, 203, 255, 0.05));
+            padding: 25px;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary);
+            font-size: 1.1em;
+            line-height: 1.9;
+        }
+
+        .core-argument strong {
+            color: #2E7BA6;
+        }
+
+        /* Logic Diagram */
+        .logic-diagram {
+            background: #FAFAFA;
+            padding: 25px;
+            border-radius: 6px;
+            border: 1px solid #E0E0E0;
+            font-family: "Courier New", monospace;
+            font-size: 0.9em;
+            line-height: 1.6;
+            overflow-x: auto;
+            white-space: pre;
+        }
+
+        /* Methods Grid */
+        .methods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .method-item {
+            background: linear-gradient(135deg, rgba(255, 230, 106, 0.15), rgba(255, 230, 106, 0.05));
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .method-item strong {
+            color: #C9A227;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        /* Quote Cards */
+        .quote-card {
+            background: linear-gradient(135deg, rgba(123, 203, 255, 0.08), rgba(255, 230, 106, 0.08));
+            padding: 25px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(123, 203, 255, 0.2);
+        }
+
+        .quote-text {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #2E7BA6;
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-style: italic;
+        }
+
+        .quote-analysis h4 {
+            color: var(--text);
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .quote-analysis ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .quote-analysis li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .quote-analysis li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .quote-analysis strong {
+            color: #2E7BA6;
+        }
+
+        /* Topics Grid */
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .topic-tag {
+            background: var(--primary);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.9em;
+            box-shadow: 2px 2px 0 0 rgba(0,0,0,0.1);
+        }
+
+        /* Usage Template */
+        .usage-template {
+            background: #FAFAFA;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary);
+            margin-top: 15px;
+        }
+
+        .usage-template strong {
+            display: block;
+            margin-bottom: 10px;
+            color: #2E7BA6;
+        }
+
+        .usage-template p {
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #E0E0E0;
+            line-height: 1.8;
+        }
+
+        /* Scenarios */
+        .scenario-box {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #E0E0E0;
+            margin-bottom: 15px;
+        }
+
+        .scenario-box h4 {
+            color: #2E7BA6;
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        /* Original Text */
+        .original-text {
+            background: #FAFAFA;
+            padding: 25px;
+            border-radius: 6px;
+            border: 1px solid #E0E0E0;
+            font-size: 0.95em;
+            line-height: 2;
+            color: #444;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        /* Summary */
+        .summary {
+            background: linear-gradient(135deg, var(--primary), #5BA3D9);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            margin-top: 40px;
+        }
+
+        .summary h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .summary ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .summary li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .article-title {
+                font-size: 1.4em;
+            }
+
+            .article-card {
+                padding: 25px;
+            }
+
+            .methods-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Collapsible */
+        .collapsible {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .collapsible:hover {
+            opacity: 0.8;
+        }
+
+        .collapsed + .original-text {
+            max-height: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .collapsed + .original-text:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(transparent, #FAFAFA);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-04-30 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析 · 3篇精选评论</p>
+        </header>
+
+        <!-- Article 1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">《由"娇龙"月季想到的（评论员观察）》</h2>
+                <div class="article-meta">
+                    <span>📝 作者：李斌</span>
+                    <span>📄 版面：第05版 评论</span>
+                    <span>📏 字数：约850字</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument">
+                    <strong>一句话概括：</strong>党员干部的好口碑来自实实在在的业绩和实干担当的作风，而非表面的政绩工程。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🧠 论证逻辑</h3>
+                <div class="logic-diagram">第一层：现象引入（由物及人）
+├── "娇龙"月季新品种在昭苏县"安家"
+├── 引发思考：党员干部如何留下好口碑？
+└── 过渡：从贺娇龙的案例说起
+
+第二层：正面论证（业绩+作风）
+├── 论点一：好口碑来自实实在在的业绩
+│   ├── 举例1：廖俊波"背着石头上山"
+│   ├── 举例2：徐利民"总要给土地留下点东西"
+│   └── 小结：业绩体现在为群众办实事中
+│
+├── 论点二：好口碑来自实干担当的作风
+│   ├── 举例：贺娇龙骑马宣传、牺牲休息直播
+│   └── 分析：实干风采、担当风骨是精神面貌
+│
+└── 论点三：好业绩和好作风可以并存
+    ├── 举例：黄文秀、张桂梅的榜样力量
+    └── 比喻：好业绩如甘霖，好作风如灯塔
+
+第三层：反面警示（对比论证）
+├── 反面案例：追求高增长引进高污染企业
+├── 后果：政绩观不正遗患无穷
+└── 警示：权力应心存敬畏、为民服务
+
+第四层：价值升华（精神境界）
+├── 核心观点：大公无私的精神境界
+├── 贺娇龙的启示：把"流量"变民生"增量"
+└── 结尾升华：播下种子，凝聚磅礴力量</div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🔧 论证方法</h3>
+                <div class="methods-grid">
+                    <div class="method-item">
+                        <strong>比喻论证</strong>
+                        "好业绩如甘霖润物，泽被当下；好作风则如灯塔长明"<br>
+                        <small>将抽象概念具象化，增强画面感和感染力</small>
+                    </div>
+                    <div class="method-item">
+                        <strong>举例论证</strong>
+                        正面：廖俊波、徐利民、黄文秀、张桂梅<br>
+                        反面：引进高污染企业、政绩工程<br>
+                        <small>正反对比，增强说服力</small>
+                    </div>
+                    <div class="method-item">
+                        <strong>因果论证</strong>
+                        因为实干担当 → 所以获得好口碑<br>
+                        因为政绩观不正 → 所以遗患无穷<br>
+                        <small>逻辑链条清晰，论证严密</small>
+                    </div>
+                    <div class="method-item">
+                        <strong>对比论证</strong>
+                        贺娇龙的实干 vs 某些干部的政绩工程<br>
+                        <small>突出核心观点，形成强烈反差</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 金句深度解析</h3>
+
+                <div class="quote-card">
+                    <div class="quote-text">"好口碑来自实实在在的业绩"</div>
+                    <div class="quote-analysis">
+                        <h4>好在哪</h4>
+                        <ul>
+                            <li>简洁有力，一语中的</li>
+                            <li>"实实在在"强调真实性，反对虚浮</li>
+                            <li>"业绩"是结果导向，符合价值观</li>
+                        </ul>
+                        <h4 style="margin-top: 15px;">适用话题</h4>
+                        <div class="topics-grid">
+                            <div class="topic-tag">实干兴邦</div>
+                            <div class="topic-tag">公仆精神</div>
+                            <div class="topic-tag">为民造福</div>
+                            <div class="topic-tag">政绩观</div>
+                            <div class="topic-tag">担当作为</div>
+                            <div class="topic-tag">实事求是</div>
+                            <div class="topic-tag">求真务实</div>
+                            <div class="topic-tag">人民立场</div>
+                        </div>
+                        <h4 style="margin-top: 15px;">段落模板</h4>
+                        <div class="usage-template">
+                            <strong>开头引用示例：</strong>
+                            <p>"好口碑来自实实在在的业绩。"这不是一句空洞的口号，而是无数优秀共产党人用行动书写的答卷。从焦裕禄种下的泡桐，到孔繁森留下的雪莲，再到黄文秀扎根的百坭村，他们用实干赢得了人民的爱戴。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"好业绩如甘霖润物，泽被当下；好作风则如灯塔长明，照亮奋斗者的方向"</div>
+                    <div class="quote-analysis">
+                        <h4>好在哪</h4>
+                        <ul>
+                            <li>对偶句式，音韵和谐</li>
+                            <li>"甘霖"与"灯塔"的比喻精准</li>
+                            <li>"当下"与"方向"形成时空呼应</li>
+                        </ul>
+                        <h4 style="margin-top: 15px;">段落模板</h4>
+                        <div class="usage-template">
+                            <strong>论证句示例：</strong>
+                            <p>我们既要追求实实在在的业绩，也要锤炼过硬的作风。因为"好业绩如甘霖润物，泽被当下；好作风则如灯塔长明，照亮奋斗者的方向"。前者解决当下的问题，后者指引长远的道路，二者相辅相成，缺一不可。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"若为热爱，便所向披靡"</div>
+                    <div class="quote-analysis">
+                        <h4>好在哪</h4>
+                        <ul>
+                            <li>短句有力，节奏明快</li>
+                            <li>"热爱"是情感出发点</li>
+                            <li>"所向披靡"是强烈结果</li>
+                            <li>因果关系明确</li>
+                        </ul>
+                        <h4 style="margin-top: 15px;">段落模板</h4>
+                        <div class="usage-template">
+                            <strong>结尾引用示例：</strong>
+                            <p>"若为热爱，便所向披靡。"贺娇龙之所以能赢得人民的口碑，正是因为她对这片土地深沉的热爱。热爱让她不畏艰险，热爱让她忘我工作，热爱让她把个人的"流量"变成民生的"增量"。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 适用场景</h3>
+                <div class="scenario-box">
+                    <h4>2024年全国甲卷"人·技术·时间"</h4>
+                    <p>可用贺娇龙案例：她用现代技术（直播）为传统文旅赋能<br>
+                    <strong>论点：</strong>技术服务于人，才能创造真正价值</p>
+                </div>
+                <div class="scenario-box">
+                    <h4>2023年新课标I卷"故事的力量"</h4>
+                    <p>可用"娇龙"月季的故事：一个干部的故事如何成为精神象征<br>
+                    <strong>论点：</strong>好故事具有感染力、引领力</p>
+                </div>
+                <div class="scenario-box">
+                    <h4>2021年全国甲卷"可为与有为"</h4>
+                    <p>可用政绩观：干部应该追求"可为"的实绩，而非"有为"的虚名<br>
+                    <strong>论点：</strong>有为要先问是否可为</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title collapsible">📄 原文（点击展开/收起）</h3>
+                <div class="original-text">
+新时代的"娇龙"月季，是无数共产党人政绩为人民而树、使命为群众而担、口碑用实干来立的生动写照
+
+新疆伊犁哈萨克自治州昭苏县灯塔知青馆娇龙厅里，参观者络绎不绝。今年2月，命名为"娇龙"的月季新品种，从云南出发跨越数千里山河，在娇龙厅"安家"，以另一种形式延续贺娇龙的初心，承载着人们对她的怀念。
+
+由此联想到，今天的党员干部，怎样才能在人民群众中留下好口碑？
+
+不追求一时的轰动效应，而是想方设法推介家乡文旅，为一域发展留下"火种"；不追求个人分红，而是着力发展直播电商，为一方百姓创造普惠福祉……贺娇龙扎根基层、实干笃行的奋斗历程，印证了一个道理：好口碑来自实实在在的业绩。
+
+共产党人的业绩，是百姓家门口亮起的路灯，是狂风骤雨中屹立不倒的防洪堤，是方便快捷的"一窗通办"，体现在为人民群众办实事、解难题的具体行动中。廖俊波"认准的事，背着石头上山也要干"，让没有工业基础的福建政和县建起工业园；徐利民觉得"总要给这片土地留下点东西"，因此力主为自然村修水库，筹办"民情暖哨"，全力弘扬上山文化。以不遗余力的担当作为，为百姓兴产业、谋福祉，这样的业绩经得起时间检验，对得起人民期待。
+
+好口碑还来自实干担当的作风。群众感念贺娇龙，不只是因为她眷恋家乡，更是因为那股扎根基层、心系群众的坚韧执着。网友佩服贺娇龙，动容于她牺牲休息时间推销农牧产品的孜孜不倦，感佩于她多次坠马依然坚持骑马宣传昭苏的勇敢无畏。马背为舞台，直播是桥梁，实干写答卷，廉洁筑底色，此中实干风采、担当风骨，正是党员干部应有的精神面貌。
+
+修路修渠、改善民生是造福；留下清风正气，树起实干榜样，同样是造福。黄文秀把自强不息的精神长留百坭村，感召青年才俊投身乡村全面振兴；张桂梅扎根山区教育，点亮山区孩童的求学之路，也激励更多学子返乡任教。好业绩如甘霖润物，泽被当下；好作风则如灯塔长明，照亮奋斗者的方向。从行动上效仿，从精神上接力，以实干笃定前行，以担当诠释忠诚，亲民爱民为民的行动和作风将蔚为大观。
+
+反观有的干部，为了追求高增长，随意引进高污染、高耗能企业，短期内拉动了经济，却给生态环境造成难以逆转的破坏。大拆大建搞政绩工程，偏离实际需求和群众意愿，留下的只有烂尾工程和债务黑洞。政绩观不正，必定遗患无穷。这警示着每一位党员干部：职位是人民赋予的，只能用来为人民服务；权力是一把双刃剑，理应心存敬畏、恪守法纪，把权力用在为党分忧、为国干事、为民谋利上。
+
+党员干部必须有大公无私的精神境界。贺娇龙品行的可贵之处就在于，把"流量"变成民生"增量"，把岗位当成奉献的阵地。正因为丹心为民、不慕虚荣、不图私利，"娇龙"月季才带给人恒久的感念和温暖。
+
+"若为热爱，便所向披靡。"新时代的"娇龙"月季，是无数共产党人政绩为人民而树、使命为群众而担、口碑用实干来立的生动写照。那些在人民心田播下的种子，终将成长为民心向党的坚实根基，凝聚起推动社会发展进步的磅礴力量。
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">《文艺不妨多些科技思维（金台随笔）》</h2>
+                <div class="article-meta">
+                    <span>📝 作者：程红</span>
+                    <span>📄 版面：第05版 评论</span>
+                    <span>📏 字数：约900字</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument">
+                    <strong>一句话概括：</strong>文艺应该增强科技思维、加强科技应用，但要以人的创造精神和主体意识为关键。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🧠 论证逻辑</h3>
+                <div class="logic-diagram">第一层：现象引入
+├── 现象：人形机器人上春晚、AI生成短视频
+├── 判断：文艺与科技正紧紧相拥
+└── 提问：如何让文艺更有生命力？
+
+第二层：正面论证（科技的作用）
+├── 论点一：向科技要效力
+│   ├── 举例1：人形机器人表演、数字技术复原文物
+│   ├── 举例2：人工智能渲染电影场景
+│   └── 分析：降低成本、优化效果、事半功倍
+│
+├── 论点二：用科技挖灵感
+│   ├── 举例1：《三体》"纳米飞刃"与碳纤维
+│   ├── 举例2："千里江陵"与高铁
+│   └── 分析：文艺想象与科技实力具有"同源性"
+│
+└── 论点三：文艺与科技可以同频共振
+
+第三层：辩证分析（机遇与挑战）
+├── 机遇：文艺是科技的理想"试验田"
+├── 警惕：蓬勃生长不是野蛮生长
+└── 对策：用好"两只手"，"放得活"又"管得好"
+
+第四层：价值升华（人的主体性）
+├── 疑惑：AI会写诗，人还有创造力吗？
+├── 回答：真正的原创力在人身上
+└── 升华：科技向善、艺术向美，关键在人</div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 核心金句</h3>
+
+                <div class="quote-card">
+                    <div class="quote-text">"文艺与科技可以同频共振"</div>
+                    <div class="quote-analysis">
+                        <h4>好在哪</h4>
+                        <ul>
+                            <li>"同频共振"是物理学概念，新颖贴切</li>
+                            <li>将抽象关系具象化</li>
+                            <li>暗示两者相互促进、共同发展</li>
+                        </ul>
+                        <div class="topics-grid" style="margin-top: 15px;">
+                            <div class="topic-tag">文艺与科技</div>
+                            <div class="topic-tag">融合创新</div>
+                            <div class="topic-tag">跨界发展</div>
+                            <div class="topic-tag">文化创新</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"真正的原创力、情感表达，还是在我们自己身上"</div>
+                    <div class="quote-analysis">
+                        <h4>好在哪</h4>
+                        <ul>
+                            <li>直击要害，观点明确</li>
+                            <li>"真正"强调不可替代性</li>
+                            <li>坚定人的主体地位</li>
+                        </ul>
+                        <div class="usage-template">
+                            <strong>论证句示例：</strong>
+                            <p>面对AI技术的飞速发展，有人担心人类会失去创造力。但我们要清醒认识到，技术只是工具，"真正的原创力、情感表达，还是在我们自己身上"。AI可以模仿，但无法替代人类独特的情感和思想。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"蓬勃生长不是野蛮生长"</div>
+                    <div class="quote-analysis">
+                        <h4>好在哪</h4>
+                        <ul>
+                            <li>顶真修辞，朗朗上口</li>
+                            <li>对比鲜明，警示性强</li>
+                            <li>用词精准，富有哲理</li>
+                        </ul>
+                        <div class="usage-template">
+                            <strong>警示句示例：</strong>
+                            <p>新技术带来了新机遇，但也伴生新风险。面对AI技术引发的创作热潮，我们既要热情拥抱，也要保持清醒："蓬勃生长不是野蛮生长"，只有划定边界、规范发展，才能让技术真正造福人类。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 适用场景</h3>
+                <div class="scenario-box">
+                    <h4>2024年全国甲卷"人·技术·时间"</h4>
+                    <p><strong>完美契合！</strong>直接用全文<br>
+                    <strong>论点：</strong>技术服务于人，人保持主体性</p>
+                </div>
+                <div class="scenario-box">
+                    <h4>2022年新高考I卷"本手、妙手、俗手"</h4>
+                    <p>可用文艺科技融合：既要"本手"（基础），又要"妙手"（创新）<br>
+                    <strong>论点：</strong>创新要守正</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title collapsible">📄 原文（点击展开/收起）</h3>
+                <div class="original-text">
+人的坚定立场、清醒判断、不屈韧性，成为科技向善、艺术向美的关键所在
+
+从年初人形机器人上春晚演节目，到最近人工智能生成短视频引领风潮，一个趋势不容忽视：文艺与科技正紧紧相拥。如何让文艺更有生命力、感染力、引领力，增强科技思维、加强科技应用，无疑是一个重要选项。
+
+向科技要效力。
+
+人形机器人跳起舞、会功夫，数字技术让贾湖骨笛、商周编钟再次发声，人工智能技术渲染出《哪吒》电影中的震撼场景，"科技+文艺"所展现出的表现力前所未有。文艺创作善用科技之手，不仅能显著降低制作成本，还可以优化视听效果，可谓事半功倍。
+
+智能手机的普及，让每个人都能变成创作者，可以利用碎片化时间，讲述自身故事、阐释个人观点。从"一人公司"做出一部剧，到"打工文学"铺展人生叙事，新大众文艺正释放出多元鲜活的时代声量，为文化事业奏响"大合唱"。
+
+用科技挖灵感。
+
+文艺与科技的相向而行，常带给人惊喜。《三体》想象出"纳米飞刃"，我国全球首发的T1200级碳纤维在现实中回应科幻想象；古有"千里江陵一日还"的夸张描绘，今有中国高铁列车风驰电掣；古人设想用莲藕重塑肉身，如今藕纤维经3D打印可成为骨骼支架……从人们对美好生活的向往、想象出发，文艺的浪漫构想与科技的硬核实力具有了"同源性"。
+
+文艺与科技可以同频共振。让文艺拥有科技思维，不仅是技术问题，还是思想问题。聚焦美好生活向往，施以非凡想象，创造更多现实与想象共鸣的文艺场景，我们才能在其中获得更多精神满足。
+
+有人提出，文艺是科技的理想"试验田"。因为文艺领域拥有更加丰富的审美赛道，科技能在多赛道探索中高效找到合适途径。同时，试错成本也低，正适合技术蓬勃生长。但蓬勃生长不是野蛮生长，文艺也应划清可为与不可为的边界。近段时间，人工智能制作视频在网络流行，带来创意作品的同时，也带来有关造谣传谣、侵权等隐患。面对新需求、新特点，不可"一刀切"，也不可"大开闸"。用好"两只手"，"放得活"又"管得好"，文艺才能在新潮流中逐浪而上。
+
+人们也有疑惑，当人工智能会写诗、虚拟人能出演剧集，人类是否还会有更胜一筹的创造力？有从业者指出，"真正的原创力、情感表达，还是在我们自己身上"。一语点出人的主体意识和能动作用。
+
+从手执石子于岩壁作画，到运用毛笔绘就斑斓图卷，再到人工智能按需求出图，无论艺术创作的载体怎么变，人的创造精神和思考能力，始终是推动文艺变革的重要力量。人对于未知的追寻、对于美好的追求，构成了文艺进步的原动力；人的坚定立场、清醒判断、不屈韧性，成为科技向善、艺术向美的关键所在。
+
+美学认为，美是感性与理性的统一。着眼当下，科技发展与理性认识互促共进，而感性又是人类的独有特质。让文艺更有科技思维，打破门类壁垒、促进跨界融合，不仅是时代所需，更有机会实现大众所盼。循此展卷，将描绘出物质文明和精神文明协调发展的锦绣图景。
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">《实干是最朴素的方法论》</h2>
+                <div class="article-meta">
+                    <span>📝 作者：杨蕾歆</span>
+                    <span>📄 版面：第05版 评论</span>
+                    <span>📏 字数：约800字</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument">
+                    <strong>一句话概括：</strong>树立正确政绩观，要以"民"为圆心、以"实"为本、以"恒"为要，创造经得起检验的实绩。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🧠 论证逻辑</h3>
+                <div class="logic-diagram">第一层：问题引入
+├── 反面案例：某地花7亿建"实训基地"实则酒店
+├── 问题分析：重噱头轻实效，政绩观偏差
+└── 引出下文：什么是正确政绩观？
+
+第二层：正面论证（三个维度）
+├── 维度一："民"字当头，政绩有根
+│   └── 引用：习近平总书记"为民造福是最大政绩"
+│
+├── 维度二："实"字为本，政绩有质
+│   ├── 举例1：焦裕禄在兰考475天
+│   ├── 举例2：谷文昌在东山14年
+│   └── 金句：实干是最朴素的方法论
+│
+└── 维度三："恒"字为要，才能一直出政绩
+    ├── 举例：李冰父子修都江堰
+    └── 要求："功成不必在我、功成必定有我"
+
+第三层：价值升华
+├── 号召：奋进"十五五"，把正确政绩观刻入基因
+└── 升华：我们没有辜负时代，没有辜负人民</div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 核心金句</h3>
+
+                <div class="quote-card">
+                    <div class="quote-text">"实干是最朴素的方法论"</div>
+                    <div class="quote-analysis">
+                        <h4>好在哪</h4>
+                        <ul>
+                            <li>标题即金句，统领全文</li>
+                            <li>"最朴素"强调基础性、重要性</li>
+                            <li>"方法论"上升理论高度</li>
+                            <li>语言简洁有力</li>
+                        </ul>
+                        <div class="topics-grid" style="margin-top: 15px;">
+                            <div class="topic-tag">实干精神</div>
+                            <div class="topic-tag">求真务实</div>
+                            <div class="topic-tag">方法论</div>
+                            <div class="topic-tag">脚踏实地</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"功成不必在我、功成必定有我"</div>
+                    <div class="quote-analysis">
+                        <h4>好在哪</h4>
+                        <ul>
+                            <li>对比鲜明，辩证统一</li>
+                            <li>"不必"强调境界，"必定"强调担当</li>
+                            <li>既有历史情怀，又有现实担当</li>
+                            <li>语言凝练，富有哲理</li>
+                        </ul>
+                        <div class="usage-template">
+                            <strong>论证句示例：</strong>
+                            <p>新时代的干部要有"功成不必在我、功成必定有我"的精神境界。前者体现的是淡泊名利、着眼长远的胸怀，后者彰显的是主动作为、敢于担当的意识。二者辩证统一，缺一不可。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"政绩观不能偏离'为民'这个圆心，否则，所有努力都会变成离心运动——转得越猛，偏得越远"</div>
+                    <div class="quote-analysis">
+                        <h4>好在哪</h4>
+                        <ul>
+                            <li>"圆心"比喻新颖贴切</li>
+                            <li>"离心运动"物理概念恰当</li>
+                            <li>"转得越猛，偏得越远"警示性强</li>
+                            <li>逻辑严密，说理透彻</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 适用场景</h3>
+                <div class="scenario-box">
+                    <h4>2024年全国乙卷"抵达未知之境"</h4>
+                    <p>可用"过了一山再登一峰"：探索未知需要接续奋斗<br>
+                    <strong>论点：</strong>每一步都是积累，每代人都有使命</p>
+                </div>
+                <div class="scenario-box">
+                    <h4>2023年全国甲卷"人·技术·时间"</h4>
+                    <p>可用都江堰案例：2000多年过去还在造福<br>
+                    <strong>论点：</strong>经得起时间检验的才是真业绩</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title collapsible">📄 原文（点击展开/收起）</h3>
+                <div class="original-text">
+最近读到一则报道，某地花了超7亿元，建了一个"现代农业公共实训基地"，实则是一个包含酒店、会议中心、宴会厅和棋牌室的综合服务场所，与农业关系不大。这种情况，发人深省。
+
+建一个耗资千万的豪华公厕，种一片活不过3个月的草，搞这种重噱头轻实效的政绩工程，显然是政绩观出了偏差。
+
+"民"字当头，政绩有根。
+
+习近平总书记强调："共产党人必须牢记，为民造福是最大政绩。"每个"小家"热气腾腾，中国这个"大家"才能蒸蒸日上。关心民生冷暖、解决急难愁盼，真正的业绩才能干进群众心坎里。
+
+为国者，以民为基。政绩观不能偏离"为民"这个圆心，否则，所有努力都会变成离心运动——转得越猛，偏得越远。
+
+"实"字为本，政绩有质。
+
+政绩不是漂亮话堆出来的，是脚踏实地干出来的。这样的政绩，历经岁月洗礼而不减光华，随着时代变迁而愈发闪耀。焦裕禄在河南兰考干了475天，泡桐还没成林，他就去世了，可几十年过去，老百姓还记着"焦桐"。谷文昌扎根福建东山14年，种下一片片木麻黄，把一个风沙肆虐的荒岛变成了东海"绿洲"，东山人对"谷公"代代称颂。
+
+实干是最朴素的方法论，也是攻坚克难的金钥匙。为官一方，就要多做打基础、利长远的实在活，杜绝寅吃卯粮的"透支账"，真正做到对历史和人民负责。
+
+"恒"字为要，才能一直出政绩。
+
+干事创业不易，一张蓝图绘到底更难。有些干部一上任就"另起炉灶"，前任的规划再好也要推翻重来。这不是创新，是政绩观跑偏。
+
+持之以恒，不仅需要科学决策，也需要"功成不必在我、功成必定有我"的精神境界和历史担当。功成不必在我，并不是消极、怠政、不作为，而是要牢固树立和践行正确政绩观，努力创造经得起实践、人民、历史检验的实绩。
+
+莫问收获，但问耕耘。我们既要不慕虚荣、不务虚功、不图虚名，还要务实功、出实招、求实效，过了一山再登一峰，跨过一沟再越一壑，以尺寸之功，积千秋之利。
+
+李冰父子接力修筑都江堰，未留下片句豪言。2000多年过去了，这一工程还在造福"天府"。这是泽被千秋的真政绩——经得起时间检验，更镌刻在人民心里。
+
+奋进"十五五"，蓝图已经绘就，号角已经吹响。在充满光荣与梦想、艰辛和挑战的新征程上，我们要把正确政绩观刻入基因里，贯穿于工作的全过程各方面。
+
+这不是为了把功劳写进总结里，而是为了多年以后，我们自己回首往事时，能问心无愧地说一句：我们没有辜负时代，没有辜负人民。
+                </div>
+            </div>
+        </article>
+
+        <!-- Summary -->
+        <div class="summary">
+            <h2>📚 今日总结</h2>
+            <ul>
+                <li><strong>主题聚焦</strong>：实干精神、正确价值观、人民立场</li>
+                <li><strong>核心金句</strong>：实干是最朴素的方法论、文艺与科技同频共振、功成不必在我</li>
+                <li><strong>适用话题</strong>：政绩观、实干担当、文艺创新、科技发展、人的主体性、长远发展</li>
+                <li><strong>高考预测</strong>：实干精神类、科技与人文类、政绩观/价值观类、长远发展类</li>
+                <li><strong>推荐组合</strong>：三篇形成"为什么要实干—怎样实干—实干的意义"逻辑链</li>
+                <li><strong>适用真题</strong>：2024年全国甲卷"人·技术·时间"、2023年"故事的力量"等</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Collapsible functionality
+        document.querySelectorAll('.collapsible').forEach(header => {
+            header.addEventListener('click', () => {
+                header.classList.toggle('collapsed');
+            });
+        });
+    </script>
+</body>
+</html>
