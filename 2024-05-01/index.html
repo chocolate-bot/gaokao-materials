@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024-05-01 高考作文素材</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2C2C2C;
+            --text-light: #666666;
+            --border: #2C2C2C;
+            --shadow: #B5B5B5;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--text);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        /* Article Card */
+        .article-card {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        .article-title {
+            font-size: 1.8rem;
+            color: var(--text);
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--text);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: var(--accent);
+            margin-right: 10px;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            border-radius: 4px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            display: inline-block;
+            margin-right: 25px;
+            font-size: 0.95rem;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        /* Core Argument */
+        .core-argument {
+            background: linear-gradient(135deg, var(--primary) 0%, #5BB8E8 100%);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 1.5px solid var(--border);
+        }
+
+        /* Logic Diagram */
+        .logic-diagram {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            border-radius: 4px;
+            padding: 20px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 2;
+        }
+
+        /* Method List */
+        .method-list {
+            list-style: none;
+        }
+
+        .method-item {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 12px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            transition: transform 0.2s;
+        }
+
+        .method-item:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        .method-name {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        /* Quote Card */
+        .quote-card {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .quote-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .quote-detail {
+            margin-bottom: 10px;
+        }
+
+        .quote-detail-label {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--text);
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .quote-detail-content {
+            color: var(--text-light);
+        }
+
+        /* Scenario Tags */
+        .scenario-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .scenario-tag {
+            background: var(--primary);
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Application Template */
+        .template-box {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 10px;
+            font-style: italic;
+            color: var(--text-light);
+        }
+
+        /* Original Text Toggle */
+        .original-text-toggle {
+            background: var(--text);
+            color: var(--white);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .original-text-toggle:hover {
+            background: var(--primary);
+        }
+
+        .original-text {
+            display: none;
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            border-radius: 4px;
+            padding: 20px;
+            margin-top: 15px;
+            font-size: 0.95rem;
+            line-height: 2;
+            color: var(--text-light);
+        }
+
+        .original-text.active {
+            display: block;
+        }
+
+        .original-text p {
+            margin-bottom: 15px;
+            text-indent: 2em;
+        }
+
+        /* Summary Section */
+        .summary-section {
+            background: linear-gradient(135deg, var(--accent) 0%, #FFD93D 100%);
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        .summary-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        .summary-list {
+            list-style: none;
+        }
+
+        .summary-item {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-item::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .article-title {
+                font-size: 1.4rem;
+            }
+
+            .section-title {
+                font-size: 1.1rem;
+            }
+
+            .info-item {
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            body {
+                padding: 10px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2024-05-01 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析 | 共3篇精选文章</p>
+        </header>
+
+        <!-- 文章1 -->
+        <article class="article-card">
+            <h2 class="article-title">📰 文章1：《竹之梦（杂记）》</h2>
+
+            <div class="section">
+                <div class="info-box">
+                    <span class="info-item"><span class="info-label">作者：</span>叶梅</span>
+                    <span class="info-item"><span class="info-label">版面：</span>第08版（副刊）</span>
+                    <span class="info-item"><span class="info-label">字数：</span>约1300字</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument">
+                    通过江西资溪县竹产业的发展故事，展现"绿水青山就是金山银山"的发展理念，体现生态保护与经济发展的辩证统一关系，彰显乡村振兴中科技创新与文化传承的重要价值。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🧠 论证逻辑</h3>
+                <div class="logic-diagram">
+生态优势（森林覆盖率87%）
+    ↓
+毛竹资源（上亿根蓄积量）
+    ↓
+科技加持（竹产业发展）
+    ↓
+"竹梦小镇"（乡村振兴）
+                </div>
+                <p style="margin-top: 15px; color: var(--text-light); font-size: 0.95rem;">
+                    <strong>第一层：</strong>引入话题 - 资溪县的绿色生态环境，"纯净资溪"的得来不易<br>
+                    <strong>第二层：</strong>展开分析 - 从生态优势到竹产业的发展路径<br>
+                    <strong>第三层：</strong>文化传承 - 引用《诗经》和苏东坡，展现竹文化古今对话<br>
+                    <strong>第四层：</strong>总结升华 - 竹的生长特性和"胸有成竹"的奇观
+                </p>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🔧 论证方法</h3>
+                <ul class="method-list">
+                    <li class="method-item">
+                        <div class="method-name">1. 举例论证</div>
+                        资溪人拒绝多个污染项目；四万资溪人在外做面包；小汤大学毕业投身竹产业；"六进工程"的具体应用
+                    </li>
+                    <li class="method-item">
+                        <div class="method-name">2. 引用论证</div>
+                        《诗经》："瞻彼淇奥，绿竹猗猗"；苏东坡："食者竹笋，庇者竹瓦，载者竹筏..."
+                    </li>
+                    <li class="method-item">
+                        <div class="method-name">3. 对比论证</div>
+                        过去：小楼空置vs现在：主人回乡；简陋环境vs高科技成就
+                    </li>
+                    <li class="method-item">
+                        <div class="method-name">4. 数据论证</div>
+                        森林覆盖率87%；十二万人的县，四万人做面包；毛竹蓄积量上亿根；24小时长1.5米
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 金句深度解析</h3>
+
+                <div class="quote-card">
+                    <div class="quote-text">"他们懂得发展的前提是大保护，几代人的坚守换来了今天的绿意盎然。"</div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">好在哪</span>
+                        <span class="quote-detail-content">哲理性强，揭示发展与保护的辩证关系；时间维度体现长期主义</span>
+                    </div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">适用话题</span>
+                    </div>
+                    <div class="scenario-tags">
+                        <span class="scenario-tag">绿水青山就是金山银山</span>
+                        <span class="scenario-tag">生态保护</span>
+                        <span class="scenario-tag">可持续发展</span>
+                        <span class="scenario-tag">代际责任</span>
+                    </div>
+                    <div class="template-box">
+                        <strong>考场应用：</strong>"他们懂得XX的前提是YY，ZZ的努力换来了今天的AA。"
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"那竹根在地下默默地掘进，自会遇到百般拦阻，但它巧妙地择地而行，与这枫杨树根交织会合，长成了一道奇观。"</div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">好在哪</span>
+                        <span class="quote-detail-content">画面感强，拟人化体现竹的智慧和韧性</span>
+                    </div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">适用话题</span>
+                    </div>
+                    <div class="scenario-tags">
+                        <span class="scenario-tag">逆境成长</span>
+                        <span class="scenario-tag">智慧与适应</span>
+                        <span class="scenario-tag">和谐共生</span>
+                        <span class="scenario-tag">奋斗精神</span>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"资溪人的竹之梦，也正如春雨催发的春笋，在人们的努力中卓然生长。"</div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">好在哪</span>
+                        <span class="quote-detail-content">比喻生动，动态感强，因果关系明确</span>
+                    </div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">适用话题</span>
+                    </div>
+                    <div class="scenario-tags">
+                        <span class="scenario-tag">梦想与奋斗</span>
+                        <span class="scenario-tag">乡村振兴</span>
+                        <span class="scenario-tag">民族复兴</span>
+                        <span class="scenario-tag">希望与未来</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 适用场景</h3>
+                <div class="scenario-tags">
+                    <span class="scenario-tag">绿水青山就是金山银山</span>
+                    <span class="scenario-tag">乡村振兴</span>
+                    <span class="scenario-tag">文化传承与创新</span>
+                    <span class="scenario-tag">梦想与奋斗</span>
+                </div>
+                <div class="template-box">
+                    <strong>高考真题：</strong>2023年全国甲卷"人·技术·时间"｜2022年全国乙卷"跨越，再跨越"｜2023年新课标I卷"故事的力量"
+                </div>
+            </div>
+
+            <div class="section">
+                <button class="original-text-toggle" onclick="toggleText(this)">📄 查看原文</button>
+                <div class="original-text">
+                    <p>每回到江西资溪，都不由为武夷山脉西麓这片汪洋般的绿色而惊叹不已。层叠丰饶的葱绿、嫩绿、墨绿，养就一派水碧山青、浮翠流丹。人在其间，时刻被绿色所环绕，吸纳着自然的清香。</p>
+                    <p>都道是"纯净资溪"，得"纯净"一说并非容易，全靠资溪人对山川林木多年不变的挚爱和呵护。我曾得知，为了护住青山绿水，当地人拒绝了多个可能对环境造成污染的项目。他们懂得发展的前提是大保护，几代人的坚守换来了今天的绿意盎然。放眼山野，除了葱茏的树木花草，更有大片翠浪翻滚的竹林，它们在科技的加持下，为资溪人编织起了"竹之梦"。</p>
+                    <p>十二万人的资溪县，有四万多人在其他省市做面包，有人评价说这是一项香甜的事业。的确，心灵手巧的资溪人将面包糕点做出了远近闻名、十分可口的味道。这门手艺是从外地学来的，当年由两名退伍军人带回家乡，开了一个小面包坊，继而将手艺一传十、十传百。后来，不仅在当地做，在其他省市做，甚至还做到了国外。一代人走向远方，他们的孩子在异乡长大，掌握了新的知识和技能，而今陆续踏上了回乡的路。年轻一代有的子承父业做面包，有的另辟蹊径创新业，就像他们的父辈一样，敢问路在何方。</p>
+                    <p>资溪人对竹的喜爱溢于言表。有一名当地的年轻人小汤，大学毕业来到此地，如今逢人就说竹，说毛竹的生长，最快二十四小时就可达一米半，一月后可达二十米。这是因为毛竹的每一个竹节都有一个居间分生组织，每根竹子有三五十个竹节，就相当于装了近五十台发动机带动快速长高。这是多么神奇的植物啊！</p>
+                    <p>野竹自成径，绕溪十里余。从大觉山流下的小溪旁，竖着"幽竹紫云"的木牌，溪畔人家无不倚竹而立。春分过后，勤快的主人纷纷晾晒笋干，午间用腊肉炒了鲜笋，邻舍间相互将菜碗攒成一桌，就着自酿的米酒，说一番家常。那由笋长成的竹，到了如今，又变为竹板、桌椅和家居生活用品。竹的下脚料还能生产出一种活性炭，可用于净化空气。</p>
+                    <p>临走的那天，当地朋友还要带我去看一棵特别的竹。我看时间不早了，怕误了火车，他却一再坚持。我索性随他去了大觉溪旁的排上村。田里，一些穿着胶靴的村民正在栽种新品种的玉米苗，村头一棵高大的枫杨树，树身挂满了细藤，树下有冒出的尖笋，却没有见到竹。朋友笑指树说，你抬头看。</p>
+                    <p>这一看，令我惊诧万分。原来这棵粗壮的、枝叶繁茂的百年老树的树心是空的。它的枝干是从那半尺余厚的树皮上再生的，而空洞的树心里竟然伸展出一棵秀劲挺拔的毛竹，与老树融为一体，果真是应了那句"胸有成竹"。不觉揣摩，那竹根在地下默默地掘进，自会遇到百般拦阻，但它巧妙地择地而行，与这枫杨树根交织会合，长成了一道奇观。资溪人的竹之梦，也正如春雨催发的春笋，在人们的努力中卓然生长。</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章2 -->
+        <article class="article-card">
+            <h2 class="article-title">📰 文章2：《山城的记忆（我与一座城）》</h2>
+
+            <div class="section">
+                <div class="info-box">
+                    <span class="info-item"><span class="info-label">作者：</span>唐青柏</span>
+                    <span class="info-item"><span class="info-label">版面：</span>第08版（副刊）</span>
+                    <span class="info-item"><span class="info-label">字数：</span>约1100字</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument">
+                    通过湖南炎陵县从上世纪70年代到今天的巨大变化，展现中国小城市的发展历程，表达游子对家乡蝶变的喜悦与乡愁的复杂情感。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 金句精选</h3>
+
+                <div class="quote-card">
+                    <div class="quote-text">"当清晨第一缕阳光掠过街巷时，西边的湘山，孤塔影斜，古松苍苍，岚烟隐隐，恍如蓬莱仙岛。"</div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">好在哪</span>
+                        <span class="quote-detail-content">画面感极强，意境优美，如诗如画</span>
+                    </div>
+                    <div class="scenario-tags">
+                        <span class="scenario-tag">家乡之美</span>
+                        <span class="scenario-tag">自然与人文</span>
+                        <span class="scenario-tag">乡村意境</span>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"灯芯糕里桂子油的香味，似乎至今还留在我的唇齿间。"</div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">好在哪</span>
+                        <span class="quote-detail-content">感官描写细腻，情感真挚，细节动人</span>
+                    </div>
+                    <div class="scenario-tags">
+                        <span class="scenario-tag">乡愁</span>
+                        <span class="scenario-tag">童年记忆</span>
+                        <span class="scenario-tag">家乡味道</span>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"面对今日这繁华的山城，我是如此陌生。不由得感慨万千，喜悦的是家乡蝶变，却也难以磨灭过去的记忆。这或许就是游子心中的乡愁吧。"</div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">好在哪</span>
+                        <span class="quote-detail-content">情感复杂，哲理深刻，转折自然</span>
+                    </div>
+                    <div class="scenario-tags">
+                        <span class="scenario-tag">乡愁</span>
+                        <span class="scenario-tag">发展与记忆</span>
+                        <span class="scenario-tag">变迁与传承</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 适用场景</h3>
+                <div class="scenario-tags">
+                    <span class="scenario-tag">乡愁</span>
+                    <span class="scenario-tag">发展与记忆</span>
+                    <span class="scenario-tag">家乡的变迁</span>
+                    <span class="scenario-tag">游子情怀</span>
+                </div>
+                <div class="template-box">
+                    <strong>高考真题：</strong>2022年全国甲卷"红楼梦"材料（传承与创新）｜2021年全国乙卷"射箭"（完美记忆）
+                </div>
+            </div>
+
+            <div class="section">
+                <button class="original-text-toggle" onclick="toggleText(this)">📄 查看原文</button>
+                <div class="original-text">
+                    <p>我的家乡湖南炎陵县，位于井冈山西麓，因邑有圣陵，是华夏始祖炎帝安寝之地，故得此名。</p>
+                    <p>炎陵是名副其实的山城。当清晨第一缕阳光掠过街巷时，西边的湘山，孤塔影斜，古松苍苍，岚烟隐隐，恍如蓬莱仙岛。山下一湾碧溪，流过接龙桥又蜿蜒而去，俨然是王维笔下绝美的山水画卷。北面是巍峨耸立的笔架峰，登高望远，一浪高过一浪的山峦，一直延展到天尽头。</p>
+                    <p>上世纪70年代，县城挤在山脚下，小得可怜，最长的井冈路也只有二三里。除了机关和商场是红砖水泥砌的，其他居民的房屋大都是祖辈留下的老房子。西门过去就是汽车站，每天只有一趟班车到省城，这是山城连通远方大城市的起点。印象最深的是东门，街两边的墙上写满了红军当年留下的标语。当年的星星之火，早已照亮了全中国。</p>
+                    <p>天蒙蒙亮，山民们就背着山货，挑起农副产品，身披晨雾在溪光山色中汇集于城中的农贸市场。叫卖声，吆喝声，鸡鸣鸭叫声，把沉睡的山城也吵醒了。山城的一天就此开始。</p>
+                    <p>后来，我考上了大学，一直在外地工作，母亲退休后也跟我住在一起。去年夏天，八十五岁的母亲想回炎陵看望几位老同事，我满口答应。以前从长沙开车到县城，从早到晚要一整天。如今方便多了，地处湘赣边的炎陵，高速公路纵横交错，早通了火车。我开车从株洲出发，两个多小时就进了城。过去的湘山如今已改建成炎帝公园，儿时常去玩的大操坪也建成了红军标语博物馆，加上洣泉书院现为4A级景区，外来炎陵避暑旅游的人日渐增多。</p>
+                    <p>现在的炎陵已成为著名的黄桃之乡，街上弥漫着一股甜香味。慕名而来的人络绎不绝，购销两旺，山城也热闹起来了。车水马龙，人流如织，一条条新建的街道我叫不出名，路上的行人不认识几个。面对今日这繁华的山城，我是如此陌生。不由得感慨万千，喜悦的是家乡蝶变，却也难以磨灭过去的记忆。这或许就是游子心中的乡愁吧。</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章3 -->
+        <article class="article-card">
+            <h2 class="article-title">📰 文章3：《见证航天历程 传承民族精神》</h2>
+
+            <div class="section">
+                <div class="info-box">
+                    <span class="info-item"><span class="info-label">作者：</span>蒋建科、孟扬、唐中科</span>
+                    <span class="info-item"><span class="info-label">版面：</span>第05版（特别报道）</span>
+                    <span class="info-item"><span class="info-label">字数：</span>约1800字</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument">
+                    通过北京卫星制造厂从"东方红一号"到今天的航天历程，展现中国航天事业从无到有、从弱到强的发展奇迹，彰显航天人"严慎细实"的工作作风和自力更生、艰苦创业的精神。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 金句精选</h3>
+
+                <div class="quote-card">
+                    <div class="quote-text">"从一辆汽车、一架飞机、一辆坦克、一辆拖拉机都不能造，到构建起门类齐全、世界上最完整的现代工业体系；从满目疮痍、一穷二白，到国内生产总值稳居世界第二……"</div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">好在哪</span>
+                        <span class="quote-detail-content">对比强烈，成就震撼，时间跨度大</span>
+                    </div>
+                    <div class="scenario-tags">
+                        <span class="scenario-tag">中国成就</span>
+                        <span class="scenario-tag">工业发展</span>
+                        <span class="scenario-tag">艰苦奋斗</span>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"谁承想，集中了尖端科技的'造星厂'，第一件产品竟是'老虎钳'。"</div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">好在哪</span>
+                        <span class="quote-detail-content">悬念设置，对比强烈，情感冲击</span>
+                    </div>
+                    <div class="scenario-tags">
+                        <span class="scenario-tag">从无到有</span>
+                        <span class="scenario-tag">自力更生</span>
+                        <span class="scenario-tag">厚积薄发</span>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"质量是航天的生命，卫星、飞船、空间站都运行在太空极端环境，由至少上万个元器件组成，任何零件都可能影响任务的成败。"</div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">好在哪</span>
+                        <span class="quote-detail-content">观点鲜明，原因分析充分，责任重大</span>
+                    </div>
+                    <div class="scenario-tags">
+                        <span class="scenario-tag">质量意识</span>
+                        <span class="scenario-tag">工匠精神</span>
+                        <span class="scenario-tag">责任担当</span>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"再聪明的脑袋，都不如良好的习惯可靠。"</div>
+                    <div class="quote-detail">
+                        <span class="quote-detail-label">好在哪</span>
+                        <span class="quote-detail-content">哲理深刻，对比鲜明，实用性强</span>
+                    </div>
+                    <div class="scenario-tags">
+                        <span class="scenario-tag">习惯养成</span>
+                        <span class="scenario-tag">细节决定成败</span>
+                        <span class="scenario-tag">工匠精神</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 适用场景</h3>
+                <div class="scenario-tags">
+                    <span class="scenario-tag">自力更生</span>
+                    <span class="scenario-tag">工匠精神</span>
+                    <span class="scenario-tag">细节决定成败</span>
+                    <span class="scenario-tag">传承与创新</span>
+                </div>
+                <div class="template-box">
+                    <strong>高考真题：</strong>2023年全国乙卷"吹灭别人的灯"（团结协作）｜2021年全国甲卷"可为与有为"｜2018年全国I卷"世纪宝宝"
+                </div>
+            </div>
+
+            <div class="section">
+                <button class="original-text-toggle" onclick="toggleText(this)">📄 查看原文</button>
+                <div class="original-text">
+                    <p>从一辆汽车、一架飞机、一辆坦克、一辆拖拉机都不能造，到构建起门类齐全、世界上最完整的现代工业体系；从满目疮痍、一穷二白，到国内生产总值稳居世界第二……新中国成立以来，我们用几十年的时间走完西方发达国家几百年走过的工业化历程，成功走出了中国式现代化道路，实现了人类历史上前所未有的大变革。</p>
+                    <p>谁承想，集中了尖端科技的"造星厂"，第一件产品竟是"老虎钳"。</p>
+                    <p>1958年，北京卫星制造厂的前身中国科学院北京科学仪器厂创办，主要给中国科学院各研究所提供必要仪器和设备。他们从简单设备"老虎钳"干起，逐步开始研制质谱仪、物理光学电子仪器等先进设备。1965年，我国第一颗人造地球卫星计划启动，该厂被选中担当重任。</p>
+                    <p>园区内，三号厂房前竖立了"东方红一号卫星诞生地"纪念碑。这里是"东方红一号"总装车间，也是其最后的产床，卫星从这里出厂后直奔发射场。</p>
+                    <p>一位老职工回忆，"东方红一号"总装时，一枚小垫片找不到了，全车间的人都很着急，全部参与寻找。卫星绝不能带着多余物出厂，这是巨大的隐患。最后大家确定这枚垫片肯定不在卫星上，才放下心来。事后，大家总结教训，规定每一个带入总装阶段的零部件都要检查登记。这与后来的航天工业质量管理要求一脉相承。</p>
+                    <p>王连友说，"质量是航天的生命，卫星、飞船、空间站都运行在太空极端环境，由至少上万个元器件组成，任何零件都可能影响任务的成败。"</p>
+                    <p>王连友的徒弟冯佳林说，再聪明的脑袋，都不如良好的习惯可靠。一个产品中一个部件的加工就涉及上百道工序，王连友班组承担的几十个大型星船舱体组合加工任务，产品交验合格率100%，秘诀就在"做事有依据，做事按依据，做事留记录"的航天职业素养。</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 总结 -->
+        <div class="summary-section">
+            <h2>📊 今日素材总结</h2>
+            <ul class="summary-list">
+                <li class="summary-item"><strong>时代感强：</strong>三篇文章都体现了新时代的发展变化，从乡村振兴到航天强国</li>
+                <li class="summary-item"><strong>情感真挚：</strong>都有强烈的情感色彩，或喜悦、或乡愁、或自豪</li>
+                <li class="summary-item"><strong>论证有力：</strong>都有清晰的论证逻辑和丰富的论证方法（举例、引用、对比、数据）</li>
+                <li class="summary-item"><strong>金句频出：</strong>每篇都有3-5句值得背诵的金句，可直接用于考场</li>
+            </ul>
+
+            <div style="margin-top: 25px;">
+                <h3 style="margin-bottom: 15px; color: var(--text);">🎯 适用话题汇总</h3>
+                <div class="scenario-tags">
+                    <span class="scenario-tag" style="background: var(--text);">发展类：绿水青山、乡村振兴、科技创新</span>
+                    <span class="scenario-tag" style="background: var(--text);">精神类：自力更生、工匠精神、细节决定成败</span>
+                    <span class="scenario-tag" style="background: var(--text);">情感类：乡愁、家国情怀、奋斗精神</span>
+                    <span class="scenario-tag" style="background: var(--text);">文化类：文化传承、传统与现代、工业遗产</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 25px; padding: 20px; background: rgba(255,255,255,0.5); border-radius: 4px;">
+                <h3 style="margin-bottom: 15px; color: var(--text);">📝 考场应用建议</h3>
+                <ul style="color: var(--text); line-height: 1.9;">
+                    <li><strong>开头：</strong>用金句或对比引入，快速吸引阅卷老师</li>
+                    <li><strong>论证：</strong>用具体例子支撑观点，避免空泛</li>
+                    <li><strong>情感：</strong>适当抒发真情实感，增强感染力</li>
+                    <li><strong>结尾：</strong>呼应开头，升华主题，给阅卷老师留下深刻印象</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>整理日期：2024年5月1日</p>
+            <p>素材来源：《人民日报》第05版、第08版</p>
+            <p style="margin-top: 10px; color: var(--text-light);">本素材集适合高考作文备考，建议背诵金句，学习论证方法，积累写作素材。</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleText(button) {
+            var originalText = button.nextElementSibling;
+            if (originalText.classList.contains('active')) {
+                originalText.classList.remove('active');
+                button.textContent = '📄 查看原文';
+            } else {
+                originalText.classList.add('active');
+                button.textContent = '📄 收起原文';
+            }
+        }
+    </script>
+</body>
+</html>

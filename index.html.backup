@@ -661,7 +661,423 @@
    920|   735|                                        问题提出（实力强 vs 话语权弱）<br>
    921|   736|                                        ↓<br>
    922|   737|                                        具体例证（AI领域的数据）<br>
-   923|   738|                                        ↓<br>
+
+        <!-- 2026-04-28 -->
+        <div class="date-section">
+            <div class="date-header" onclick="toggleDate('2026-04-28')">
+                <div class="date-title">
+                    <span class="latest-tag">NEW</span>
+                    <span class="date-badge">2026年4月28日</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: var(--space-3);">
+                    <span class="date-stats">5篇素材 · 深度分析版</span>
+                    <span class="toggle-icon" id="toggle-2026-04-28">▼</span>
+                </div>
+            </div>
+            
+            <div class="date-content expanded" id="content-2026-04-28">
+                <!-- Material 1 -->
+                <div class="material-card">
+                    <div class="material-header">
+                        <span class="material-tag">政绩观</span>
+                        <div class="material-title">考实真政绩 画准实干人（人民时评）</div>
+                        <div class="material-source">《人民日报》2026年4月28日 第05版</div>
+                    </div>
+                    <div class="material-body">
+                        <div class="section">
+                            <div class="section-title">📖 核心论点</div>
+                            <div class="summary-box">
+                                通过科学精准的政绩考核体系，既用望远镜又用显微镜，既看显绩又看潜绩，全方位、多渠道了解干部，让真政绩和实干人凸显出来。
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <div class="section-title">💎 金句储备</div>
+                            <div class="quotes-container">
+                                <div class="quote-card">
+                                    <p class="quote-text">"考核是'指挥棒'和'风向标'，指向哪些方面、重点考核什么，党员干部往往会把更多精力和行动投向哪里。"</p>
+                                    <div class="quote-meta">
+                                        <span class="topic-tag">考核评价</span>
+                                        <span class="topic-tag">政绩观</span>
+                                    </div>
+                                </div>
+                                <div class="quote-card">
+                                    <p class="quote-text">"既用望远镜又用显微镜，既看显绩又看潜绩。"</p>
+                                    <div class="quote-meta">
+                                        <span class="topic-tag">长远眼光</span>
+                                        <span class="topic-tag">务实精神</span>
+                                    </div>
+                                </div>
+                                <div class="quote-card">
+                                    <p class="quote-text">"让每一个岗位的价值得到认可，让每一分辛勤的付出都有回响。"</p>
+                                    <div class="quote-meta">
+                                        <span class="topic-tag">价值认可</span>
+                                        <span class="topic-tag">实干精神</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <div class="section-title">🎯 适用话题</div>
+                            <ul class="topics-list">
+                                <li><span class="topic-badge">政绩观</span> - 2025年全国卷"如何看待政绩"</li>
+                                <li><span class="topic-badge">考核评价</span> - 2024年新课标I卷"评价标准"</li>
+                                <li><span class="topic-badge">实干精神</span> - 2023年全国甲卷"人·技术·时间"</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="material-footer">
+                        <a href="./2026-04-28/" class="btn-link">查看深度分析 →</a>
+                    </div>
+                </div>
+                
+                <!-- Material 2 -->
+                <div class="material-card">
+                    <div class="material-header">
+                        <span class="material-tag">科技创新</span>
+                        <div class="material-title">两个关键词看我国AI创新（微观）</div>
+                        <div class="material-source">《人民日报》2026年4月28日 第05版</div>
+                    </div>
+                    <div class="material-body">
+                        <div class="section">
+                            <div class="section-title">📖 核心论点</div>
+                            <div class="summary-box">
+                                中国AI跑出加速度、成为创新引擎的两个关键词：性价比和开放度。凭借高性价比和开源开放的优势，中国AI在全球竞逐中展现出强大竞争力。
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <div class="section-title">💎 金句储备</div>
+                            <div class="quotes-container">
+                                <div class="quote-card">
+                                    <p class="quote-text">"风起于青蘋之末，浪成于微澜之间。今日中国AI的多点突破、惊艳表现，绝非偶然，而是基于密集创新、长期积累。"</p>
+                                    <div class="quote-meta">
+                                        <span class="topic-tag">创新积累</span>
+                                        <span class="topic-tag">厚积薄发</span>
+                                    </div>
+                                </div>
+                                <div class="quote-card">
+                                    <p class="quote-text">"开源不是简单的'技术让利'，而是通过开放协作打造更优的创新生态。"</p>
+                                    <div class="quote-meta">
+                                        <span class="topic-tag">开放创新</span>
+                                        <span class="topic-tag">协作共赢</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <div class="section-title">🎯 适用话题</div>
+                            <ul class="topics-list">
+                                <li><span class="topic-badge">科技创新</span> - 2025年全国卷"科技创新与人才培养"</li>
+                                <li><span class="topic-badge">开放合作</span> - 2024年新课标I卷"开放与自主"</li>
+                                <li><span class="topic-badge">竞争力</span> - 2023年全国甲卷"技术与时间"</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="material-footer">
+                        <a href="./2026-04-28/" class="btn-link">查看深度分析 →</a>
+                    </div>
+                </div>
+
+                <!-- Material 3 -->
+                <div class="material-card">
+                    <div class="material-header">
+                        <span class="material-tag">党性修养</span>
+                        <div class="material-title">树立正确政绩观须明"公私之辨"（思想纵横）</div>
+                        <div class="material-source">《人民日报》2026年4月28日 第09版</div>
+                    </div>
+                    <div class="material-body">
+                        <div class="section">
+                            <div class="section-title">📖 核心论点</div>
+                            <div class="summary-box">
+                                处理好公私关系是树立正确政绩观的重要命题。党员干部必须明辨公私，以公心校准政绩观的方向，以公德筑牢廉洁自律的防线。
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <div class="section-title">💎 金句储备</div>
+                            <div class="quotes-container">
+                                <div class="quote-card">
+                                    <p class="quote-text">"公私关系处理得当，坚持大公无私、公私分明、先公后私、公而忘私，就能以'功成不必在我'的境界谋划长远，以'功成必定有我'的担当真抓实干。"</p>
+                                    <div class="quote-meta">
+                                        <span class="topic-tag">政绩观</span>
+                                        <span class="topic-tag">担当精神</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="material-footer">
+                        <a href="./2026-04-28/" class="btn-link">查看深度分析 →</a>
+                    </div>
+                </div>
+
+                <!-- Material 4 -->
+                <div class="material-card">
+                    <div class="material-header">
+                        <span class="material-tag">教育</span>
+                        <div class="material-title">为乡村儿童打开阅读之窗（追梦路上）</div>
+                        <div class="material-source">《人民日报》2026年4月28日 第07版</div>
+                    </div>
+                    <div class="material-body">
+                        <div class="section">
+                            <div class="section-title">📖 核心论点</div>
+                            <div class="summary-box">
+                                通过志愿服务活动让乡村儿童认识图书馆、爱上阅读，通过阅读这个窗口看到更大的世界，为乡村振兴播撒知识的种子。
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <div class="section-title">💎 金句储备</div>
+                            <div class="quotes-container">
+                                <div class="quote-card">
+                                    <p class="quote-text">"每一次活动，都像一个流动的'微型图书馆'，把知识的种子播撒在孩子们的心里。"</p>
+                                    <div class="quote-meta">
+                                        <span class="topic-tag">知识传播</span>
+                                        <span class="topic-tag">教育创新</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="material-footer">
+                        <a href="./2026-04-28/" class="btn-link">查看深度分析 →</a>
+                    </div>
+                </div>
+
+                <!-- Material 5 -->
+                <div class="material-card">
+                    <div class="material-header">
+                        <span class="material-tag">文化传承</span>
+                        <div class="material-title">让国风音乐汇成文化江河（艺海观澜）</div>
+                        <div class="material-source">《人民日报》2026年4月28日 第20版</div>
+                    </div>
+                    <div class="material-body">
+                        <div class="section">
+                            <div class="section-title">📖 核心论点</div>
+                            <div class="summary-box">
+                                国风音乐正经历从表层符号堆砌到深层审美体系再造的深刻变革，要构建"形、神、意"兼备的创新表达体系，让国风音乐从"一阵风"汇成奔向远方的文化江河。
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <div class="section-title">💎 金句储备</div>
+                            <div class="quotes-container">
+                                <div class="quote-card">
+                                    <p class="quote-text">"当国风音乐扎根传统的深度、感知时代的温度、传播中国声音的广度都实现新的飞跃，其带来的将不再是一阵流行浪花，而是一条奔向远方的文化江河。"</p>
+                                    <div class="quote-meta">
+                                        <span class="topic-tag">文化传承</span>
+                                        <span class="topic-tag">创新发展</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="material-footer">
+                        <a href="./2026-04-28/" class="btn-link">查看深度分析 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2026-04-25 -->
+        <div class="date-section">
+            <div class="date-header" onclick="toggleDate('2026-04-25')">
+                <div class="date-title">
+                    <span class="date-badge">2026年4月25日</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: var(--space-3);">
+                    <span class="date-stats">5篇素材 · 绿色发展·青年成长·网络治理</span>
+                    <span class="toggle-icon" id="toggle-2026-04-27">▼</span>
+                </div>
+            </div>
+
+            <div class="date-content expanded" id="content-2026-04-27">
+                <div class="material-preview-card">
+                    <div class="preview-header">
+                        <span class="preview-tag">绿色发展</span>
+                        <span class="preview-title">感悟绿色发展的"三力"</span>
+                    </div>
+                    <div class="preview-body">
+                        <p class="preview-thesis">核心论点：绿色发展不仅是生态理念的变革，更是发展方式的深刻转型，蕴含着强大的内生动力、持久合力和磅礴伟力。</p>
+                        <div class="preview-highlights">
+                            <span class="highlight-tag">金句3条</span>
+                            <span class="highlight-tag">论证方法4种</span>
+                            <span class="highlight-tag">适用真题4个</span>
+                        </div>
+                    </div>
+                    <div class="preview-footer">
+                        <a href="2026-04-27/" class="read-more-btn">查看深度分析 →</a>
+                    </div>
+                </div>
+
+                <div class="material-preview-card">
+                    <div class="preview-header">
+                        <span class="preview-tag">改革创新</span>
+                        <span class="preview-title">以微改革撬动外贸大棋局</span>
+                    </div>
+                    <div class="preview-body">
+                        <p class="preview-thesis">核心论点：通过一系列"微改革"破除体制机制障碍，为外贸高质量发展注入新动能。</p>
+                        <div class="preview-highlights">
+                            <span class="highlight-tag">金句3条</span>
+                            <span class="highlight-tag">微改革方法论</span>
+                            <span class="highlight-tag">以小见大</span>
+                        </div>
+                    </div>
+                    <div class="preview-footer">
+                        <a href="2026-04-27/" class="read-more-btn">查看深度分析 →</a>
+                    </div>
+                </div>
+
+                <div class="material-preview-card">
+                    <div class="preview-header">
+                        <span class="preview-tag">青年奋斗</span>
+                        <span class="preview-title">洞悉活力中国的青春脚步</span>
+                    </div>
+                    <div class="preview-body">
+                        <p class="preview-thesis">核心论点：青年一代正在用行动定义属于自己的青春，展现活力中国的向上力量。</p>
+                        <div class="preview-highlights">
+                            <span class="highlight-tag">金句3条</span>
+                            <span class="highlight-tag">青年案例</span>
+                            <span class="highlight-tag">时代责任</span>
+                        </div>
+                    </div>
+                    <div class="preview-footer">
+                        <a href="2026-04-27/" class="read-more-btn">查看深度分析 →</a>
+                    </div>
+                </div>
+
+                <div class="material-preview-card">
+                    <div class="preview-header">
+                        <span class="preview-tag">网络治理</span>
+                        <span class="preview-title">健全网络生态治理长效机制</span>
+                    </div>
+                    <div class="preview-body">
+                        <p class="preview-thesis">核心论点：网络空间不是法外之地，要建立健全网络生态治理的长效机制。</p>
+                        <div class="preview-highlights">
+                            <span class="highlight-tag">金句3条</span>
+                            <span class="highlight-tag">法治思维</span>
+                            <span class="highlight-tag">技术伦理</span>
+                        </div>
+                    </div>
+                    <div class="preview-footer">
+                        <a href="2026-04-27/" class="read-more-btn">查看深度分析 →</a>
+                    </div>
+                </div>
+
+                <div class="material-preview-card">
+                    <div class="preview-header">
+                        <span class="preview-tag">读书修身</span>
+                        <span class="preview-title">每次出门读本书</span>
+                    </div>
+                    <div class="preview-body">
+                        <p class="preview-thesis">核心论点：利用出门的碎片时间读书，是一种对抗浮躁、滋养心灵的生活方式。</p>
+                        <div class="preview-highlights">
+                            <span class="highlight-tag">金句3条</span>
+                            <span class="highlight-tag">时间管理</span>
+                            <span class="highlight-tag">碎片时间</span>
+                        </div>
+                    </div>
+                    <div class="preview-footer">
+                        <a href="2026-04-27/" class="read-more-btn">查看深度分析 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2026-04-26 -->
+        <div class="date-section">
+            <div class="date-header" onclick="toggleDate('2026-04-26')">
+                <div class="date-title">
+                    <span class=\"date-badge\">2026年4月26日</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: var(--space-3);">
+                    <span class="date-stats">4篇素材 · 深度分析版</span>
+                    <span class="toggle-icon" id="toggle-2026-04-28">▼</span>
+                </div>
+            </div>
+
+            <div class="date-content expanded" id="content-2026-04-28">
+                <div class="material-preview-card">
+                    <div class="preview-header">
+                        <span class="preview-tag">青年·五四精神</span>
+                        <div class="preview-title">以青春赴使命  以担当践初心</div>
+                        <div class="preview-source">《人民日报》2026年4月26日 第05版</div>
+                    </div>
+                    <div class="preview-body">
+                        <p class="preview-summary">5位中国青年五四奖章获得者的奋斗故事，涵盖乡村振兴、科技创新、生态保护、文化传承、工匠精神等领域，展现五四精神的当代传承。</p>
+                        <div class="preview-highlights">
+                            <span class="highlight-pill">📌 5个典型故事</span>
+                            <span class="highlight-pill">💎 4句金句</span>
+                            <span class="highlight-pill">🎯 青年责任</span>
+                        </div>
+                    </div>
+                    <div class="preview-footer">
+                        <a href="2026-04-26/" class="read-more-btn">查看深度分析 →</a>
+                    </div>
+                </div>
+
+                <div class="material-preview-card">
+                    <div class="preview-header">
+                        <span class="preview-tag">青年观</span>
+                        <div class="preview-title">弘扬五四精神  答好时代之问</div>
+                        <div class="preview-source">《人民日报》2026年4月26日 第05版 | 作者：廉思</div>
+                    </div>
+                    <div class="preview-body">
+                        <p class="preview-summary">回答"国家向前、青年何为""时代变迁、青年何立""民族复兴、青年何担"三个时代课题，阐述新时代青年如何弘扬五四精神。</p>
+                        <div class="preview-highlights">
+                            <span class="highlight-pill">📌 三个时代之问</span>
+                            <span class="highlight-pill">💎 3句金句</span>
+                            <span class="highlight-pill">🎯 理想信念</span>
+                        </div>
+                    </div>
+                    <div class="preview-footer">
+                        <a href="2026-04-26/" class="read-more-btn">查看深度分析 →</a>
+                    </div>
+                </div>
+
+                <div class="material-preview-card">
+                    <div class="preview-header">
+                        <span class="preview-tag">阅读·AI</span>
+                        <div class="preview-title">阅读的未来与未来的阅读</div>
+                        <div class="preview-source">《人民日报》2026年4月26日 第07版 | 温儒敏、陈丹、乔叶</div>
+                    </div>
+                    <div class="preview-body">
+                        <p class="preview-summary">三位专家学者探讨智能时代的阅读之道，既要积极拥抱技术机遇，更要坚守深度阅读价值，构建智慧阅读生态。</p>
+                        <div class="preview-highlights">
+                            <span class="highlight-pill">📌 对话体</span>
+                            <span class="highlight-pill">💎 4句金句</span>
+                            <span class="highlight-pill">🎯 深度阅读</span>
+                        </div>
+                    </div>
+                    <div class="preview-footer">
+                        <a href="2026-04-26/" class="read-more-btn">查看深度分析 →</a>
+                    </div>
+                </div>
+
+                <div class="material-preview-card">
+                    <div class="preview-header">
+                        <span class="preview-tag">阅读·人生</span>
+                        <div class="preview-title">阅读是一生之事</div>
+                        <div class="preview-source">《人民日报》2026年4月26日 第07版 | 作者：张贺</div>
+                    </div>
+                    <div class="preview-body">
+                        <p class="preview-summary">批判"伪阅读"现象，提倡把阅读当成一生的事业，在书籍的密林里按辔徐行，以独立、自由的阅读拓展生命深度与广度。</p>
+                        <div class="preview-highlights">
+                            <span class="highlight-pill">📌 少与多·快与慢·浅与深</span>
+                            <span class="highlight-pill">💎 5句金句</span>
+                            <span class="highlight-pill">🎯 终身阅读</span>
+                        </div>
+                    </div>
+                    <div class="preview-footer">
+                        <a href="2026-04-26/" class="read-more-btn">查看深度分析 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
    924|   739|                                        三大对策（并列递进）<br>
    925|   740|                                        ↓<br>
    926|   741|                                        总结升华（自立自强基础上的开放合作）
@@ -845,9 +1261,9 @@
   1104|   919|        </div>
   1105|   920|        
   1106|   921|        <footer>
-  1107|   922|            <p><strong>更新时间：</strong>2026年4月25日</p>
-  1108|   923|            <p><strong>下次更新：</strong>2026年4月26日 早上8点</p>
-  1109|   924|            <p style="margin-top: var(--space-2);"><strong>累计收录：</strong>2天 · 6篇素材</p>
+  1107|   922|            <p><strong>更新时间：</strong>2026年4月26日</p>
+  1108|   923|            <p><strong>下次更新：</strong>2026年4月27日 早上8点</p>
+  1109|   924|            <p style="margin-top: var(--space-2);"><strong>累计收录：</strong>3天 · 10篇素材</p>
   1110|   925|            <p style="margin-top: var(--space-2); font-size: 0.9rem;">📚 每天积累一点点，高考作文不犯难</p>
   1111|   926|        </footer>
   1112|   927|    </div>
@@ -873,8 +1289,8 @@
   1132|   947|        
   1133|   948|        // 默认展开最新的日期
   1134|   949|        document.addEventListener('DOMContentLoaded', function() {
-  1135|   950|            const latestContent = document.getElementById('content-2026-04-25');
-  1136|   951|            const latestToggle = document.getElementById('toggle-2026-04-25');
+  1135|   950|            const latestContent = document.getElementById('content-2026-04-28');
+  1136|   951|            const latestToggle = document.getElementById('toggle-2026-04-28');
   1137|   952|            latestContent.classList.add('expanded');
   1138|   953|            latestToggle.classList.add('expanded');
   1139|   954|        });
