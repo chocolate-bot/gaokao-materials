@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-02 高考作文素材 | 人民日报深度解析</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text-dark: #2C2C2C;
+            --text-light: #666666;
+            --border: #1A1A1A;
+            --shadow: #B5B5B5;
+            --success: #7BCBFF;
+            --warning: #FFE66A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 20px;
+            background: var(--primary);
+            border: 1.5px solid var(--border);
+            box-shadow: 8px 8px 0 0 var(--shadow);
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        /* Article Card */
+        .article-card {
+            background: white;
+            border: 1.5px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 40px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0 0 var(--shadow);
+        }
+
+        .article-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 4px solid var(--primary);
+            font-weight: bold;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .info-item {
+            display: inline-block;
+            margin-right: 30px;
+            margin-bottom: 10px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        /* Core Argument */
+        .core-argument {
+            background: linear-gradient(135deg, var(--primary) 0%, #5BADE8 100%);
+            color: white;
+            padding: 25px;
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* Logic Diagram */
+        .logic-diagram {
+            background: #FAFAFA;
+            border: 1.5px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 6px;
+            padding: 25px;
+            overflow-x: auto;
+        }
+
+        .logic-diagram pre {
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+        }
+
+        /* Method List */
+        .method-list {
+            list-style: none;
+        }
+
+        .method-item {
+            background: white;
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.2s;
+        }
+
+        .method-item:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        .method-title {
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Quote Card */
+        .quote-card {
+            background: linear-gradient(135deg, var(--accent) 0%, #FFD93D 100%);
+            border: 1.5px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .quote-text {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .quote-analysis {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 15px;
+        }
+
+        .analysis-item {
+            margin-bottom: 10px;
+        }
+
+        .analysis-label {
+            font-weight: bold;
+            color: var(--primary);
+            display: inline-block;
+            min-width: 80px;
+        }
+
+        /* Usage Tags */
+        .usage-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            background: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1.5px solid var(--border);
+            box-shadow: 2px 2px 0 0 var(--shadow);
+            transition: all 0.2s;
+        }
+
+        .tag:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        /* Template Box */
+        .template-box {
+            background: #F0F8FF;
+            border: 2px solid var(--primary);
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .template-title {
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .template-content {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 15px;
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: var(--text-dark);
+        }
+
+        /* Data Table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border: 1.5px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .data-table th {
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table tr:nth-child(even) {
+            background: #F9F9F9;
+        }
+
+        /* Collapsible */
+        .collapsible {
+            margin-top: 30px;
+        }
+
+        .collapsible-header {
+            background: var(--text-dark);
+            color: white;
+            padding: 15px 20px;
+            border: 1.5px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .collapsible-header:hover {
+            background: #444;
+        }
+
+        .collapsible-content {
+            background: white;
+            border: 1.5px solid var(--border);
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            padding: 30px;
+            display: none;
+            line-height: 2;
+            font-size: 1.05rem;
+        }
+
+        .collapsible-content.active {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            background: var(--text-dark);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 6px 6px 0 0 var(--shadow);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-card {
+                padding: 25px;
+            }
+
+            .article-title {
+                font-size: 1.4rem;
+            }
+
+            .info-item {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 8px;
+            }
+
+            .data-table {
+                font-size: 0.9rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 10px;
+            }
+        }
+
+        /* Scroll to Top */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border: 1.5px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: all 0.2s;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .scroll-top:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .article-card {
+                box-shadow: none;
+                border: 1px solid #ccc;
+                page-break-inside: avoid;
+            }
+
+            .scroll-top {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-05-02 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析 | 生态保护 · 工匠精神</p>
+        </header>
+
+        <!-- 文章1 -->
+        <article class="article-card">
+            <h2 class="article-title">📰 文章1：《我国自然保护区建设走过七十年》</h2>
+
+            <div class="section">
+                <h3 class="section-title">📋 基本信息</h3>
+                <div class="info-box">
+                    <div class="info-item">
+                        <span class="info-label">作者：</span>人民日报评论员
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">版面：</span>第05版 绿色
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">字数：</span>约3500字
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">日期：</span>2026年05月02日
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument">
+                    通过四个典型国家级自然保护区的案例，展示我国七十年来自然保护区建设的辉煌成就，体现"绿水青山就是金山银山"的生态保护理念。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🧠 论证逻辑</h3>
+                <div class="logic-diagram">
+<pre>
+第一层：引入话题
+└─ 筑牢生态屏障 守护美丽中国（标题揭示主题）
+
+第二层：展开分析（四个维度）
+├─ 最高：珠穆朗玛峰国家级自然保护区——科研数据记录山峰脉动
+│   ├─ 严格保护核心区（禁止游客进入）
+│   ├─ 建立科学观测站
+│   └─ 生态向好（黑颈鹤、雪豹等珍稀动物种群壮大）
+│
+├─ 最冷：内蒙古大兴安岭汗马国家级自然保护区
+│   ├─ 智慧监测体系（无人机+红外相机+数据分析）
+│   ├─ 物种恢复（驼鹿168头→285头，狼群回归）
+│   └─ 发展方式转型（狩猎者→生态讲解员）
+│
+├─ 最早：广东鼎湖山国家级自然保护区
+│   ├─ 我国第一个自然保护区（1956年建立）
+│   ├─ 生物多样性宝库（1948种野生高等植物）
+│   └─ 适度发展生态旅游与研学
+│
+└─ 最东：黑龙江黑瞎子岛国家级自然保护区
+    ├─ 科学修复、最小干预
+    ├─ 科技赋能（天空地一体化监测体系）
+    └─ 严格分区管理（核心区全封闭，实验区科普教育）
+
+第三层：总结升华
+└─ 七十年自然保护区建设 = 国家生态屏障 + 生物多样性保护 + 可持续发展
+</pre>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🔧 论证方法</h3>
+                <ul class="method-list">
+                    <li class="method-item">
+                        <div class="method-title">1. 分类论证（最有特色）</div>
+                        <p>文章采用"最高、最冷、最早、最东"四个维度，构建立体化的论证框架。每个维度选取一个代表性保护区，形成"东南西北"的地理覆盖。</p>
+                        <p><strong>高考迁移：</strong>可迁移到"文化传承"（东西南北文化）、"科技创新"（不同领域突破）等话题</p>
+                    </li>
+                    <li class="method-item">
+                        <div class="method-title">2. 数据对比论证</div>
+                        <p>汗马保护区：驼鹿种群"由约168头增长至285头"<br>
+                        黑瞎子岛：鸟类"从2014年的173种增至233种"</p>
+                        <p><strong>高考迁移：</strong>用具体数字说话，增强说服力</p>
+                    </li>
+                    <li class="method-item">
+                        <div class="method-title">3. 举例论证</div>
+                        <p>珠峰边境派出所所长刘志明巡逻的细节<br>
+                        鄂温克族老人得克沙"从狩猎者转变为生态讲解员"</p>
+                        <p><strong>高考迁移：</strong>通过小故事展现大主题，以小见大</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 金句深度解析</h3>
+
+                <div class="quote-card">
+                    <div class="quote-text">"人不负青山，青山定不负人"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>
+                            对偶工整，节奏感强；"不负"的双向性体现人与自然的和谐共生；"定"字表达坚定信念
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">适用话题：</span>
+                            生态保护、人与自然、绿色发展、奋斗与回报、责任担当
+                        </div>
+                        <div class="usage-tags">
+                            <span class="tag">开头使用</span>
+                            <span class="tag">论证使用</span>
+                            <span class="tag">结尾升华</span>
+                        </div>
+                        <div class="analysis-item" style="margin-top: 10px;">
+                            <span class="analysis-label">可仿写：</span>
+                            "人不负XX，XX定不负人"（例：人不负时代，时代定不负人）
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card" style="background: linear-gradient(135deg, #7BCBFF 0%, #5BADE8 100%);">
+                    <div class="quote-text" style="color: white;">"我们做的不是'改造'，而是'疏通'和'连接'，让湿地自己'喘过气来'"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>
+                            对比鲜明；拟人化生动形象；哲理深刻，体现尊重自然规律
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">适用话题：</span>
+                            生态保护、可持续发展、治国理政、教育方式
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card" style="background: linear-gradient(135deg, #FFD93D 0%, #FFE66A 100%);">
+                    <div class="quote-text">"以前靠山林吃饭，现在要护着山林。"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>
+                            对比鲜明："靠"vs"护"；朴素话语道出深刻哲理；体现时代变迁
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">适用话题：</span>
+                            发展方式转型、生态文明、理念更新、人与自然
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 适用场景</h3>
+                <div class="info-box">
+                    <p><strong>直接可用：</strong></p>
+                    <ul style="list-style: none; padding-left: 10px;">
+                        <li>✓ 2021年全国甲卷"可为与有为"</li>
+                        <li>✓ 2022年新高考I卷"本手、妙手、俗手"</li>
+                        <li>✓ 2023年新课标I卷"故事的力量"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">📝 考场应用模板</h3>
+
+                <div class="template-box">
+                    <div class="template-title">模板1：开头段（生态保护类）</div>
+                    <div class="template-content">
+                        "人不负青山，青山定不负人。"从珠穆朗玛峰的巍峨雪峰到黑瞎子岛的湿地原野，从大兴安岭的原始森林到鼎湖山的常绿阔叶林，七十年自然保护区建设，用坚守与智慧筑起生态屏障。这份"不负"，是对自然的敬畏；这份"定不负"，是生态的回馈。
+                    </div>
+                </div>
+
+                <div class="template-box">
+                    <div class="template-title">模板2：论证段（科技创新+生态保护）</div>
+                    <div class="template-content">
+                        科技的力量，让生态保护更精准。在内蒙古汗马保护区，"天—空—地"一体化监测体系让巡护从"脚步丈量"转向"三栖巡护"，驼鹿种群由168头增长至285头；在珠峰保护区，科研人员用一组组数据记录山峰脉动，首次实现珠峰顶部数据实时传输。这说明，科技赋能让守护更有力，让生态更向好。
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">📊 数据速查表</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>保护区</th>
+                            <th>面积</th>
+                            <th>特色</th>
+                            <th>成就</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>珠峰</td>
+                            <td>3.38万km²</td>
+                            <td>全球海拔最高</td>
+                            <td>黑颈鹤90余只，32种大中型哺乳动物</td>
+                        </tr>
+                        <tr>
+                            <td>汗马</td>
+                            <td>15万公顷</td>
+                            <td>最冷（-58.5℃）</td>
+                            <td>森林覆盖率88.4%→94.8%，驼鹿168→285头</td>
+                        </tr>
+                        <tr>
+                            <td>鼎湖山</td>
+                            <td>1155公顷</td>
+                            <td>最早（1956年）</td>
+                            <td>1948种植物，98%森林覆盖率</td>
+                        </tr>
+                        <tr>
+                            <td>黑瞎子岛</td>
+                            <td>12417公顷</td>
+                            <td>最东</td>
+                            <td>鸟类173→233种，放流鱼苗超千万尾</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="collapsible">
+                <div class="collapsible-header" onclick="toggleContent(this)">
+                    <span>📄 原文（点击展开/收起）</span>
+                    <span>▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <strong>筑牢生态屏障 守护美丽中国——</strong><br>
+                    <strong>我国自然保护区建设走过七十年</strong><br><br>
+                    
+                    <strong>最高</strong><br>
+                    <strong>珠穆朗玛峰国家级自然保护区——</strong><br>
+                    <strong>用科研数据记录山峰脉动</strong><br>
+                    本报记者  徐驭尧<br><br>
+                    
+                    　　5月的珠穆朗玛峰，依旧寒风刺骨，积雪覆盖着山脊。在海拔5000多米的珠穆朗玛峰国家级自然保护区核心区域内，刘志明带着工作人员艰难地攀爬着。<br><br>
+                    
+                    　　刘志明是珠峰边境派出所的所长。他带着几名年轻民警进入核心区巡逻，时不时回头喊："慢一点，稳一点。"<br><br>
+                    
+                    　　"每年，总有一些游客会尝试越过界线，违规进入珠峰核心区。我们持续加强监控和巡逻，让珠峰核心区不再被游客的脚步打扰。"他说。<br><br>
+                    
+                    　　珠峰地区环境脆弱，人类活动的痕迹需多年才能自然降解。为更好保护环境，如今核心区早已不再对游客开放。为保护珠峰自然生态，我国于1988年成立珠峰自然保护区，面积3.38万平方公里，是全球海拔最高、落差最大的自然保护区，主要保护极高山生态系统；1994年，珠峰保护区升格为国家级自然保护区；2005年被列入世界生物圈保护区。<br><br>
+                    
+                    　　（全文内容较长，此处省略部分内容...）
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章2 -->
+        <article class="article-card">
+            <h2 class="article-title">📰 文章2：《人不负青山 青山定不负人》</h2>
+
+            <div class="section">
+                <h3 class="section-title">📋 基本信息</h3>
+                <div class="info-box">
+                    <div class="info-item">
+                        <span class="info-label">版面：</span>第05版 绿色
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">主题：</span>绿色发展理念
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">日期：</span>2026年05月02日
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument">
+                    阐述"绿水青山就是金山银山"的深刻内涵，强调人与自然是生命共同体，保护生态就是保护生产力。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 核心金句</h3>
+                <div class="quote-card">
+                    <div class="quote-text">"人不负青山，青山定不负人"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">适用话题：</span>绿色发展、生态文明、人与自然、可持续发展
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">使用建议：</span>作为作文的核心论点或结尾升华
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章3 -->
+        <article class="article-card">
+            <h2 class="article-title">📰 文章3：《慢慢做好，不乱阵脚》</h2>
+
+            <div class="section">
+                <h3 class="section-title">📋 基本信息</h3>
+                <div class="info-box">
+                    <div class="info-item">
+                        <span class="info-label">版面：</span>第08版 文化遗产
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">主题：</span>工匠精神、专注坚守
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">日期：</span>2026年05月02日
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument">
+                    在快节奏的时代，更需要"慢慢做好"的工匠精神，专注坚守，不急不躁，才能成就精品。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 核心金句</h3>
+                <div class="quote-card" style="background: linear-gradient(135deg, #7BCBFF 0%, #5BADE8 100%);">
+                    <div class="quote-text" style="color: white;">"慢慢做好，不乱阵脚"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>语言朴素，富有哲理；"慢慢"与"不乱"形成呼应；强调定力与节奏感
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">适用话题：</span>工匠精神、专注与坚守、反对浮躁、长期主义
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">可仿写：</span>"慢慢XX，不乱XX"（例：慢慢成长，不乱节奏）
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 综合应用 -->
+        <article class="article-card" style="background: linear-gradient(135deg, #FFE66A 0%, #FFD93D 100%);">
+            <h2 class="article-title" style="color: var(--text-dark);">📝 综合应用建议</h2>
+
+            <div class="section">
+                <h3 class="section-title">三篇文章的组合使用</h3>
+                
+                <div class="method-item">
+                    <div class="method-title">1. 主题：守护与传承</div>
+                    <p>文章1（生态保护）+ 文章3（非遗传承）= 守护自然生态，传承文化生态</p>
+                    <p><strong>共同关键词：</strong>"坚守""保护""传承"</p>
+                </div>
+
+                <div class="method-item">
+                    <div class="method-title">2. 主题：快与慢的辩证</div>
+                    <p>文章1（用科技加快监测）+ 文章3（慢慢做好）= 该快则快，该慢则慢</p>
+                    <p><strong>观点：</strong>科技创新要快，文化传承要慢</p>
+                </div>
+
+                <div class="method-item">
+                    <div class="method-title">3. 主题：人与自然、人与文化</div>
+                    <p>文章1（人与自然和谐共生）+ 文章3（人与文化传承）</p>
+                    <p><strong>观点：</strong>尊重自然规律，尊重文化传统</p>
+                </div>
+            </div>
+
+            <div class="usage-tags" style="justify-content: center; margin-top: 30px;">
+                <span class="tag">生态保护</span>
+                <span class="tag">工匠精神</span>
+                <span class="tag">科技创新</span>
+                <span class="tag">人与自然</span>
+                <span class="tag">文化遗产</span>
+                <span class="tag">可持续发展</span>
+            </div>
+        </article>
+
+        <footer>
+            <p><strong>整理日期：</strong>2026年5月2日</p>
+            <p><strong>素材来源：</strong>《人民日报》第05版、第08版</p>
+            <p><strong>整理说明：</strong>本素材集聚焦生态保护、工匠精神两大主题，适用于2024-2026年高考作文备考</p>
+        </footer>
+    </div>
+
+    <div class="scroll-top" onclick="scrollToTop()">↑</div>
+
+    <script>
+        function toggleContent(header) {
+            const content = header.nextElementSibling;
+            const arrow = header.querySelector('span:last-child');
+            
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                arrow.textContent = '▼';
+            } else {
+                content.classList.add('active');
+                arrow.textContent = '▲';
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show scroll to top button
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.querySelector('.scroll-top');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
