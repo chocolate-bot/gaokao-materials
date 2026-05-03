@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-03 高考作文素材 | 来自《人民日报》的深度解析</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --primary-dark: #5AB8EE;
+            --accent: #FFE66A;
+            --accent-dark: #E5D048;
+            --text: #2C2C2C;
+            --text-light: #666666;
+            --border: #2C2C2C;
+            --shadow: #B5B5B5;
+            --white: #FFFFFF;
+            --success: #94E5A3;
+            --warning: #FFB84D;
+            --error: #FF8A8A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: var(--white);
+            border: 2px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+
+        .date {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--white);
+            padding: 8px 24px;
+            border: 2px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 4px;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+
+        /* Article Card */
+        .article-card {
+            background: var(--white);
+            border: 2px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 40px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0 0 var(--shadow);
+        }
+
+        .article-header {
+            border-bottom: 3px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .article-title {
+            font-size: 2rem;
+            color: var(--text);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .meta-tag {
+            display: inline-block;
+            background: var(--accent);
+            padding: 6px 16px;
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--text);
+            margin-bottom: 20px;
+            padding-left: 16px;
+            border-left: 5px solid var(--primary);
+            font-weight: 700;
+        }
+
+        /* Core Argument Box */
+        .core-argument {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 24px;
+            border: 2px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+            font-size: 1.1rem;
+            line-height: 1.9;
+            font-weight: 500;
+        }
+
+        /* Logic Diagram */
+        .logic-diagram {
+            background: var(--bg);
+            padding: 24px;
+            border: 2px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        .logic-diagram pre {
+            font-family: "Courier New", monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text);
+            white-space: pre;
+        }
+
+        /* Method List */
+        .method-list {
+            list-style: none;
+        }
+
+        .method-item {
+            background: var(--white);
+            border: 2px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: transform 0.2s;
+        }
+
+        .method-item:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        .method-title {
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        /* Quote Cards */
+        .quote-card {
+            background: var(--white);
+            border: 2px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .quote-text {
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--text);
+            margin-bottom: 16px;
+            padding-left: 20px;
+            border-left: 4px solid var(--accent);
+            line-height: 1.9;
+        }
+
+        .quote-analysis {
+            margin-top: 16px;
+        }
+
+        .analysis-item {
+            margin-bottom: 12px;
+            padding-left: 16px;
+        }
+
+        .analysis-label {
+            font-weight: 700;
+            color: var(--primary-dark);
+            display: inline-block;
+            min-width: 80px;
+        }
+
+        .analysis-content {
+            color: var(--text);
+        }
+
+        .topic-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .topic-tag {
+            background: var(--bg);
+            padding: 4px 12px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        /* Application Sections */
+        .application-box {
+            background: var(--white);
+            border: 2px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .application-title {
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .application-title::before {
+            content: "▸";
+            color: var(--primary);
+            margin-right: 8px;
+            font-size: 1.3rem;
+        }
+
+        .application-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .application-list li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .application-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+
+        /* Original Text */
+        .original-text {
+            background: var(--bg);
+            border: 2px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 6px;
+            padding: 24px;
+            font-size: 0.95rem;
+            line-height: 2;
+            color: var(--text-light);
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .original-text p {
+            margin-bottom: 16px;
+            text-indent: 2em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 24px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-card {
+                padding: 24px;
+            }
+
+            .article-title {
+                font-size: 1.5rem;
+            }
+
+            .quote-text {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-dark);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>📚 2026-05-03 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+            <span class="date">2026年5月3日</span>
+        </header>
+
+        <!-- Article 1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">《守护，代代相续》</h2>
+                <div class="article-meta">
+                    <span class="meta-tag">作者：董丝雨</span>
+                    <span class="meta-tag">第05版（绿色版）</span>
+                    <span class="meta-tag">约1100字</span>
+                    <span class="meta-tag">生态保护</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument">
+                    一代代自然保护区守护者以"功成不必在我"的境界和"功成必定有我"的担当，扎根山野荒原数十年，为筑牢国家生态安全屏障贡献力量。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🧠 论证逻辑</h3>
+                <div class="logic-diagram">
+<pre>第一层：引入话题（地理画面）
+├─ 从高黎贡山到陕西汉中，从可可西里到安徽扬子鳄
+├─ 2600多处自然保护区星罗棋布
+└─ 提出核心论点：守护自然保护区就是守护共同家园
+
+第二层：展开分析（三个维度）
+├─ 维度1：代代相续的守护是对自然的敬畏与责任
+│   ├─ 案例1：江苏盐城"追鹤人"三代接力
+│   └─ 案例2：云南白马雪山余氏父子30多年坚守
+│
+├─ 维度2：科技赋能提供有力支撑
+│   ├─ 案例3：四川王朗保护区用红外相机拍到雪豹
+│   └─ 案例4：浙江天目山用无人机和大数据监测
+│
+└─ 维度3：需要"甘坐冷板凳"的奉献精神
+    └─ 案例5：湖南八大公山徐生科30多年巡山
+
+第三层：总结升华（价值意义）
+├─ 守护者们是生态文明建设的生动范例
+└─ 全民行动，建设美丽中国</pre>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🔧 论证方法</h3>
+                <ul class="method-list">
+                    <li class="method-item">
+                        <div class="method-title">举例论证（具体案例+数据支撑）</div>
+                        江苏盐城"追鹤人"三代接力，丹顶鹤种群数量稳步回升；云南白马雪山余氏父子30多年时间，推动滇金丝猴种群数量稳步回升；四川王朗保护区罗春平用5年时间首次拍到岷山雪豹影像；浙江天目山用无人机巡护、大数据分析；湖南八大公山徐生科穿烂近百双鞋，历经12次考验。
+                    </li>
+                    <li class="method-item">
+                        <div class="method-title">引用论证（经典名言）</div>
+                        引用《荀子》："万物各得其和以生，各得其养以成"；引用"功成不必在我"和"功成必定有我"的境界与担当。
+                    </li>
+                    <li class="method-item">
+                        <div class="method-title">对比论证</div>
+                        徒手追踪 vs 运用红外相机、监测设备（从传统到现代）；经验型 vs 精准型（科技赋能的转变）。
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 金句深度解析</h3>
+                
+                <div class="quote-card">
+                    <div class="quote-text">"守护自然保护区，就是守护我们共同的家园，就是守护子孙后代的生存根基。"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>
+                            <span class="analysis-content">排比句式"就是守护...就是守护..."增强气势；从"共同家园"到"生存根基"，层层深入；将具体行为上升到人类永续发展的高度。</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">适用话题：</span>
+                            <div class="topic-tags">
+                                <span class="topic-tag">生态文明</span>
+                                <span class="topic-tag">责任担当</span>
+                                <span class="topic-tag">可持续发展</span>
+                                <span class="topic-tag">代际公平</span>
+                                <span class="topic-tag">人与自然</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">可仿写：</span>
+                            <span class="analysis-content">"保护xx，就是保护我们共同的文化家园，就是守护民族精神的精神根基。"</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"这种甘于奉献、久久为功的精神，不仅是自然保护区守护者的精神底色，更成为生态文明建设源源不竭的精神动力，激励着更多人投身生态保护事业。"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>
+                            <span class="analysis-content">关键词提炼："甘于奉献""久久为功"；层次递进：从"精神底色"到"精神动力"再到"激励更多人"。</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">适用话题：</span>
+                            <div class="topic-tags">
+                                <span class="topic-tag">奉献精神</span>
+                                <span class="topic-tag">长期坚守</span>
+                                <span class="topic-tag">榜样力量</span>
+                                <span class="topic-tag">精神传承</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 适用场景</h3>
+                
+                <div class="application-box">
+                    <div class="application-title">直接可用话题</div>
+                    <ul class="application-list">
+                        <li>生态文明：直接用自然保护区的案例论证生态保护的重要性</li>
+                        <li>传承与坚守：用"追鹤人"三代接力、余氏父子30多年坚守等案例</li>
+                        <li>责任担当：用"功成不必在我"和"功成必定有我"论证担当精神</li>
+                        <li>科技创新：用红外相机、无人机、大数据等科技赋能案例</li>
+                        <li>奉献精神：用徐生科30多年巡山、穿烂近百双鞋等细节</li>
+                    </ul>
+                </div>
+
+                <div class="application-box">
+                    <div class="application-title">高考真题对接</div>
+                    <ul class="application-list">
+                        <li><strong>2024年新课标I卷（故事的力量）</strong>：每个自然保护区守护者都有一个动人的故事，这些故事汇聚成生态文明建设的磅礴力量</li>
+                        <li><strong>2023年新课标I卷（故事的力量）</strong>：自然保护区的守护者们用行动书写着动人故事，这些故事激励着更多人投身生态保护</li>
+                        <li><strong>2022年全国甲卷（直接移用、借鉴化用、情境仿写）</strong>：直接引用"'功成不必在我'的境界和'功成必定有我'的担当"</li>
+                        <li><strong>2021年全国甲卷（可为与有为）</strong>：在生态文明建设这个"可为"的时代，自然保护区守护者们展现了"有为"的担当</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">📝 段落模板</h3>
+                <div class="application-box">
+                    <div class="application-title">开头模板（排比式）</div>
+                    <div class="original-text" style="max-height: none;">
+                        从高黎贡山层峦叠嶂的原始密林，到陕西汉中朱鹮翔集的秦巴水田；从可可西里高寒缺氧的无人荒野，到安徽扬子鳄栖息的长江湿地——在幅员辽阔的国土上，xx星罗棋布，守护着xx。一代又一代xx者，扎根xx，为xx贡献力量，成为xx的生动范例。
+                    </div>
+                </div>
+
+                <div class="application-box">
+                    <div class="application-title">论证模板（三层递进）</div>
+                    <div class="original-text" style="max-height: none;">
+                        xx的xx，是对xx的敬畏与责任。在xx，xx；在xx，xx...他们不仅xx，更xx，让xx"xx"。<br><br>
+                        xx的xx，背后是xx的有力支撑。xx在xx，用xx时间xx；xx运用xx，实现了xx。xx为xx插上"xx翅膀"，推动xx从"xx"向"xx"的转变。<br><br>
+                        "xx"的xx，也需要"xx"的奉献精神。xx多xx，xx。然而，xx以xx的境界和xx的担当，xx。这种xx的精神，不仅是xx的精神底色，更成为xx的精神动力，激励着更多人xx。
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">《从"单点闪光"到"汇聚星河"》</h2>
+                <div class="article-meta">
+                    <span class="meta-tag">作者：王平</span>
+                    <span class="meta-tag">第08版（副刊）</span>
+                    <span class="meta-tag">约1400字</span>
+                    <span class="meta-tag">青年人才培养</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument" style="background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);">
+                    通过制度化、体系化的展览与培养机制，为青年人才铺设从"单点闪光"到"汇聚星河"的宽阔航道，形成"以展促创、以培育人"的良性生态。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 核心金句</h3>
+                
+                <div class="quote-card">
+                    <div class="quote-text">"从首届全国青年美展创办，一代代青年创作者便从此出发、逐梦艺途。过去他们的成长更多依赖个人天赋与勤奋，如今中国美协搭建起制度化、体系化的展览与培养矩阵，为他们铺就一条从'单点闪光'到'汇聚星河'的宽阔航道，形成'以展促创、以培育人'的良性生态。"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>
+                            <span class="analysis-content">对比鲜明："过去"vs"如今"，"个人天赋与勤奋"vs"制度化、体系化的展览与培养矩阵"；比喻精彩："单点闪光"→"汇聚星河"，"宽阔航道"；提炼精准："以展促创、以培育人"。</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">适用话题：</span>
+                            <div class="topic-tags">
+                                <span class="topic-tag">人才培养</span>
+                                <span class="topic-tag">制度建设</span>
+                                <span class="topic-tag">平台建设</span>
+                                <span class="topic-tag">个人与集体</span>
+                                <span class="topic-tag">薪火相传</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"艺术源于生活。深入生活的深度，决定着作品的高度。"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>
+                            <span class="analysis-content">哲理深刻：揭示艺术创作的根本规律；因果明确：深入生活→作品高度，逻辑清晰；简洁有力：一句话阐明深刻道理。</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">可仿写：</span>
+                            <span class="analysis-content">"创新源于实践。深入实践的深度，决定着创新的高度。"</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"不是提升'画得更像'的技法熟练度，而是补足'画得更深'的思想厚度。"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>
+                            <span class="analysis-content">对比强烈："画得更像"vs"画得更深"，"技法熟练度"vs"思想厚度"；哲理深刻：揭示人才培养的真正目标；文字精炼：对仗工整，朗朗上口。</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">适用话题：</span>
+                            <div class="topic-tags">
+                                <span class="topic-tag">人才培养目标</span>
+                                <span class="topic-tag">技法与思想</span>
+                                <span class="topic-tag">外在形式与内在实质</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 适用场景</h3>
+                
+                <div class="application-box">
+                    <div class="application-title">高考真题对接</div>
+                    <ul class="application-list">
+                        <li><strong>2024年新课标I卷（故事的力量）</strong>：每个青年画家都有一个成长故事，这些故事汇聚成中国美术发展的磅礴力量</li>
+                        <li><strong>2023年新课标I卷（故事的力量）</strong>：用"单点闪光"到"汇聚星河"的故事，论证制度让个体故事汇聚成时代故事</li>
+                        <li><strong>2021年全国甲卷（可为与有为）</strong>：新时代为青年人才搭建了"可为"的平台，青年才能"有为"</li>
+                        <li><strong>2020年全国卷I（读书、实践、识人）</strong>：青年人才培养既要读书（理论研修），也要实践（深入生活、扎根人民）</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">《星光引路 青苗拔节》</h2>
+                <div class="article-meta">
+                    <span class="meta-tag">作者：王瑾妤</span>
+                    <span class="meta-tag">第08版（副刊）</span>
+                    <span class="meta-tag">约1000字</span>
+                    <span class="meta-tag">师徒传承</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 核心论点</h3>
+                <div class="core-argument" style="background: linear-gradient(135deg, var(--success) 0%, #7BCB90 100%);">
+                    以文脉为根、以育人为本，通过分梯次、相衔接的青年优才培育体系，实现"代代有人才出、代代有精品出"的良性循环。
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">💎 核心金句</h3>
+                
+                <div class="quote-card">
+                    <div class="quote-text">"聚如一团火，凝聚起岭南美术的传承力量；散若满天星，点亮当代艺术的青春华章——这便是岭南美术薪火相传的关键密码。"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>
+                            <span class="analysis-content">对偶工整："聚如一团火"对"散若满天星"；比喻精彩：用"火"比喻凝聚力，用"星"比喻个体的光芒；气势磅礴：既有"一团火"的热烈，又有"满天星"的璀璨。</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">适用话题：</span>
+                            <div class="topic-tags">
+                                <span class="topic-tag">个人与集体</span>
+                                <span class="topic-tag">团结协作</span>
+                                <span class="topic-tag">传承发展</span>
+                                <span class="topic-tag">凝聚力量</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">可仿写：</span>
+                            <span class="analysis-content">"聚如一团火，凝聚起科技创新的攻关力量；散若满天星，点亮产业发展的未来华章——这便是科技强国建设的关键密码。"</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"回首来路，岭南美术的人才培育，非一时之举，而是跨越了百年的坚守与传承。"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>
+                            <span class="analysis-content">历史厚重："跨越了百年的坚守与传承"；对比强烈："非一时之举"否定急功近利；哲理深刻：强调传承需要长期坚持。</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">适用话题：</span>
+                            <div class="topic-tags">
+                                <span class="topic-tag">传承与坚守</span>
+                                <span class="topic-tag">长期主义</span>
+                                <span class="topic-tag">文化建设</span>
+                                <span class="topic-tag">历史底蕴</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">"星光引路，青苗拔节。"</div>
+                    <div class="quote-analysis">
+                        <div class="analysis-item">
+                            <span class="analysis-label">好在哪：</span>
+                            <span class="analysis-content">比喻形象："星光引路"（前辈指引），"青苗拔节"（青年成长）；动态感强："引路""拔节"都是动态词，富有生命力。</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="analysis-label">可仿写：</span>
+                            <span class="analysis-content">"良师引路，学子成长。""榜样引路，青年奋进。"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">🎯 适用场景</h3>
+                
+                <div class="application-box">
+                    <div class="application-title">高考真题对接</div>
+                    <ul class="application-list">
+                        <li><strong>2024年新课标I卷（故事的力量）</strong>：每个走出"星河展"的青年画家都有一个成长故事，73回展览、近200名青年中坚，汇聚成岭南美术传承的动人故事</li>
+                        <li><strong>2023年新课标I卷（故事的力量）</strong>：用从1921年到2026年跨越百年的传承故事，论证故事需要时间沉淀</li>
+                        <li><strong>2022年全国甲卷（直接移用、借鉴化用、情境仿写）</strong>：直接引用"聚如一团火，散若满天星"</li>
+                        <li><strong>2021年全国甲卷（可为与有为）</strong>：新时代为青年美术人才搭建了多元平台（可为），青年才能实现"代代有人才出"（有为）</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer style="text-align: center; padding: 40px 20px; color: var(--text-light); border-top: 2px solid var(--border); margin-top: 60px;">
+            <p style="margin-bottom: 8px;">📚 每日整理 | 高考作文素材库</p>
+            <p style="font-size: 0.9rem;">来源：《人民日报》2026年5月3日</p>
+            <p style="font-size: 0.9rem; margin-top: 16px;">深度解析 · 段落模板 · 高考对接</p>
+        </footer>
+    </div>
+</body>
+</html>
