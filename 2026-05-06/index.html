@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-06 高考作文素材</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2C2C2C;
+            --text-light: #666666;
+            --border: #2C2C2C;
+            --shadow: #B5B5B5;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .article-card {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .article-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .article-number {
+            background: var(--primary);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .article-title {
+            font-size: 1.5rem;
+            color: var(--text);
+            flex: 1;
+        }
+
+        .info-box {
+            background: var(--accent);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-box h3 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .info-box ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .info-box li {
+            margin-bottom: 5px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            width: 4px;
+            height: 24px;
+            background: var(--primary);
+            margin-right: 10px;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .logic-diagram {
+            background: #F0F8FF;
+            border: 1.5px solid var(--primary);
+            border-radius: 4px;
+            padding: 20px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        .golden-quote {
+            background: linear-gradient(135deg, var(--accent) 0%, #FFF4CC 100%);
+            border-left: 4px solid var(--border);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .golden-quote blockquote {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        .quote-analysis {
+            margin-top: 10px;
+        }
+
+        .quote-analysis p {
+            margin-bottom: 8px;
+        }
+
+        .quote-analysis strong {
+            color: var(--text);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0;
+        }
+
+        .tag {
+            background: var(--primary);
+            color: var(--white);
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        .usage-box {
+            background: #E8F4F8;
+            border: 1px solid var(--primary);
+            border-radius: 4px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .template-box {
+            background: #FFF;
+            border: 1.5px dashed var(--border);
+            border-radius: 4px;
+            padding: 15px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+
+        .collapsible {
+            margin: 20px 0;
+        }
+
+        .collapsible-header {
+            background: var(--text);
+            color: var(--white);
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .collapsible-header:hover {
+            opacity: 0.9;
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+        }
+
+        .collapsible-content.active {
+            max-height: 2000px;
+        }
+
+        .collapsible-content p {
+            padding: 15px 20px;
+            text-indent: 2em;
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #E8F4F8 0%, #F0F8FF 100%);
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .summary-box h2 {
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .summary-box h2::before {
+            display: none;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .stat-item {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 4px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .article-card {
+                padding: 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-05-06 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+        </header>
+
+
+        <!-- 文章1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <div class="article-number">1</div>
+                <h2 class="article-title">后来怎样居上（评论员观察）</h2>
+            </div>
+
+            <div class="info-box">
+                <h3>📋 基本信息</h3>
+                <ul>
+                    <li><strong>作者</strong>：尹双红</li>
+                    <li><strong>版面</strong>：第05版 评论</li>
+                    <li><strong>字数</strong>：约1200字</li>
+                </ul>
+            </div>
+
+            <section>
+                <h2>🎯 核心论点</h2>
+                <p>用马拉松比赛比喻地区发展，提出"后来也能居上"的观点：关键不是起步早晚，而是跑好自己的节奏、发挥比较优势、用好协同战术。</p>
+            </section>
+
+            <section>
+                <h2>🧠 论证逻辑</h2>
+                <div class="logic-diagram">
+【引入：马拉松比喻】
+    ↓ 分区起跑→成绩取决于自己→后发也能有优势
+    ↓
+【第一层：首先要跑起来】
+    ↓ 观念转变：打破惯性思维、惰性思维
+    案例：广东梅州从"发展洼地"到增速第一
+    ↓
+【第二层：要抬头看路】
+    ↓ 发挥比较优势，避免盲目跟风
+    案例：安徽界首、雄安新区、新疆
+    ↓
+【第三层：团队协作】
+    ↓ 取长补短、各展所长、强强联合
+    案例：山东菏泽、湖南与海南、成渝
+    ↓
+【升华：汇聚合力】
+    各地奋勇奔跑→实现高质量发展
+                </div>
+            </section>
+
+            <section>
+                <h2>💎 金句深度解析</h2>
+
+                <div class="golden-quote">
+                    <blockquote>"打破惯性思维、惰性思维，以思想破冰引领发展突围，方能在有限资源里拼出更多可能。"</blockquote>
+                    <div class="quote-analysis">
+                        <p><strong>好在哪</strong>：对仗工整，比喻生动（"思想破冰"），哲理深刻。</p>
+                        <p><strong>适用话题</strong>：<div class="tags">
+                            <span class="tag">创新与变革</span>
+                            <span class="tag">思想解放</span>
+                            <span class="tag">资源与发展</span>
+                            <span class="tag">后发优势</span>
+                        </div></p>
+                        <div class="usage-box">
+                            <strong>可仿写</strong>："打破xx思维、xx思维，以xx引领xx，方能在xx里xx"
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-quote">
+                    <blockquote>"机遇窗口不是等出来的，而是靠主动跑、全力争出来的。"</blockquote>
+                    <div class="quote-analysis">
+                        <p><strong>好在哪</strong>：对比鲜明（"等"vs"跑"、"争"），强调主观能动性。</p>
+                        <p><strong>适用话题</strong>：<div class="tags">
+                            <span class="tag">机遇与挑战</span>
+                            <span class="tag">主动争取</span>
+                            <span class="tag">奋斗精神</span>
+                        </div></p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>🎯 适用场景</h2>
+                <div class="usage-box">
+                    <strong>直接可用话题</strong>：后发优势、地区发展、创新思维、协同发展、主动作为
+                </div>
+                <div class="usage-box">
+                    <strong>高考真题示例</strong>：2022年全国乙卷"跨越，再跨越"、2021年全国甲卷"可为与有为"
+                </div>
+            </section>
+
+            <div class="template-box">
+                <strong>【开头段落模板】</strong><br>
+                马拉松赛场上，分区起跑意味着出发早晚不同，但芯片计时告诉我们：成绩只取决于自己，后发也能有优势。地区发展何尝不是一场马拉松？基础不同、起步有先后，但后来也能居上，关键在于跑好自己的节奏。正如《人民日报》所言："打破惯性思维、惰性思维，以思想破冰引领发展突围，方能在有限资源里拼出更多可能。"
+            </div>
+
+            <div class="collapsible">
+                <div class="collapsible-header" onclick="toggleCollapse(this)">
+                    <span>📄 原文（点击展开/收起）</span>
+                    <span>▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <p>气温渐暖，多地马拉松鸣枪开跑。与其他田径赛事不同，马拉松赛事采取分区起跑方式，按照A、B、C等分区顺序依次起跑。</p>
+                    <p>那么，是否分区在前面的人出发早，更容易在赛道中占据有利位置，而分区靠后的人只能白白浪费等待时间呢？</p>
+                    <p>实际上，马拉松净成绩采用芯片计时，不管是第一个冲出去，还是最后一个起跑，成绩只取决于自己。对后起步的跑者来说，跟跑还可以减少风阻，善于利用"后发优势"，反而容易取得好成绩。由此思之，地区发展何尝不是一场马拉松？各地基础不同，发展有快有慢，但后来也能居上，关键是跑好自己的节奏。</p>
+                    <p>首先要跑起来，并奋力跑、坚持跑。广东梅州，曾经的"发展洼地"。面对资源禀赋有限、区位条件一般的现实，是安于现状、小进即满，还是主动图强、奋力争先？在一次次思想碰撞中，梅州凝聚起"小地方也能有大作为"的共识，主动招商引资，盘活闲置资产，把核心要素投向实体经济和制造业，2025年地区生产总值增速全省第一。</p>
+                    <p>正如当地干部所言，"机遇窗口不是等出来的，而是靠主动跑、全力争出来的"。想干、愿干是改变的种子。打破惯性思维、惰性思维，以思想破冰引领发展突围，方能在有限资源里拼出更多可能。</p>
+                    <p>追赶不是一味埋头猛冲，也要抬头看路，既看跑的节奏是否适合自己，也看他人的优势在哪，在对比中发挥自身比较优势。</p>
+                    <p>比如，安徽界首没有一哄而上发展热门产业，而是立足自身回收产业基础，前瞻布局循环经济赛道，连续上榜"中国创新百强县（市）"。</p>
+                    <p>又如，避开先发地区走过的弯路，学习经过验证的成熟模式，雄安新区把每一寸土地都规划得清清楚楚后再开工建设，一座高水平现代化城市拔地而起。</p>
+                    <p>一个地区想要发展，资源禀赋毋庸置疑是重要条件，但真正拉开差距的，往往是战略眼光与实际行动。在传统视角里，新疆深处内陆，远离海洋与港口，与东部沿海地区相比，区位条件不占优。但换个视角来看，向西开放，新疆也有"五口通八国、一路连欧亚"的独特优势，内陆也可变前沿。目光四射，格局打开，资源禀赋的内涵就会随之不断丰富延展，发展的故事也会更加精彩。</p>
+                    <p>马拉松比赛中，常常可见身着统一服饰的跑团，选手通过团队协作，往往能取得更好成绩。事实上，赛场上一起奔跑的，既是同台竞技的对手，也可以是携手前行的队友，发展亦是如此。</p>
+                    <p>取长补短，山东菏泽探索在北京、上海、苏州设立离岸创新中心，实现借梯上楼。各展所长，湖南与海南携手打造先进制造业共建产业园，借港出海，撬动更广阔的全球市场。强强联合，成渝共唱"双城记"，推动川渝经济总量6年跨越4个万亿元级关口，发展能级整体跃升。</p>
+                    <p>想要跑出好成绩，既考验体力，也考验智慧。用好协同"战术"，互相支持，同向而行，才能跑得更快、更远。</p>
+                    <p>有政策、有空间、有机遇，更有敢闯敢试的魄力与久久为功的定力，今日中华大地上，"无中生有""有中生新"的蝶变不断上演。赛道足够长，舞台足够大，各地奋勇奔跑，每一步都是向着更高发展境界的进发，必将汇聚成实现高质量发展的强大合力。</p>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- 文章2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <div class="article-number">2</div>
+                <h2 class="article-title">中国市场缘何被喻为"健身房"（现场评论）</h2>
+            </div>
+
+            <div class="info-box">
+                <ul>
+                    <li><strong>作者</strong>：李心萍 | <strong>版面</strong>：第05版 评论 | <strong>字数</strong>：约1100字</li>
+                </ul>
+            </div>
+
+            <section>
+                <h2>🎯 核心论点</h2>
+                <p>用"健身房"比喻中国市场，从四个维度论证：竞争锤炼能力、创新激活动力、生态涵养全链条、成长锚定未来。</p>
+            </section>
+
+            <section>
+                <h2>💎 金句精选</h2>
+                <div class="golden-quote">
+                    <blockquote>"在中国经历过'大浪淘沙'的企业，也将锤炼出一流的反应速度、管理机制与创新能力。"</blockquote>
+                    <div class="quote-analysis">
+                        <p><strong>适用话题</strong>：<div class="tags">
+                            <span class="tag">市场竞争</span>
+                            <span class="tag">企业成长</span>
+                            <span class="tag">磨砺与成长</span>
+                        </div></p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <!-- 文章3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <div class="article-number">3</div>
+                <h2 class="article-title">践行正确政绩观，不能"穿新鞋走老路"（思想纵横）</h2>
+            </div>
+
+            <div class="info-box">
+                <ul>
+                    <li><strong>作者</strong>：王钰涵 | <strong>版面</strong>：第09版 理论 | <strong>字数</strong>：约1100字</li>
+                </ul>
+            </div>
+
+            <section>
+                <h2>🎯 核心论点</h2>
+                <p>深刻阐释"穿新鞋走老路"的本质：形式主义作祟、政绩观错位。强调只有树立和践行正确政绩观，才能真正走出高质量发展的"新路"。</p>
+            </section>
+
+            <section>
+                <h2>💎 金句精选</h2>
+                <div class="golden-quote">
+                    <blockquote>"'穿新鞋走老路'，表面上是行为的偏差，根本上是政绩观的错位。"</blockquote>
+                </div>
+                <div class="golden-quote">
+                    <blockquote>"形式主义实质是主观主义、功利主义，根源是政绩观错位、责任心缺失。"</blockquote>
+                </div>
+            </section>
+        </article>
+
+        <!-- 文章4 -->
+        <article class="article-card">
+            <div class="article-header">
+                <div class="article-number">4</div>
+                <h2 class="article-title">师傅，守艺，也破局</h2>
+            </div>
+
+            <div class="info-box">
+                <ul>
+                    <li><strong>作者</strong>：沈兆仁 | <strong>版面</strong>：第20版 副刊 | <strong>字数</strong>：约1000字</li>
+                </ul>
+            </div>
+
+            <section>
+                <h2>🎯 核心论点</h2>
+                <p>在AI时代，师傅的价值不是被替代，而是转型：从"传授技艺"转向"传授判断、传授做人、传授精神"。</p>
+            </section>
+
+            <section>
+                <h2>💎 金句精选</h2>
+                <div class="golden-quote">
+                    <blockquote>"经验可以复制，判断难以替代。"</blockquote>
+                </div>
+                <div class="golden-quote">
+                    <blockquote>"AI教做事，师傅教做人。"</blockquote>
+                </div>
+                <div class="golden-quote">
+                    <blockquote>"算法也许能给出最优解，却未必能给出价值权衡与道德判断。"</blockquote>
+                </div>
+            </section>
+        </article>
+
+        <!-- 文章5 -->
+        <article class="article-card">
+            <div class="article-header">
+                <div class="article-number">5</div>
+                <h2 class="article-title">让"气候贷"成气候（纵横）</h2>
+            </div>
+
+            <div class="info-box">
+                <ul>
+                    <li><strong>作者</strong>：孟亚生 | <strong>版面</strong>：第05版 评论 | <strong>字数</strong>：约600字</li>
+                </ul>
+            </div>
+
+            <section>
+                <h2>🎯 核心论点</h2>
+                <p>介绍江苏"气候贷"创新做法，分析其面临的困难，提出通过统一标准、打通壁垒、政策托底等措施推动"气候贷"普及。</p>
+            </section>
+
+            <section>
+                <h2>💎 金句精选</h2>
+                <div class="golden-quote">
+                    <blockquote>"'气象+金融'模式，正让无形气候资源转化为有形信用资产。"</blockquote>
+                </div>
+                <div class="golden-quote">
+                    <blockquote>"要让'气候贷'早日成气候，关键要靶向破堵点、协同补短板。"</blockquote>
+                </div>
+            </section>
+        </article>
+
+        <!-- 总结部分 -->
+        <div class="summary-box">
+            <h2>📊 今日素材总览</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">精选文章</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">深度解析金句</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">总字数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">对接高考真题</div>
+                </div>
+            </div>
+
+            <section>
+                <h3>核心话题分布</h3>
+                <div class="tags">
+                    <span class="tag">发展理念</span>
+                    <span class="tag">市场竞争</span>
+                    <span class="tag">人工智能</span>
+                    <span class="tag">绿色金融</span>
+                    <span class="tag">工匠精神</span>
+                    <span class="tag">政绩观</span>
+                    <span class="tag">传承与创新</span>
+                </div>
+            </section>
+
+            <section>
+                <h3>适用高考话题</h3>
+                <div class="tags">
+                    <span class="tag">创新与变革</span>
+                    <span class="tag">传承与发展</span>
+                    <span class="tag">竞争与合作</span>
+                    <span class="tag">担当精神</span>
+                    <span class="tag">技术与人文</span>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>素材来源：《人民日报》2026年5月6日</p>
+            <p>整理日期：2026年5月6日 | 整理人：高考作文素材自动整理系统</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleCollapse(header) {
+            const content = header.nextElementSibling;
+            const arrow = header.querySelector('span:last-child');
+            
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                arrow.textContent = '▼';
+            } else {
+                content.classList.add('active');
+                arrow.textContent = '▲';
+            }
+        }
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
