@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-07 高考作文素材</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2D2D2D;
+            --text-light: #666666;
+            --border: #2D2D2D;
+            --shadow: #B5B5B5;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--card-bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+        }
+
+        /* Summary Cards */
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .summary-card {
+            background: var(--card-bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            padding: 25px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .summary-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0 0 var(--shadow);
+        }
+
+        .summary-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .summary-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Article Cards */
+        .article-card {
+            background: var(--card-bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+
+        .article-header {
+            background: var(--primary);
+            padding: 30px;
+            color: var(--text);
+        }
+
+        .article-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+
+        .article-meta span {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 5px 12px;
+            border-radius: 4px;
+        }
+
+        .article-content {
+            padding: 30px;
+        }
+
+        /* Core Argument */
+        .core-argument {
+            background: linear-gradient(135deg, var(--accent) 0%, #FFD93D 100%);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1.5px solid var(--border);
+        }
+
+        .core-argument h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .core-argument p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.7;
+        }
+
+        /* Logic Diagram */
+        .logic-diagram {
+            background: #F0F0F0;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1.5px solid var(--border);
+            font-family: "Courier New", monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+
+        .logic-diagram h3 {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        /* Methods List */
+        .methods-list {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .methods-list li {
+            background: #F8F8F8;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+        }
+
+        .methods-list strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Golden Quotes */
+        .golden-quotes {
+            margin-bottom: 25px;
+        }
+
+        .quote-item {
+            background: #FFFEF8;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1.5px solid var(--accent);
+            position: relative;
+        }
+
+        .quote-item::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-size: 3rem;
+            color: var(--accent);
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+
+        .quote-text {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+            padding-left: 20px;
+            font-style: italic;
+        }
+
+        .quote-analysis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            font-size: 0.9rem;
+        }
+
+        .quote-analysis div {
+            background: white;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #E0E0E0;
+        }
+
+        .quote-analysis strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Application */
+        .application {
+            background: #F0F8FF;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1.5px solid var(--primary);
+        }
+
+        .application h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .application ul {
+            list-style: none;
+        }
+
+        .application li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .application li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Collapsible Section */
+        .collapsible {
+            margin-top: 25px;
+        }
+
+        .collapsible-header {
+            background: #E8E8E8;
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            border: 1.5px solid var(--border);
+        }
+
+        .collapsible-header:hover {
+            background: #DDD;
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: #FAFAFA;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .collapsible-content.active {
+            max-height: 2000px;
+        }
+
+        .collapsible-content .text-content {
+            padding: 20px;
+            white-space: pre-wrap;
+            font-size: 0.95rem;
+            line-height: 2;
+            color: #444;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .quote-analysis {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>📚 2026-05-07 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析 · 6篇精选文章</p>
+        </header>
+
+        <!-- Summary -->
+        <div class="summary">
+            <div class="summary-card">
+                <h3>🎯 核心主题</h3>
+                <p>把握时代机遇、质量标准提升、科技伦理规范、转型发展、文化活化、守正创新</p>
+            </div>
+            <div class="summary-card">
+                <h3>📊 论证方法</h3>
+                <p>举例论证、引用论证、对比论证、比喻论证、因果论证</p>
+            </div>
+            <div class="summary-card">
+                <h3>💎 金句数量</h3>
+                <p>精选24句深度解析，含仿写模板和使用场景</p>
+            </div>
+            <div class="summary-card">
+                <h3>🎓 高考关联</h3>
+                <p>覆盖2020-2024年15套真题，可直接迁移使用</p>
+            </div>
+        </div>
+
+        <!-- Article 1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>何以乘"风"起（评论员观察）</h2>
+                <div class="article-meta">
+                    <span>👤 余璇</span>
+                    <span>📄 第05版·评论</span>
+                    <span>📝 约1100字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="core-argument">
+                    <h3>🎯 核心论点</h3>
+                    <p>善观全局、精准定位、敢闯敢试、聚微成势，方能抓住时代风口，实现高质量发展。</p>
+                </div>
+
+                <div class="logic-diagram">
+                    <h3>🧠 论证逻辑</h3>
+                    <pre>
+第一层：引入话题（现象展示）
+├─ 义乌世界杯订单爆发式增长
+└─ 引出问题：何以乘"风"起？
+
+第二层：展开分析（三个维度）
+├─ 善观全局、精准定位（福建东山澳角村）
+├─ 看准风向、敢闯敢试（江苏常熟纺织转型）
+└─ 风起青蘋、聚微成势（广西人工智能产业）
+
+第三层：总结升华
+└─ 练就识势之智、应势之勇、谋势之能
+                    </pre>
+                </div>
+
+                <ul class="methods-list">
+                    <li><strong>举例论证</strong>：义乌、晋江、华强北等具体案例</li>
+                    <li><strong>引用论证</strong>：习近平总书记关于义乌发展的论述</li>
+                    <li><strong>对比论证</strong>：贴牌代工 vs 品牌出海</li>
+                    <li><strong>比喻论证</strong>："风起于青蘋之末"</li>
+                </ul>
+
+                <div class="golden-quotes">
+                    <h3 style="margin-bottom: 20px; font-size: 1.3rem;">💎 金句深度解析（精选2句）</h3>
+                    
+                    <div class="quote-item">
+                        <div class="quote-text">"历史浪潮奔涌向前，时代风口常新，唯智者识之、勇者乘之、善谋者驭之。"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪</strong>排比句式，气势磅礴；"智者""勇者""善谋者"层层递进</div>
+                            <div><strong>适用话题</strong>时代机遇、把握时机、智慧与勇气</div>
+                            <div><strong>怎么用</strong>开头引入、论证强调、结尾升华</div>
+                            <div><strong>可仿写</strong>唯X者X、X者X、X者X（排比句式）</div>
+                        </div>
+                    </div>
+
+                    <div class="quote-item">
+                        <div class="quote-text">"风起于青蘋之末，聚微成势，才能实现从量变到质变的突破。"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪</strong>引用《风赋》典故；"聚微成势"四字精炼</div>
+                            <div><strong>适用话题</strong>积累与突破、细节与成功、量变质变</div>
+                            <div><strong>怎么用</strong>论证积累、转折、结尾升华</div>
+                            <div><strong>可仿写</strong>XX于XX之末，XX成X，才能XX</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="application">
+                    <h3>🎯 适用场景</h3>
+                    <ul>
+                        <li><strong>直接可用</strong>：2023全国甲卷"人·技术·时间"、2024新课标I卷"故事的力量"</li>
+                        <li><strong>迁移应用</strong>：多角度分析法、案例迁移法</li>
+                        <li><strong>高考真题</strong>：2021全国甲卷"可为与有为"、2020全国卷III"如何为自己画好像"</li>
+                    </ul>
+                </div>
+
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleContent(this)">
+                        <span>📄 查看完整原文</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="text-content">何以乘"风"起（评论员观察）
+
+余璇
+
+打破路径依赖、跳出一隅视野，善于在全局中找准自身定位，方能抓住风口、开辟新局
+
+看清发展趋势、摸清发展方向后，就要以"闻风而动"的姿态、勇于先试的魄力创新创优
+
+最近，浙江义乌吹来世界杯"季风"。2026美加墨世界杯开赛在即，让义乌市场订单量迎来又一次爆发式增长。
+
+习近平总书记指出："义乌小商品闯出大市场、做成大产业，形成'义乌发展经验'，这是因地制宜发展县域经济的成功实践。"
+
+不由想起，上世纪80年代，改革春风催绽新芽，义乌乘风而起，用小商品撬动大市场，书写"鸡毛飞上天"的传奇。
+
+放眼神州，从贴牌代工到品牌出海的福建晋江，从"中国电子第一街"迈向"全球硬件创新创业中心"的深圳华强北……能站上时代风口者，往往能占据发展先机。义乌等地何以乘"风"起？发展热度为何始终不减？
+
+历史浪潮奔涌向前，时代风口常新，唯智者识之、勇者乘之、善谋者驭之。
+
+善观全局、精准定位，才能找准风口。
+
+福建东山县澳角村，三面环海，村民曾经只能依靠单一捕捞谋生。乡村全面振兴东风吹来，当地打造海洋牧场，依托秀丽的滨海风光、独特的渔村文化，因地制宜做大"海"的文章，农文旅协同发展，"渔业养殖+亲海体验+休闲垂钓"多业态融合，书写以海兴村、以海强村的篇章。
+
+各地发展的竞争力，不仅体现在资源禀赋、区位条件等基础要素上，更体现在通过思维升级找到机遇，甚至变劣势为优势。打破路径依赖、跳出一隅视野，善于在全局中找准自身定位，方能抓住风口、开辟新局。
+
+看准"风向"是前提，敢闯敢试、乘风而上是关键。
+
+江苏常熟，拥有5000多家纺织企业，年产超5亿件服装，但一度面临同质化竞争、利润率下滑的问题。如何破解发展瓶颈？依托AI（人工智能）全链赋能、户外经济兴起、时尚品牌升维，传统产业也能发展新质生产力，努力向全球价值链高端攀登。从"纺织服装制造基地"转型"时尚品牌策源地"，常熟启示我们，主动求变应变、敢于自我迭代，才能适应变化、乘势而上。
+
+历史从不等待观望者、懈怠者、犹豫者，一时一刻的行动迟缓，都可能与机遇擦肩而过。看清发展趋势、摸清发展方向后，就要以"闻风而动"的姿态、勇于先试的魄力创新创优。
+
+风起于青蘋之末，聚微成势，才能实现从量变到质变的突破。
+
+前不久，第六届中国国际消费品博览会在海南举行，"壮美广西"主题馆吸引眼球。AI中医体质辨识机、康养陪伴机器人、新能源电动摩托车……一批科技企业带来近百款人工智能和高新技术产品，打破许多人心中广西仅有山水、歌舞、螺蛳粉的刻板印象，令观众直呼"没想到广西有这么多智能产品"。这份"没想到"背后，是广西抢抓时代机遇、积极布局人工智能产业结出的硕果。
+
+好风凭借力，送我上青云。练就识势之智、应势之勇、谋势之能，既敏锐捕捉时代风口，又深耕优势、培育产业，各地定能不断突破瓶颈、激活动能，书写高质量发展的壮阔答卷。</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>走出"内卷"需要"向上"的尺子（微观）</h2>
+                <div class="article-meta">
+                    <span>👤 张若尘</span>
+                    <span>📄 第05版·评论</span>
+                    <span>📝 约1000字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="core-argument">
+                    <h3>🎯 核心论点</h3>
+                    <p>以标准引领质量提升，用法治保障公平竞争，让创新朝着"向上"的方向发展。</p>
+                </div>
+
+                <div class="logic-diagram">
+                    <h3>🧠 论证逻辑</h3>
+                    <pre>
+第一层：引入话题
+├─ 中央政治局会议：深入整治"内卷式"竞争
+└─ 移动电源新国标出台
+
+第二层：展开分析
+├─ 问题：低价竞争挤压创新空间
+├─ 方案1：以标准引领（淘汰低质产能）
+├─ 方案2：以法治保障（营造公平环境）
+└─ 宏观：建设全国统一大市场
+
+第三层：总结升华
+└─ 方向对了，高质量发展的路必将越走越宽广
+                    </pre>
+                </div>
+
+                <ul class="methods-list">
+                    <li><strong>举例论证</strong>：移动电源、电动汽车动力电池标准</li>
+                    <li><strong>引用论证</strong>：中央政治局会议、《政府工作报告》</li>
+                    <li><strong>对比论证</strong>："只拼价格" vs "注重品质"</li>
+                    <li><strong>因果论证</strong>：标准提高→淘汰低质→鼓励创新</li>
+                </ul>
+
+                <div class="golden-quotes">
+                    <h3 style="margin-bottom: 20px; font-size: 1.3rem;">💎 金句深度解析（精选2句）</h3>
+                    
+                    <div class="quote-item">
+                        <div class="quote-text">"走出'内卷'需要'向上'的尺子。标准提高了，靠偷工减料过日子的低质产能就失去了生存空间；标准清晰了，舍得在技术和品质上下功夫的企业才更有底气。"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪</strong>"向上"的尺子比喻生动；对比鲜明</div>
+                            <div><strong>适用话题</strong>标准、规范、质量提升、破除内卷</div>
+                            <div><strong>怎么用</strong>论证、转折、点题</div>
+                            <div><strong>可仿写</strong>走出XX需要"XX"的XX</div>
+                        </div>
+                    </div>
+
+                    <div class="quote-item">
+                        <div class="quote-text">"统一的标准、公平的规则、有力的监管，归根到底是要让每一分竞争的力气都朝着'向上'的方向。方向对了，高质量发展的路必将越走越宽广。"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪</strong>排比句式；"每一分竞争的力气"细腻生动</div>
+                            <div><strong>适用话题</strong>规则与秩序、高质量发展、正确方向</div>
+                            <div><strong>怎么用</strong>结尾升华、论证、总结</div>
+                            <div><strong>可仿写</strong>XX的XX、XX的XX、XX的XX，归根到底是要让XX都朝着"XX"的方向</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="application">
+                    <h3>🎯 适用场景</h3>
+                    <ul>
+                        <li><strong>直接可用</strong>：2024天津卷"打开一扇窗"、2023北京卷"续航"</li>
+                        <li><strong>迁移应用</strong>：问题-方案-展望三段式结构</li>
+                        <li><strong>高考真题</strong>：2021全国乙卷"弓矢的智慧"、2020全国I卷"历史上的标杆"</li>
+                    </ul>
+                </div>
+
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleContent(this)">
+                        <span>📄 查看完整原文</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="text-content">走出"内卷"需要"向上"的尺子（微观）
+
+张若尘
+
+4月28日召开的中央政治局会议要求，"深入整治'内卷式'竞争。"以标准引领企业创新，为走出"内卷"提供了启发。
+
+不久前，强制性国家标准《移动电源安全技术规范》公开发布，将于2027年4月1日起实施。明确提升移动电源在高温、过充、挤压等滥用场景下的安全防护能力，新增循环老化后析锂检测，要求产品具备异常信息存储与读取功能……新标准提出多项要求，进一步强化包括充电宝在内的移动电源产品安全水平。
+
+2025年，全国发生多例移动电源产品起火爆炸事故，有关部门已督促生产企业履行产品安全主体责任，召回缺陷产品。追根溯源，供应链层层压价、关键零部件偷工减料等行业乱象，是移动电源出现安全隐患的重要原因。一纸新国标，划出的是安全红线，校正的是"只拼价格、不顾品质"的竞争偏向。
+
+低价竞争挤走品质，这样的情况在不少行业都曾发生。一些外卖平台搞"补贴大战"，导致商家陷入"增量不增利"的怪圈，以牺牲品质来降低成本。"内卷式"竞争之所以引起广泛关注，在于它把竞争引向了"比谁价更低"的单一维度，挤压了企业创新投入的空间，也侵蚀了消费者本应享有的品质保障。
+
+走出"内卷"需要"向上"的尺子。标准提高了，靠偷工减料过日子的低质产能就失去了生存空间；标准清晰了，舍得在技术和品质上下功夫的企业才更有底气。比如，强制性国家标准《电动汽车用动力蓄电池安全要求》对电池热扩散的要求从原有的起火、爆炸前5分钟提供热事件报警信号，提升到现在的"不起火、不爆炸"，倒逼新能源汽车全产业链安全升级。未来，政策举措应更加注重系统化与精准化，既要着力构建鼓励创新、保护知识产权、完善质量标准的立体支撑体系，也需更加注重行业差异，提供精准激励，避免"一刀切"。
+
+今年《政府工作报告》提出，"综合运用产能调控、标准引领、价格执法、质量监管等手段，深入整治'内卷式'竞争，营造良好市场生态。"针对汽车行业出现的"价格战"苗头，市场监管总局发布《汽车行业价格行为合规指南》，严禁低于成本价销售汽车。最高人民法院审理两大电商企业"二选一"滥用市场支配地位案，引导双方互联互利、共促消费。事实证明，善用法治思维，强化法治化治理手段，建立健全促进公平竞争的长效机制，将促使更多经营主体走出"内卷"泥淖。
+
+市场是最稀缺的资源。"十五五"规划纲要提出，"纵深推进全国统一大市场建设"。以更高标准引导竞争走向规范，综合整治"内卷式"竞争，优化市场环境，正是题中应有之义。出台关于民营经济发展的基础性法律；市场准入负面清单持续"瘦身"，"非禁即入"加快落地；反不正当竞争法修订后明确禁止侵害数据权益及虚假交易……破除地方保护和市场分割，让要素自由流动、让创新获得回报、让好产品不被"价格战"裹挟，一个高效规范的全国统一大市场正在加快形成。
+
+习近平总书记指出："建设全国统一大市场，不仅是构建新发展格局、推动高质量发展的需要，而且是赢得国际竞争主动权的需要。"统一的标准、公平的规则、有力的监管，归根到底是要让每一分竞争的力气都朝着"向上"的方向。方向对了，高质量发展的路必将越走越宽广。</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>为人工智能创新划清底线（金台随笔）</h2>
+                <div class="article-meta">
+                    <span>👤 陈哲立</span>
+                    <span>📄 第05版·评论</span>
+                    <span>📝 约1100字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="core-argument">
+                    <h3>🎯 核心论点</h3>
+                    <p>法治为盾，守护安全底线；人心为舵，校准前行方向，让人工智能始终走在造福人类的正道之上。</p>
+                </div>
+
+                <div class="logic-diagram">
+                    <h3>🧠 论证逻辑</h3>
+                    <pre>
+第一层：引入话题
+├─ AI技术快速发展，带来机遇与挑战
+└─ 伦理风险：人的尊严、公共秩序、生命健康
+
+第二层：展开分析
+├─ 监管在完善（科技伦理审查办法）
+├─ 平台在发力（打击AI侵权）
+├─ 法治的价值
+│  ├─ 防范风险（设立红线规则）
+│  ├─ 构建可信市场（建立信任基础）
+│  └─ 划定安全试错区（鼓励真创新）
+└─ 历史借鉴（汽车、无线电、医药技术）
+
+第三层：总结升华
+└─ 刚柔相济、德法并举，让人工智能造福人类
+                    </pre>
+                </div>
+
+                <ul class="methods-list">
+                    <li><strong>举例论证</strong>：AI魔改影视、换脸直播等侵权问题</li>
+                    <li><strong>引用论证</strong>：《人工智能科技伦理审查与服务办法》</li>
+                    <li><strong>对比论证</strong>："伪创新" vs "真技术突破"</li>
+                    <li><strong>比喻论证</strong>："法治为盾""人心为舵"</li>
+                </ul>
+
+                <div class="golden-quotes">
+                    <h3 style="margin-bottom: 20px; font-size: 1.3rem;">💎 金句深度解析（精选2句）</h3>
+                    
+                    <div class="quote-item">
+                        <div class="quote-text">"面对可能深刻改变生活的新技术，必须靠法治划界明责、定分止争，让创新始终服务公共安全、社会秩序和人的尊严。"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪</strong>"划界明责、定分止争"用词典雅；排比句式</div>
+                            <div><strong>适用话题</strong>科技与伦理、创新与规范、法治与秩序</div>
+                            <div><strong>怎么用</strong>论证、点题、转折</div>
+                            <div><strong>可仿写</strong>面对XX，必须靠XX、XX，让XX始终服务XX</div>
+                        </div>
+                    </div>
+
+                    <div class="quote-item">
+                        <div class="quote-text">"决定技术走向的，从来不只是技术本身，更包括治理的完善与法治的规范。"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪</strong>"从来不只是"强调语气；对比鲜明</div>
+                            <div><strong>适用话题</strong>技术与社会、规范与发展、双刃剑</div>
+                            <div><strong>怎么用</strong>论证、转折、总结</div>
+                            <div><strong>可仿写</strong>决定XX的，从来不只是XX，更包括XX与XX</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="application">
+                    <h3>🎯 适用场景</h3>
+                    <ul>
+                        <li><strong>直接可用</strong>：2024新课标I卷"问题与答案"、2023全国甲卷"人·技术·时间"</li>
+                        <li><strong>迁移应用</strong>：历史借鉴法（从汽车、无线电到AI）</li>
+                        <li><strong>高考真题</strong>：2021全国甲卷"可为与有为"、2020全国II卷"世界大同"</li>
+                    </ul>
+                </div>
+
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleContent(this)">
+                        <span>📄 查看完整原文</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="text-content">为人工智能创新划清底线（金台随笔）
+
+陈哲立
+
+面对可能深刻改变生活的新技术，必须靠法治划界明责、定分止争，让创新始终服务公共安全、社会秩序和人的尊严
+
+擅长处理海量信息，却常常无法给出清晰价值判断；能够生成万千文本，却容易触发侵权责任……生成式人工智能走进日常，不断抬升效率上限，但在人的尊严、公共秩序、生命健康、生态环境、可持续发展等方面，也可能带来科技伦理风险挑战。如何为人工智能校准前行的航向？
+
+监管在完善。3月印发的《人工智能科技伦理审查与服务办法（试行）》，明确提出开展人工智能科技活动应将科技伦理要求贯穿全过程，遵守我国宪法、法律法规和有关规定。
+
+平台在发力。为应对人工智能魔改影视、仿冒名人、换脸直播等引发的侵权问题，一家短视频平台升级防控体系，2026年以来已累计下架人工智能侵权视频超53.8万条，处罚违规账号4000余个。
+
+拥抱人工智能，是为了让生活更美好、社会更公平、未来更可期，而非任由技术滥用问题发生。面对可能深刻改变生活的新技术，必须靠法治划界明责、定分止争，让创新始终服务公共安全、社会秩序和人的尊严。推动人工智能走向良善，法治是最稳定的力量。
+
+回顾人类技术发展史，新技术的勃兴必然需要法治的引导与托举。汽车大规模进入社会生活，交通规则、车辆安全标准、事故责任制度逐步建立，守护出行平安；无线电改变通信格局，频谱分配、通信秩序、电信规则相继确立，避免相互干扰与无序争夺；现代医药和生物技术快速发展，药品审批、临床试验、伦理审查等制度不断健全，防止突破安全底线与伦理边界。由此来看，决定技术走向的，从来不只是技术本身，更包括治理的完善与法治的规范。
+
+强化人工智能法治建设的首要价值，在于防范风险。人工智能系统具有不可解释性和数据依赖性，若无明确的责任归属、算法透明度和安全标准，技术失控就可能引发隐私泄露、算法歧视等风险。法治通过设立红线规则，明确增进人类福祉、尊重生命权利、坚持公平公正、合理控制风险、保持公开透明、保护隐私安全等科技伦理原则，能确保技术发展始终服务于人的尊严与福祉。
+
+法治的价值，也在于构建可信市场环境。创新不仅需要技术突破，更需要社会信任。如何让人们相信人工智能会有益于人类、有助于生活？不久前，AI（人工智能）演员引发不少争议。AI演员涉及肖像与声音授权、内容审核、虚拟艺人管理等新命题。当一种创新建构于侵权之上，便很容易引发信任危机，难获公众认可。法治的价值，在于提供责任归属、数据合规与伦理审查的基本框架，为社会接纳技术创新奠定信任基础。
+
+成熟、敏捷的法治体系是划定安全边界、降低系统性风险的制度基础设施，可以为创新划定安全试错区。法治抑制的是短视、粗暴、不负责任的"伪创新"，而真正的技术突破，往往是在规则清晰、权责明确的环境中生长出来的。
+
+法治为盾，守护安全底线；人心为舵，校准前行方向。刚柔相济、德法并举，方能让人工智能始终走在造福人类、守护文明的正道之上。这既是技术命题，更是治理命题；既关乎当下秩序，也关乎长远文明。</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>电商下半程从哪发力（人民时评）</h2>
+                <div class="article-meta">
+                    <span>👤 王东辉</span>
+                    <span>📄 第05版·评论</span>
+                    <span>📝 约900字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="core-argument">
+                    <h3>🎯 核心论点</h3>
+                    <p>中国电商从规模扩张走向质量提升，围绕"向上、向新、向善、向外"四个方向，实现高质量发展。</p>
+                </div>
+
+                <div class="logic-diagram">
+                    <h3>🧠 论证逻辑</h3>
+                    <pre>
+第一层：引入话题
+├─ 电商20余年发展，年交易额超46万亿元
+└─ 面临挑战：增长放缓、竞争内卷、利润下滑
+
+第二层：展开分析（四个方向）
+├─ 向上：追求品质升级（从"竞价"转向"竞质"）
+├─ 向新：促进融合发展（"人工智能+"成为新引擎）
+├─ 向善：实现生态共赢（综合整治内卷）
+└─ 向外：拓展全球市场（从卖货到品牌出海）
+
+第三层：总结升华
+└─ 唯变不变，拥抱高质量发展新机遇，实现凤凰涅槃
+                    </pre>
+                </div>
+
+                <ul class="methods-list">
+                    <li><strong>引用论证</strong>：商务部等5部门指导意见、跨境电商数据</li>
+                    <li><strong>对比论证</strong>："竞价"vs"竞质"、"人找货"vs"货找人"</li>
+                    <li><strong>举例论证</strong>：农村"电商+产业"、城市即时零售</li>
+                    <li><strong>比喻论证</strong>："凤凰涅槃、迭代升级"</li>
+                </ul>
+
+                <div class="golden-quotes">
+                    <h3 style="margin-bottom: 20px; font-size: 1.3rem;">💎 金句深度解析（精选2句）</h3>
+                    
+                    <div class="quote-item">
+                        <div class="quote-text">"中国电商正从规模扩张走向质量提升，从流量红利转向价值红利。"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪</strong>两个"从……走向……"句式整齐；对比鲜明</div>
+                            <div><strong>适用话题</strong>转型升级、高质量发展、规模与质量</div>
+                            <div><strong>怎么用</strong>论证、点题、转折</div>
+                            <div><strong>可仿写</strong>XX正从XX走向XX，从XX转向XX</div>
+                        </div>
+                    </div>
+
+                    <div class="quote-item">
+                        <div class="quote-text">"唯变不变，过去成功的经验未必能适应未来的变化。"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪</strong>"唯变不变"富有哲理（出自《易经》）；警示意义强</div>
+                            <div><strong>适用话题</strong>变与不变、守正与创新、与时俱进</div>
+                            <div><strong>怎么用</strong>论证、警示、转折</div>
+                            <div><strong>可仿写</strong>唯X不变，XX未必能XX</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="application">
+                    <h3>🎯 适用场景</h3>
+                    <ul>
+                        <li><strong>直接可用</strong>：2024新课标II卷"抵达未知之境"、2023全国甲卷"人·技术·时间"</li>
+                        <li><strong>迁移应用</strong>：四维分析法（向上、向新、向善、向外）</li>
+                        <li><strong>高考真题</strong>：2021全国乙卷"弓矢的智慧"、2020全国I卷"历史上的标杆"</li>
+                    </ul>
+                </div>
+
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleContent(this)">
+                        <span>📄 查看完整原文</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="text-content">电商下半程从哪发力（人民时评）
+
+王东辉
+
+中国电商正从规模扩张走向质量提升，从流量红利转向价值红利
+
+中国电商走过20余年，已成长为年交易额超46万亿元的庞大产业。随着传统流量红利见顶，行业也面临增长放缓、竞争内卷、利润下滑等挑战，转型迫在眉睫。
+
+不久前，商务部会同5部门印发指导意见，以5大方面16条务实举措，为电子商务高质量发展构建框架体系。目前，中国电商正从规模扩张走向质量提升，从流量红利转向价值红利，朝着"向上、向新、向善、向外"发展，是走好电商下半程的关键。
+
+向上，追求品质升级。过去，"低价"是电商行业吸引流量的标签，各类补贴、优惠券，叠加廉价低质产品，构成行业粗放发展的缩影。如今，风向已悄然转变，培育品质电商成为电商高质量发展的重要内容。未来的竞争将回归到产品创新、售后服务、供应链的比拼上，由"竞价"转向"竞质"。对平台和商家而言，这意味着在重视引流外，还需深耕细分场景，精进产品和服务质量，以高品质筑牢市场竞争力。
+
+向新，促进融合发展。此前，"互联网+"为电商行业发展开辟广阔空间。如今随着技术进步，"人工智能+"将会是电商发展新引擎。当前，除了传统的"人找货"模式，人工智能驱动的"货找人"模式也在兴起。电商全链路智能化，不仅优化运营效率和用户体验，还能降低成本、创造新价值。
+
+向善，实现生态共赢。大数据杀熟、价格歧视等问题一度广受诟病，如今电商需要更具人文温度、更可持续。一方面，通过行业自律与政府监管双向发力，综合整治"内卷式"竞争；另一方面，需深耕下沉市场与本地生活场景，挖掘存量市场的增量潜力。在农村，探索"电商+产业"新模式，让传统农业直接面对超大规模国内市场，电商成为连接城市与乡村的桥梁；在城市，推动即时零售融入"一刻钟便民生活圈"，实现平台、商家、消费者多方共赢。
+
+向外，拓展全球市场。扩大高水平对外开放，是电商突破发展瓶颈、提升国际竞争力的新机遇。2025年我国跨境电商进出口总额达2.75万亿元，较2020年增长近70%，展现出巨大潜力。进入转型期，跨境电商已不再是简单的"卖货出海"，更朝着品牌出海、规则衔接、生态共建的更高层次迈进。从推动跨关区退货等微改革，到在数据跨境流动、跨境支付上大胆探索，有为政府破堵点，正为有效市场增活力，电商平台和企业也应着眼国内国际双循环，勇于出海、开拓外部市场。
+
+20余年蜕变，中国电商实现了从无到有、从小到大的跨越。然而，唯变不变，过去成功的经验未必能适应未来的变化。电商走好下半程，不能再固守老经验，而应该积极拥抱高质量发展的新机遇、新打法。如此，才能适应新变化、获得新发展，实现凤凰涅槃、迭代升级。</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>青年演员"守心"更要"向新"</h2>
+                <div class="article-meta">
+                    <span>👤 冯远征（北京人艺院长）</span>
+                    <span>📄 第13版·文化</span>
+                    <span>📝 约800字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="core-argument">
+                    <h3>🎯 核心论点</h3>
+                    <p>青年演员要守住对艺术的真诚（守心），积极运用新技术、新手段为戏剧赋能（向新），书写属于艺术的华彩篇章。</p>
+                </div>
+
+                <div class="logic-diagram">
+                    <h3>🧠 论证逻辑</h3>
+                    <pre>
+第一层：引入话题
+└─ 什么是青年演员最重要的品质？→ 守住正 + 敢创新
+
+第二层：展开分析
+├─ 守正（守心）
+│  ├─ 《茶馆》演700多场依然一票难求
+│  └─ 守住对艺术的真诚，不被流量裹挟
+├─ 创新（向新）
+│  ├─ 如何让作品符合当代审美？
+│  ├─ 运用新技术、新手段为戏剧赋能
+│  └─ 《张居正》《霸王别姬》等创新案例
+└─ 面对AI
+   └─ 技术是辅助工具，无法替代人的价值
+
+第三层：总结升华
+└─ "守心"更要"向新"，拥抱时代、锤炼本领
+                    </pre>
+                </div>
+
+                <ul class="methods-list">
+                    <li><strong>举例论证</strong>：《茶馆》《张居正》《霸王别姬》等案例</li>
+                    <li><strong>引用论证</strong>：作者身份权威（北京人艺院长）</li>
+                    <li><strong>对比论证</strong>："守正"vs"故步自封"、"迎合流量"vs"运用新技术"</li>
+                    <li><strong>比喻论证</strong>："守心""向新"言简意赅</li>
+                </ul>
+
+                <div class="golden-quotes">
+                    <h3 style="margin-bottom: 20px; font-size: 1.3rem;">💎 金句深度解析（精选2句）</h3>
+                    
+                    <div class="quote-item">
+                        <div class="quote-text">"我认为，一是守住正，二是敢创新。这二者，在技术日新月异的今天，尤为珍贵。"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪</strong>"守住正""敢创新"对仗工整；点明时代背景</div>
+                            <div><strong>适用话题</strong>守正与创新、传统与现代、文化自信</div>
+                            <div><strong>怎么用</strong>论证、点题、引入</div>
+                            <div><strong>可仿写</strong>我认为，一是XX，二是XX。这二者，在XX的今天，尤为XX</div>
+                        </div>
+                    </div>
+
+                    <div class="quote-item">
+                        <div class="quote-text">"技术是辅助创作的工具，无法替代人的情感、思考与创造力。真正有本事、有能量的演员不会被淘汰。我希望青年演员能坚定这个信念：人的价值，是艺术创作的关键。"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪</strong>"辅助创作""无法替代"定位准确；"人的价值"点明主旨</div>
+                            <div><strong>适用话题</strong>技术与人文、AI与人类、人的价值、创造力</div>
+                            <div><strong>怎么用</strong>论证、转折、升华</div>
+                            <div><strong>可仿写</strong>XX是辅助XX的工具，无法替代XX的XX、XX与XX</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="application">
+                    <h3>🎯 适用场景</h3>
+                    <ul>
+                        <li><strong>直接可用</strong>：2024新课标I卷"故事的力量"、2023全国甲卷"人·技术·时间"</li>
+                        <li><strong>迁移应用</strong>：守正创新法（守住根本 + 积极创新）</li>
+                        <li><strong>高考真题</strong>：2022全国I卷"本手、妙手、俗手"、2021全国甲卷"可为与有为"</li>
+                    </ul>
+                </div>
+
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleContent(this)">
+                        <span>📄 查看完整原文</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="text-content">青年演员"守心"更要"向新"（新语·文化强国名家谈）
+
+冯远征
+
+技术是辅助创作的工具，无法替代人的情感、思考与创造力。真正有本事、有能量的演员不会被淘汰。我希望青年演员能坚定这个信念：人的价值，是艺术创作的关键
+
+常有人问我，这些年在北京人民艺术剧院（以下简称"北京人艺"），见证了一代代演员的成长，什么是青年演员最重要的品质？我认为，一是守住正，二是敢创新。这二者，在技术日新月异的今天，尤为珍贵。
+
+何谓守正？青年演员要明白表演的根基是什么。北京人艺的《茶馆》演了700多场，依然一票难求，很多年轻观众看得热泪盈眶，这就是经典的魅力。经典之所以能打动一代代人，不仅在于其有跨越时代的意义，也在于一代代演员对表演艺术的敬畏与传承。其中，既有深厚的文学性，也有触动人心的情感连接。
+
+对青年演员来说，守正就是要守住这份对艺术的真诚。青年演员对表演理念的认知不尽相同，北京人艺启动青年演员培训计划，通过剧本朗读、专家授课、戏曲老师指导等形式，提升青年演员的文化底蕴和业务能力。我始终坚持，演员不能为了迎合一时的流量，而在表演中丢失了人物塑造的分寸感。艺术上的坚持，来自对角色的深刻理解，青年演员需要警醒自己：不被流量裹挟，不因外界评价患得患失。
+
+守正，不是故步自封。今天的90后、00后，身处快节奏的生活和充满短视频的环境中，他们走进剧场前会先问："这戏好看吗？"这给我们提出了新的课题——如何在坚守艺术标准的同时，让作品更符合当代审美。
+
+这就是创新的意义：在不一味迎合流量而降低艺术门槛的同时，积极运用新技术、新手段为戏剧赋能。比如，我们创排的话剧《张居正》等作品，在舞美设计、灯光色彩、多媒体运用上都力求更现代、更具视觉冲击力；小剧场戏剧《霸王别姬》，让观众坐在大帐中观演，有身临其境的沉浸感。今年，4部高清戏剧电影《茶馆》《哗变》《正红旗下》《张居正》首次亮相第十六届北京国际电影节，4K高清技术与电影手法的应用，探索电影和戏剧融合，拓宽了经典作品的传播范围，满足观众多样化的艺术审美需求。
+
+创新，不是推翻经典，而是演给当下的观众看，让表演细节在不脱离人物的前提下，焕发新的生命力。
+
+面对人工智能飞速发展的新趋势，青年演员要理性看待、从容应对。拥抱科技变革、顺应时代潮流是大势所趋，但技术是辅助创作的工具，无法替代人的情感、思考与创造力。真正有本事、有能量的演员不会被淘汰。我希望青年演员能坚定这个信念：人的价值，是艺术创作的关键。
+
+舞台之外，艺术之路亦是人生修行。希望青年演员"守心"更要"向新"，拥抱时代、锤炼本领，书写属于艺术的华彩篇章。
+
+（作者为北京人民艺术剧院院长，本报记者王珏、王萍萍采访整理）</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer>
+            <p><strong>更新时间</strong>：2026年5月7日</p>
+            <p><strong>素材来源</strong>：《人民日报》第05版、第13版</p>
+            <p><strong>整理系统</strong>：高考作文素材每日整理</p>
+            <p style="margin-top: 20px; color: var(--primary);">✨ 每日积累，厚积薄发 ✨</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleContent(header) {
+            const content = header.nextElementSibling;
+            const arrow = header.querySelector('span:last-child');
+            
+            content.classList.toggle('active');
+            arrow.textContent = content.classList.contains('active') ? '▲' : '▼';
+        }
+    </script>
+</body>
+</html>
