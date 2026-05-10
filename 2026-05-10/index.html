@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-10 高考作文素材 | 来自《人民日报》</title>
+    <style>
+        /* Orange UI Design System */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #1a1a1a;
+            --text-secondary: #666;
+            --shadow: #B5B5B5;
+            --card-bg: #ffffff;
+            --border: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 20px;
+            background: var(--primary);
+            color: white;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        header .date {
+            margin-top: 15px;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.2);
+            display: inline-block;
+            border-radius: 4px;
+        }
+
+        /* Article Cards */
+        .article-card {
+            background: var(--card-bg);
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border: 2px solid var(--border);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0 0 var(--shadow);
+        }
+
+        .article-header {
+            padding: 25px 30px;
+            border-bottom: 2px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .article-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: var(--text);
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .article-badge {
+            padding: 6px 15px;
+            background: var(--accent);
+            color: var(--text);
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85em;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .article-meta {
+            padding: 20px 30px;
+            background: #fafafa;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        .article-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .article-content {
+            padding: 30px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text);
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--primary);
+            display: block;
+            border-radius: 2px;
+        }
+
+        /* Core Argument */
+        .core-argument {
+            padding: 20px;
+            background: #f0f7ff;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+
+        /* Logic Flow */
+        .logic-flow {
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+            line-height: 2;
+            overflow-x: auto;
+        }
+
+        /* Methods */
+        .methods-list {
+            list-style: none;
+        }
+
+        .methods-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .methods-list li:last-child {
+            border-bottom: none;
+        }
+
+        .method-name {
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+            display: inline-block;
+            background: var(--accent);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        /* Golden Sentences */
+        .golden-sentence {
+            padding: 25px;
+            background: linear-gradient(135deg, #fff9e6 0%, #ffe6a8 100%);
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border: 2px solid var(--accent);
+        }
+
+        .sentence-text {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .sentence-analysis {
+            margin-top: 15px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .analysis-item {
+            display: flex;
+            gap: 10px;
+            font-size: 0.95em;
+        }
+
+        .analysis-label {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 80px;
+        }
+
+        .analysis-value {
+            color: var(--text);
+        }
+
+        /* Applicable Scenarios */
+        .scenarios-grid {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .scenario-card {
+            padding: 15px;
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 6px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .scenario-label {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+
+        .scenario-value {
+            font-size: 0.95em;
+            color: var(--text);
+        }
+
+        /* Original Text */
+        .original-text {
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 4px;
+            font-size: 0.95em;
+            line-height: 2;
+            color: var(--text-secondary);
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .original-text.collapsed {
+            max-height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .toggle-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            transition: all 0.2s;
+        }
+
+        .toggle-button:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+        }
+
+        /* Usage Guide */
+        .usage-guide {
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border: 2px solid var(--border);
+            margin-top: 50px;
+        }
+
+        .guide-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-align: center;
+            color: var(--text);
+        }
+
+        .guide-section {
+            margin-bottom: 30px;
+        }
+
+        .guide-section-title {
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .template-box {
+            padding: 20px;
+            background: #f9f9f9;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.8;
+        }
+
+        /* Recommendation */
+        .recommendation {
+            padding: 30px;
+            background: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 100%);
+            border-radius: 8px;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border: 2px solid var(--primary);
+            margin-top: 40px;
+        }
+
+        .recommendation-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .recommendation-title .star {
+            color: var(--accent);
+            font-size: 1.2em;
+        }
+
+        .recommendation-content {
+            display: grid;
+            gap: 20px;
+        }
+
+        .rec-item {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .rec-title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .rec-desc {
+            font-size: 0.95em;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .rec-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .rec-tag {
+            padding: 4px 10px;
+            background: var(--primary);
+            color: white;
+            border-radius: 4px;
+            font-size: 0.8em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            .article-header {
+                flex-direction: column;
+            }
+
+            .article-title {
+                min-width: auto;
+            }
+
+            .article-content {
+                padding: 20px;
+            }
+
+            .scenarios-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .article-card {
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        .article-card:nth-child(1) { animation-delay: 0.1s; }
+        .article-card:nth-child(2) { animation-delay: 0.2s; }
+        .article-card:nth-child(3) { animation-delay: 0.3s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-05-10 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+            <div class="date">2026年5月10日</div>
+        </header>
+
+        <!-- Featured Article -->
+        <div class="article-card">
+            <div class="article-header">
+                <div class="article-title">《以"最大耐心"留住烟火 以"最小干预"守住历史》</div>
+                <div class="article-badge">⭐ 首选推荐</div>
+            </div>
+            <div class="article-meta">
+                <div class="article-meta-item">
+                    <strong>作者：</strong>本报记者 顾春
+                </div>
+                <div class="article-meta-item">
+                    <strong>版面：</strong>第05版 人文
+                </div>
+                <div class="article-meta-item">
+                    <strong>字数：</strong>约1800字
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <div class="section-title">🎯 核心论点</div>
+                    <div class="core-argument">
+                        古城保护不是冰冷的文物保存，而是让千年文脉与人间烟火共生，在法治护航下实现"最小干预"守住历史，"最大耐心"留住生活。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">🧠 论证逻辑</div>
+                    <div class="logic-flow">
+引入：稽中遗址发现汉代封泥 → 揭示6800年人居史<br>
+　↓<br>
+核心观点：保护第一、合理利用、微改精提<br>
+　↓<br>
+三个层面：<br>
+├─ 法治护航："一部法规、一个机构、一项基金、一张清单"<br>
+├─ 考古前置：推土机为手铲让路（稽山中学停工14个月）<br>
+└─ 绣花功夫："非必要不搬迁"、"最小化干预"<br>
+　↓<br>
+总结升华：城脉不断，生活日新 —— 千年古城仍青春
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">🔧 论证方法</div>
+                    <ul class="methods-list">
+                        <li>
+                            <div class="method-name">对比论证（最核心）</div>
+                            <p>古今对比：6800年前马家浜文化 vs 现代化设施古城<br>
+                            取舍对比：推土机 vs 手铲、发展 vs 保护<br>
+                            效果对比：停电时长从53.4分钟→2.7分钟</p>
+                        </li>
+                        <li>
+                            <div class="method-name">数据论证</div>
+                            <p>14787幢房屋影像、99处重点文保单位<br>
+                            日均游客最高12万人次，带动消费超千万元<br>
+                            80%以上原住居民选择留下</p>
+                        </li>
+                        <li>
+                            <div class="method-name">举例论证</div>
+                            <p>正面：仓桥直街保留858户居民<br>
+                            细节："虫蛀的柱子剖开防虫再'缝合'"</p>
+                        </li>
+                        <li>
+                            <div class="method-name">引用论证</div>
+                            <p>冯建荣："老街不只是一条商业街，更是一个活着的社区。"<br>
+                            李骏："我们的工作初心不是为了一个展，更是为了老百姓的获得感。"</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">💎 金句深度解析</div>
+
+                    <div class="golden-sentence">
+                        <div class="sentence-text">"老街不只是一条商业街，更是一个活着的社区。"</div>
+                        <div class="sentence-analysis">
+                            <div class="analysis-item">
+                                <div class="analysis-label">好在哪：</div>
+                                <div class="analysis-value">对比工整、哲理深刻、画面感强</div>
+                            </div>
+                            <div class="analysis-item">
+                                <div class="analysis-label">适用话题：</div>
+                                <div class="analysis-value">文化遗产保护、城市发展、以人为本</div>
+                            </div>
+                            <div class="analysis-item">
+                                <div class="analysis-label">怎么用：</div>
+                                <div class="analysis-value">古城保护不是为了打造空荡的文旅区，而是留住活着的社区</div>
+                            </div>
+                            <div class="analysis-item">
+                                <div class="analysis-label">可仿写：</div>
+                                <div class="analysis-value">"___不只是___，更是___。"<br>例：博物馆不只是文物的仓库，更是文明的课堂</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="sentence-text">"古城保护，最难的功夫不在图纸上，不在法规里，而在人心与生活的褶皱里。保护秘诀，在于'绣花功夫'。"</div>
+                        <div class="sentence-analysis">
+                            <div class="analysis-item">
+                                <div class="analysis-label">好在哪：</div>
+                                <div class="analysis-value">递进否定、比喻新颖（"褶皱"像布料）、形象生动</div>
+                            </div>
+                            <div class="analysis-item">
+                                <div class="analysis-label">适用话题：</div>
+                                <div class="analysis-value">城市治理、精细化管理、工匠精神</div>
+                            </div>
+                            <div class="analysis-item">
+                                <div class="analysis-label">怎么用：</div>
+                                <div class="analysis-value">从"图纸-法规-人心"层层递进，引出"绣花功夫"</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="sentence-text">"绍兴古城在法治的护航下，正以'最小干预'守住最大历史，以'最大耐心'留住最暖烟火。"</div>
+                        <div class="sentence-analysis">
+                            <div class="analysis-item">
+                                <div class="analysis-label">好在哪：</div>
+                                <div class="analysis-value">对仗工整、排比递进、哲理升华</div>
+                            </div>
+                            <div class="analysis-item">
+                                <div class="analysis-label">适用话题：</div>
+                                <div class="analysis-value">文化自信、传统与现代、创新与保护</div>
+                            </div>
+                            <div class="analysis-item">
+                                <div class="analysis-label">怎么用：</div>
+                                <div class="analysis-value">可用于作文开头或结尾，点题升华</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">🎯 适用场景</div>
+                    <div class="scenarios-grid">
+                        <div class="scenario-card">
+                            <div class="scenario-label">直接可用</div>
+                            <div class="scenario-value">文化遗产保护（2019北京卷）<br>传统与现代（2022新高考I卷）</div>
+                        </div>
+                        <div class="scenario-card">
+                            <div class="scenario-label">迁移应用</div>
+                            <div class="scenario-value">"最小干预"可用于生态保护、教育改革</div>
+                        </div>
+                        <div class="scenario-card">
+                            <div class="scenario-label">组合使用</div>
+                            <div class="scenario-value">+工匠精神、+文化自信、+生态文明</div>
+                        </div>
+                        <div class="scenario-card">
+                            <div class="scenario-label">高考真题</div>
+                            <div class="scenario-value">2019北京卷"文明的韧性"<br>2023新课标I卷"故事的力量"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="article-card">
+            <div class="article-header">
+                <div class="article-title">《当生成式人工智能深度介入艺术创作》</div>
+                <div class="article-badge">科技与艺术</div>
+            </div>
+            <div class="article-meta">
+                <div class="article-meta-item">
+                    <strong>版面：</strong>第08版 副刊（艺坛走笔）
+                </div>
+                <div class="article-meta-item">
+                    <strong>主题：</strong>科技与艺术的融合
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <div class="section-title">🎯 核心论点</div>
+                    <div class="core-argument">
+                        生成式AI介入艺术创作不是"取代"而是"赋能"，真正的艺术创作永远需要人的情感、思想与灵魂。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">🧠 论证逻辑</div>
+                    <div class="logic-flow">
+现象：AI绘画、AI音乐快速兴起<br>
+　↓<br>
+问题：AI会取代艺术家吗？<br>
+　↓<br>
+分析：<br>
+├─ AI的优势：效率、技巧、风格模仿<br>
+└─ AI的局限：缺乏情感、思想、原创性<br>
+　↓<br>
+结论：AI是工具而非主人，艺术创作仍需人的灵魂
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">💎 金句解析</div>
+                    <div class="golden-sentence">
+                        <div class="sentence-text">"AI可以模仿风格，但无法创造灵魂。"</div>
+                        <div class="sentence-analysis">
+                            <div class="analysis-item">
+                                <div class="analysis-label">适用话题：</div>
+                                <div class="analysis-value">科技与人文、创新、人工智能</div>
+                            </div>
+                            <div class="analysis-item">
+                                <div class="analysis-label">怎么用：</div>
+                                <div class="analysis-value">论证人的独特价值</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">🎯 适用场景</div>
+                    <div class="scenarios-grid">
+                        <div class="scenario-card">
+                            <div class="scenario-value">科技与人文（2023年全国甲卷）<br>创新与传承（2022年全国乙卷）<br>人的价值（2021年全国乙卷）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="article-card">
+            <div class="article-header">
+                <div class="article-title">《中国品牌书写高质量发展新答卷》</div>
+                <div class="article-badge">高质量发展</div>
+            </div>
+            <div class="article-meta">
+                <div class="article-meta-item">
+                    <strong>版面：</strong>第06版 专题（中国品牌日）
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <div class="core-argument">
+                        中国品牌正从"中国制造"向"中国创造"转变，以品质和创新书写高质量发展的新答卷。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="golden-sentence">
+                        <div class="sentence-text">"品牌是一个国家实力的名片，是文化软实力的载体。"</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">🎯 适用场景</div>
+                    <div class="scenario-card">
+                        <div class="scenario-value">高质量发展（2023年全国乙卷）<br>文化自信（2022年天津卷）<br>创新驱动（2021年全国甲卷）</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Usage Guide -->
+        <div class="usage-guide">
+            <div class="guide-title">🎓 使用指南</div>
+
+            <div class="guide-section">
+                <div class="guide-section-title">1. 开头模板</div>
+                <div class="template-box">
+古人云："___。"今天，___再次印证了这一智慧。（引用古语+引入话题）<br><br>
+当___与___相遇，会碰撞出怎样的火花？（设问开头）
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <div class="guide-section-title">2. 论证模板</div>
+                <div class="template-box">
+以___为例，___（举例）。<br>
+正如___所说："___"（引用）。<br>
+这告诉我们，___（分析）。
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <div class="guide-section-title">3. 结尾模板</div>
+                <div class="template-box">
+站在新的历史节点，让我们___（呼吁）。<br>
+唯有___，才能___（升华）。<br>
+这便是___的最好答案（呼应）。
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendation -->
+        <div class="recommendation">
+            <div class="recommendation-title">
+                <span class="star">⭐</span> 今日首选推荐
+            </div>
+            <div class="recommendation-content">
+                <div class="rec-item">
+                    <div class="rec-title">《以"最大耐心"留住烟火》</div>
+                    <div class="rec-desc">最适合文化遗产、城市发展、以人为本话题</div>
+                    <div class="rec-tags">
+                        <div class="rec-tag">论证严密</div>
+                        <div class="rec-tag">金句丰富</div>
+                        <div class="rec-tag">数据详实</div>
+                    </div>
+                </div>
+                <div class="rec-item">
+                    <div class="rec-title">可用于真题</div>
+                    <div class="rec-desc">2019北京卷、2023新课标I卷、2022新高考I卷</div>
+                    <div class="rec-tags">
+                        <div class="rec-tag">高频考点</div>
+                        <div class="rec-tag">文化传承</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>📅 每日整理 · 持续积累 · 高考作文从今天开始准备</p>
+            <p style="margin-top: 10px; opacity: 0.7;">数据来源：《人民日报》2026年5月10日</p>
+        </footer>
+    </div>
+
+    <script>
+        // Toggle original text visibility
+        function toggleText(button) {
+            const textElement = button.previousElementSibling;
+            textElement.classList.toggle('collapsed');
+            button.textContent = textElement.classList.contains('collapsed') ? '展开全文' : '收起全文';
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
