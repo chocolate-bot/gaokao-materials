@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-15 高考作文素材</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2C2C2C;
+            --border: #1A1A1A;
+            --shadow: #B5B5B5;
+            --success: #A7F3D0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+            background: var(--accent);
+            border: 2px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            color: var(--text);
+            opacity: 0.8;
+        }
+
+        header .date {
+            margin-top: 15px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .article-card {
+            background: white;
+            border: 2px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .article-header {
+            background: var(--primary);
+            padding: 20px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .article-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .article-header .meta {
+            display: flex;
+            gap: 20px;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .article-header .meta span {
+            font-weight: 600;
+        }
+
+        .article-content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--accent);
+            color: var(--text);
+        }
+
+        .core-point {
+            background: var(--success);
+            padding: 20px;
+            border: 2px solid var(--border);
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .logic-diagram {
+            background: white;
+            border: 2px solid var(--primary);
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .logic-level {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .logic-level h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .logic-level ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .logic-level li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .logic-level li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .methods-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .method-item {
+            background: var(--bg);
+            padding: 15px;
+            border: 2px solid var(--border);
+            border-radius: 6px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .method-item strong {
+            color: var(--text);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .golden-quote {
+            background: var(--accent);
+            border: 2px solid var(--border);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 4px 4px 0 0 var(--shadow);
+        }
+
+        .golden-quote .quote-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .golden-quote .quote-analysis {
+            display: grid;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+
+        .golden-quote .quote-analysis div {
+            background: white;
+            padding: 10px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+
+        .golden-quote .quote-analysis strong {
+            color: var(--text);
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .scenarios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .scenario-box {
+            background: white;
+            border: 2px solid var(--primary);
+            border-radius: 6px;
+            padding: 15px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .scenario-box h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .scenario-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .scenario-box li {
+            padding: 5px 0;
+            font-size: 0.95rem;
+        }
+
+        .scenario-box li:before {
+            content: "• ";
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .original-text {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .original-text h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .original-text p {
+            margin-bottom: 10px;
+            text-indent: 2em;
+        }
+
+        .summary {
+            background: var(--primary);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        .summary h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .summary-item {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .summary-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        .summary-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .summary-item li {
+            padding: 5px 0;
+            font-size: 0.95rem;
+        }
+
+        .summary-item li:before {
+            content: "✓ ";
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--text);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .article-content {
+                padding: 20px;
+            }
+
+            .scenarios {
+                grid-template-columns: 1fr;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-05-15 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+            <p class="date">2026年5月15日 星期五</p>
+        </header>
+
+        <!-- 文章1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章1：《读书学习，贵在"找准状态"》</h2>
+                <div class="meta">
+                    <span><strong>作者：</strong>李斌</span>
+                    <span><strong>版面：</strong>第05版（评论版）</span>
+                    <span><strong>字数：</strong>约1200字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        读书学习需要"找准状态"——既要有紧迫感，又要沉下心、细水长流，在实践中找到"锚定点"，实现所学所思与所行所用相得益彰。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🧠 论证逻辑</h3>
+                    <div class="logic-diagram">
+                        <div class="logic-level">
+                            <h4>第一层：提出问题</h4>
+                            <ul>
+                                <li>现象：离开校园后，很多人感慨读书学习没时间、缺心境</li>
+                                <li>引出：解开学习难题，"找准状态"是切入口</li>
+                            </ul>
+                        </div>
+                        <div class="logic-level">
+                            <h4>第二层：展开分析</h4>
+                            <ul>
+                                <li><strong>紧迫感</strong>：工作要求、时代形势、创新态势、进步趋势</li>
+                                <li><strong>案例分析</strong>：宇树科技创始人王兴兴的密码</li>
+                                <li><strong>避免误区</strong>：心浮气躁、功利主义、速成书单</li>
+                                <li><strong>正确状态</strong>：沉下心、细水长流、有"锚定点"</li>
+                                <li><strong>深度案例</strong>："养鸡博士"刘松柏的故事</li>
+                            </ul>
+                        </div>
+                        <div class="logic-level">
+                            <h4>第三层：总结升华</h4>
+                            <ul>
+                                <li>阅读+思考：学习的基础和灵魂</li>
+                                <li>目的：提升改造主观世界和客观世界的能力</li>
+                                <li>结尾：以"有字之书"丰富理论素养，从"无字之书"中探寻实践真知</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🔧 论证方法</h3>
+                    <div class="methods-list">
+                        <div class="method-item">
+                            <strong>引申论证</strong>
+                            以"状态不对，努力白费"这一俗语引入，制造悬念
+                        </div>
+                        <div class="method-item">
+                            <strong>排比论证</strong>
+                            四个排比句增强气势，层层递进论证紧迫性
+                        </div>
+                        <div class="method-item">
+                            <strong>举例论证</strong>
+                            王兴兴、刘松柏两个典型案例，覆盖科技与传统行业
+                        </div>
+                        <div class="method-item">
+                            <strong>对比论证</strong>
+                            "心浮气躁" vs "沉下心"，正反对比突出正确方法
+                        </div>
+                        <div class="method-item">
+                            <strong>比喻论证</strong>
+                            "细水长流方能汇川成海"，形象生动
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"状态不对，努力白费"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>简洁有力，一针见血；口语化表达，记忆点强</div>
+                            <div><strong>适用话题：</strong>学习态度、学习方法、成长心态、实干精神</div>
+                            <div><strong>怎么用：</strong>开头引出话题、论证强调方法、结尾呼应升华</div>
+                            <div><strong>可仿写：</strong>方向不对，越跑越远；方法不对，事倍功半</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"读书学习的紧迫感，不是焦虑情绪的蔓延，而是对自我成长的负责、对时代浪潮的回应"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>辨证思维：区分"紧迫感"与"焦虑"；层次清晰：从个人到时代</div>
+                            <div><strong>适用话题：</strong>学习压力、时代责任、成长焦虑、终身学习</div>
+                            <div><strong>怎么用：</strong>转折论证纠正错误观点、深化主题提升思想高度</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"细水长流方能汇川成海"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>古典韵味、意象优美、哲理性强：量变到质变</div>
+                            <div><strong>适用话题：</strong>积累、坚持、长期主义、慢功夫</div>
+                            <div><strong>怎么用：</strong>论证坚持的重要性、批判急功近利、总结升华</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"知识会过时，但学习的能力不会"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>对比鲜明、深刻洞见、鼓舞人心</div>
+                            <div><strong>适用话题：</strong>学习能力、终身学习、人工智能、核心竞争力</div>
+                            <div><strong>怎么用：</strong>金句结尾升华主题、转折论证从现象到本质</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"以'有字之书'丰富理论素养，从'无字之书'中探寻实践真知"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>对偶工整、辨证统一、层次递进</div>
+                            <div><strong>适用话题：</strong>知行合一、理论与实践、读书与实践</div>
+                            <div><strong>怎么用：</strong>总结全文完美收尾、对偶论证增强文采</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="scenarios">
+                        <div class="scenario-box">
+                            <h4>直接可用</h4>
+                            <ul>
+                                <li>2024年新课标I卷"故事的力量"</li>
+                                <li>2023年新课标I卷"故事的力量"</li>
+                                <li>2022年新高考I卷"本手、妙手、俗手"</li>
+                                <li>2021年全国甲卷"可为与有为"</li>
+                            </ul>
+                        </div>
+                        <div class="scenario-box">
+                            <h4>迁移应用</h4>
+                            <ul>
+                                <li>学习方法类话题</li>
+                                <li>成长心态类话题</li>
+                                <li>时代责任类话题</li>
+                                <li>实践与认识类话题</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章2：《铺好流失文物回家的路》</h2>
+                <div class="meta">
+                    <span><strong>作者：</strong>王珏</span>
+                    <span><strong>版面：</strong>第05版（评论版）</span>
+                    <span><strong>字数：</strong>约1000字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        流失文物回归需要建立完整的证据链——从出土到流失，从流转到藏处，越是有据可查、形成闭环，回归之路就越顺畅。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🔧 论证方法</h3>
+                    <div class="methods-list">
+                        <div class="method-item">
+                            <strong>比喻论证</strong>
+                            "每一件流失的文物，都是一叶离散的孤舟，等待重泊旧岸"
+                        </div>
+                        <div class="method-item">
+                            <strong>举例论证</strong>
+                            法国法律、子弹库帛书、《海外藏中国青铜器集录》
+                        </div>
+                        <div class="method-item">
+                            <strong>因果论证</strong>
+                            因为证据链完整，所以文物回归顺畅
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"每一件流失的文物，都是一叶离散的孤舟，等待重泊旧岸"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>比喻精妙、情感充沛、意象优美</div>
+                            <div><strong>适用话题：</strong>文物回归、文化传承、家国情怀、文化自信</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"流失文物回到文化母体，犹如书页归卷，如此方才拥有完整的生命力"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>比喻精妙、哲理深刻、语言优美</div>
+                            <div><strong>适用话题：</strong>文化传承、文化归属、文物价值、文化自信</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="scenarios">
+                        <div class="scenario-box">
+                            <h4>直接可用</h4>
+                            <ul>
+                                <li>2023年全国乙卷"一花独放不是春"</li>
+                                <li>2022年全国甲卷"直接移用、借鉴化用、根据情境独创"</li>
+                                <li>2021年全国甲卷"可为与有为"</li>
+                            </ul>
+                        </div>
+                        <div class="scenario-box">
+                            <h4>迁移应用</h4>
+                            <ul>
+                                <li>文化遗产类话题</li>
+                                <li>证据意识类话题</li>
+                                <li>国际合作类话题</li>
+                                <li>努力与坚持类话题</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章3：《从"书店要有书"说起》</h2>
+                <div class="meta">
+                    <span><strong>作者：</strong>常晋</span>
+                    <span><strong>版面：</strong>第05版（评论版）</span>
+                    <span><strong>字数：</strong>约1000字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        "名归"必须"实至"——无论是个人立身行事，还是地方长远发展，都离不开对"根本"的敬畏与坚守。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🔧 论证方法</h3>
+                    <div class="methods-list">
+                        <div class="method-item">
+                            <strong>对比论证</strong>
+                            正面：万圣书园、钟书阁；反面：只有咖啡台的"书店"
+                        </div>
+                        <div class="method-item">
+                            <strong>举例论证</strong>
+                            李再勇、曹炯芳反面案例，具体鲜活，警示性强
+                        </div>
+                        <div class="method-item">
+                            <strong>类比论证</strong>
+                            从书店类推到个人立身、地方发展
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"正如网上热议的，文化工作者要有文化、演员要有演技等，这样的讨论之所以能引人共鸣，就在于大家都认同一个朴素的道理——'名归'必须'实至'"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>引用热点、提炼哲理、金句凝练</div>
+                            <div><strong>适用话题：</strong>名与实、表与里、本质与现象、敬业精神</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"守住立身之本，抓住最本质、最核心的要义，才能行得稳、走得远"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>对比鲜明、逻辑严密、哲理性强</div>
+                            <div><strong>适用话题：</strong>根本与枝叶、本质与现象、长远与眼前</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"真正的发展底气，从来不在于追了多少风口，而在于能不能耕好自己的责任田、做出特色"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>对比鲜明、深刻洞见、语言生动</div>
+                            <div><strong>适用话题：</strong>发展理念、特色发展、因地制宜</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章4 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章4：《遇见古典诗歌的"非标准读者"》</h2>
+                <div class="meta">
+                    <span><strong>作者：</strong>黄晓丹</span>
+                    <span><strong>版面：</strong>第20版（副刊）</span>
+                    <span><strong>字数：</strong>约1500字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        古典诗歌的需求来自世间的每个角落——它并不特别高雅，也不需要顶级智慧，只是过去人类与世界肉身相搏的记录，现在与未来的人们仍进行着同等程度的搏斗。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"不是作者生平，而是读者生平才是理解诗歌的金钥匙"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>颠覆性观点、比喻精妙、深刻洞见</div>
+                            <div><strong>适用话题：</strong>阅读方法、文学欣赏、读者反应</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"它们只是过去人类与世界肉身相搏的记录，现在与未来的人们仍进行着同等程度的搏斗"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>洞察深刻、表达有力、哲理性强</div>
+                            <div><strong>适用话题：</strong>文学的本质、人生的意义、永恒的主题</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"那是一些久已沉埋的光源，当搬运、擦拭它们时，它们迸发的光芒自然会照在我们身上，使我们更清楚地看见自己的内在"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>比喻精妙、动作细腻、效果显著</div>
+                            <div><strong>适用话题：</strong>文学的价值、自我发现、照亮内心</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章5 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章5：《Z世代在读什么》</h2>
+                <div class="meta">
+                    <span><strong>作者：</strong>陶颖</span>
+                    <span><strong>版面：</strong>第20版（副刊）</span>
+                    <span><strong>字数：</strong>约900字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        在人工智能时代，Z世代拥抱技术的同时，也珍视能让人静下来、慢下来的时光——阅读纸质书，寻找同频共振，与广阔世界建立连接。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"在这个人工智能可以瞬间倾吐万字长文的时代，我们当然拥抱技术，但也珍视能让人静下来、慢下来的时光"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>时代感强、辨证思维、价值清晰</div>
+                            <div><strong>适用话题：</strong>人工智能、快与慢、技术与人文</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"繁杂的信息检索可以交给数字工具，或深或浅的思辨还是要留给书页"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>分工明确、价值判断、语言优美</div>
+                            <div><strong>适用话题：</strong>技术与人、工具与思考、浅与深</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"初夏的未名湖畔，风吹动新翻开的书页，这书页就是我们与广阔世界建立连接的印证"</div>
+                        <div class="quote-analysis">
+                            <div><strong>好在哪：</strong>意境优美、哲理深刻、语言富有诗意</div>
+                            <div><strong>适用话题：</strong>阅读、连接世界、精神成长</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 总结 -->
+        <div class="summary">
+            <h2>📝 今日总结</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <h3>核心主题</h3>
+                    <ul>
+                        <li>读书学习：找准状态、知行合一</li>
+                        <li>文化遗产：流失文物回归、古典诗歌阅读</li>
+                        <li>文化场所：书店的坚守、读书会的价值</li>
+                        <li>时代特征：Z世代的阅读、AI时代的思考</li>
+                    </ul>
+                </div>
+
+                <div class="summary-item">
+                    <h3>适用话题</h3>
+                    <ul>
+                        <li>学习方法、成长心态、终身学习</li>
+                        <li>文化自信、文化传承、文化遗产保护</li>
+                        <li>读书的意义、阅读的价值、书香社会</li>
+                        <li>技术与人文、快与慢、深度思考</li>
+                        <li>守正创新、根本与枝叶、名与实</li>
+                    </ul>
+                </div>
+
+                <div class="summary-item">
+                    <h3>高考真题适配</h3>
+                    <ul>
+                        <li>2024年：故事的力量、未知与探索</li>
+                        <li>2023年：故事的力量、人·技术·时间</li>
+                        <li>2022年：本手妙手俗手、跨越</li>
+                        <li>2021年：可为与有为</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>素材来源：《人民日报》2026年5月15日 | 整理：高考作文素材库</p>
+        </footer>
+    </div>
+</body>
+</html>
