@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-17 高考作文素材</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2C2C2C;
+            --text-light: #666666;
+            --border: #2C2C2C;
+            --shadow: #B5B5B5;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 20px;
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        /* Article Card */
+        .article-card {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+
+        .article-header {
+            background: var(--primary);
+            padding: 25px 30px;
+            border-bottom: 1.5px solid var(--border);
+        }
+
+        .article-header h2 {
+            font-size: 1.8rem;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+
+        .article-header .meta {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .article-header .meta span {
+            margin-right: 20px;
+        }
+
+        .article-content {
+            padding: 30px;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--text);
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        /* Core Thesis */
+        .core-thesis {
+            background: var(--accent);
+            padding: 20px;
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            font-size: 1.05rem;
+            line-height: 1.9;
+        }
+
+        /* Logic Diagram */
+        .logic-diagram {
+            background: #f8f8f8;
+            padding: 20px;
+            border: 1.5px solid var(--border);
+            font-family: "Courier New", monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            overflow-x: auto;
+        }
+
+        /* Methods List */
+        .methods-list {
+            list-style: none;
+        }
+
+        .methods-list li {
+            background: #f8f8f8;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .methods-list .method-name {
+            font-weight: bold;
+            color: var(--text);
+        }
+
+        /* Golden Sentences */
+        .golden-sentence {
+            background: #f8f8f8;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .golden-sentence .quote {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: var(--text);
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .golden-sentence .analysis-item {
+            margin-bottom: 12px;
+            padding-left: 15px;
+        }
+
+        .golden-sentence .label {
+            font-weight: bold;
+            color: var(--text);
+        }
+
+        .golden-sentence .topics {
+            color: var(--primary);
+        }
+
+        /* Scenarios */
+        .scenarios {
+            background: #f8f8f8;
+            padding: 20px;
+            border: 1.5px solid var(--border);
+        }
+
+        .scenarios h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .scenarios ul {
+            list-style-position: inside;
+            margin-left: 10px;
+        }
+
+        .scenarios li {
+            margin-bottom: 8px;
+        }
+
+        /* Original Text */
+        .original-text {
+            background: #f8f8f8;
+            padding: 25px;
+            border: 1.5px solid var(--border);
+            max-height: 500px;
+            overflow-y: auto;
+            font-size: 0.95rem;
+            line-height: 2;
+        }
+
+        .original-text p {
+            margin-bottom: 15px;
+            text-indent: 2em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .article-content {
+                padding: 20px;
+            }
+
+            .section h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-05-17 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+        </header>
+
+        <!-- 文章1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章1：《你的AI科研"搭子"靠谱吗》</h2>
+                <div class="meta">
+                    <span><strong>作者：</strong>丁雅诵</span>
+                    <span><strong>版面：</strong>第05版（教育版）</span>
+                    <span><strong>日期：</strong>2026-05-17</span>
+                    <span><strong>字数：</strong>约4014字</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3>🎯 核心论点</h3>
+                    <div class="core-thesis">
+                        AI作为科研工作者的"搭子"，正在深刻改变科学研究的路径与范式。从"假设—验证"转向"数据—规律发现—智能生成—闭环迭代"，AI不仅是工具，更是推动科学创新的重要伙伴。但人类科学家的判断力、洞察力和价值取向不可被取代，关键在于人机协同，让AI处理数据广度，让人类守住思想深度。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🧠 论证逻辑</h3>
+                    <div class="logic-diagram">
+第一层：引入话题
+├─ 现象：AI以前所未有的广度和深度介入科学研究
+└─ 设问：AI如何改变科研路径？如何合理使用？如何激发平台作用？
+
+第二层：多维展开
+├─ 角度1：科学发现的路径改变（王翕君教授）
+│  ├─ 从"假设—验证"到"数据—规律发现—智能生成—闭环迭代"
+│  └─ AI的角色演进：计算工具 → 研究工具 → 科研伙伴
+│
+├─ 角度2：科研效率的提升（莫伯峰教授）
+│  ├─ AI擅长：有明确答案、大量重复计算的工作
+│  ├─ 局限：深层语义判断仍需人类把关
+│  └─ 方案：人机协同
+│
+├─ 角度3：科研判断力的挑战（杨耀东研究员）
+│  ├─ 好处：效率提升、学科交叉、降低门槛
+│  ├─ 风险：虚假引用、错误推理、学术责任不清
+│  └─ 核心：科研判断力不能被工具逻辑取代
+│
+├─ 角度4：资源的有效整合（吴力波教授）
+│  ├─ 从"以技术为中心"到"以科学家为中心"
+│  └─ 平台作用：降低门槛、促进融合、生态枢纽
+│
+└─ 角度5：平台建设的挑战（刘铁岩理事长）
+   ├─ 现实：基础设施欠账、技术局限、产研鸿沟
+   └─ 对策：产业数字化、开放共享机制、公共基础设施
+
+第三层：深度链接
+├─ 案例："第一作者必须是AI"的社会实验
+└─ 结论：AI写作的伦理边界——原创性、透明性、责任归属
+
+第四层：总结升华
+├─ 核心观点：人类使用AI辅助，绝非让渡主体性
+└─ 协同范式：AI处理数据广度 + 人类守住思想深度与价值温度
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🔧 论证方法</h3>
+                    <ul class="methods-list">
+                        <li><span class="method-name">举例论证：</span>用框架材料研究、甲骨文缀合等具体案例，说明AI在不同学科的应用</li>
+                        <li><span class="method-name">引用论证：</span>引用5位专家的观点，多角度论证AI在科研中的角色与影响</li>
+                        <li><span class="method-name">对比论证：</span>传统"假设—验证" vs AI时代"数据—规律发现"新范式</li>
+                        <li><span class="method-name">因果论证：</span>因为AI擅长处理重复计算 → 所以能提升科研效率但仍需人类把关</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>💎 金句深度解析</h3>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"人类负责提出问题、把握方向，AI则在广阔的数据与复杂空间中寻找可能的答案。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"负责...把握..."与"在...寻找..."形成对比，明确人机分工：人类掌舵方向，AI负责探索。句式工整，逻辑清晰。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">科技与人文、人机关系、科研创新、分工协作、人工智能、主导与辅助</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>可用于论证"科技发展中人的主体性""人机协同的理想模式"等话题，适合放在论证段作为核心观点</div>
+                        <div class="analysis-item"><span class="label">可仿写：</span>XX负责...把握...，YY则在...寻找可能的答案。</div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"从最初的计算工具，到辅助分析规律的研究工具，再到能够参与乃至驱动自主探索的'科研伙伴'。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"从...到...再到..."的递进句式，展现AI角色的演进轨迹。层次分明，动词选择精准（"计算""辅助""参与乃至驱动"）。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">科技发展、角色转变、AI进化、工具与伙伴、科技创新</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>适合用于描述技术演进的段落，或论证"事物发展的阶段性特征"</div>
+                        <div class="analysis-item"><span class="label">可仿写：</span>从最初的...，到...的...，再到能够...的"..."。</div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"AI擅长在已有数据中找最优解，但什么问题值得研究、哪些结果具有科学意义，仍需要人来把关。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"擅长...但..."的转折结构，划清AI的能力边界。"找最优解"vs"把关价值判断"形成鲜明对比。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">科技局限、人的价值、判断力、科学意义、价值判断、主导权</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>适合论证"技术不能取代人文""人的主体性不可替代"等话题，可用在转折段</div>
+                        <div class="analysis-item"><span class="label">可仿写：</span>XX擅长...但...仍需要人来...。</div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"与其视而不见，不如正面回应。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"与其...不如..."的选择句式，态度鲜明，四字成语"视而不见""正面回应"对仗工整，有力果断。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">直面问题、积极应对、改革勇气、创新态度、解决问题</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>适合用于论证"面对挑战的正确态度""改革的必要性"等话题，可用于过渡段或结尾段</div>
+                        <div class="analysis-item"><span class="label">可仿写：</span>与其...不如...。</div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"让AI去处理数据的广度，让人类来守住思想的深度与价值的温度。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"让...去...让...来..."的排比句式，"广度""深度""温度"三个维度形成韵律美。"处理"vs"守住"动词选择精准。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">人机协同、科技与人文、分工、价值坚守、思想深度、人文温度</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>这是全文的精华句，适合用作结尾总结或核心论点，升华主题</div>
+                        <div class="analysis-item"><span class="label">可仿写：</span>让XX去...的...，让人类来...的...与...的...。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🎯 适用场景</h3>
+                    <div class="scenarios">
+                        <h4>直接可用：</h4>
+                        <ul>
+                            <li>2023年新课标I卷"故事的力量"（论证科技发展中的"人本故事"）</li>
+                            <li>2024年新课标I卷"问题与答案"（论证AI时代"提出问题比解决问题更重要"）</li>
+                            <li>2023年全国甲卷"人·技术·时间"（论证人机关系、技术边界）</li>
+                            <li>科技创新类话题（AI发展、科研范式变革、科学精神）</li>
+                            <li>人文思考类话题（技术伦理、人的主体性、价值判断）</li>
+                        </ul>
+
+                        <h4>迁移应用：</h4>
+                        <ul>
+                            <li>迁移到"教育变革"话题：论证教育中技术工具与人文引导的关系</li>
+                            <li>迁移到"文化传承"话题：论证数字化时代如何守住文化根脉</li>
+                            <li>迁移到"青年成长"话题：论证工具使用与自主思考的平衡</li>
+                        </ul>
+
+                        <h4>高考真题：</h4>
+                        <ul>
+                            <li>2024年新课标I卷"问题的意义"：用"人类负责提出问题"论证问题意识的重要性</li>
+                            <li>2023年新课标II卷"安静一下不被打扰"：用"AI处理广度，人类守住深度"论证专注思考的价值</li>
+                            <li>2021年全国甲卷"可为与有为"：用AI的"可为"论证人的"有为"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章2：《生涯教育，导航学生"山海寻梦"》</h2>
+                <div class="meta">
+                    <span><strong>作者：</strong>佚名</span>
+                    <span><strong>版面：</strong>第05版（教育版）</span>
+                    <span><strong>日期：</strong>2026-05-17</span>
+                    <span><strong>字数：</strong>约1193字</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3>🎯 核心论点</h3>
+                    <div class="core-thesis">
+                        生涯教育不是求职季的"临门一脚"，而是春风化雨般的长期滋养。好的生涯教育要突破认知局限，把个人目标与国家需要结合；要教授实用技能，通过实战训练提升求职能力；要跨越课堂边界，连接校园与职场，成为学生走向社会的桥梁。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🧠 论证逻辑</h3>
+                    <div class="logic-diagram">
+第一层：引入话题
+├─ 现象："山海寻梦"实践活动开在产业一线
+├─ 数据：98%高校开设生涯教育课，90%设为必修
+└─ 问题：部分同学认为生涯教育课是"水课"
+
+第二层：展开分析
+├─ 角度1：生涯教育的定位（认知突破）
+│  ├─ 不是"临门一脚"，而是"春风化雨般的滋养"
+│  ├─ 不是讲大道理或简单测试，而是基于对行业和自我的准确认知
+│  └─ 例子：东华大学学"十五五"规划、北师大分析人口形势
+│
+├─ 角度2：生涯教育的技能（方法传授）
+│  ├─ 目标：学以致用的技能，求职底气
+│  ├─ 问题：不能纸上谈兵，需要实战训练
+│  └─ 方法：招聘会观摩、模拟面试、生涯人物访谈
+│
+└─ 角度3：生涯教育的边界（跨越课堂）
+   ├─ 需求：一头连校园，一头连职场
+   ├─ 挑战：教师经验不足、行业变化快
+   ├─ 方案：打破围墙，引入校外资源，校企合作
+   └─ 例子：清华校友导师、深圳职业技术大学请企业专家
+
+第三层：总结升华
+├─ 证据：职业规划大赛中的自信讲述、录用意向
+├─ 引用："以脚步丈量山海，以实干笃定前行，在奋斗中书写青春职业华章"
+└─ 核心：把个人目标与国家需要、社会发展相结合
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>💎 金句深度解析</h3>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"志趣的挖掘、目标的树立，所赖并非求职季的'临门一脚'，而是需要春风化雨般的滋养。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"并非...而是..."的转折结构，"临门一脚"vs"春风化雨"形成鲜明对比。"挖掘""树立"动词精准，"滋养"一词温暖有力。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">教育理念、成长规律、生涯规划、长期主义、滋养与速成</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>适合论证"教育应循序渐进""成长需要积淀"等话题，可用在开头或核心论证段</div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"把个人目标和国家需要、社会发展相结合，志存高远、脚踏实地，实现人生理想。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"把...相结合"的结构，"志存高远"与"脚踏实地"形成理想与现实的辩证统一。四字词语铿锵有力。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">个人与国家、理想与现实、志存高远、脚踏实地、人生规划、家国情怀</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>这是标准的考场作文升华句，适合结尾段，用于总结全文或提出倡议</div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"以脚步丈量山海，以实干笃定前行，在奋斗中书写青春职业华章。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"以...以...在..."的排比句式，"丈量""笃定""书写"动词层层递进，"山海""实干""华章"意象宏大优美。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">奋斗、实干、青春、职业理想、山海、笃定前行</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>这是典型的倡议句式，适合用于结尾段或提出号召，情感饱满</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章3：《让社会实践更"实"》</h2>
+                <div class="meta">
+                    <span><strong>作者：</strong>福建师范大学团委社会实践指导教师</span>
+                    <span><strong>版面：</strong>第05版（教育版）</span>
+                    <span><strong>日期：</strong>2026-05-17</span>
+                    <span><strong>字数：</strong>约943字</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3>🎯 核心论点</h3>
+                    <div class="core-thesis">
+                        社会实践不能"走过场"，而要成为"真课堂"。要抓好三个关键：助力学生成长，把课堂开到田间地头、生产一线；服务地方发展，把调研成果做在基层急需处；科学组织引领，构建全链条全过程实践育人体系。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🧠 论证逻辑</h3>
+                    <div class="logic-diagram">
+第一层：引入话题
+├─ 现象：学生喜欢实践，但不喜欢走马观花、拍照打卡
+├─ 问题：如何让社会实践"实"起来？
+└─ 总领：抓好成长、服务、组织三个关键环节
+
+第二层：分层展开
+├─ 环节1：助力学生成长更"实"
+│  ├─ 目标：把课堂开到田间地头、生产一线
+│  ├─ 例子：福建师范大学千支实践队、万余名师生
+│  └─ 结果：在行走中受教育、长才干、作贡献
+│
+├─ 环节2：服务地方发展更"实"
+│  ├─ 理念：不能"自娱自乐"，必须扎根基层、服务基层
+│  ├─ 方法：关注地方实事、难事，把成果做在急需处
+│  └─ 结果：学生练就硬功夫，地方获得真助力
+│
+└─ 环节3：实践工作组织更"实"
+   ├─ 体系：全链条、全过程实践育人体系
+   ├─ 前期：周密部署、培训班、实践一本通
+   ├─ 中期：精准指导、"重点队伍+分散实践"
+   └─ 后期：总结提升、"实践归来话成长"、选树典型
+
+第三层：总结升华
+├─ 对比：从"走过场"变成"真课堂"
+├─ 价值：回应青年期盼，实践育人的生动答卷
+└─ 目标：把个人成长融入国家发展大局
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>💎 金句深度解析</h3>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"当代大学生朝气蓬勃、心怀家国，学校应以实践为桥，把课堂开到田间地头、生产一线，让青年在行走中受教育、长才干、作贡献。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"朝气蓬勃、心怀家国"赞美青年，"以实践为桥"的比喻生动。"田间地头、生产一线"具体可感。"受教育、长才干、作贡献"三字排比递进。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">青年成长、社会实践、家国情怀、知行合一、实践育人</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>适合论证"实践的重要价值""青年责任担当"等话题，可用于开头或核心论证段</div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"社会实践不能'自娱自乐'，必须扎根基层、服务基层。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"不能...必须..."的否定肯定结构，态度坚决。"自娱自乐"与"扎根基层、服务基层"形成鲜明对比，简洁有力。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">实践方向、基层服务、为民情怀、社会责任、扎根与漂浮</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>适合论证"工作的价值导向""服务基层的意义"等话题，可用于转折段</div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"学生在破解基层急难愁盼中练就了硬功夫，地方也在这些务实成果中获得了真助力。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"在...中练就了...，也在...中获得了..."的对仗结构。"急难愁盼"与"硬功夫"、"务实成果"与"真助力"对应工整。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">实践价值、双向赋能、基层服务、急难愁盼、硬功夫、务实成果</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>适合论证"实践的双赢价值""服务与成长相统一"等话题</div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"把社会实践从'走过场'变成'真课堂'，这是对青年期盼的回应，也是实践育人的生动答卷。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"把...从...变成..."的句式，"走过场"与"真课堂"对比强烈。"回应期盼"与"生动答卷"双关有力。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">实践改革、教育质量、回应期盼、生动答卷、形式与实质</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>适合论证"反对形式主义""追求实质效果"等话题，可用于总结段</div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"引导更多青年学子把个人成长融入国家发展大局，在实践中书写青春答卷。"</div>
+                        <div class="analysis-item"><span class="label">好在哪：</span>用"引导...把...融入..."的结构，"个人成长"与"国家发展大局"形成小大之辩。"书写青春答卷"的比喻富有诗意。</div>
+                        <div class="analysis-item"><span class="label">适用话题：</span><span class="topics">个人与国家、青春答卷、融入大局、实践书写、家国情怀</span></div>
+                        <div class="analysis-item"><span class="label">怎么用：</span>这是典型的升华句式，适合用于结尾段，呼应主题、升华立意</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer style="text-align: center; margin-top: 50px; padding: 30px; color: var(--text-light); font-size: 0.9rem;">
+            <p>数据来源：《人民日报》2026年5月17日 第05版</p>
+            <p style="margin-top: 10px;">© 2026 高考作文素材整理 | 自动生成</p>
+        </footer>
+    </div>
+</body>
+</html>
