@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-18 高考作文素材</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2D2D2D;
+            --text-light: #666666;
+            --border: #2D2D2D;
+            --shadow: #B5B5B5;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: var(--card-bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            padding: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        header .meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        header .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        header .meta-label {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        /* Article Card */
+        .article-card {
+            background: var(--card-bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+
+        .article-header {
+            background: var(--primary);
+            color: var(--text);
+            padding: 30px;
+            border-bottom: 1.5px solid var(--border);
+        }
+
+        .article-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+
+        .article-meta span {
+            background: var(--bg);
+            padding: 5px 15px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .article-content {
+            padding: 30px;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title .icon {
+            font-size: 1.5rem;
+        }
+
+        /* Core Argument */
+        .core-argument {
+            background: var(--accent);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+
+        /* Logic Diagram */
+        .logic-diagram {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            padding: 25px;
+            border-radius: 8px;
+            font-family: "SF Mono", Monaco, monospace;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            overflow-x: auto;
+        }
+
+        .logic-diagram pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* Methods Grid */
+        .methods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .method-item {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .method-item h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Quote Cards */
+        .quote-card {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .quote-text {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 20px;
+            line-height: 1.8;
+            padding-left: 20px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .quote-analysis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .analysis-item h5 {
+            color: var(--primary);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .analysis-item p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Applications */
+        .applications-list {
+            list-style: none;
+        }
+
+        .applications-list li {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            position: relative;
+            padding-left: 50px;
+        }
+
+        .applications-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            color: var(--primary);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .applications-list strong {
+            color: var(--text);
+        }
+
+        /* Collapsible */
+        .collapsible {
+            margin-top: 30px;
+        }
+
+        .collapsible-header {
+            background: var(--text);
+            color: var(--bg);
+            padding: 15px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .collapsible-header:hover {
+            background: var(--primary);
+            color: var(--text);
+        }
+
+        .collapsible-header::after {
+            content: "▼";
+            transition: transform 0.3s ease;
+        }
+
+        .collapsible.active .collapsible-header::after {
+            transform: rotate(180deg);
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .collapsible.active .collapsible-content {
+            max-height: 10000px;
+        }
+
+        .original-text {
+            background: var(--bg);
+            padding: 30px;
+            border: 1.5px solid var(--border);
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            font-size: 0.95rem;
+            line-height: 2;
+            color: var(--text-light);
+            white-space: pre-wrap;
+        }
+
+        /* Tags */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            background: var(--primary);
+            color: var(--text);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Summary Section */
+        .summary {
+            background: var(--card-bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .summary h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--text);
+            text-align: center;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .summary-card {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .summary-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .summary-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .summary-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--shadow);
+            font-size: 0.95rem;
+        }
+
+        .summary-card li:last-child {
+            border-bottom: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .article-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .methods-grid,
+            .quote-analysis,
+            .applications-list {
+                grid-template-columns: 1fr;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 10px;
+            }
+
+            header,
+            .article-card,
+            .summary {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>📚 2026-05-18 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+            <div class="meta">
+                <div class="meta-item">
+                    <span class="meta-label">📅 日期：</span>
+                    <span>2026年5月18日</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">📰 来源：</span>
+                    <span>人民日报 05版、12版</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">📝 文章数：</span>
+                    <span>4篇</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Article 1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>心中有数 手上有招（评论员观察）</h2>
+                <div class="article-meta">
+                    <span>👤 作者：盛玉雷</span>
+                    <span>📄 版面：05版（评论版）</span>
+                    <span>📊 字数：约1200字</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <!-- 核心论点 -->
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">🎯</span>
+                        核心论点
+                    </h3>
+                    <div class="core-argument">
+                        在时代江河中，既要能顺势而为（把握时代大势），也要能逆向思考（转换思路），掌握战略主动，这要求"心中有数"（顺应大势、把握规律）和"手上有招"（运筹因素、创新方法）的统一。
+                    </div>
+                </div>
+
+                <!-- 论证逻辑 -->
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">🧠</span>
+                        论证逻辑
+                    </h3>
+                    <div class="logic-diagram">
+<pre>第一层：引入话题（现象引入）
+├─ 设喻：潜游的鱼，有顺流而下，也有溯源而上
+├─ 提出核心问题：时代江河中如何既能借势顺风，亦能逆水行舟？
+└─ 点明主旨：彰显大局把握能力，是推动高质量发展的思维方法
+
+第二层：展开分析（递进论证）
+├─ 顺势而为篇（正面案例）
+│  ├─ 镇：陈村"莫氏鸡煲"走红→一天修停车场→营业额增30%
+│  ├─ 城：义乌"鸡毛换糖"→接轨全球→全球数贸中心
+│  └─ 区域：西部"沙戈荒"新能源基地→特高压跨越山海
+│
+├─ 逆向思考篇（转换思路）
+│  ├─ 建德"办不成事"窗口：从"怎么办成"→"为何办不成"
+│  ├─ 桑植"反向飞地"：从"有什么干什么"→"缺什么创什么"
+│  └─ 丽水等茶产业联合体：从竞争走向合作，抱团发展
+│
+└─ 升华：两者都是因时因地制宜，在识变应变求变中科学决策
+
+第三层：总结提升（理论高度）
+├─ "心中有数"：调查研究和科学精神
+├─ "手上有招"：党的创新理论中悟规律、明方向
+└─ 定位：奋进的智慧，笃行的底气</pre>
+                    </div>
+                </div>
+
+                <!-- 论证方法 -->
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">🔧</span>
+                        论证方法
+                    </h3>
+                    <div class="methods-grid">
+                        <div class="method-item">
+                            <h4>比喻论证</h4>
+                            <p>开头"潜游的鱼"比喻时代中的人；"江河"喻时代大势；"顺流""溯源"喻顺势与逆势</p>
+                        </div>
+                        <div class="method-item">
+                            <h4>举例论证</h4>
+                            <p>微观：陈村、建德窗口；中观：义乌、桑植；宏观：西部新能源基地</p>
+                        </div>
+                        <div class="method-item">
+                            <h4>引用论证</h4>
+                            <p>引用习近平总书记关于"十五五"规划的重要论述</p>
+                        </div>
+                        <div class="method-item">
+                            <h4>对比论证</h4>
+                            <p>顺势而为 vs 逆向思考；"怎么办成" vs "为何办不成"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 金句解析 -->
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">💎</span>
+                        金句深度解析
+                    </h3>
+
+                    <div class="quote-card">
+                        <div class="quote-text">
+                            "潜游的鱼，有的顺流而下，有的溯源而上。"
+                        </div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>好在哪</h5>
+                                <p>画面感强：用鱼游水的意象，让抽象的"顺势""逆势"具象化；哲理深刻：暗示两种路径都是合理选择；启发性：引发读者思考</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>适用话题</h5>
+                                <p>时代与个人、变通与坚守、发展路径选择、战略思维</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>怎么用</h5>
+                                <p>开头使用：引出话题；论证使用：作为比喻贯穿全文；结尾使用：呼应开头</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">
+                            "这既要求'心中有数'，顺应时代大势，把谋事和谋势、谋当下和谋未来统一起来；也要求'手上有招'，运筹有利因素，从党的创新理论中悟规律、明方向、学方法、增智慧。"
+                        </div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>好在哪</h5>
+                                <p>对仗工整；层层递进；理论高度；金词叠出：谋事谋势、时代性、规律性、创造性</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>适用话题</h5>
+                                <p>干事创业、调查研究、科学决策、创新理论</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>怎么用</h5>
+                                <p>结尾使用：总结全文，点明方法论；过渡使用：从"为什么"转向"怎么做"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 适用场景 -->
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">🎯</span>
+                        适用场景
+                    </h3>
+                    <ul class="applications-list">
+                        <li><strong>2024年新课标I卷"故事的力量"</strong>：可用顺势/逆向的故事作为论据</li>
+                        <li><strong>2022年全国甲卷"移用、化用、独创"</strong>：逆向思考就是"独创"的体现</li>
+                        <li><strong>2021年全国乙卷"追求理想"</strong>：心中有数、手上有招是实现理想的路径</li>
+                        <li><strong>话题：时代与个人</strong>：个人在时代中既要顺势而为，也要保持独立思考</li>
+                        <li><strong>话题：创新与发展</strong>：创新需要在顺势中把握机遇，在逆势中寻找突破</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">#战略思维</span>
+                        <span class="tag">#顺势而为</span>
+                        <span class="tag">#逆向思考</span>
+                        <span class="tag">#心中有数</span>
+                        <span class="tag">#手上有招</span>
+                    </div>
+                </div>
+
+                <!-- 原文折叠 -->
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                        <span>📄 查看原文</span>
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="original-text">心中有数   手上有招（评论员观察）
+
+盛玉雷
+
+　　潜游的鱼，有的顺流而下，有的溯源而上。不禁遐思，置身时代江河，如何既能借势顺风，亦能逆水行舟？
+
+　　既能顺势而为，也会逆向思考，彰显的是对大局大势的把握能力，是推动高质量发展的思维方法。最近的几个新闻颇有启迪。
+
+　　一个镇，应时而动，话题热度转化为发展契机。
+
+　　广东佛山陈村镇，"莫氏鸡煲"走红。当地用一天时间修好新停车场，连夜铺出新路，顺势推出旅游线路，上线定制化公交。数据显示，周边餐饮商户营业额增长约30%。
+
+　　一座城，踩准节拍，时代东风转化为发展优势。
+
+　　"鸡毛换糖"，畅通市场循环；接轨全球，抓住入世机遇；建设全球数贸中心，站上数字互联风口……"义乌发展经验"，换个角度看就是拥抱改革浪潮、跟上时代脚步、融入开放大局的成功之道。
+
+　　进而观察一片区域，因势而谋，资源禀赋转化为发展红利。首批"沙戈荒"新能源基地项目基本建成投产，一条条特高压大动脉跨越山海实现电能"毫秒级闪送"，西部地区向新而行、逐绿而兴，源源不断的清洁能源输往大江南北。
+
+　　"战略上判断得准确，战略上谋划得科学、战略上赢得主动，党和人民事业就大有希望。"在科学理论指引下能够前瞻形势、把握趋势，在战略窗口期顺时谋势，是顺势而为的关键。
+
+　　当今世界，百年变局加速演进，新一轮科技革命和产业变革加速突破，迫切要求我们从历史长河、时代大潮、全球风云中分析演变机理、探究历史规律，提出因应的战略策略。抓住"人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾"，遵循"贯彻新发展理念、构建新发展格局、推动高质量发展"这个要求，理解"战略机遇和风险挑战并存、不确定难预料因素增多"这个形势判断……这是作决策、抓发展必须具备的基本功。
+
+　　当然，顺势而为不等于亦步亦趋。面向"十五五"，习近平总书记目光深远，指出"影响形势的因素是多重的，而且往往十分复杂"，强调"把握国内外形势新变化，目的在于胸怀全局、登高望远，在战略上保持定力、充满信心，在战术上精心运筹、趋利避害，不断增强我国发展的确定性和可持续性"。
+
+　　对形势的把握，如何"始终居于主动"？除了顺势而为，善于逆向思考也是重要方面。
+
+　　浙江建德，"办不成事"窗口给人启示。不仅从"怎么办成"出发，更从"为何办不成"切入，在问题的另一端找到了改进服务的突破口。自设立以来，已累计化解"疑难杂症"事项3000余件。
+
+　　逆向思考，不是追求标新立异，而是要学会转换思路，在克服思维定势、摆脱路径依赖中另辟蹊径、寻求破局之策。
+
+　　比如，从接受辐射到主动嵌入。湖南桑植，产品优质但曾经打不开销路。通过在长沙设立"反向飞地"，实现"异地生产、税收共享、指标公认"，面向更广空间开展产品孵化和经贸合作，从"有什么干什么"变为"缺什么创什么"。
+
+　　再如，从竞争走向合作。浙江丽水大源镇、台州安岭乡、温州界坑乡，成立丽台温三区边界茶产业共富联合体，不再"各自提篮叫卖"，而是抱团发展，通过协作共享更大市场。
+
+　　又如，从"等风来"到"抢先机"。布局产业链关键环节，打造特色产业集群，提前卡位、注意错位、强调补位，才能创造属于自己的时间窗口。
+
+　　无论顺势而为还是逆向思考，本质上都是因时因地制宜，在识变应变求变中科学决策，牢牢把握战略主动。这既要求"心中有数"，顺应时代大势，把谋事和谋势、谋当下和谋未来统一起来，将干事创业建立在扎实的调查研究和严谨的科学精神之上；也要求"手上有招"，运筹有利因素，从党的创新理论中悟规律、明方向、学方法、增智慧，使领导和决策体现时代性、把握规律性、富于创造性。
+
+　　从实际出发、按规律办事，既能顺势而为，也能逆势而上，这是奋进的智慧，也是笃行的底气。
+
+2026年05月18日 第05版</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>从"在中国生产"到"在中国创造"（人民时评）</h2>
+                <div class="article-meta">
+                    <span>👤 作者：罗珊珊</span>
+                    <span>📄 版面：05版（评论版）</span>
+                    <span>📊 字数：约1100字</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">🎯</span>
+                        核心论点
+                    </h3>
+                    <div class="core-argument">
+                        外资企业在华布局正从"制造基地"升级为"创新策源地"，这一趋势源于中国完备的产业体系、丰富的应用场景和持续优化的政策环境，彰显中国创新生态的蓬勃生命力。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">💎</span>
+                        金句深度解析
+                    </h3>
+
+                    <div class="quote-card">
+                        <div class="quote-text">
+                            "越来越多跨国公司在华'制造基地'正升级为'创新策源地'，外资在华研发中心正从本地化适配升级为全球创新支点。"
+                        </div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>好在哪</h5>
+                                <p>对比鲜明："制造基地"→"创新策源地"；升级感强：用"升级为"体现质的飞跃；精准定位：清晰描述外资在华布局的变迁</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>适用话题</h5>
+                                <p>创新驱动发展、高质量发展、开放创新、产业升级、中国机遇</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">
+                            "创造力就是将一个个'不可能'雕琢为'可能'的刻刀。"
+                        </div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>好在哪</h5>
+                                <p>比喻精妙："刻刀"喻创造力；动词有力："雕琢"比"实现"更有质感；对比鲜明："不可能"到"可能"</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>适用话题</h5>
+                                <p>创新与创造、挑战不可能、科技自立自强、中国制造、梦想与奋斗</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">🎯</span>
+                        适用场景
+                    </h3>
+                    <ul class="applications-list">
+                        <li><strong>2024年新课标I卷"故事的力量"</strong>：外资企业在华创新的故事</li>
+                        <li><strong>2022年全国乙卷"双奥之城"</strong>：从制造到创造的升级</li>
+                        <li><strong>2021年全国甲卷"可为与有为"</strong>：中国的创新环境"可为"，外资企业的创新"有为"</li>
+                        <li><strong>话题：创新驱动发展</strong>：创新需要完整的生态支撑</li>
+                        <li><strong>话题：开放的中国</strong>：开放不仅带来资本，更带来创新</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">#创新驱动</span>
+                        <span class="tag">#中国创造</span>
+                        <span class="tag">#外资研发</span>
+                        <span class="tag">#高质量发展</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>无中生钻 雕琢"璀璨"（中国道路中国梦）</h2>
+                <div class="article-meta">
+                    <span>👤 作者：邵增明（河南省力量钻石股份有限公司创始人）</span>
+                    <span>📄 版面：05版</span>
+                    <span>📊 字数：约1100字</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">🎯</span>
+                        核心论点
+                    </h3>
+                    <div class="core-argument">
+                        创造力是将一个个"不可能"雕琢为"可能"的刻刀，中国培育钻石技术实现了从无到有、从追赶到领跑的跨越，诠释了自主创新的中国质造。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">💎</span>
+                        金句深度解析
+                    </h3>
+
+                    <div class="quote-card">
+                        <div class="quote-text">
+                            "技术进步没有终点，唯有挺进'无人区'，才能登上'制高点'。"
+                        </div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>好在哪</h5>
+                                <p>形象比喻："无人区"喻未知领域，"制高点"喻领先地位；气势磅礴："挺进""登上"动词有力；哲理深刻：创新永无止境</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>适用话题</h5>
+                                <p>科技创新、挑战未知、永不止步、领跑时代、开拓精神</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">
+                            "'中国质造'既成为改变全球产业格局的'扳手'，也成为拓宽市场空间的'杠杆'。"
+                        </div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>好在哪</h5>
+                                <p>双喻叠加："扳手"+"杠杆"，两个工具喻两种力量；功能明确：改变格局+拓宽市场；新造词："中国质造"而非"中国制造"</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>适用话题</h5>
+                                <p>中国制造、高质量发展、国际竞争力、质量强国、产业升级</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">🎯</span>
+                        适用场景
+                    </h3>
+                    <ul class="applications-list">
+                        <li><strong>2022年全国甲卷"移用、化用、独创"</strong>："独创"的典型案例</li>
+                        <li><strong>2021年全国乙卷"追求理想"</strong>：挺进"无人区"追求科技理想</li>
+                        <li><strong>话题：自主创新</strong>：创新需要突破技术封锁，挺进"无人区"</li>
+                        <li><strong>话题：工匠精神</strong>：3万小时试验、数百次改进，体现精益求精</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">#自主创新</span>
+                        <span class="tag">#中国质造</span>
+                        <span class="tag">#突破封锁</span>
+                        <span class="tag">#工匠精神</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>文物里的烟火气，有着鲜活的文化味（文化中国行·国际博物馆日特别报道）</h2>
+                <div class="article-meta">
+                    <span>📄 版面：12版（文化版）</span>
+                    <span>📊 字数：约2500字</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">🎯</span>
+                        核心论点
+                    </h3>
+                    <div class="core-argument">
+                        博物馆正经历身份重构，不仅是知识殿堂，更是承载公共记忆、提供情绪价值的文化空间；文物中的"烟火气"——食材、食器、食艺、食礼——让厚重的文明记忆变得鲜活可感。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">💎</span>
+                        金句深度解析
+                    </h3>
+
+                    <div class="quote-card">
+                        <div class="quote-text">
+                            "博物馆正在经历一场身份重构，不仅是知识殿堂，更是承载公共记忆、提供情绪价值的文化空间。"
+                        </div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>好在哪</h5>
+                                <p>新视角："身份重构"准确描述博物馆的当代转型；对比鲜明："不仅是...更是..."强调变化；时代感强："情绪价值"是当下热词</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>适用话题</h5>
+                                <p>文化传承、博物馆的功能、公共文化空间、文化与情感、文化创新</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">
+                            "中华传统饮食文化里，不仅有文明的脉络，也有连通古今的人间烟火。"
+                        </div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>好在哪</h5>
+                                <p>高度提炼："文明的脉络"+"人间烟火"；辩证统一：高雅文化vs日常生活；动词有力："连通"体现古今对话；意境优美</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>适用话题</h5>
+                                <p>饮食文化、文明传承、文化与生活、传统与现代、文化自信</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">
+                            "从一件件蕴含'烟火气'的文物中探寻厚重的文明记忆，在日常滋味里品读鲜活的文化基因。"
+                        </div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>好在哪</h5>
+                                <p>对仗工整："探寻...记忆"对"品读...基因"；对比鲜明：厚重记忆vs鲜活基因；创新视角：用"烟火气"连接文物与日常生活</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>适用话题</h5>
+                                <p>文化传承、文物的价值、文化自信、细节与整体、传统与创新</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">
+                        <span class="icon">🎯</span>
+                        适用场景
+                    </h3>
+                    <ul class="applications-list">
+                        <li><strong>2024年新课标I卷"故事的力量"</strong>：文物背后的故事，炭化稻米、多穆壶等</li>
+                        <li><strong>2023年新课标II卷"青少年自己的空间"</strong>：博物馆作为文化空间的价值</li>
+                        <li><strong>2022年全国甲卷"移用、化用、独创"</strong>：《随园食单》复刻，古籍的现代转化</li>
+                        <li><strong>话题：文化自信</strong>：文化自信来源于对传统文化的深入了解</li>
+                        <li><strong>话题：传承与创新</strong>：传承不是守旧，而是让古老文化"活"起来</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">#文化传承</span>
+                        <span class="tag">#文物价值</span>
+                        <span class="tag">#烟火气</span>
+                        <span class="tag">#文化自信</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Summary Section -->
+        <div class="summary">
+            <h2>📊 今日素材总结</h2>
+
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <h3>核心主题</h3>
+                    <ul>
+                        <li>战略思维：心中有数+手上有招</li>
+                        <li>创新驱动：从制造到创造</li>
+                        <li>文化传承：文物里的烟火气</li>
+                    </ul>
+                </div>
+
+                <div class="summary-card">
+                    <h3>金词金句</h3>
+                    <ul>
+                        <li>心中有数，手上有招</li>
+                        <li>顺势而为，逆向思考</li>
+                        <li>创造力是将"不可能"雕琢为"可能"的刻刀</li>
+                        <li>挺进"无人区"，登上"制高点"</li>
+                        <li>厚重的文明记忆，鲜活的文化基因</li>
+                    </ul>
+                </div>
+
+                <div class="summary-card">
+                    <h3>适用话题</h3>
+                    <ul>
+                        <li>时代与个人</li>
+                        <li>创新与发展</li>
+                        <li>文化传承与文化自信</li>
+                        <li>战略思维与方法论</li>
+                        <li>中国制造与中国创造</li>
+                        <li>高质量发展</li>
+                    </ul>
+                </div>
+
+                <div class="summary-card">
+                    <h3>高考真题对应</h3>
+                    <ul>
+                        <li>2024年新课标I卷"故事的力量"</li>
+                        <li>2023年新课标I卷/II卷</li>
+                        <li>2022年全国甲卷/乙卷</li>
+                        <li>2021年全国甲卷/乙卷</li>
+                        <li>2020年全国I卷</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p><strong>整理时间：</strong>2026-05-18</p>
+            <p><strong>来源：</strong>人民日报 05版、12版</p>
+            <p><strong>整理人：</strong>高考作文素材每日整理系统</p>
+            <p style="margin-top: 20px; color: var(--primary);">✨ 每日积累，持续进步 ✨</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleCollapsible(element) {
+            element.parentElement.classList.toggle('active');
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
