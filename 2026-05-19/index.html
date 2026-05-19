@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-19 高考作文素材</title>
+    <style>
+        /* Orange UI Design System */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2D2D2D;
+            --text-light: #666666;
+            --border: #2D2D2D;
+            --shadow: #B5B5B5;
+            --white: #FFFFFF;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 20px;
+            background: var(--primary);
+            box-shadow: 8px 8px 0 0 var(--border);
+            border: 3px solid var(--border);
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 0 var(--border);
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        header .date {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 20px;
+            background: var(--accent);
+            color: var(--text);
+            font-weight: 600;
+            border: 2px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--border);
+        }
+
+        /* Article Card */
+        .article-card {
+            background: var(--card-bg);
+            border: 3px solid var(--border);
+            box-shadow: 8px 8px 0 0 var(--shadow);
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 10px 10px 0 0 var(--shadow);
+        }
+
+        .article-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 10px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: var(--bg);
+            border: 2px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 6px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .meta-label {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title .emoji {
+            font-size: 1.3rem;
+        }
+
+        /* Core Argument */
+        .core-argument {
+            background: linear-gradient(135deg, var(--primary) 0%, #5BB8E8 100%);
+            color: var(--white);
+            padding: 25px;
+            border: 3px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--border);
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.9;
+        }
+
+        /* Logic Tree */
+        .logic-tree {
+            background: var(--bg);
+            padding: 30px;
+            border: 3px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        .logic-tree pre {
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text);
+            white-space: pre;
+        }
+
+        /* Argument Methods */
+        .methods-list {
+            list-style: none;
+        }
+
+        .method-item {
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .method-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .method-content {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* Golden Sentences */
+        .golden-sentence {
+            background: var(--card-bg);
+            border: 3px solid var(--accent);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .sentence-quote {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 5px solid var(--accent);
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .sentence-analysis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .analysis-item {
+            background: var(--bg);
+            padding: 15px;
+            border: 2px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 6px;
+        }
+
+        .analysis-label {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .analysis-content {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Application Scenarios */
+        .scenarios-list {
+            list-style: none;
+        }
+
+        .scenario-item {
+            background: linear-gradient(135deg, var(--accent) 0%, #FFD54F 100%);
+            border: 3px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        .scenario-title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .scenario-content {
+            line-height: 1.8;
+        }
+
+        /* Original Text */
+        .original-text {
+            background: var(--bg);
+            border: 3px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .original-text h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--text);
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .original-text p {
+            margin-bottom: 15px;
+            text-indent: 2em;
+            line-height: 2;
+        }
+
+        /* Summary Section */
+        .summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--white);
+            padding: 40px;
+            border: 3px solid var(--border);
+            box-shadow: 8px 8px 0 0 var(--border);
+            border-radius: 8px;
+            margin-top: 60px;
+        }
+
+        .summary h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            text-shadow: 3px 3px 0 var(--border);
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .summary-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .summary-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            opacity: 0.95;
+        }
+
+        .summary-item ul {
+            list-style: none;
+            opacity: 0.9;
+        }
+
+        .summary-item li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .summary-item li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary);
+            color: var(--white);
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0 0 var(--border);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            header {
+                padding: 30px 15px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-card {
+                padding: 25px 20px;
+            }
+
+            .article-title {
+                font-size: 1.5rem;
+            }
+
+            .sentence-analysis {
+                grid-template-columns: 1fr;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .article-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                page-break-inside: avoid;
+            }
+
+            .back-to-top {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>📚 2026-05-19 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+            <div class="date">2026年5月19日 星期二</div>
+        </header>
+
+        <!-- Article 1 -->
+        <article class="article-card">
+            <h2 class="article-title">文章1：《"咱农民也能把自己活成诗"》（中国道路中国梦·每一个人都是主角）</h2>
+
+            <div class="article-meta">
+                <div class="meta-item">
+                    <span class="meta-label">作者：</span>
+                    <span>李成山（宁夏西吉县高同村村民、文学爱好者）</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">版面：</span>
+                    <span>第05版（评论版）</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">字数：</span>
+                    <span>约1200字</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">栏目：</span>
+                    <span>中国道路中国梦·每一个人都是主角</span>
+                </div>
+            </div>
+
+            <!-- Core Argument -->
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🎯</span>核心论点</h3>
+                <div class="core-argument">
+                    文学不分阶层，梦想无关身份——普通农民也能通过文学创作活出诗意人生，并带动乡村文化振兴。
+                </div>
+            </section>
+
+            <!-- Logic Structure -->
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🧠</span>论证逻辑</h3>
+                <div class="logic-tree">
+                    <pre>第一层：引入（现象呈现）
+├─ "为牛写诗"的独特场景
+└─ 打破"对牛弹琴"的刻板印象
+
+第二层：展开（故事递进）
+├─ 少年梦：早年发表作品，灿烂得很
+├─ 中年难：生活拮据，梦想压箱底30年
+├─ 晚年兴：国家发展，重拾文学梦
+└─ 转化：从"想摆脱农民身份"到"以农民身份写作"
+
+第三层：升华（价值提炼）
+├─ 个人层面：生活丰盈有趣，身心得到滋养
+├─ 社会层面：带动身边人，促进文明乡风
+└─ 时代层面：新大众文艺崛起，普通人也有舞台</pre>
+                </div>
+            </section>
+
+            <!-- Argument Methods -->
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🔧</span>论证方法</h3>
+                <ul class="methods-list">
+                    <li class="method-item">
+                        <div class="method-title">1. 对比论证（强烈反差）</div>
+                        <div class="method-content">
+                            古 vs 今："对牛弹琴"作讽 → "为牛写诗"钟爱<br>
+                            过去 vs 现在：压箱底30年 → 重拾文学梦<br>
+                            早年想法 vs 现在观念：摆脱农民身份 → 理直气壮以农民身份表达
+                        </div>
+                    </li>
+                    <li class="method-item">
+                        <div class="method-title">2. 举例论证（具体场景）</div>
+                        <div class="method-content">
+                            场景1：在牛圈读诗、贴红纸诗<br>
+                            场景2：半夜醒了摸黑记诗<br>
+                            场景3：农忙间隙、等雨工夫、干完活歇气的几分钟写诗<br>
+                            场景4：用《1987年的浆水和酸菜》劝解邻居纠纷
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Golden Sentences -->
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">💎</span>金句深度解析</h3>
+
+                <div class="golden-sentence">
+                    <div class="sentence-quote">"文学的念头，如种子般埋到了地里，虽然没发芽，但只需一场春雨，便会破土而出。"</div>
+                    <div class="sentence-analysis">
+                        <div class="analysis-item">
+                            <div class="analysis-label">🎨 好在哪</div>
+                            <div class="analysis-content">比喻精妙：将梦想比作种子，将机遇比作春雨；画面感强，哲理深刻，适合农业背景</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">📌 适用话题</div>
+                            <div class="analysis-content">梦想与坚持、机遇与准备、文学的力量、个人成长、乡村振兴中的文化力量、时代的托举</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">✍️ 怎么用</div>
+                            <div class="analysis-content">开头引入（论述梦想需要耐心等待时机）、转折论证（看似沉寂其实积蓄力量）、结尾升华（强调机遇来临时要抓住）</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-sentence">
+                    <div class="sentence-quote">"咱农民也能把自己活成诗，把日子过成诗！"</div>
+                    <div class="sentence-analysis">
+                        <div class="analysis-item">
+                            <div class="analysis-label">🎨 好在哪</div>
+                            <div class="analysis-content">标题金句，点睛之笔；自信宣言，理直气壮的身份认同；诗意表达"活成诗"生动形象；双重结构强调生活整体的诗意化</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">📌 适用话题</div>
+                            <div class="analysis-content">诗意生活、平凡人生的价值、文学与生活、自我实现、乡村振兴</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Application Scenarios -->
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🎯</span>适用场景</h3>
+                <ul class="scenarios-list">
+                    <li class="scenario-item">
+                        <div class="scenario-title">✅ 2022年全国新高考I卷《"本手、妙手、俗手"》</div>
+                        <div class="scenario-content">李成山坚持写诗30年，是"本手"；最终活成诗，是"妙手"</div>
+                    </li>
+                    <li class="scenario-item">
+                        <div class="scenario-title">✅ 2021年全国甲卷《"可为与有为"》</div>
+                        <div class="scenario-content">时代托举（可为）+ 个人坚持（有为）= 活成诗</div>
+                    </li>
+                    <li class="scenario-item">
+                        <div class="scenario-title">📚 关于"文学与生活"的作文</div>
+                        <div class="scenario-content">文学不是高高在上的，而是润泽生活的养分</div>
+                    </li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card">
+            <h2 class="article-title">文章2：《不妨多关注"后10%"》（纵横）</h2>
+
+            <div class="article-meta">
+                <div class="meta-item">
+                    <span class="meta-label">作者：</span>
+                    <span>朱珉迕</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">版面：</span>
+                    <span>第05版（评论版）</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">字数：</span>
+                    <span>约900字</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">来源：</span>
+                    <span>摘编自《解放日报》</span>
+                </div>
+            </div>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🎯</span>核心论点</h3>
+                <div class="core-argument">
+                    改革不能只抓"尖子生"，更要关注"后10%"——真正的本事在于让条件差的"大多数"跟上来，啃下最难啃的"硬骨头"。
+                </div>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🔧</span>论证方法</h3>
+                <ul class="methods-list">
+                    <li class="method-item">
+                        <div class="method-title">对比论证（核心论证结构）</div>
+                        <div class="method-content">
+                            尖子生 vs 后10%：条件好的少数 vs 条件差的多数<br>
+                            只见树木 vs 不见森林：局部成功 vs 整体推进<br>
+                            只想出彩 vs 不想出力：表面政绩 vs 实际担当
+                        </div>
+                    </li>
+                    <li class="method-item">
+                        <div class="method-title">引用论证（权威支撑）</div>
+                        <div class="method-content">
+                            习近平总书记："天底下哪有那么多四平八稳、顺风顺水的事。正因为有风险，才需要担当。"<br>
+                            古训："为官避事平生耻"
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">💎</span>金句深度解析</h3>
+
+                <div class="golden-sentence">
+                    <div class="sentence-quote">"只想出彩不想出力，是一种投机取巧。"</div>
+                    <div class="sentence-analysis">
+                        <div class="analysis-item">
+                            <div class="analysis-label">🎨 好在哪</div>
+                            <div class="analysis-content">对仗工整、一针见血、定义精准、批判有力；直指形式主义、表面文章的本质</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">📌 适用话题</div>
+                            <div class="analysis-content">务实 vs 务虚、政绩观、担当精神、工作作风、形式主义</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-sentence">
+                    <div class="sentence-quote">"用力破解了'后10%'，破解了最复杂、最顽固的裉节问题，往往能带来满盘皆活的效果，实现整体跃升，乃至成就一片天地。"</div>
+                    <div class="sentence-analysis">
+                        <div class="analysis-item">
+                            <div class="analysis-label">🎨 好在哪</div>
+                            <div class="analysis-content">逻辑递进：破解"后10%" → 满盘皆活 → 整体跃升 → 成就天地；强调攻克难点的战略意义</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">📌 适用话题</div>
+                            <div class="analysis-content">抓主要矛盾、攻坚克难、系统思维、全面发展、重点突破</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🎯</span>适用场景</h3>
+                <ul class="scenarios-list">
+                    <li class="scenario-item">
+                        <div class="scenario-title">✅ 2023年全国新课标I卷《"故事的力量"》</div>
+                        <div class="scenario-content">讲述"后10%"被关注的故事，展现政策的温度</div>
+                    </li>
+                    <li class="scenario-item">
+                        <div class="scenario-title">✅ 关于"共同富裕"的作文</div>
+                        <div class="scenario-content">不能只让"尖子生"富起来，更要带动"后10%"</div>
+                    </li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card">
+            <h2 class="article-title">文章3：《工业旅游，生产线也是风景线》（以文塑旅 以旅彰文）</h2>
+
+            <div class="article-meta">
+                <div class="meta-item">
+                    <span class="meta-label">版面：</span>
+                    <span>第13版（文化版）</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">字数：</span>
+                    <span>约1800字</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">时间：</span>
+                    <span>第十六个中国旅游日</span>
+                </div>
+            </div>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🎯</span>核心论点</h3>
+                <div class="core-argument">
+                    工业旅游让生产线成为风景线，传统工业在文旅融合中焕发新生——科技+文化+旅游，创造出沉浸式的"智造地标"和城市新名片。
+                </div>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🧠</span>三个典型案例</h3>
+                <div class="logic-tree">
+                    <pre>案例1：北京亦庄小米汽车工厂
+├─ 定位：智能制造的"实景课堂"
+├─ 特色：科技展厅+生产车间参观
+│  ├─ 底盘架构、电池技术、自研芯片等展示
+│  └─ 600多个机器人工作场景
+├─ 效果：累计接待游客23万人次
+└─ 价值：科普+研学+文旅融合
+
+案例2：江苏镇江恒顺醋文化博物馆
+├─ 定位："有味道"的博物馆
+├─ 特色：传统工艺+现代工厂
+│  ├─ 老作坊翻醅体验（最传统）
+│  └─ 灌装车间自动化产线（最前沿）
+├─ 对比：老师傅翻醅 vs 1小时灌装3.6万瓶
+└─ 价值：传统非遗与现代工厂融合
+
+案例3：山西阳泉1947文化园
+├─ 定位：老厂房改造的科幻文学馆
+├─ 背景：阳泉水泵厂老厂区（工业遗产）
+├─ 特色：刘慈欣科幻文学馆
+└─ 价值：盘活工业遗产，带动文创产业</pre>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">💎</span>金句深度解析</h3>
+
+                <div class="golden-sentence">
+                    <div class="sentence-quote">"生产线也是风景线"</div>
+                    <div class="sentence-analysis">
+                        <div class="analysis-item">
+                            <div class="analysis-label">🎨 好在哪</div>
+                            <div class="analysis-content">对仗工整：生产线 vs 风景线；观念突破，重新定义工业空间的审美价值；朗朗上口，易于记忆传播</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">📌 适用话题</div>
+                            <div class="analysis-content">工业与美、文旅融合、城市更新、传统与现代、创新思维</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-sentence">
+                    <div class="sentence-quote">"工业文化的精妙之处，在于既传承又创新，体现了传统非遗与现代工厂的融合。"</div>
+                    <div class="sentence-analysis">
+                        <div class="analysis-item">
+                            <div class="analysis-label">🎨 好在哪</div>
+                            <div class="analysis-content">辩证统一：传承 vs 创新；概括工业文化的核心特征；传统非遗 vs 现代工厂的对举结构</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">📌 适用话题</div>
+                            <div class="analysis-content">传统与创新、文化传承、融合发展、非遗保护、工业文明</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🎯</span>适用场景</h3>
+                <ul class="scenarios-list">
+                    <li class="scenario-item">
+                        <div class="scenario-title">✅ 2022年全国新高考I卷《"本手、妙手、俗手"》</div>
+                        <div class="scenario-content">传统工艺（本手）+ 现代技术（妙手）= 工业旅游的融合发展</div>
+                    </li>
+                    <li class="scenario-item">
+                        <div class="scenario-title">📚 关于"文旅融合"的作文</div>
+                        <div class="scenario-content">以文塑旅、以旅彰文的生动案例</div>
+                    </li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card">
+            <h2 class="article-title">文章4：《在稻浪里，看到共同的未来》（暖闻热评）</h2>
+
+            <div class="article-meta">
+                <div class="meta-item">
+                    <span class="meta-label">作者：</span>
+                    <span>余璇</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">版面：</span>
+                    <span>第05版（评论版）</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">关键词：</span>
+                    <span>"袁氏大米"</span>
+                </div>
+            </div>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🎯</span>核心论点</h3>
+                <div class="core-argument">
+                    一袋来自非洲的"袁氏大米"，承载着跨越山海的感激之情，见证了中国智慧普惠世界人民的生动实践，彰显了中国现代化道路的包容性与共赢性。
+                </div>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🧠</span>论证逻辑</h3>
+                <div class="logic-tree">
+                    <pre>第一层：事件引入
+├─ 几内亚总理将"袁氏大米"带给袁隆平夫人
+└─ 传递着诚挚谢意
+
+第二层：现象扩展
+├─ 冈比亚案例：农户穆萨将大米敬献于袁隆平墓前
+└─ 结论：大家一起发展才是真发展
+
+第三层：横向拓展
+├─ 杂交水稻：从亩产极低到稻浪翻滚
+├─ 绿电项目：点亮厄立特里亚的未来
+├─ 减贫经验："村长班"传授至印度尼西亚
+└─ 苦咸水淡化：让巴西居民喝上干净水
+
+第四层：深度追问
+└─ 中国何以选择这样的道路？
+
+第五层：历史对比
+├─ 西方老路：对外扩张掠夺、竞争倾轧
+└─ 中国道路：
+   ├─ 对内：以人民为中心，拒绝两极分化
+   └─ 对外：开放包容，"开源式现代化"
+
+第六层：总结升华
+└─ 摒弃零和博弈，践行互利共赢</pre>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">💎</span>金句深度解析</h3>
+
+                <div class="golden-sentence">
+                    <div class="sentence-quote">"大家一起发展才是真发展，可持续发展才是好发展。"</div>
+                    <div class="sentence-analysis">
+                        <div class="analysis-item">
+                            <div class="analysis-label">🎨 好在哪</div>
+                            <div class="analysis-content">对仗工整：真发展 vs 好发展；递进关系；给出发展的评判标准；国际视野</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">📌 适用话题</div>
+                            <div class="analysis-content">国际合作、共同发展、人类命运共同体、可持续发展、互利共赢</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-sentence">
+                    <div class="sentence-quote">"德不孤，必有邻。"</div>
+                    <div class="sentence-analysis">
+                        <div class="analysis-item">
+                            <div class="analysis-label">🎨 好在哪</div>
+                            <div class="analysis-content">出自《论语·里仁》，增强文化底蕴；简洁凝练；经过千年检验的真理；适用性广</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">📌 适用话题</div>
+                            <div class="analysis-content">道德修养、国际关系、诚信合作、软实力、文化影响力</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-sentence">
+                    <div class="sentence-quote">"相信中国就是相信明天正成为更广阔语境下的现实。"</div>
+                    <div class="sentence-analysis">
+                        <div class="analysis-item">
+                            <div class="analysis-label">🎨 好在哪</div>
+                            <div class="analysis-content">因果关系：相信中国 = 相信明天；指向未来，充满希望；传递出强烈的自信</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">📌 适用话题</div>
+                            <div class="analysis-content">中国道路、未来展望、时代机遇、国际影响、发展信心</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title"><span class="emoji">🎯</span>适用场景</h3>
+                <ul class="scenarios-list">
+                    <li class="scenario-item">
+                        <div class="scenario-title">✅ 2023年全国新课标I卷《"故事的力量"》</div>
+                        <div class="scenario-content">"袁氏大米"背后的故事：技术援助+民心相通</div>
+                    </li>
+                    <li class="scenario-item">
+                        <div class="scenario-title">✅ 关于"人类命运共同体"的作文</div>
+                        <div class="scenario-content">"袁氏大米"是构建人类命运共同体的生动案例</div>
+                    </li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- Summary -->
+        <div class="summary">
+            <h2>📝 今日总结</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <h3>🎯 文章主题分布</h3>
+                    <ul>
+                        <li>个人成长：农民文学爱好者的梦想坚持</li>
+                        <li>工作方法：关注"后10%"的政绩观</li>
+                        <li>产业发展：工业旅游的文旅融合</li>
+                        <li>国际合作：互利共赢的中国智慧</li>
+                    </ul>
+                </div>
+                <div class="summary-item">
+                    <h3>💡 核心价值导向</h3>
+                    <ul>
+                        <li>平视视角：普通人也有诗意生活</li>
+                        <li>问题导向：关注薄弱环节而非只抓典型</li>
+                        <li>创新融合：传统工业的现代转型</li>
+                        <li>开放包容：中国方案的普惠价值</li>
+                    </ul>
+                </div>
+                <div class="summary-item">
+                    <h3>📚 高考话题适用性</h3>
+                    <ul>
+                        <li>高频话题：梦想坚持、务实担当、传统创新、国际合作</li>
+                        <li>中频话题：文旅融合、文化自信、人类命运共同体</li>
+                        <li>特色话题：农民文学、工业旅游、政绩观反思</li>
+                    </ul>
+                </div>
+                <div class="summary-item">
+                    <h3>✨ 重点金句储备</h3>
+                    <ul>
+                        <li>"文学的念头，如种子般埋到了地里"</li>
+                        <li>"咱农民也能把自己活成诗"</li>
+                        <li>"只想出彩不想出力"</li>
+                        <li>"生产线也是风景线"</li>
+                        <li>"大家一起发展才是真发展"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; margin-top: 60px; padding: 30px; color: var(--text-light);">
+            <p style="font-size: 0.9rem;">整理时间：2026年5月19日</p>
+            <p style="font-size: 0.9rem;">数据来源：《人民日报》电子版</p>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </div>
+
+    <script>
+        // Smooth scroll for back to top
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
