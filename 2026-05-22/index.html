@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-22 高考作文素材</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2D2D2D;
+            --text-light: #666666;
+            --border: #2D2D2D;
+            --shadow: #B5B5B5;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+
+        /* Article Card */
+        .article-card {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            margin-bottom: 60px;
+            overflow: hidden;
+        }
+
+        .article-header {
+            background: var(--primary);
+            padding: 30px 40px;
+            color: var(--white);
+        }
+
+        .article-header h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+            opacity: 0.95;
+        }
+
+        .article-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .article-meta-item strong {
+            font-weight: 600;
+        }
+
+        .article-content {
+            padding: 40px;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 4px solid var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-content {
+            padding-left: 30px;
+        }
+
+        /* Core Argument */
+        .core-argument {
+            background: linear-gradient(135deg, var(--bg) 0%, var(--white) 100%);
+            border: 1.5px solid var(--border);
+            padding: 30px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.9;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            position: relative;
+        }
+
+        .core-argument::before {
+            content: "💡";
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            font-size: 2rem;
+            background: var(--accent);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px solid var(--border);
+        }
+
+        /* Logic Diagram */
+        .logic-diagram {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            padding: 30px;
+            font-family: "Courier New", monospace;
+            font-size: 0.9rem;
+            line-height: 2;
+            overflow-x: auto;
+            white-space: pre;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        /* Argument Methods */
+        .method-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .method-item {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            padding: 20px 25px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .method-item:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        .method-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .method-title::before {
+            content: "🔧";
+            font-size: 1.2rem;
+        }
+
+        .method-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Golden Quotes */
+        .quote-list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .quote-item {
+            background: linear-gradient(135deg, var(--white) 0%, var(--bg) 100%);
+            border: 1.5px solid var(--border);
+            padding: 30px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .quote-text {
+            font-size: 1.15rem;
+            font-weight: 600;
+            line-height: 1.9;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: var(--white);
+            border-left: 4px solid var(--accent);
+            font-style: italic;
+        }
+
+        .quote-analysis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .analysis-item {
+            background: var(--white);
+            border: 1px solid var(--border);
+            padding: 15px;
+        }
+
+        .analysis-label {
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .analysis-content {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* Scenarios */
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .scenario-card {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            padding: 25px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .scenario-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        .scenario-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .scenario-title::before {
+            content: "🎯";
+            font-size: 1.3rem;
+        }
+
+        .scenario-content {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        .scenario-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .scenario-content li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .scenario-content li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Templates */
+        .template-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .template-item {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            padding: 25px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .template-title {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+
+        .template-content {
+            background: var(--bg);
+            padding: 15px;
+            border-left: 3px solid var(--border);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        /* Original Text */
+        .original-text {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            padding: 30px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            max-height: 400px;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .original-text p {
+            margin-bottom: 15px;
+            text-indent: 2em;
+            line-height: 2;
+        }
+
+        .original-text::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .original-text::-webkit-scrollbar-track {
+            background: var(--bg);
+        }
+
+        .original-text::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 4px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 20px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-header {
+                padding: 25px;
+            }
+
+            .article-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .article-content {
+                padding: 25px;
+            }
+
+            .quote-analysis {
+                grid-template-columns: 1fr;
+            }
+
+            .scenario-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Collapsible */
+        .collapsible {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .collapsible::after {
+            content: "▼";
+            float: right;
+            margin-left: 10px;
+            transition: transform 0.3s;
+        }
+
+        .collapsible.active::after {
+            transform: rotate(180deg);
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .collapsible-content.active {
+            max-height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-05-22 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+        </header>
+
+        <!-- 文章1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>前瞻性眼光从何而来（人民时评）</h2>
+                <div class="article-meta">
+                    <div class="article-meta-item">
+                        <strong>作者：</strong>龙国贻
+                    </div>
+                    <div class="article-meta-item">
+                        <strong>版面：</strong>05版（评论版）
+                    </div>
+                    <div class="article-meta-item">
+                        <strong>字数：</strong>约1200字
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <!-- 核心论点 -->
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="section-content">
+                        <div class="core-argument">
+                            前瞻性眼光来源于对潮流趋势的把握、对长短板的辩证把握、以及宏阔的国际视野；后发亦可先至，关键在于找准比较优势、错位竞争、差异化发展。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 论证逻辑 -->
+                <div class="section">
+                    <h3 class="section-title">🧠 论证逻辑</h3>
+                    <div class="section-content">
+                        <div class="logic-diagram">第一层：现象引入
+  ↓
+  蓝莓从高价到亲民 + 中国汽车全球夺冠
+  ↓
+  引出问题：前瞻性眼光从何而来？
+
+第二层：三个维度的论证
+  ↓
+  【维度1】对潮流趋势的把握
+  → 案例：安徽汽车（战略咨询委员会"站在未来看现在"）
+  → 观点：潮流起势之初科学判断，未雨绸缪
+  ↓
+  【维度2】对长短板的辩证把握
+  → 案例：甘肃庆阳（从"无先发优势"到"智算第一"）
+  → 观点：短板可以成为跳板，后发可先至
+  ↓
+  【维度3】宏阔的国际视野
+  → 案例：湖北黄石（飞地研发+本土转化）
+  → 案例：陕西武功（借力杨凌自贸区优势）
+  → 观点：跳出局限，以协同之力成发展之势
+
+第三层：总结升华
+  ↓
+  把握当前与长远、识别长板与短板、统筹自身与他者
+  → 牢牢掌握发展主动权</div>
+                    </div>
+                </div>
+
+                <!-- 论证方法 -->
+                <div class="section">
+                    <h3 class="section-title">🔧 论证方法</h3>
+                    <div class="section-content">
+                        <div class="method-list">
+                            <div class="method-item">
+                                <div class="method-title">对比论证</div>
+                                <div class="method-description">
+                                    蓝莓（曾是高价舶来品 vs 中国产量全球第一）、中国汽车（2020年全国第八 vs 2025年全国第一）、甘肃庆阳（起步最晚 vs 智算规模增速最快）<br>
+                                    <strong>作用：</strong>通过前后对比突出前瞻性布局的重要性
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-title">举例论证</div>
+                                <div class="method-description">
+                                    安徽汽车产量跃升案例（具体数据支撑）、庆阳智算规模11.4万P（精准数据）、黄石400家企业、武功1.02亿元跨境电商额（量化成果）<br>
+                                    <strong>作用：</strong>用真实案例增强说服力
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-title">因果论证</div>
+                                <div class="method-description">
+                                    因为"站在未来看现在"的战略眼光 → 所以安徽汽车夺冠<br>
+                                    因为转换思路发展智能算力 → 所以庆阳抢占先机<br>
+                                    <strong>作用：</strong>揭示前瞻性布局与成功之间的必然联系
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-title">比喻论证</div>
+                                <div class="method-description">
+                                    "见微知著"的敏锐、"一叶知秋"的机警、"火眼金睛"捕捉机遇<br>
+                                    <strong>作用：</strong>生动形象地说明前瞻性眼光的特质
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 金句解析 -->
+                <div class="section">
+                    <h3 class="section-title collapsible">💎 金句深度解析</h3>
+                    <div class="section-content collapsible-content active">
+                        <div class="quote-list">
+                            <div class="quote-item">
+                                <div class="quote-text">"后发亦可先至，短板也能成为发展的跳板。找准比较优势，错位竞争，实现差异化发展，一地发展才会有'过人之处'。"</div>
+                                <div class="quote-analysis">
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">✨ 好在哪</div>
+                                        <div class="analysis-content">哲理性强：突破"先发优势"的常规思维<br>对仗工整："后发亦可先至"vs"短板也能成为跳板"<br>动词有力："找准""错位""实现"层层递进</div>
+                                    </div>
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">📝 适用话题</div>
+                                        <div class="analysis-content">创新与发展、变通与智慧、优势与劣势、转化与突破、竞争与合作、差异化发展、扬长避短、精准定位</div>
+                                    </div>
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">🎯 怎么用</div>
+                                        <div class="analysis-content">【开头使用】作为论述起点<br>【论证使用】分析案例前铺垫<br>【结尾使用】升华主题</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quote-item">
+                                <div class="quote-text">"要想抢占先机，就必须有战略眼光。保持'见微知著'的敏锐，练就'一叶知秋'的机警，擦亮捕捉机遇的'火眼金睛'，既立足当前，明确当务之急，也着眼未来，善谋长远之策，才能让发展的后劲源源不绝。"</div>
+                                <div class="quote-analysis">
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">✨ 好在哪</div>
+                                        <div class="analysis-content">成语叠加：三个成语形成排比，增强气势<br>逻辑严密："立足当前"+"着眼未来"双重视角<br>音韵铿锵："机警""眼金""不绝"押韵感强</div>
+                                    </div>
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">📝 适用话题</div>
+                                        <div class="analysis-content">远见与眼光、准备与机遇、当前与长远、机遇与挑战、战略思维、未雨绸缪、审时度势</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quote-item">
+                                <div class="quote-text">"他者也能成为自身发展的助力。勇于跳出一地一隅的局限，以更宏阔的视野、更开放的眼界观照一地，就能看到更多的市场机遇、更广的发展空间、更远的美好未来。"</div>
+                                <div class="quote-analysis">
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">✨ 好在哪</div>
+                                        <div class="analysis-content">辩证思维："他者"非"对立者"，而是"助力"<br>排比递进："更多""更广""更远"层层扩展<br>视野开阔：从"局限"到"宏阔"，境界提升</div>
+                                    </div>
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">📝 适用话题</div>
+                                        <div class="analysis-content">开放与包容、合作共赢、跳出局限、借力发展、协同发展、开放思维、全球视野、合作精神</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 适用场景 -->
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="section-content">
+                        <div class="scenario-grid">
+                            <div class="scenario-card">
+                                <div class="scenario-title">直接可用</div>
+                                <div class="scenario-content">
+                                    <ul>
+                                        <li>创新与发展类话题：论证"差异化发展"的重要性和方法论</li>
+                                        <li>变通与智慧类话题：用"短板变跳板"论证转换思路的重要性</li>
+                                        <li>竞争与合作类话题：用"协同发展"论证开放包容的价值</li>
+                                        <li>远见与眼光类话题：用三个案例论证前瞻性布局的意义</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="scenario-card">
+                                <div class="scenario-title">高考真题对接</div>
+                                <div class="scenario-content">
+                                    <ul>
+                                        <li>2024年全国甲卷"技术与时间"：可用庆阳智算案例</li>
+                                        <li>2023年新课标I卷"故事的力量"：可用安徽汽车案例</li>
+                                        <li>2022年新高考I卷"本手、妙手、俗手"：可用庆阳案例</li>
+                                        <li>2021年全国甲卷"可为与有为"：全文可直接使用</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 段落模板 -->
+                <div class="section">
+                    <h3 class="section-title collapsible">📝 考场段落模板</h3>
+                    <div class="section-content collapsible-content">
+                        <div class="template-list">
+                            <div class="template-item">
+                                <div class="template-title">【模板1：开头引入】</div>
+                                <div class="template-content">
+                                    蓝莓从高价舶来品到中国产量全球第一，中国汽车从2020年全国第八到2025年全球冠军，这些成绩的背后，是一个引人深思的问题：前瞻性眼光从何而来？
+                                </div>
+                            </div>
+                            <div class="template-item">
+                                <div class="template-title">【模板2：论证展开】</div>
+                                <div class="template-content">
+                                    后发亦可先至，关键在于找准比较优势、错位竞争。甘肃庆阳在"东数西算"中起步最晚，却转换思路发展智能算力，最终智算规模达11.4万P，成为全国增速最快的枢纽节点。这充分说明，短板也能成为发展的跳板。
+                                </div>
+                            </div>
+                            <div class="template-item">
+                                <div class="template-title">【模板3：升华总结】</div>
+                                <div class="template-content">
+                                    行棋观大势，落子谋全局。把握好当前与长远、识别好长板与短板、统筹好自身与他者，在千帆竞发中找准赛道、抢占先机，就能牢牢掌握发展的主动权。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 原文 -->
+                <div class="section">
+                    <h3 class="section-title collapsible">📄 原文</h3>
+                    <div class="section-content collapsible-content">
+                        <div class="original-text">
+                            <p>后发亦可先至，短板也能成为发展的跳板。找准比较优势，错位竞争，实现差异化发展，一地发展才会有"过人之处"</p>
+                            <p>看似不相关的新闻，合起来看，则耐人寻味。</p>
+                            <p>"蓝莓自由"近期刷屏。蓝莓曾是高价舶来品，如今中国产量稳居全球第一，价格更亲民。</p>
+                            <p>再看中国汽车，据报道，2025年中国车企全球累计销量逼近2700万辆，首次超越日本车企的约2500万辆，夺得全球冠军。</p>
+                            <p>蓝莓做出大文章，汽车闯出大市场，回过头来看，这样的成绩来之不易，也引人思考：前瞻性布局是如何实现的？前瞻性眼光从何而来？</p>
+                            <p>前瞻性，往往基于对潮流、趋势的把握。潮流起势之初，便科学判断其走向，趋势未成之前，就预判未来动态，未雨绸缪、主动布局，等到潮流、趋势成形时，自然能立于潮头。</p>
+                            <p>就拿安徽来说，汽车产量从2020年全国第八，到2025年全国第一，省新能源汽车产业集群建设战略咨询委员会发挥了重要作用。成立之初，它就被赋予"站在未来看现在，站在后天看今天"的职责，不仅连接高校、产业等资源，为汽车发展出谋划策，还推动技术创新落地转化、产品创新迭代。</p>
+                            <p>要想抢占先机，就必须有战略眼光。保持"见微知著"的敏锐，练就"一叶知秋"的机警，擦亮捕捉机遇的"火眼金睛"，既立足当前，明确当务之急，也着眼未来，善谋长远之策，才能让发展的后劲源源不绝。</p>
+                            <p>眼光的前瞻性，也体现在对"长与短"的辩证把握上。有些地方的资源、区位等基础条件，从常规思路来看，可能是短板，换个角度思考，就可能是潜力板，是未来可以努力的方向。</p>
+                            <p>在"东数西算"全国八大枢纽节点中，甘肃庆阳起步最晚。没了先发优势，庆阳转换思路，不是发展通用算力，而是另辟蹊径，发展智能算力。于是，在国产AI（人工智能）大模型集中涌现、全国智算需求急速增长的窗口期，庆阳反而抢占了先机。截至2025年底，庆阳数据中心集群智算规模达11.4万P（1P约等于每秒1000万亿次计算速度），成为全国增量最大、增速最快、智算化比例最高的枢纽节点和数据集群。</p>
+                            <p>后发亦可先至，短板也能成为发展的跳板。找准比较优势，错位竞争，实现差异化发展，一地发展才会有"过人之处"。</p>
+                            <p>眼光是否具有前瞻性，还在于眼界的宽阔程度。</p>
+                            <p>比如，能否跳出一地看一地，以协同之力成发展之势。湖北黄石，作为中部省份的中等城市，科教资源、科技人才优势并不突出，如何破局？借脑发展、借智创新，把外部智力变成黄石机遇。黄石创新探索"飞地研发+本土转化"路径，布局建设武汉、上海、深圳、北京离岸科创中心，累计引育企业超400家。</p>
+                            <p>再比如，能否站在世界版图看一地，以国际市场开拓新空间。陕西咸阳武功县，借助10公里外杨凌的"自贸试验区+综保区"等政策叠加优势，设立"武功电商专用保税仓"。2025年，全县全网店铺超5000家，跨境电商贸易额超1.02亿元。</p>
+                            <p>他者也能成为自身发展的助力。勇于跳出一地一隅的局限，以更宏阔的视野、更开放的眼界观照一地，就能看到更多的市场机遇、更广的发展空间、更远的美好未来。</p>
+                            <p>行棋观大势，落子谋全局。对弈中，能多看一步，就多一分胜算，发展亦是如此。把握好当前与长远、识别好长板与短板、统筹好自身与他者，在千帆竞发中找准赛道、抢占先机，就能牢牢掌握发展的主动权。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>将镜头与笔触对准烟火日常（金台随笔）</h2>
+                <div class="article-meta">
+                    <div class="article-meta-item">
+                        <strong>作者：</strong>陈曦
+                    </div>
+                    <div class="article-meta-item">
+                        <strong>版面：</strong>05版（评论版）
+                    </div>
+                    <div class="article-meta-item">
+                        <strong>字数：</strong>约900字
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <!-- 核心论点 -->
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="section-content">
+                        <div class="core-argument">
+                            新大众文艺的独特价值在于打破创作壁垒，让人民群众从"剧中人"成为"剧作者"；其蓬勃生机来自守正创新、拥抱数字时代，以技术革新拓展创作边界。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 论证逻辑 -->
+                <div class="section">
+                    <h3 class="section-title">🧠 论证逻辑</h3>
+                    <div class="section-content">
+                        <div class="logic-diagram">第一层：现象引入
+  ↓
+  微短剧《家里家外》引发共鸣 + 音乐《嘉禾望岗》"破圈"
+  ↓
+  引出问题：新大众文艺的魅力究竟何在？
+
+第二层：四个维度的论证
+  ↓
+  【维度1】生活即艺术的创作逻辑
+  → 案例：外卖诗人王计兵《赶时间的人》
+  → 观点：将镜头与笔触对准烟火日常，接地气所以聚人气
+  ↓
+  【维度2】打破创作壁垒的价值
+  → 现象：从田间到街巷、从素人到全民的文艺实践
+  → 观点："人人可创作、处处可传播、大众共分享"
+  ↓
+  【维度3】守正创新的蓬勃生机
+  → 案例：李子柒短视频（田园为纸、生活作画）
+  → 观点：以轻量化、接地气的表达让传统文化与时代精神相融
+  ↓
+  【维度4】拥抱数字时代的持久活力
+  → 案例：AI短片《雪山救狐狸》"人机协同"创作
+  → 观点：技术革新让"一个人就是一个剧组"成为可能
+
+第三层：总结升华
+  ↓
+  扎根人民、紧跟时代，新大众文艺将带来更多惊喜</div>
+                    </div>
+                </div>
+
+                <!-- 论证方法 -->
+                <div class="section">
+                    <h3 class="section-title">🔧 论证方法</h3>
+                    <div class="section-content">
+                        <div class="method-list">
+                            <div class="method-item">
+                                <div class="method-title">举例论证</div>
+                                <div class="method-description">
+                                    微短剧《家里家外》、外卖诗人王计兵《赶时间的人》、李子柒短视频、AI短片《雪山救狐狸》<br>
+                                    <strong>作用：</strong>用多样化案例覆盖不同文艺形态
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-title">比喻论证</div>
+                                <div class="method-description">
+                                    "田间地头的诗歌创作，到街巷市井的短视频记录"<br>"田园为纸、生活作画"<br>"人人可创作、处处可传播、大众共分享"<br>
+                                    <strong>作用：</strong>生动展现新大众文艺的广度和活力
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-title">对比论证</div>
+                                <div class="method-description">
+                                    过去：专业舞台、小众圈层、专业人士的专业事<br>现在：生活现场、全民实践、"一个人就是一个剧组"<br>
+                                    <strong>作用：</strong>突出新大众文艺的变革性
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 金句解析 -->
+                <div class="section">
+                    <h3 class="section-title collapsible">💎 金句深度解析</h3>
+                    <div class="section-content collapsible-content active">
+                        <div class="quote-list">
+                            <div class="quote-item">
+                                <div class="quote-text">"新大众文艺遵循生活即艺术的创作逻辑，将镜头与笔触对准烟火日常，成为人民群众观察生活、表达情感的文艺新形态。因为接地气，所以聚人气。"</div>
+                                <div class="quote-analysis">
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">✨ 好在哪</div>
+                                        <div class="analysis-content">哲理深刻："生活即艺术"揭示文艺本质<br>对仗工整："接地气"vs"聚人气"<br>动词精准："对准""观察""表达"层层递进<br>节奏明快：短句有力，朗朗上口</div>
+                                    </div>
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">📝 适用话题</div>
+                                        <div class="analysis-content">艺术与生活、人民与文艺、真实与虚假、烟火气与高级感、以人民为中心、生活即艺术、接地气、情感共鸣</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quote-item">
+                                <div class="quote-text">"新大众文艺的独特价值，在于打破创作壁垒，人民群众不仅可以是'剧中人'，还可以成为'剧作者'。"</div>
+                                <div class="quote-analysis">
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">✨ 好在哪</div>
+                                        <div class="analysis-content">对比鲜明："剧中人"vs"剧作者"<br>递进有力："不仅可以是...还可以成为..."<br>用词精准："打破壁垒"准确概括变革<br>哲理深刻：揭示文艺创作的民主化趋势</div>
+                                    </div>
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">📝 适用话题</div>
+                                        <div class="analysis-content">主体与客体、参与与旁观、创造与享受、民主与参与、去中心化、创作主体、人民性、赋权</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quote-item">
+                                <div class="quote-text">"李子柒的短视频，借助'田园为纸、生活作画'的独特叙事，构建东方美学意境，实现对中华优秀传统文化的诗意转译与全球传播。"</div>
+                                <div class="quote-analysis">
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">✨ 好在哪</div>
+                                        <div class="analysis-content">比喻精妙："田园为纸、生活作画"画面感强<br>用词典雅："诗意转译"富有美感<br>层次丰富：从"叙事"到"意境"再到"转译"和"传播"<br>文化自信：体现传统文化在当代的活力</div>
+                                    </div>
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">📝 适用话题</div>
+                                        <div class="analysis-content">传统与现代、传承与创新、文化传播、东方美学、文化自信、讲好中国故事、传统文化创造性转化、全球传播</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quote-item">
+                                <div class="quote-text">"'人机协同'创作的新模式，可以让更多人实现从策划、制作到剪辑的全流程创作，进一步刷新了诗歌、短视频、网络小说等文艺作品创作的效率。"</div>
+                                <div class="quote-analysis">
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">✨ 好在哪</div>
+                                        <div class="analysis-content">时效性强：紧扣AI技术前沿<br>概念清晰："人机协同"准确概括新模式<br>动词有力："刷新"体现变革性<br>视角开放：积极看待技术对文艺的影响</div>
+                                    </div>
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">📝 适用话题</div>
+                                        <div class="analysis-content">技术与人文、效率与质量、创作与工具、AI与人类、技术赋能、创作效率、人机关系、未来趋势</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 适用场景 -->
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="section-content">
+                        <div class="scenario-grid">
+                            <div class="scenario-card">
+                                <div class="scenario-title">直接可用</div>
+                                <div class="scenario-content">
+                                    <ul>
+                                        <li>文艺创作类话题：论证"生活即艺术""人民是创作主体"等观点</li>
+                                        <li>技术发展类话题：用AI案例论证技术对创作的赋能作用</li>
+                                        <li>传统文化类话题：用李子柒案例论证传统文化的创造性转化</li>
+                                        <li>时代发展类话题：论证"人人可创作"的时代特征</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="scenario-card">
+                                <div class="scenario-title">高考真题对接</div>
+                                <div class="scenario-content">
+                                    <ul>
+                                        <li>2024年全国甲卷"技术与时间"：可用AI案例论证技术如何改变文艺创作的时间效率</li>
+                                        <li>2023年新课标I卷"故事的力量"：可用李子柒案例，讲述传统文化如何"破圈"传播</li>
+                                        <li>2022年新高考I卷"本手、妙手、俗手"：可用"生活即艺术"论证"本手"的重要性</li>
+                                        <li>2021年全国甲卷"可为与有为"：全文可用，论述在新时代如何"有为"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 段落模板 -->
+                <div class="section">
+                    <h3 class="section-title collapsible">📝 考场段落模板</h3>
+                    <div class="section-content collapsible-content">
+                        <div class="template-list">
+                            <div class="template-item">
+                                <div class="template-title">【模板1：开头引入】</div>
+                                <div class="template-content">
+                                    微短剧《家里家外》讲述重组家庭的温情故事，引发观众共鸣；音乐《嘉禾望岗》成功"破圈"，"一首歌唱火了一座城"。新大众文艺蓬勃兴起，成为新时代文艺繁荣发展的一道亮丽风景。
+                                </div>
+                            </div>
+                            <div class="template-item">
+                                <div class="template-title">【模板2：论证展开】</div>
+                                <div class="template-content">
+                                    新大众文艺遵循生活即艺术的创作逻辑，将镜头与笔触对准烟火日常。外卖诗人王计兵坚持写作，以原创诗作《赶时间的人》展现普通劳动者的不屈与坚韧。因为接地气，所以聚人气。
+                                </div>
+                            </div>
+                            <div class="template-item">
+                                <div class="template-title">【模板3：升华总结】</div>
+                                <div class="template-content">
+                                    新大众文艺的独特价值，在于打破创作壁垒，人民群众不仅可以是"剧中人"，还可以成为"剧作者"。这种"人人可创作、处处可传播、大众共分享"的模式，激发出蕴藏在民间的无限创作活力。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 原文 -->
+                <div class="section">
+                    <h3 class="section-title collapsible">📄 原文</h3>
+                    <div class="section-content collapsible-content">
+                        <div class="original-text">
+                            <p>新大众文艺的独特价值，在于打破创作壁垒，人民群众不仅可以是"剧中人"，还可以成为"剧作者"</p>
+                            <p>微短剧《家里家外》讲述重组家庭共同面对生活挑战的温情故事，引发观众共鸣；音乐《嘉禾望岗》成功"破圈"，"一首歌唱火了一座城"……</p>
+                            <p>新大众文艺蓬勃兴起，成为新时代文艺繁荣发展的一道亮丽风景。魅力究竟何在？细究其里，这既是文艺形态、创作方式的深刻变革，更是时代精神与人民心声的同频共振。</p>
+                            <p>外卖诗人王计兵坚持写作初衷，以原创诗作《赶时间的人》等作品，展现普通劳动者为生活奔波的不屈与坚韧。外卖箱里装载的不仅是货物，还有被诗行抚慰的灵魂。新大众文艺遵循生活即艺术的创作逻辑，将镜头与笔触对准烟火日常，成为人民群众观察生活、表达情感的文艺新形态。因为接地气，所以聚人气。</p>
+                            <p>新大众文艺的独特价值，在于打破创作壁垒，人民群众不仅可以是"剧中人"，还可以成为"剧作者"。</p>
+                            <p>从田间地头的诗歌创作，到街巷市井的短视频记录，从素人原创的网络小说，到全民参与的音频分享，文艺创作褪去神秘光环，从专业舞台走向生活现场，从小众圈层变为全民实践。这种"人人可创作、处处可传播、大众共分享"的模式，激发出蕴藏在民间的无限创作活力。</p>
+                            <p>新大众文艺的蓬勃生机，在于守正创新，让主流价值以更鲜活、更可感的方式走进大众心中。</p>
+                            <p>李子柒的短视频，借助"田园为纸、生活作画"的独特叙事，构建东方美学意境，实现对中华优秀传统文化的诗意转译与全球传播。新大众文艺以轻量化、接地气的表达，让传统文化与时代精神相融相通，展现当代中国的发展气象。</p>
+                            <p>新大众文艺的持久活力，在于拥抱数字时代，以技术革新拓展创作边界。过去拍电影、写小说，都是专业人士的专业事；而在今天，以AI（人工智能）为代表的新一代信息技术，为文艺创作提供了新的抓手，让"一个人就是一个剧组"成为可能。</p>
+                            <p>不久前，AI辅助生成的短片《雪山救狐狸》意外走红。"你可曾在雪山救过一只狐狸？我不是狐狸，我是那只酱板鸭！"这些魔性台词刷屏网络，引发许多机构和网友进行二次创作。"人机协同"创作的新模式，可以让更多人实现从策划、制作到剪辑的全流程创作，进一步刷新了诗歌、短视频、网络小说等文艺作品创作的效率。</p>
+                            <p>文艺赋美时代，征途激荡人心。扎根人民、紧跟时代，新大众文艺将带来更多惊喜。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>一部具有时代意义的语言大典（书里书外）</h2>
+                <div class="article-meta">
+                    <div class="article-meta-item">
+                        <strong>作者：</strong>王宁（北京师范大学文学院资深教授）
+                    </div>
+                    <div class="article-meta-item">
+                        <strong>版面：</strong>20版（副刊）
+                    </div>
+                    <div class="article-meta-item">
+                        <strong>字数：</strong>约1500字
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <!-- 核心论点 -->
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="section-content">
+                        <div class="core-argument">
+                            《现代汉语大词典》不仅是收词数量的扩充，更是辞书编纂理念与方法的原创性超越；它在共时描写中融入历时视角，具有当仁不让的开创性和时代意义。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 论证逻辑 -->
+                <div class="section">
+                    <h3 class="section-title">🧠 论证逻辑</h3>
+                    <div class="section-content">
+                        <div class="logic-diagram">第一层：背景介绍
+  ↓
+  《现代汉语大词典》经过20年编纂正式出版
+  ↓
+  收词量15.7万、总字数1200万，是本世纪第一部大型原创辞书
+
+第二层：三个维度的论证
+  ↓
+  【维度1】开创性价值
+  → 对比：《辞源》《辞海》是民国初创成果，《汉语大词典》《汉语大字典》以文言为主
+  → 定位：《大现汉》是首部"规范性和描写性"相结合、仅收现代汉语的辞书
+  → 意义：全面呈现正在使用和发展中的现代汉语真实面貌
+  ↓
+  【维度2】学术创新价值
+  → 模式："意义+语法+语序"系统梳理构词规则
+  → 发现：发掘高频语素（如"提"作为"提款、提现"语素义）
+  → 功能：逆序检索功能为归纳单音语素提供支撑
+  ↓
+  【维度3】时代意义价值
+  → 关注网络用语：收录"数智化"等新词（从专业术语到全民用语）
+  → 规范引导："四定"（定写法、定释义、定读音、定指向）
+  → 辞书功能：既滞后于语言现状，又引领语言规范
+
+第三层：总结升华
+  ↓
+  历经十几年修改，语言还在发展
+  → 只要国家重视、民众支持、学界努力，适时修订
+  → 必将成为跨时代的传世之作</div>
+                    </div>
+                </div>
+
+                <!-- 论证方法 -->
+                <div class="section">
+                    <h3 class="section-title">🔧 论证方法</h3>
+                    <div class="section-content">
+                        <div class="method-list">
+                            <div class="method-item">
+                                <div class="method-title">对比论证</div>
+                                <div class="method-description">
+                                    《大现汉》vs《现代汉语词典》：收词量15.7万vs6万，总字数1200万vs400万<br>
+                                    《大现汉》vs传统辞书：仅收现代汉语 vs 古今兼有或以文言为主<br>
+                                    <strong>作用：</strong>突出《大现汉》的开创性和规模
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-title">举例论证</div>
+                                <div class="method-description">
+                                    "挤兑"案例：兼具"抢着取钱"与"找人麻烦"两个义项，新增"挤提"<br>
+                                    "星"语素：从"星辰"本义归纳出"知名人士""明星"意义<br>
+                                    "数智化"案例：8年间从小众用语到全民用语<br>
+                                    <strong>作用：</strong>用具体词语说明词典的学术价值和时代意义
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="method-title">因果论证</div>
+                                <div class="method-description">
+                                    因为有历时视角→ 所以能掇拾社会变迁的微观记忆<br>
+                                    因为关注民间语言生活→ 所以能收录网络新词语<br>
+                                    <strong>作用：</strong>揭示词典编纂理念与功能之间的关系
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 金句解析 -->
+                <div class="section">
+                    <h3 class="section-title collapsible">💎 金句深度解析</h3>
+                    <div class="section-content collapsible-content active">
+                        <div class="quote-list">
+                            <div class="quote-item">
+                                <div class="quote-text">"《大现汉》不仅是收词数量增多，而且具有当仁不让的开创性；它不仅提供个体词语的形音义查检，而且有助于我们全面认识现代汉语，是一部具有时代意义的语言大典。"</div>
+                                <div class="quote-analysis">
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">✨ 好在哪</div>
+                                        <div class="analysis-content">递进有力："不仅...而且..."两次使用，层层深入<br>用词精准："当仁不让的开创性"突出地位<br>哲理深刻：从"查检工具"上升到"认识现代汉语"<br>结尾有力："语言大典"四字总结分量十足</div>
+                                    </div>
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">📝 适用话题</div>
+                                        <div class="analysis-content">工具与价值、表面与本质、积累与突破、形式与内容、工具书的价值、学术研究的意义、从量变到质变、认识工具</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quote-item">
+                                <div class="quote-text">"《大现汉》在共时描写中融入历时视角，让我们从这部词典里掇拾到这100多年社会变迁的微观记忆。"</div>
+                                <div class="quote-analysis">
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">✨ 好在哪</div>
+                                        <div class="analysis-content">学术性强："共时描写""历时视角"是语言学专业术语<br>动词典雅："掇拾"（拾取）富有书卷气<br>比喻精妙："微观记忆"将词典比作历史的记录者<br>哲理深刻：揭示语言与社会的密切关系</div>
+                                    </div>
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">📝 适用话题</div>
+                                        <div class="analysis-content">语言与文化、个体与时代、微观与宏观、语言与社会、文化传承、历史记忆、见微知著、文化载体</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quote-item">
+                                <div class="quote-text">"一般说来，辞书是滞后于语言现状的，而进入网络时代后，由于信息传播的迅速与开放，语言载体的发展必然会出现泥沙俱下的情况。《大现汉》既正视这种现实，重视人民群众的创造，又通过词典引导网络语言准确解释和合理使用，做出了表率。"</div>
+                                <div class="quote-analysis">
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">✨ 好在哪</div>
+                                        <div class="analysis-content">辩证思维："既正视...又通过...引导..."体现科学态度<br>用词精准："泥沙俱下"准确描述网络语言现状<br>立场明确："重视人民群众的创造"体现人民立场<br>责任担当："做出表率"强调辞书的引领作用</div>
+                                    </div>
+                                    <div class="analysis-item">
+                                        <div class="analysis-label">📝 适用话题</div>
+                                        <div class="analysis-content">规范与创新、滞后与引领、网络语言、语言规范、大众创造、专业引导、时代适应、社会责任</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 适用场景 -->
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="section-content">
+                        <div class="scenario-grid">
+                            <div class="scenario-card">
+                                <div class="scenario-title">直接可用</div>
+                                <div class="scenario-content">
+                                    <ul>
+                                        <li>语言文化类话题：论证语言与社会的密切关系、语言规范的重要性</li>
+                                        <li>学术研究类话题：说明如何平衡"规范性与描写性""共时与历时"</li>
+                                        <li>时代发展类话题：用"数智化"案例论证网络语言的演变过程</li>
+                                        <li>工具价值类话题：论证工具书不仅是查检工具，更是认识世界的窗口</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="scenario-card">
+                                <div class="scenario-title">高考真题对接</div>
+                                <div class="scenario-content">
+                                    <ul>
+                                        <li>2024年全国甲卷"技术与时间"：可用"数智化"案例，论证技术如何影响语言发展的时间维度</li>
+                                        <li>2023年新课标I卷"故事的力量"：可用词典故事，讲述100多年来社会变迁的"微观记忆"</li>
+                                        <li>2022年新高考I卷"本手、妙手、俗手"：可用"规范性与描写性"论证"本手"的重要性</li>
+                                        <li>2021年全国甲卷"可为与有为"：全文可用，论述在学术研究上如何"有为"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 段落模板 -->
+                <div class="section">
+                    <h3 class="section-title collapsible">📝 考场段落模板</h3>
+                    <div class="section-content collapsible-content">
+                        <div class="template-list">
+                            <div class="template-item">
+                                <div class="template-title">【模板1：开头引入】</div>
+                                <div class="template-content">
+                                    《现代汉语大词典》经过20年编纂，终于正式出版。这是本世纪以来第一部大型原创辞书，收词量15.7万，总字数1200万，分别是《现代汉语词典》的两倍多和三倍多。
+                                </div>
+                            </div>
+                            <div class="template-item">
+                                <div class="template-title">【模板2：论证展开】</div>
+                                <div class="template-content">
+                                    《大现汉》是现时代唯一一部"规范性和描写性"相结合、仅收现代汉语的辞书。更为难得的是，它在共时描写中融入历时视角，让我们从这部词典里掇拾到这100多年社会变迁的微观记忆。
+                                </div>
+                            </div>
+                            <div class="template-item">
+                                <div class="template-title">【模板3：升华总结】</div>
+                                <div class="template-content">
+                                    《大现汉》历经十几年修改终于出版，但语言还在不断发展。有了这样好的基础，只要国家重视、民众支持、学界努力，适时修订，《大现汉》的引领作用必会不断拓宽和加强，直至成为跨时代的传世之作。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 原文 -->
+                <div class="section">
+                    <h3 class="section-title collapsible">📄 原文</h3>
+                    <div class="section-content collapsible-content">
+                        <div class="original-text">
+                            <p>《现代汉语大词典》（以下简称《大现汉》）经过20年编纂，终于正式出版。这是本世纪以来第一部大型原创辞书，也是语言文字学领域最重要的研究成果之一。"第一"和"最重要"的评价，《大现汉》是担得起的。《大现汉》收词量15.7万，总字数1200万，分别是《现代汉语词典》的两倍多和三倍多。但它不只是《现代汉语词典》的扩充版，而且具有原创性，在辞书编纂理念与方法上实现了超越。</p>
+                            <p>"现代汉语"是以汉语书面语实行白话文为开端的。100多年来，汉语方言口语呈"散点多线"的复杂状态，而由汉字记录的现代汉语书面语只有理论定义，实际面貌是什么样，并没有全面系统的描写。新中国成立初期没有新编的大型辞书，后来陆续修订的《辞源》《辞海》，是民国时代的初创成果。新中国成立以来编纂了《汉语大词典》和《汉语大字典》，这些大型辞书都是古今兼有或以文言字词为主。《大现汉》是现时代唯一一部"规范性和描写性"相结合、仅收现代汉语的辞书，收字收词也达到了一定规模，较为全面地呈现了正在使用和发展中的现代汉语真实面貌。更为难得的是，它在共时描写中融入历时视角，让我们从这部词典里掇拾到这100多年社会变迁的微观记忆。可以说，《大现汉》不仅是收词数量增多，而且具有当仁不让的开创性；它不仅提供个体词语的形音义查检，而且有助于我们全面认识现代汉语，是一部具有时代意义的语言大典。</p>
+                            <p>《大现汉》以"意义+语法+语序"为模式，系统梳理了现代汉语自身的构词规则，提炼了现代汉语的构词语素，完善了单双音共存的词汇系统，更发掘出一批源于现代语言生活、与文言无关的高频语素，展现了现代汉语的成熟与独立。在现代语素发掘上，《大现汉》成果显著。例如，民国时期"挤兑"兼具"抢着取钱"与"找人麻烦"两个义项，《大现汉》不仅收录这两个义项，还新增"挤提"一词，明确"提"作为"提款、提现"的单音语素义；又如"星"，不再局限于"星辰"的本义，在"歌星""童星""追星"等词大量出现后，归纳出"知名人士""明星"意义的高频语素。而《大现汉》的逆序检索功能，为归纳这类单音语素提供了重要支撑，也是其编纂中的一大亮点。</p>
+                            <p>汉语使用过程中，常有一些新词出现，又很快消亡，规范性辞书可以不收这些词，但只要这些词有查检的需要，描写性辞书是应当收录的。例如：朱自清等著名文学家民国时期的作品里，常会出现一些后来未能传承下来的合成词，如"幽僻""蕴蓄"等。《大现汉》收录后，给出释义并注释参考原出处且配上了语例。</p>
+                            <p>《大现汉》在来源于口语的词语搜寻和解释上，下了很大功夫。特别是对趋于稳定的现代网络用语，用心搜集。我做了一个统计，词典所收"数智化"一词，在8年时间里经历了从小众用语、官方用语再到全民用语的过程。2017年到2019年，它作为一个专业术语刚刚冒头，绝大多数人没听过更没用过；2020年到2021年，它在咨询软件、互联网圈内的流传使用很快增多，但公众与传统行业还很少使用。2022年到2023年，国家正式文件使用了这一词语，政府、企事业单位和媒体开始大规模、频繁地使用，"数智化"开始成为全民用语。《咬文嚼字》把"数智化"收入"2024年十大流行语"，也为这一新词语在语言学界受到重视，起到了推动作用。《大现汉》2022年截稿，已经把这个词收进去了，既体现了对稳态词语的精准判断，也发挥了引领语言规范的作用，证明其收词兼具学术与应用两方面的价值。</p>
+                            <p>为了让一些网络新词语进入辞书，编辑们做了大量的整理工作，通过"四定"（定规范写法、定释义、定读音、定指向）进行规范。他们的做法是，首先根据多个用例，归纳出词语的语义，再根据语义，将其中的实语素和虚语素分别用求本字和定作用的方法，统一了它们纷杂的读音和书写形式，又用配例确立了合理与优化的用法，对词语的稳定和健康发展给予了积极引导。这一方面说明《大现汉》对民间语言生活的高度关注，对具有时代特征的语言现象极其敏锐，同时又说明这部词典在收词上有很高的站位。一般说来，辞书是滞后于语言现状的，而进入网络时代后，由于信息传播的迅速与开放，语言载体的发展必然会出现泥沙俱下的情况。《大现汉》既正视这种现实，重视人民群众的创造，又通过词典引导网络语言准确解释和合理使用，做出了表率。</p>
+                            <p>《大现汉》历经十几年修改，终于出版。但语言还在不断发展，一部词典也不可能一次成熟完善。有了这样好的基础，只要国家重视，民众支持，学界努力，适时修订，《大现汉》的引领作用必会不断拓宽和加强，直至成为跨时代的传世之作。</p>
+                            <p>（作者为北京师范大学文学院资深教授）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+    <script>
+        // Collapsible functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const collapsibles = document.querySelectorAll('.collapsible');
+            collapsibles.forEach(item => {
+                item.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const content = this.nextElementSibling;
+                    content.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
