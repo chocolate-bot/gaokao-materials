@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-25 高考作文素材深度分析</title>
+    <style>
+        /* Orange UI Design System */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text-dark: #2C2C2C;
+            --text-light: #6B6B6B;
+            --shadow-color: #B5B5B5;
+            --border-color: #2C2C2C;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg);
+            color: var(--text-dark);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary);
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 5px 5px 0 0 var(--shadow-color);
+            border: 1.5px solid var(--border-color);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            opacity: 0.8;
+        }
+
+        header .date {
+            margin-top: 15px;
+            display: inline-block;
+            background: var(--accent);
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            border: 1.5px solid var(--border-color);
+            box-shadow: 3px 3px 0 0 var(--shadow-color);
+        }
+
+        /* Article Cards */
+        .article-card {
+            background: var(--card-bg);
+            margin-bottom: 40px;
+            border: 1.5px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 5px 5px 0 0 var(--shadow-color);
+            overflow: hidden;
+        }
+
+        .article-header {
+            background: var(--primary);
+            padding: 25px 30px;
+            border-bottom: 1.5px solid var(--border-color);
+        }
+
+        .article-header h2 {
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            margin-top: 10px;
+        }
+
+        .article-meta span {
+            background: var(--accent);
+            padding: 4px 12px;
+            border-radius: 4px;
+            border: 1.5px solid var(--border-color);
+            box-shadow: 2px 2px 0 0 var(--shadow-color);
+            font-weight: 500;
+        }
+
+        .article-content {
+            padding: 30px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary);
+            font-weight: 700;
+        }
+
+        /* Core Point */
+        .core-point {
+            background: linear-gradient(135deg, var(--primary) 0%, #5BB8E8 100%);
+            padding: 20px 25px;
+            border-radius: 8px;
+            border: 1.5px solid var(--border-color);
+            box-shadow: 4px 4px 0 0 var(--shadow-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Logic Tree */
+        .logic-tree {
+            background: #FAFAFA;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1.5px solid var(--border-color);
+            box-shadow: 3px 3px 0 0 var(--shadow-color);
+            font-family: "Courier New", monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            overflow-x: auto;
+            white-space: pre;
+        }
+
+        /* Methods List */
+        .methods-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .methods-list li {
+            background: #FAFAFA;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+            border: 1.5px solid var(--border-color);
+            box-shadow: 3px 3px 0 0 var(--shadow-color);
+        }
+
+        .methods-list li strong {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Quote Cards */
+        .quote-card {
+            background: #FAFAFA;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1.5px solid var(--border-color);
+            box-shadow: 4px 4px 0 0 var(--shadow-color);
+        }
+
+        .quote-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-style: italic;
+        }
+
+        .quote-analysis h4 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .quote-analysis p {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .quote-analysis p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Topics Tags */
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .topic-tag {
+            background: var(--accent);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1.5px solid var(--border-color);
+            box-shadow: 2px 2px 0 0 var(--shadow-color);
+            font-weight: 500;
+        }
+
+        /* Applications */
+        .applications {
+            background: #FAFAFA;
+            padding: 20px 25px;
+            border-radius: 8px;
+            border: 1.5px solid var(--border-color);
+            box-shadow: 3px 3px 0 0 var(--shadow-color);
+        }
+
+        .applications h4 {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .applications ul {
+            padding-left: 20px;
+        }
+
+        .applications li {
+            margin-bottom: 8px;
+            color: var(--text-light);
+        }
+
+        /* Expandable Content */
+        details {
+            background: #FAFAFA;
+            border: 1.5px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 3px 3px 0 0 var(--shadow-color);
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        details summary {
+            background: var(--primary);
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--text-dark);
+            user-select: none;
+            border-bottom: 1.5px solid var(--border-color);
+        }
+
+        details summary:hover {
+            background: #6AB9E9;
+        }
+
+        details[open] summary {
+            border-bottom: 1.5px solid var(--border-color);
+        }
+
+        details .content {
+            padding: 20px;
+            max-height: 500px;
+            overflow-y: auto;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 40px;
+            border-top: 2px solid var(--primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .article-content {
+                padding: 20px;
+            }
+
+            .quote-text {
+                font-size: 1.1rem;
+            }
+
+            .logic-tree {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Utility */
+        .highlight {
+            background: var(--accent);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            background: var(--primary);
+            color: var(--text-dark);
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 8px;
+            border: 1.5px solid var(--border-color);
+            box-shadow: 2px 2px 0 0 var(--shadow-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>📚 2026-05-25 高考作文素材深度分析</h1>
+            <p class="subtitle">来自《人民日报》的5篇精选文章深度解析</p>
+            <div class="date">2026年5月25日 星期一</div>
+        </header>
+
+        <!-- Article 1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章1：《与AI同行，答案在人手中（评论员观察）》</h2>
+                <div class="article-meta">
+                    <span><strong>作者：</strong>孟繁哲</span>
+                    <span><strong>版面：</strong>第05版 评论</span>
+                    <span><strong>字数：</strong>约1200字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <!-- 核心论点 -->
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        人工智能改写了能力图谱，但无法替代人的独特价值——创造性思维、情感伦理和意义追问始终是人的核心优势。
+                    </div>
+                </div>
+
+                <!-- 论证逻辑 -->
+                <div class="section">
+                    <h3 class="section-title">🧠 论证逻辑</h3>
+                    <div class="logic-tree">第一层：引入话题（现象呈现）
+├─ 数据：AI人才需求攀升，供给不足（需供比3.5:1）
+├─ 教育：78%国家强调培养高阶思维
+└─ 提出问题：人的价值坐标该如何锚定？
+
+第二层：展开分析（历史视角与现实对照）
+├─ 历史经验：新技术替代的是功能/职业，而非人本身
+├─ 数据支撑：2030年9200万岗位被替代，但1.7亿新岗位被创造
+└─ 核心判断：与其焦虑"被替代"，不如追问"如何凸显人的价值"
+
+第三层：深入论证（价值迁移与比较优势）
+├─ 劳动力市场变化：从"会操作"到"善判断"
+├─ 人的比较优势：创造性思维、跨界整合、审美感知、伦理判断
+└─ 教育变革：培养解决问题、合作沟通、适应变化的能力
+
+第四层：总结升华（从有用到意义）
+├─ 教育层面：技术改变手段，但改变不了育人使命
+├─ 精神层面：算法无法量化的毅力、情怀、崇高选择
+└─ 价值层面：人对意义的追问、对善的坚守、对彼此命运的关怀
+
+第五层：结尾回扣
+└─ 真正的弄潮儿知道自己"为何出发"，答案永远握在我们自己手中</div>
+                </div>
+
+                <!-- 论证方法 -->
+                <div class="section">
+                    <h3 class="section-title">🔧 论证方法</h3>
+                    <ul class="methods-list">
+                        <li><strong>数据论证法：</strong>需供比3.5:1、78%国家、9200万vs1.7亿岗位</li>
+                        <li><strong>历史对比法：</strong>蒸汽机时代案例，说明技术替代的是功能而非人本身</li>
+                        <li><strong>举例论证法：</strong>机器人企业需要文科人才、汽车制造商寻觅跨界人才</li>
+                        <li><strong>对比论证法：</strong>"会操作"→"善判断"，"能执行"→"能整合"</li>
+                        <li><strong>引用论证法：</strong>习近平总书记关于AI教育的讲话</li>
+                        <li><strong>举例+抒情结合：</strong>徐梦桃、西部支教群体、消防员案例</li>
+                    </ul>
+                </div>
+
+                <!-- 金句深度解析 -->
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+
+                    <div class="quote-card">
+                        <div class="quote-text">"机器越是擅长标准化运算，越显出人在非标准化复杂场景中不可替代的价值。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>对比修辞（"标准化运算" vs "非标准化复杂场景"），逻辑深刻，哲理意蕴丰富</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">人工智能与人的关系</span>
+                                <span class="topic-tag">科技发展双刃剑</span>
+                                <span class="topic-tag">人的独特价值</span>
+                                <span class="topic-tag">教育使命</span>
+                                <span class="topic-tag">时代变迁中的价值锚定</span>
+                            </div>
+                            <h4>✍️ 可仿写</h4>
+                            <p>"___越是擅长___，越显出___在___中不可替代的价值。"</p>
+                            <p class="highlight">例：算法越是精准预测流量，越显出人在情感共鸣中不可替代的价值。</p>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">"创造性思维、跨界整合、审美感知、对伦理边界的判断……这些都是算法难以复制的人类禀赋。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>排比罗列，具体明确，精准定位了AI难以触及的领域</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">人的不可替代性</span>
+                                <span class="topic-tag">教育改革方向</span>
+                                <span class="topic-tag">创新能力培养</span>
+                                <span class="topic-tag">科技伦理</span>
+                            </div>
+                            <h4>✍️ 可仿写</h4>
+                            <p>"___、___、___、___……这些都是___难以___的___。"</p>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">"技术可以刷新教育的手段，但改变不了教育的方向；算法可以优化知识的传递，但替代不了人格的养成。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>对偶句式，辩证统一，深刻揭示了"术"与"道"的关系</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">教育与技术</span>
+                                <span class="topic-tag">AI教育应用</span>
+                                <span class="topic-tag">教育本质</span>
+                                <span class="topic-tag">人格养成</span>
+                            </div>
+                            <h4>✍️ 可仿写</h4>
+                            <p>"___可以___，但___；___可以___，但___。"</p>
+                            <p class="highlight">例：科技可以拓展生命的宽度，但改变不了生命的厚度；算法可以预测行为的概率，但替代不了信念的坚守。</p>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">"人工智能可以让世界运转得更快，但让人间变得更值得的，始终是人对意义的追问、对善的坚守、对彼此命运的真切关怀。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>对比强烈（"运转得更快" vs "变得更值得"），情感共鸣，价值升华</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">科技与人文</span>
+                                <span class="topic-tag">生命意义</span>
+                                <span class="topic-tag">人文关怀</span>
+                                <span class="topic-tag">速度与温度</span>
+                            </div>
+                            <h4>✍️ 可仿写</h4>
+                            <p>"___可以让___，但___的，始终是___。"</p>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">"技术的洪流奔涌向前，但真正的弄潮儿从来不会随波逐流，而是知道自己'为何出发'。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>比喻生动（"洪流""弄潮儿"），哲理深刻，时代感强</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">时代与个人</span>
+                                <span class="topic-tag">初心与坚守</span>
+                                <span class="topic-tag">青年成长</span>
+                                <span class="topic-tag">价值选择</span>
+                            </div>
+                            <h4>✍️ 可仿写</h4>
+                            <p>"___的___，但真正的___，而是___。"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 适用场景 -->
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="applications">
+                        <h4>✅ 直接可用</h4>
+                        <ul>
+                            <li><strong>人工智能话题：</strong>2023新课标I卷、2024全国甲卷</li>
+                            <li><strong>教育话题：</strong>2019全国I卷、2021新高考I卷</li>
+                            <li><strong>人的价值话题：</strong>2022全国甲卷、2020全国I卷</li>
+                        </ul>
+                    </div>
+                    <div class="applications" style="margin-top: 15px;">
+                        <h4>🔄 迁移应用</h4>
+                        <ul>
+                            <li><strong>"价值迁移"思路：</strong>用于技术变革中的价值锚定</li>
+                            <li><strong>"术与道"辩证：</strong>用于科技、文化、教育等多个领域</li>
+                            <li><strong>"标准化vs非标准化"对比：</strong>用于工业化与个性化的讨论</li>
+                        </ul>
+                    </div>
+                    <div class="applications" style="margin-top: 15px;">
+                        <h4>📝 高考真题示例</h4>
+                        <p><strong>2024年全国新课标II卷"本手、妙手、俗手"</strong></p>
+                        <ul>
+                            <li>立意：AI是"本手"基础，人要追求"妙手"</li>
+                            <li>论证：只有"本手"没有"妙手"，会陷入"俗手"（完全依赖AI）</li>
+                            <li>可用金句：关于创造性思维、跨界整合的论述</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 原文 -->
+                <div class="section">
+                    <h3 class="section-title">📄 原文</h3>
+                    <details>
+                        <summary>点击展开/收起原文</summary>
+                        <div class="content">
+与AI同行，答案在人手中（评论员观察）
+
+孟繁哲
+
+　　机器越是擅长标准化运算，越显出人在非标准化复杂场景中不可替代的价值。无论技术如何演变，育人的使命永远不会变
+
+　　随着技术和场景的双重突破，当前各行业各领域对人工智能人才需求攀升。数据显示，人工智能相关人才供给不足，需供比是3.5∶1。
+
+　　在人才供给侧，教育领域也在经历深刻变革。近日发布的《全球数字教育发展指数（2026）》显示，78%的国家强调应更加重视学生高阶思维能力培养，中美等4国已率先进入"AI（人工智能）+教育"新阶段。
+
+　　就业市场提出新的需求，教育界随之作出调整，变化背后有一个深刻的时代命题：在人工智能深刻重塑生产生活方式的今天，人的价值坐标该如何锚定？
+
+　　回看历史，每一次技术跃迁，都伴随着人"向何处去"的焦虑。蒸汽机、流水线替代了手工作坊，同时催生出工程师、铁路调度员等全新职业，也把管理学、工业设计等新领域推上历史舞台。新技术替代的，从来只是某种功能、某种职业，而非人本身。世界经济论坛发布的报告预测，到2030年，全球将有9200万个工作岗位被替代，但会有1.7亿个工作岗位被新创造出来。一些传统岗位会消亡，但更多新工作在涌现。
+
+　　因此，与其焦虑"人会不会被替代"，不如追问一个更根本的问题：如何驾驭新技术以凸显人的价值？答案正在实践中浮现。
+
+　　机器人企业发现文科人才在用户洞察上不可或缺，汽车制造商转向寻觅兼具工程知识与数字素养的跨界人才，数据标注师、人工智能训练师等新职业从无到有……劳动力市场正在经历一场静悄悄的"价值迁移"。从"会操作"到"善判断"，从"能执行"到"能整合"，从"精通一门手艺"到"进行创造性联想"，人工智能改写能力图谱，凸显的恰恰是人的比较优势。
+
+　　习近平总书记强调："推进人工智能全学段教育和全社会通识教育，源源不断培养高素质人才。"顺应人工智能带来的变革，关键在思维思路，根基在学习教育。从《"人工智能+教育"行动计划》推动人工智能教育全面纳入地方课程体系，到一些高校鼓励博士生读硕士、培养复合型人才，再到职业院校推进技能培训与产业需求精准对接，一系列部署举措的用意，在于塑造学生的创新思维，培养其解决问题、合作沟通、适应变化、面对复杂情境的能力。
+
+　　创造性思维、跨界整合、审美感知、对伦理边界的判断……这些都是算法难以复制的人类禀赋。机器越是擅长标准化运算，越显出人在非标准化复杂场景中不可替代的价值。技术可以刷新教育的手段，但改变不了教育的方向；算法可以优化知识的传递，但替代不了人格的养成。无论技术如何演变，育人的使命永远不会变。
+
+　　进一步看，仅仅在"有用"的维度讨论人的价值，显然不够。徐梦桃35岁五战冬奥，她夺冠后激动的泪水，蕴藏着算法无法模拟的毅力；河北保定学院西部支教毕业生群体扎根边疆，背后是大模型不能量化的情怀；在火场中逆行的消防员，他们的崇高选择不能被机器定义。人工智能可以让世界运转得更快，但让人间变得更值得的，始终是人对意义的追问、对善的坚守、对彼此命运的真切关怀。人心不能被算法优化，但这不是人的局限，恰恰是人的独特优势所在。
+
+　　技术的洪流奔涌向前，但真正的弄潮儿从来不会随波逐流，而是知道自己"为何出发"。从教育到就业，从产业转型到文明赓续，技术向善的命题持续回响。答案，永远握在我们自己手中。
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章2：《食养指南里的民生底色（新知）》</h2>
+                <div class="article-meta">
+                    <span><strong>作者：</strong>尹双红</span>
+                    <span><strong>版面：</strong>第05版 评论</span>
+                    <span><strong>字数：</strong>约1100字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        食养指南体现了健康治理的精细化升级，折射出从"以治病为中心"向"以健康为中心"的深刻转变。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句精选</h3>
+                    <div class="quote-card">
+                        <div class="quote-text">"治已病不如治未病，防范在先、发现在早、处置在小的解题策略经济且有效。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>对比鲜明，排比递进，哲理深刻，揭示预防胜于治疗的智慧</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">防患未然</span>
+                                <span class="topic-tag">健康管理</span>
+                                <span class="topic-tag">风险防控</span>
+                                <span class="topic-tag">治理策略</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-card">
+                        <div class="quote-text">"多想一层、多做一步，让人们所忧有指导、所需有回应，今天的谋划定能化为明天的从容。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>对偶工整，情感温度，时间跨度，体现长远谋划</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">民生保障</span>
+                                <span class="topic-tag">政府服务</span>
+                                <span class="topic-tag">远近结合</span>
+                                <span class="topic-tag">未雨绸缪</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="applications">
+                        <h4>✅ 直接可用</h4>
+                        <ul>
+                            <li><strong>民生保障话题：</strong>2021全国甲卷"可为与有为"</li>
+                            <li><strong>健康管理话题：</strong>2020全国II卷、2022北京卷</li>
+                            <li><strong>治理创新话题：</strong>2023新课标I卷、2024全国甲卷</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章3：《奋斗不怕起点低（纵横）》</h2>
+                <div class="article-meta">
+                    <span><strong>作者：</strong>庄永明</span>
+                    <span><strong>版面：</strong>第05版 评论</span>
+                    <span><strong>字数：</strong>约600字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        新时代是实现梦想的舞台，青春用来奋斗，起点低经验少不是障碍，脚踏实地勇毅前行就能活出精彩人生。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句精选</h3>
+                    <div class="quote-card">
+                        <div class="quote-text">"青春是用来奋斗的，起点低、经验少又何妨？"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>反问有力，青春朝气，打破刻板印象</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">青年成长</span>
+                                <span class="topic-tag">奋斗精神</span>
+                                <span class="topic-tag">打破偏见</span>
+                                <span class="topic-tag">自我实现</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-card">
+                        <div class="quote-text">"一个人能走多远，不在于出发的位置，而在于能否脚踏实地、勇毅前行。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>对比鲜明，哲理深刻，励志向上</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">人生价值</span>
+                                <span class="topic-tag">奋斗精神</span>
+                                <span class="topic-tag">起点终点</span>
+                                <span class="topic-tag">过程比起点更重要</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="applications">
+                        <h4>✅ 直接可用</h4>
+                        <ul>
+                            <li><strong>青年奋斗话题：</strong>2019全国I卷"劳动"、2021新高考I卷"体育之效"</li>
+                            <li><strong>就业创业话题：</strong>2022全国甲卷、2023新课标II卷</li>
+                            <li><strong>时代机遇话题：</strong>2020全国I卷、2024新课标I卷</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章4：《古老岩画融入青春舞姿（感知文化里的中国）》</h2>
+                <div class="article-meta">
+                    <span><strong>作者：</strong>张文（本报记者）</span>
+                    <span><strong>版面：</strong>第11版 文化</span>
+                    <span><strong>字数：</strong>约1800字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        宁夏银川高级中学师生将贺兰山岩画转化为舞蹈《岩话》，获得中国舞蹈荷花奖，展现了文化遗产在青春传承中的新生力量。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句精选</h3>
+                    <div class="quote-card">
+                        <div class="quote-text">"石头在说话。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>拟人化，富有诗意，引发想象</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">文化遗产</span>
+                                <span class="topic-tag">历史传承</span>
+                                <span class="topic-tag">文物价值</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-card">
+                        <div class="quote-text">"岁月失语，惟石能言。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>对偶工整，哲理深刻，历史感强</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">文化遗产</span>
+                                <span class="topic-tag">历史价值</span>
+                                <span class="topic-tag">文物保护</span>
+                                <span class="topic-tag">文明传承</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-card">
+                        <div class="quote-text">"那一刻，我和在严酷自然环境中顽强生存的黄河先民有了共情。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>画面感强，共情深刻，古今连接</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">文化共情</span>
+                                <span class="topic-tag">历史共鸣</span>
+                                <span class="topic-tag">文化传承</span>
+                                <span class="topic-tag">古今对话</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="applications">
+                        <h4>✅ 直接可用</h4>
+                        <ul>
+                            <li><strong>文化传承话题：</strong>2023全国甲卷"人·技术·时间"、2022全国乙卷"双奥之城"</li>
+                            <li><strong>艺术创新话题：</strong>2021新高考I卷"体育之效"、2020全国I卷"历史人物"</li>
+                            <li><strong>青年成长话题：</strong>2019全国I卷"劳动"、2024新课标I卷</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章5：《从词元海量调用说开去（创新谈）》</h2>
+                <div class="article-meta">
+                    <span><strong>作者：</strong>王云杉</span>
+                    <span><strong>版面：</strong>第19版 科技</span>
+                    <span><strong>字数：</strong>约1100字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        词元调用量的持续走高，是AI应用走进生活、产业商业化破局、数据要素价值释放的三重印证，折射中国人工智能产业的蓬勃脉动。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句精选</h3>
+                    <div class="quote-card">
+                        <div class="quote-text">"从2024年初的1000亿，到2025年底的100万亿，再到突破140万亿，两年间增长超千倍。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>数据对比强烈，增长轨迹清晰，冲击力强</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">科技发展</span>
+                                <span class="topic-tag">指数增长</span>
+                                <span class="topic-tag">时代变迁</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-card">
+                        <div class="quote-text">"技术的价值，最终要体现在应用落地与场景赋能上。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>观点明确，逻辑严密，强调实践</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">技术应用</span>
+                                <span class="topic-tag">科技价值</span>
+                                <span class="topic-tag">实践重要性</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-card">
+                        <div class="quote-text">"一个个跳动的数字背后，是技术的迭代、应用的深化，更是产业的跃迁。"</div>
+                        <div class="quote-analysis">
+                            <h4>🌟 好在哪</h4>
+                            <p>递进关系，层层深入，从现象到本质</p>
+                            <h4>📌 适用话题</h4>
+                            <div class="topics">
+                                <span class="topic-tag">数据背后</span>
+                                <span class="topic-tag">现象本质</span>
+                                <span class="topic-tag">产业变革</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="applications">
+                        <h4>✅ 直接可用</h4>
+                        <ul>
+                            <li><strong>科技发展话题：</strong>2024全国甲卷"技术与时间"、2023新课标I卷</li>
+                            <li><strong>数据价值话题：</strong>2022全国乙卷、2021新高考II卷</li>
+                            <li><strong>创新应用话题：</strong>2020全国I卷、2019全国II卷</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer>
+            <p><strong>文档生成时间：</strong>2026-05-25</p>
+            <p><strong>素材来源：</strong>《人民日报》2026年5月25日</p>
+            <p><strong>分析深度：</strong>高考作文素材深度整理</p>
+            <p style="margin-top: 15px; color: var(--primary); font-weight: 600;">✨ 每天进步一点点，作文素材不间断 ✨</p>
+        </footer>
+    </div>
+</body>
+</html>
