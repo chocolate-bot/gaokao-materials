@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-26 高考作文素材</title>
+    <style>
+        /* Orange UI Design System */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #1A1A1A;
+            --text-light: #666666;
+            --border: #1A1A1A;
+            --shadow: #B5B5B5;
+            --card-bg: #FFFFFF;
+            --success: #8BC34A;
+            --warning: #FFB74D;
+            --error: #FF6B6B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background-color: var(--card-bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--text);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-top: 10px;
+        }
+
+        .date {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--text);
+            padding: 5px 15px;
+            font-weight: 600;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+
+        .article-card {
+            background-color: var(--card-bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+
+        .article-header {
+            background-color: var(--primary);
+            color: var(--text);
+            padding: 20px 30px;
+            border-bottom: 1.5px solid var(--border);
+        }
+
+        .article-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .article-content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: var(--text);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+            font-weight: 600;
+        }
+
+        .core-point {
+            background-color: #FFF9E6;
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        .logic-diagram {
+            background-color: #F5F5F5;
+            padding: 20px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            overflow-x: auto;
+            border: 1px solid #E0E0E0;
+        }
+
+        .logic-diagram pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .methods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .method-card {
+            background-color: #F8F9FA;
+            border: 1px solid #E0E0E0;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .method-card h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .method-card p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .quote-card {
+            background-color: #F0F7FF;
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .quote-text {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .quote-analysis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .analysis-item {
+            background-color: #FFFFFF;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #E0E0E0;
+        }
+
+        .analysis-item h5 {
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .analysis-item p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            background-color: var(--primary);
+            color: var(--text);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .scenario-card {
+            background-color: #F8F9FA;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border-left: 4px solid var(--success);
+        }
+
+        .scenario-card h4 {
+            color: var(--success);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .scenario-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .scenario-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .scenario-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .original-text {
+            background-color: #FAFAFA;
+            padding: 25px;
+            border-radius: 4px;
+            border: 1px solid #E0E0E0;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .original-text p {
+            margin-bottom: 15px;
+            text-indent: 2em;
+        }
+
+        .summary-card {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            color: var(--text);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        .summary-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .summary-card p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .article-header h2 {
+                font-size: 1.5rem;
+            }
+
+            .article-content {
+                padding: 20px;
+            }
+
+            .methods-grid,
+            .quote-analysis {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .collapse-btn {
+            background-color: var(--primary);
+            color: var(--text);
+            border: 1.5px solid var(--border);
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 15px;
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .collapse-btn:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+        }
+
+        .collapse-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .collapse-content.active {
+            max-height: 2000px;
+        }
+
+        .warning-box {
+            background-color: #FFF3E0;
+            border-left: 4px solid var(--warning);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-05-26 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+            <div class="date">2026年05月26日</div>
+        </header>
+
+        <!-- 文章1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>文章1：《点石成金关键在认知升维（连线评论员）》</h2>
+                <div class="article-meta">
+                    <span><strong>作者：</strong>李拯、朱浙萍</span>
+                    <span><strong>版面：</strong>第05版（评论版）</span>
+                    <span><strong>字数：</strong>约1500字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        资源决定论是错的，认知升维才是点石成金的关键。义乌从资源匮乏的山区县成长为全球商贸枢纽，靠的不是先天禀赋，而是跳出地理局限的开放视野、重塑自身禀赋的认知能力、激发群众首创的制度环境、坚持改革创新的治理智慧。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🧠 论证逻辑</h3>
+                    <div class="logic-diagram">
+<pre>第一层：现象引入
+├─ 提问：义乌不沿边不靠海、资源匮乏，为什么能成功？
+└─ 回答：以认知升维打开发展新思路
+
+第二层：四个维度的分析
+├─ 认知维度1：跳出一隅的开放视野
+├─ 认知维度2：重塑对自身禀赋的认知
+├─ 制度维度：激发群众首创精神
+└─ 治理维度：改革是点石成金的"魔法棒"
+
+第三层：价值升华
+├─ 不变：一张蓝图绘到底（政绩观）
+├─ 变：与时俱进的创新创造
+└─ 结论：每个地方都能走出符合实际的高质量发展之路</pre>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🔧 论证方法</h3>
+                    <div class="methods-grid">
+                        <div class="method-card">
+                            <h4>对比论证（A vs B）</h4>
+                            <p>先天禀赋 vs 认知升维、地理局限 vs 发展格局、看得见 vs 看不见</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>举例论证</h4>
+                            <p>"哭哭马"事件、2005年国际贸易额超国内贸易额、"首单""首例""首创"</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>因果论证</h4>
+                            <p>因为不换频道不瞎折腾，所以沉下心来深挖一口井，积小胜为大胜</p>
+                        </div>
+                        <div class="method-card">
+                            <h4>引用论证</h4>
+                            <p>习近平总书记指示、义乌干部的三个问题</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+                    
+                    <div class="quote-card">
+                        <div class="quote-text">"义乌并没有被先天短板困住，而是以认知升维打开发展新思路，实现'莫名其妙、无中生有、点石成金'的发展。"</div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>🔍 好在哪</h5>
+                                <p>对比强烈："先天短板"vs"点石成金"；层次递进："莫名其妙→无中生有→点石成金"</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>🎯 适用话题</h5>
+                                <div class="tag-list">
+                                    <span class="tag">认知决定高度</span>
+                                    <span class="tag">突破局限</span>
+                                    <span class="tag">因地制宜</span>
+                                    <span class="tag">高质量发展</span>
+                                </div>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>📝 怎么用</h5>
+                                <p>开头引出话题、论证资源不是决定因素、转折从"先天不足"转向"后天努力"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">"群众蹚路，政府铺轨。首创精神转化为发展红利。"</div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>🔍 好在哪</h5>
+                                <p>对仗工整："群众蹚路"vs"政府铺轨"；比喻精妙；关系明确</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>🎯 适用话题</h5>
+                                <div class="tag-list">
+                                    <span class="tag">群众首创精神</span>
+                                    <span class="tag">改革创新</span>
+                                    <span class="tag">治理智慧</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">"不换频道、不瞎折腾，沉下心来深挖一口井，才能积小胜为大胜，在长跑中赢得主动。"</div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>🔍 好在哪</h5>
+                                <p>形象比喻："不换频道""深挖一口井""长跑"；逻辑严密；哲理深刻</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>🎯 适用话题</h5>
+                                <div class="tag-list">
+                                    <span class="tag">政绩观</span>
+                                    <span class="tag">长期主义</span>
+                                    <span class="tag">久久为功</span>
+                                    <span class="tag">定力与坚持</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="scenario-card">
+                        <h4>直接可用</h4>
+                        <ul>
+                            <li>2024年全国甲卷"人与人"：义乌从"鸡毛换糖"到"世界超市"</li>
+                            <li>2023年新课标I卷"故事的力量"：义乌的发展故事</li>
+                            <li>2021年全国甲卷"可为与有为"：义乌体现了"可为"与"有为"的统一</li>
+                        </ul>
+                    </div>
+                    <div class="scenario-card">
+                        <h4>组合推荐</h4>
+                        <ul>
+                            <li>+《守一心澄澈 持恒志笃行》：从"认知升维"到"保持定力"</li>
+                            <li>+《别丢了最初的"喜欢"》：从"义乌发展"到"文艺创作"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="collapse-btn" onclick="toggleContent('content1')">📄 查看完整原文</button>
+                <div class="collapse-content" id="content1">
+                    <div class="original-text">
+                        <p><strong>对话人：</strong></p>
+                        <p>李　拯　本报评论员</p>
+                        <p>朱浙萍　浙江日报评论员</p>
+                        <br>
+                        <p>李拯：美加墨世界杯临近，"浙江义乌又爆单了"近期登上热搜。前不久，习近平总书记作出重要指示指出："义乌小商品闯出大市场、做成大产业，形成'义乌发展经验'，这是因地制宜发展县域经济的成功实践。"不沿边、不靠海，资源匮乏、基础薄弱，义乌为什么能从一个山区县成长为全球商贸枢纽？</p>
+                        <p>朱浙萍：按照传统的"资源决定论"，义乌的家底确实不算厚。然而，义乌并没有被先天短板困住，而是以认知升维打开发展新思路，实现"莫名其妙、无中生有、点石成金"的发展。</p>
+                        <p>首先，要有跳出一隅的开放视野。一个地方的发展空间是否广阔，不只看地理位置，更要看格局和胸怀。作为内陆小城，义乌从未画地为牢，而是把自己放到发展大局里去找机遇，主动拥抱现代化、全球化。</p>
+                        <p>其次，要重塑对自身禀赋的认知。真正的禀赋，不只是看得见的物质资源，更包括看不见的文化传承。义乌的成功，在于有效激活了自身的"软禀赋"——传承千年的商贸基因和"鸡毛换糖"的草根智慧，从而蹚出一条独具特色的发展之路。</p>
+                        <p>这二者结合起来，就是义乌因地制宜发展县域经济的底气。</p>
+                        <!-- 更多原文内容... -->
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>文章2：《守一心澄澈  持恒志笃行（金台随笔）》</h2>
+                <div class="article-meta">
+                    <span><strong>作者：</strong>陈丽</span>
+                    <span><strong>版面：</strong>第05版（评论版）</span>
+                    <span><strong>字数：</strong>约800字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        "用心若镜"是为人处世和为政做事的根本态度。只有保持心境澄澈、定力坚定，才能在喧嚣中保持清醒、在纷乱中保持方向，从而行稳致远。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+                    
+                    <div class="quote-card">
+                        <div class="quote-text">"身处喧嚣、心驻静土，面对纷乱、志如磐石，方能行稳致远。"</div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>🔍 好在哪</h5>
+                                <p>对仗工整："身处喧嚣"vs"心驻静土"；比喻形象；逻辑严密；哲理深刻</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>🎯 适用话题</h5>
+                                <div class="tag-list">
+                                    <span class="tag">定力与从容</span>
+                                    <span class="tag">内心的力量</span>
+                                    <span class="tag">处变不惊</span>
+                                    <span class="tag">行稳致远</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">"常拂心镜，保持定力，不为浮华所扰、不为外物所役，步履自从容。"</div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>🔍 好在哪</h5>
+                                <p>比喻形象："常拂心镜"；排比有力；点题精辟："步履自从容"</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>🎯 适用话题</h5>
+                                <div class="tag-list">
+                                    <span class="tag">定力与从容</span>
+                                    <span class="tag">自我修养</span>
+                                    <span class="tag">抵御诱惑</span>
+                                    <span class="tag">长期主义</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="scenario-card">
+                        <h4>最适配高考真题</h4>
+                        <ul>
+                            <li>2023年新课标I卷"故事的力量"</li>
+                            <li>2022年全国甲卷"移用化用独创"</li>
+                            <li>2021年全国乙卷"追求理想"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="collapse-btn" onclick="toggleContent('content2')">📄 查看完整原文</button>
+                <div class="collapse-content" id="content2">
+                    <div class="original-text">
+                        <p>"至人之用心若镜，不将不迎，应而不藏，故能胜物而不伤。"庄子这句话，意指修养至高之人心如明镜，物来即照，事过不留，能超脱外物而不为外物所累，达到一种心境从容的状态。那怎样才能"用心若镜"？</p>
+                        <p>不久前，笔者到一个较远的地方开会，返程赶上晚高峰，又必须在指定时间内改完一篇论文。往常这个时段的地铁人山人海，令人疲惫不堪。但那天笔者静心改稿，车厢里的其他人与事皆不入我心，一个多小时的车程转瞬即逝。"用心若镜"，便有了定力和韧劲。</p>
+                        <!-- 更多原文内容... -->
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>文章3：《别丢了最初的"喜欢"》</h2>
+                <div class="article-meta">
+                    <span><strong>作者：</strong>胡妍妍</span>
+                    <span><strong>版面：</strong>第20版（副刊版）</span>
+                    <span><strong>字数：</strong>约1000字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        "喜欢"是文艺创作最珍贵的动力源，但也是最容易被磨损、异化、吞噬的东西。真正的可持续发展，不是让每个素人都成为作家、艺术家，而是让每个想写的人都能一直写下去，每个喜欢唱戏的人都能一直唱下去。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+                    
+                    <div class="quote-card">
+                        <div class="quote-text">"喜欢唱戏，不是因为唱戏能带来什么，而是因为唱戏本身就是生命的一种展开方式。"</div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>🔍 好在哪</h5>
+                                <p>对比鲜明："能带来什么"vs"生命的一种展开方式"；哲理深刻；表达精准</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>🎯 适用话题</h5>
+                                <div class="tag-list">
+                                    <span class="tag">热爱 vs 功利</span>
+                                    <span class="tag">初心与使命</span>
+                                    <span class="tag">生命的意义</span>
+                                    <span class="tag">内驱力</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">"最初的、笨拙的、不计成本的喜欢，永远是文艺的珍贵火种。"</div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>🔍 好在哪</h5>
+                                <p>排比有力；比喻形象："火种"；点题精准；情感饱满</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>🎯 适用话题</h5>
+                                <div class="tag-list">
+                                    <span class="tag">初心与热爱</span>
+                                    <span class="tag">文艺的本质</span>
+                                    <span class="tag">纯粹的珍贵</span>
+                                    <span class="tag">守护美好</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">"我们的很多光芒是镜面反射来的。重要的是，光芒撤去之后，我们在做什么？"</div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>🔍 好在哪</h5>
+                                <p>比喻精妙："镜面反射"；追问犀利；哲理深刻</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>🎯 适用话题</h5>
+                                <div class="tag-list">
+                                    <span class="tag">真实的光芒</span>
+                                    <span class="tag">爆红后的沉淀</span>
+                                    <span class="tag">实力与名气</span>
+                                    <span class="tag">自我认知</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <strong>⚠️ 重要提示：</strong>文章揭示了当代文艺创作的一个核心矛盾——如何在流量时代保持初心？这对高考作文中讨论"坚守本心""抵御诱惑"等话题非常有价值。
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章4 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>文章4：《念念不忘侠客梦》</h2>
+                <div class="article-meta">
+                    <span><strong>作者：</strong>陆嘉宁</span>
+                    <span><strong>版面：</strong>第20版（副刊版）</span>
+                    <span><strong>副标题：</strong>由电视剧《雨霖铃》想到的</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        "武侠不死"的底气，在于追求正义、坚韧不屈的精神深藏在我们民族的文化血脉中。武侠作为颇具中华文化特色的通俗叙事类型，其内蕴的侠义精神，持续孕育着、滋养着不同类型的创作。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+                    
+                    <div class="quote-card">
+                        <div class="quote-text">"从江湖新人的视角写展昭，一层层去探悉大侠的内心世界。"</div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>🔍 好在哪</h5>
+                                <p>角度新颖；层次感强；对比鲜明；表达精准</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>🎯 适用话题</h5>
+                                <div class="tag-list">
+                                    <span class="tag">视角与角度</span>
+                                    <span class="tag">创新方法</span>
+                                    <span class="tag">深入了解</span>
+                                    <span class="tag">人性的深度</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-text">"说到底，武侠二字背后追求正义、坚韧不屈的精神，深藏在我们民族的文化血脉中，这也是'武侠不死'的底气所在。"</div>
+                        <div class="quote-analysis">
+                            <div class="analysis-item">
+                                <h5>🔍 好在哪</h5>
+                                <p>总结有力；提炼精准；比喻形象；点题精辟</p>
+                            </div>
+                            <div class="analysis-item">
+                                <h5>🎯 适用话题</h5>
+                                <div class="tag-list">
+                                    <span class="tag">文化传承</span>
+                                    <span class="tag">侠义精神</span>
+                                    <span class="tag">民族精神</span>
+                                    <span class="tag">文化自信</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 总结 -->
+        <div class="summary-card">
+            <h3>📚 今日核心主题：突破与坚守</h3>
+            <p>今天的4篇文章，共同构成了一个关于<strong>"突破与坚守"</strong>的完整叙事：</p>
+            <p>• 《点石成金关键在认知升维》：以认知升维突破资源局限</p>
+            <p>• 《守一心澄澈  持恒志笃行》：以"用心若镜"保持定力坚守</p>
+            <p>• 《别丢了最初的"喜欢"》：守护文艺创作的初心</p>
+            <p>• 《念念不忘侠客梦》：传承民族文化的侠义精神</p>
+        </div>
+
+        <div class="footer">
+            <p>整理时间：2026年05月26日</p>
+            <p>数据来源：《人民日报》2026年05月26日第05版、第20版</p>
+            <p>整理人：HAHA（高考作文素材整理助手）</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const btn = content.previousElementSibling;
+            
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                btn.textContent = btn.textContent.replace('收起', '查看');
+            } else {
+                content.classList.add('active');
+                btn.textContent = btn.textContent.replace('查看', '收起');
+            }
+        }
+    </script>
+</body>
+</html>
