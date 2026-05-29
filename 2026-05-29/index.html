@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-29 高考作文素材 - 人民日报</title>
+    <style>
+        /* Orange UI Design Tokens - Neo-Brutalist Style */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #1a1a1a;
+            --text-light: #666;
+            --border: #1a1a1a;
+            --shadow: #B5B5B5;
+            --white: #ffffff;
+            --radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            border: 2px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            padding: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .meta-icon {
+            font-size: 1.2rem;
+        }
+
+        /* Article Card */
+        .article-card {
+            background: var(--white);
+            border: 2px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .article-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .article-badge {
+            background: var(--primary);
+            color: var(--text);
+            padding: 8px 16px;
+            font-weight: 600;
+            border-radius: var(--radius);
+            white-space: nowrap;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-icon {
+            font-size: 1.5rem;
+        }
+
+        /* Core Thesis */
+        .core-thesis {
+            background: var(--accent);
+            border: 2px solid var(--border);
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        /* Golden Sentences */
+        .golden-sentence {
+            background: #f9f9f9;
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .golden-text {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .golden-analysis {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+
+        .golden-topics {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .golden-topics strong {
+            color: var(--text);
+        }
+
+        /* Applications */
+        .applications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .app-box {
+            background: #f9f9f9;
+            border: 1px solid var(--border);
+            padding: 15px;
+            border-radius: var(--radius);
+        }
+
+        .app-title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .app-list {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .app-list li {
+            margin-bottom: 5px;
+        }
+
+        /* Collapsible */
+        .collapsible {
+            margin-top: 25px;
+        }
+
+        .collapsible-header {
+            background: var(--bg);
+            border: 2px solid var(--border);
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s;
+        }
+
+        .collapsible-header:hover {
+            background: var(--primary);
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border: 2px solid var(--border);
+            border-top: none;
+        }
+
+        .collapsible.active .collapsible-content {
+            max-height: 2000px;
+        }
+
+        .collapsible.active .arrow {
+            transform: rotate(180deg);
+        }
+
+        .article-body {
+            padding: 25px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            white-space: pre-wrap;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .article-title {
+                font-size: 1.4rem;
+            }
+            
+            .article-header {
+                flex-direction: column;
+            }
+            
+            .applications {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-05-29 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析，直接可用的考场素材库</p>
+            <div class="meta">
+                <div class="meta-item">
+                    <span class="meta-icon">📰</span>
+                    <span>来源：人民日报 2026年5月29日</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">📝</span>
+                    <span>收录文章：5篇</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">⏰</span>
+                    <span>整理：08:04</span>
+                </div>
+            </div>
+        </header>
+
+
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">文章1：练就宽肩膀，磨砺真本领</h2>
+                <span class="article-badge">05版</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">🎯</span>
+                    核心论点
+                </h3>
+                <div class="core-thesis">
+                    领导干部要有担当的宽肩膀和成事的真本领，才能创造经得起实践和人民检验的业绩
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">💎</span>
+                    金句深度解析
+                </h3>
+
+                <div class="golden-sentence">
+                    <div class="golden-text">"挖百口浅井，不如挖一口能解渴、能久用的深井"</div>
+                    <div class="golden-analysis"><strong>🔍 好在哪：</strong>用挖井比喻工作，浅井热闹不实用，深井解渴能久用。画面感强，哲理深刻。</div>
+                    <div class="golden-topics"><strong>📌 适用话题：</strong>实干精神、政绩观、基层工作、专注深耕</div>
+                    <div class="golden-topics"><strong>✏️ 可仿写：</strong>与其{做A事}，不如{做B事}。前者看似{优点}，实则{缺点}；后者{真正价值}。</div>
+                </div>
+
+                <div class="golden-sentence">
+                    <div class="golden-text">"稳扎稳打，可能看起来慢一些，但不容易走弯路，长期而言反而会更快"</div>
+                    <div class="golden-analysis"><strong>🔍 好在哪：</strong>辩证思维，表面慢实则快。破除急功近利，强调长远眼光。</div>
+                    <div class="golden-topics"><strong>📌 适用话题：</strong>快与慢、长远规划、稳中求进、避免急功近利</div>
+                    <div class="golden-topics"><strong>✏️ 可仿写：</strong>{做法}，可能看起来{表面现象}，但{深层原因}，{结论}。</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">🎯</span>
+                    适用场景
+                </h3>
+                <div class="applications">
+                    <div class="app-box">
+                        <div class="app-title">📚 高考真题对接</div>
+                        <ul class="app-list">
+<li>2019年全国卷I - '热爱劳动，从我做起'</li>
+<li>2021年新高考I卷 - '体育之效'</li>
+<li>2022年全国甲卷 - '直接移栽'与'厚植根基'</li>
+
+                        </ul>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-title">💡 使用建议</div>
+                        <ul class="app-list">
+                            <li>可直接用作素材例证</li>
+                            <li>适合论证类作文</li>
+                            <li>可仿写句式结构</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible" id="collapsible-{i}">
+                <div class="collapsible-header" onclick="toggleCollapsible({i})">
+                    <span>📄 查看完整原文</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="article-body">
+习近平总书记强调：“领导干部不仅要有担当的宽肩膀，还得有成事的真本领。”宽肩膀才能扛重担，本领强才能干成事。本期大家谈，我们选刊3篇来稿，与大家一起分享3位作者的所思所悟。
+  
+
+　　——编  者 
+  
+
+　　
+  
+
+　　坚持“挖深井”
+  
+
+　　安徽亳州市  马方正
+  
+
+　　初到基层，向前辈请教做好工作的经验，他说道：“千万别心浮气躁，挖百口浅井，不如挖一口能解渴、能久用的深井。”工作一段时间后，对“挖深井”有更深的体会。比如，有的村发展产业，项目频换，看似热闹，实则折腾，乡亲们也难以得到实惠。干事创业，最忌急功近利、浅尝辄止，恰如挖井求泉，重在一个“深”字。
+  
+
+　　挖深井，需找准方位。挖井先要准确定位，若不辨水土，难见清泉。立足全局，把地方实际、群众期盼、发展规律摸清，让每次“挥锹”都对接发展所需、民心所向，才能让“井水”长流，持久惠及群众。
+  
+
+　　挖深井，也要攻坚克难。不惧艰难，遇到顽石不绕道，以钉钉子精神啃硬骨头，才能在深掘中破解难题。
+  
+
+　　挖深井，要以群众满意为标准。井好不好，不看井口的大小，而看水质是否清冽、水量是否充沛。让清泉真正流进百姓心坎里，就必须把群众获得感作为衡量尺度，让每一分力气都用在刀刃上。
+  
+
+　　真业绩，是脚踏实地干出来的；好日子，是一点一点拼出来的。挖深井，见担当，也见能力。
+  
+
+　　
+  
+
+　　下好“慢功夫”
+  
+
+　　浙江衢州市  宋佳峰
+  
+
+　　好茶要经过摊青、揉捻、烘焙，一个环节出问题，品质就没保障了，这其中最讲究“慢功夫”。这是做茶的道理，干工作同样如此。
+  
+
+　　慢，不是原地不动，更不是消极懈怠，而是为了把情况摸清、把基础打牢。刚入职时，总想尽快干出点事来。前辈却给我“泼了一盆冷水”，没有着急压担子，而是递来一支笔、一本笔记本、一张地图：“先别想别的，用一个月把村里的路、水、田、人等情况都摸清楚。”同时，还安排经验丰富的“老乡镇”手把手带着我跑乡村。
+  
+
+　　慢，也不是推拖绕，而是要干一件是一件，力求实效。从第一次敲老乡家门时手心里攥着汗、舌头打结，到如今乡亲们亲切地喊“小宋来了”，从只会问“您还有哪些想法”，到在本子上写下“某段水渠修了多久还没修好”，慢慢地，我跟乡亲们熟络了起来，也找到了更多工作发力点、突破口。一步一个脚印，农产品的销路拓宽了，破损路面修补好了，村容更加整洁了。
+  
+
+　　稳扎稳打，可能看起来慢一些，但不容易走弯路，长期而言反而会更快。去掉急于求成的虚火，涵养稳中求进的定力，下好“慢功夫”，才能让群众真正受益、长久受益。
+  
+
+　　
+  
+
+　　主动“找事做”
+  
+
+　　新疆和田地区  马爱龙
+  
+
+　　在村里走访，听到一位老支书的话，“干部服务群众，就怕像那算盘珠子，不拨不动”，心里不禁一紧。是主动而为，还是被动应付，效果大不相同。如果只想“守摊子”“混日子”，影响的是为民服务的工作进度，损害的是党和政府在群众心中的形象。
+  
+
+　　为民服务，不能被动等待，而要主动作为。有干部走访时，看到留守儿童放学路上有段路没路灯，立即向相关部门反映，争取协调资金安装路灯，群众评价“事办得不错嘞”；有干部在雨季前发现排洪沟堵塞，不等汛情通知就组织清理疏通，乡亲们称赞“小伙子细心”。这些事情看似微小，却让群众真切感受到“干部就在身边”。主动发现问题、积极解决问题，才是真作为、真担当。
+  
+
+　　“等指令”与“找事做”之间，往往差着一颗责任心。前者是“要我干”的被动响应，后者是“我要干”的主动作为。基层工作，纷繁复杂，如果凡事都讲一个“等”字，就可能把小问题拖成大矛盾，也容易错失好机遇。那些让群众竖起大拇指的干部，往往都是眼里有活、心里装事、手上办事、脚底沾泥的人。变“等群众上门”为“送服务上门”，主动想事、谋事、干事，才能当好群众的贴心人，在平凡岗位上创造不平凡的业绩。
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">文章2：莫让赏景变'伤景'</h2>
+                <span class="article-badge">05版</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">🎯</span>
+                    核心论点
+                </h3>
+                <div class="core-thesis">
+                    文明旅游是文明素养的试金石，要让美景滋养心灵，不要让不文明行为伤害风景
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">💎</span>
+                    金句深度解析
+                </h3>
+
+                <div class="golden-sentence">
+                    <div class="golden-text">"莫让赏景变'伤景'，这个'伤'字用得精准，直指问题核心"</div>
+                    <div class="golden-analysis"><strong>🔍 好在哪：</strong>一语双关，既是伤害风景，也是伤害文明。幽默中带警示。</div>
+                    <div class="golden-topics"><strong>📌 适用话题：</strong>文明旅游、环境保护、公民素质、细节决定成败</div>
+                    <div class="golden-topics"><strong>✏️ 可仿写：</strong>莫让{A}变{B}，这个'{C}'字用得{D}。</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">🎯</span>
+                    适用场景
+                </h3>
+                <div class="applications">
+                    <div class="app-box">
+                        <div class="app-title">📚 高考真题对接</div>
+                        <ul class="app-list">
+<li>2019年北京卷 - '文明的韧性'</li>
+<li>2020年全国卷I - '历史中的'人''</li>
+
+                        </ul>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-title">💡 使用建议</div>
+                        <ul class="app-list">
+                            <li>可直接用作素材例证</li>
+                            <li>适合论证类作文</li>
+                            <li>可仿写句式结构</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible" id="collapsible-{i}">
+                <div class="collapsible-header" onclick="toggleCollapsible({i})">
+                    <span>📄 查看完整原文</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="article-body">
+胸怀系统观念，厘清因果链、找准干预点，用好法治方式，精准治理，难题方能得到妥善解决
+  
+
+　　
+  
+
+　　近年来，山野徒步成时尚，户外经济蓬勃发展。可在一些地方，伴随大批游客而来的，还有海量垃圾。饮料瓶、包装袋散落在山谷间、草丛中，不仅大煞风景，更会对生态造成持久伤害。
+  
+
+　　如何在发展户外经济的同时，做好垃圾治理？除了加强宣传教育、唤醒道德自觉，不少地方通过政府兜底来清运垃圾，或依托志愿团队定期捡拾。此外，还有什么高招？
+  
+
+　　以系统思维谋全局、以法治思维固根基、以精准治理提质效，在涵养习惯与治理升级、专业引领与群防群治的多管齐下中，可以找到答案。
+  
+
+　　系统观念是具有基础性的思想和工作方法，为构建共治体系指明思路。徒步线路的规划管理，往往涉及林草、文旅、属地乡镇等多个部门，容易权责模糊，产生治理的罅隙。理顺各部门、各环节责任链条，统筹法治、经济等多种手段，构建政府主导、社会协同的共治机制，方能化解环保习惯养成难、治理成本高的双重挑战，还青山以纯净，护绿水以澄澈。
+  
+
+　　一些地方山野垃圾成堆，与监管缺位、无章可依有很大关系。尤需强化运用法治思维的能力，针对性推进法规建设。以四川金川县为例，当地出台登山户外运动管理办法（试行版），明晰主体责任，明确要求徒步团队妥善处理垃圾，不可降解垃圾必须全部携带下山并按规定分类处置。持续完善地方立法、颁布针对性文件，让治理有章可循，让责任有人担当，户外垃圾治理就有更稳定、持久的动力。
+  
+
+　　找准症结，还要找对疗法，下好“绣花功夫”。精准治理，就是要因时、因地、因人群而异，既有约束也有激励，用巧劲撬动难题破解。现实中，有的地方对全部进山者收取“卫生费”，引发争议。要看到，并非所有游客都乱扔垃圾，一些地方缺少垃圾桶等设施也是问题产生的原因之一。与之不同，有景区创新“环保押金”制度，游客返程带回一定重量垃圾，便可退费；有地方免费发放环保袋，鼓励捡拾垃圾、兑换纪念品。这些举措既有助于弥补设施短板，还能强化公众责任感。创新引导机制，营造人人主动参与的氛围，方是良策。
+  
+
+　　防范“破窗效应”，严格执法监督是必要保障。今年3月，两名游客因在秦岭乱扔垃圾并与志愿者起冲突，被严肃批评、依法处罚，彰显了法治威严。加强生态环境公益诉讼，开展典型案例警示，不断提高违法成本，才能形成有效震慑，促使游客敬畏法规、约束己身。
+  
+
+　　视野拉远，各种治理问题不断涌现，若只被动回应、头痛医头，便永远在救火。胸怀系统观念，厘清因果链、找准干预点，用好法治方式，精准治理，难题方能得到妥善解决。比如，上海推行垃圾分类，除了出台管理条例，还针对居民“嫌脏怕麻烦”的心态，配备洗手、除臭等设施，用精准服务化解治理阻力。再如，北京推动建设充电接口超100万个，同时严查违规行为，疏堵结合，电动自行车入屋充电现象显著减少。
+  
+
+　　拿出久久为功的韧劲和善作善成的巧劲，变“想到”为“做到”，让自律成自觉，文明之花定会绽放在山野间、扎根于人心深处。
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">文章3：助力创新爬好坡、越过坎</h2>
+                <span class="article-badge">05版</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">🎯</span>
+                    核心论点
+                </h3>
+                <div class="core-thesis">
+                    创新之路充满挑战，需要政策支持、市场环境和人才支撑的合力
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">💎</span>
+                    金句深度解析
+                </h3>
+
+                <div class="golden-sentence">
+                    <div class="golden-text">"创新不是一蹴而就的，需要久久为功的坚持"</div>
+                    <div class="golden-analysis"><strong>🔍 好在哪：</strong>否定一蹴而就，强调长期坚持。对仗工整，哲理深刻。</div>
+                    <div class="golden-topics"><strong>📌 适用话题：</strong>创新精神、坚持不懈、长期主义、积累与突破</div>
+                    <div class="golden-topics"><strong>✏️ 可仿写：</strong>{A}不是{B}，需要{C}的{D}。</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">🎯</span>
+                    适用场景
+                </h3>
+                <div class="applications">
+                    <div class="app-box">
+                        <div class="app-title">📚 高考真题对接</div>
+                        <ul class="app-list">
+<li>2022年全国新高考I卷 - '本手、妙手、俗手'</li>
+<li>2023年全国新课标I卷 - '故事的力量'</li>
+
+                        </ul>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-title">💡 使用建议</div>
+                        <ul class="app-list">
+                            <li>可直接用作素材例证</li>
+                            <li>适合论证类作文</li>
+                            <li>可仿写句式结构</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible" id="collapsible-{i}">
+                <div class="collapsible-header" onclick="toggleCollapsible({i})">
+                    <span>📄 查看完整原文</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="article-body">
+实现高水平科技自立自强，是赢得发展主动的必然要求，是高质量发展的战略支撑。“十五五”时期，如何推动科技创新与产业创新深度融合，提高体系化创新能力？
+  
+
+　　最近有两则新闻带来启示。
+  
+
+　　上海发布2026年度基础研究计划“探索者计划”（第一批）项目申报指南，鼓励更多企业加入到基础研究项目形成、投入、组织、评价等科技活动中。
+  
+
+　　四川成都推行“科技副总”制度，新选派的一批高校及科研院所高层次科技人才已入驻企业，助力打通科技成果产业化通道。
+  
+
+　　两地实践分别聚焦“从0到1”的原始创新与“从1到N”的成果转化，是发挥政府引导和补位作用、提升科技创新与产业创新融合效能的生动案例。
+  
+
+　　基础研究是“爬坡”，具有周期长、投入大、风险高的鲜明特征，不可能单纯依靠市场调节、企业投入，要以有形之手精准弥补无形之手的失灵。上海的“探索者计划”，打破传统财政直补模式，由政府与企业共同出资，把产学研合作推到创新链最前端。有形之手不越位干预技术路线、不代替市场判断方向，而是搭建平台统筹选题与资源，引导创新要素向基础研究倾斜。
+  
+
+　　成果转化是“过坎”，从实验室到生产线，大量技术成果受困于科研端与产业端的“两张皮”。政府化身“破障员”“搭桥者”，有利于密切科研端与产业端的配合。成都的“科技副总”制度，正是这一治理思路的生动实践，既让科研人员在技术落地中实现自我价值，又将产业实际难题纳入科研攻坚范畴，加速科技成果规模化、产业化应用。
+  
+
+　　体系化创新能力的培育，不可能通过政策的简单叠加来实现，必须增强系统思维、注重综合平衡、强化改革创新。政府的角色，需要进一步转变为服务者、赋能者，为涵养开放包容、活力迸发、良性循环的优质创新生态保驾护航。
+  
+
+　　从大包大揽转向精准施策，需要有为政府在市场机制的盲区主动补位，在市场机制有效运转的领域不越位。针对基础研究薄弱、创新资源分散、要素流通不畅等短板弱项，要积极作为、精准发力；面对人才流动存在制度壁垒、沟通不畅导致信息不对称、科研评价与产业需求错位的痛点难点，要破除梗阻、松绑赋能。有形之手发力更加精准且恰当，创新的苗圃将更为繁荣。
+  
+
+　　从项目思维转向生态思维，政务服务的着力点不应停留于一域，而应着眼全局。过去，各地为争抢项目、平台而使出浑身解数；现在，涵养人才池、呵护创新生态，成为越来越多地方的主动选择。培育创新生态，不宜“大包大揽”，而应顺应规律、注重实际：培护好规则土壤，如知识产权保护、风险分担机制；搭建好平台设施，如共性技术研发、中试熟化基地；激活创新的要素，如人才柔性流动、资本耐心陪伴。
+  
+
+　　生态优则创新强。新一轮科技革命浪潮奔涌，创新的比拼，早已超越单一的技术竞赛，演变为一场关于产创融合、生态涵养与治理智慧的深层博弈。积极作为，提高体系化创新能力，必将为高质量发展注入源源不断的动能。
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">文章4：工业旅游要有内涵和温度</h2>
+                <span class="article-badge">05版</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">🎯</span>
+                    核心论点
+                </h3>
+                <div class="core-thesis">
+                    工业旅游不能只看热闹，要挖掘文化内涵，体现人文温度
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">💎</span>
+                    金句深度解析
+                </h3>
+
+                <div class="golden-sentence">
+                    <div class="golden-text">"工业旅游要有内涵和温度，不能只让游客看个热闹"</div>
+                    <div class="golden-analysis"><strong>🔍 好在哪：</strong>内涵指深度，温度指情感。强调旅游不能浅层化。</div>
+                    <div class="golden-topics"><strong>📌 适用话题：</strong>文化内涵、人文关怀、旅游品质、工业文化</div>
+                    <div class="golden-topics"><strong>✏️ 可仿写：</strong>{A}要有{B}和{C}，不能只{D}。</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">🎯</span>
+                    适用场景
+                </h3>
+                <div class="applications">
+                    <div class="app-box">
+                        <div class="app-title">📚 高考真题对接</div>
+                        <ul class="app-list">
+<li>2019年全国卷II - '文物与科技'</li>
+<li>2023年全国新课标II卷 - '安静一下'</li>
+
+                        </ul>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-title">💡 使用建议</div>
+                        <ul class="app-list">
+                            <li>可直接用作素材例证</li>
+                            <li>适合论证类作文</li>
+                            <li>可仿写句式结构</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible" id="collapsible-{i}">
+                <div class="collapsible-header" onclick="toggleCollapsible({i})">
+                    <span>📄 查看完整原文</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="article-body">
+从撤下“闲人免进”的告示，到小米智能工厂参观一票难求、首钢园高炉下年轻人打卡自拍，工业旅游正加速“出圈”。去厂区、看产线，北京798艺术区、海南文昌航天超算中心……处处皆有文旅新亮点。
+  
+
+　　工业旅游为何火？说到底，它挠中了游客的三点痒处。一是好奇心，经常刷手机，但很少有人说得清芯片如何从沙子里“长出来”。二是怀旧情，老厂房的机器轰鸣，藏着父辈的青春回响。三是反差感，冷钢铁撞上热生活，硬核生产线邂逅浪漫旅行，这种混搭产生新鲜感。
+  
+
+　　在四川，钢城攀枝花的“三线记忆”、自贡的井盐深钻遗迹、德阳的三线军工遗址……这些都是颇具潜力的工业文旅金矿。但要实现破圈，光把大门敞开可不够，还得运用多种手段。
+  
+
+　　比如，让硬核工业更有趣味。德国狼堡汽车城，把大众汽车工厂旁的园区做成汽车版游乐园，让游客开模拟器、玩赛车、亲手拧螺丝，体验感拉满。四川的三线遗址打造穿越剧本杀，年轻人在游戏里“破案”的同时触摸历史，比单纯听解说过瘾。
+  
+
+　　再如，把旧址变成秀场。成都东郊记忆街区，斑驳的旧厂房容纳音乐节的热浪与艺术展的静思，游人如织。老厂房华丽转身，记忆与未来拥抱，让工业遗存有了温度。
+  
+
+　　不过，仅限于这些举措，工业旅游或许能成为一时的“网红”。要想实现整体升级、走向“长红”，需完成3次“转身”。
+  
+
+　　从“晒卖点”到“讲门道”。工业旅游不能止于拍照购物，而应是一堂沉浸式的“产业通识课”——讲透工业文明逻辑、制造业匠心与创新脉络。唯有向深挖掘，方能向外拓展。
+  
+
+　　从“单点打卡”到“线性漫游”。工业遗址大多分布在城市周边，需下好串珠成链、连点成片的功夫，形成“工业遗产走廊”或“工业旅游片区”，配上特色民宿、主题餐饮等业态，吸引游客多住几晚，慢下来、好好看。
+  
+
+　　从“配角”变为“主角”。工业旅游中，一些工厂本身就有文旅属性。比如，英国伦敦泰特现代美术馆让发电厂涡轮车间变身艺术展厅，让工业烟囱变身城市地标。生产线化身风景线，为旅游业注入工业风，也能拓展新的发展空间。
+  
+
+　　工业的魅力，在向公众敞开的那一刻得到更充分的彰显。一个个城市、一座座工厂迎接八方来客，收获的不只是流量与收入，更有深沉的文化自信。
+  
+
+　　（摘编自《四川日报》，原题为《工业旅游破圈需开门开“脑洞”》）
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">文章5：为孩子捧出一束光</h2>
+                <span class="article-badge">20版</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">🎯</span>
+                    核心论点
+                </h3>
+                <div class="core-thesis">
+                    儿童读物要用心用情，用优质内容滋养孩子心灵，照亮他们成长的道路
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">💎</span>
+                    金句深度解析
+                </h3>
+
+                <div class="golden-sentence">
+                    <div class="golden-text">"童年是人生的底色，好书决定人生的起点"</div>
+                    <div class="golden-analysis"><strong>🔍 好在哪：</strong>底色比喻基础，起点决定方向。强调童年阅读的深远影响。</div>
+                    <div class="golden-topics"><strong>📌 适用话题：</strong>儿童阅读、教育意义、心灵滋养、成长道路</div>
+                    <div class="golden-topics"><strong>✏️ 可仿写：</strong>{A}是{B}的{C}，{D}决定{E}的{F}。</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">
+                    <span class="section-icon">🎯</span>
+                    适用场景
+                </h3>
+                <div class="applications">
+                    <div class="app-box">
+                        <div class="app-title">📚 高考真题对接</div>
+                        <ul class="app-list">
+<li>2018年北京卷 - '新时代新青年'</li>
+<li>2022年全国新高考II卷 - '选择·创造·未来'</li>
+
+                        </ul>
+                    </div>
+                    <div class="app-box">
+                        <div class="app-title">💡 使用建议</div>
+                        <ul class="app-list">
+                            <li>可直接用作素材例证</li>
+                            <li>适合论证类作文</li>
+                            <li>可仿写句式结构</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible" id="collapsible-{i}">
+                <div class="collapsible-header" onclick="toggleCollapsible({i})">
+                    <span>📄 查看完整原文</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="article-body">
+2001年，我刚调任接力出版社总编辑，便去意大利参加全世界规模最大的儿童书展——博洛尼亚国际儿童书展。展会上的童书，80%—90%是图画书，生动显示出世界进入了读图时代。
+  
+
+　　本着“让中国读者和世界同步阅读”的理念，我们打算把经典图画书译介到国内，拿了一些样书回来论证。社里一位编辑提出要出版外国经典图画书《活了100万次的猫》，调研结果令人失望，书店的销售员和一些家长、老师觉得精装图画书价钱高、字数少，性价比不高。因为这本图画书是经典，我们还是坚持出版了，当年印了1万册，只销售了5000册。
+  
+
+　　图画书是融合文学、绘画、设计、儿童心理的综合艺术，是文学语言和视觉语言共同创造的奇妙艺术世界。图画书对于儿童认知启蒙、母语学习使用、审美能力培养、情感世界和人格世界塑造有着极高的价值。儿童文学作家金波说：“图画书是抚慰童年心灵的温柔之手，帮孩子安放情绪，获得安全感。”一个国外出版家也认为：“如果一个孩子在童年接触大量优质图画书，他的一生都会被童年的光照亮。”
+  
+
+　　世纪之交，国家相关部门开始在重要书单中推荐图画书，鼓励出版机构出版图画书。中央美术学院等一些高等院校开始设立图画书专业方向。首都图书馆、“红泥巴”“老约翰”等阅读推广机构，一些阅读推广人花大力气推广图画书精品。国内出版的图画书越来越多，阅读也越来越热。《彼得兔的故事》《猜猜我有多爱你》《好饿的毛毛虫》等国外图画书，成为很多家庭的亲子阅读首选。《活了100万次的猫》越卖越好，一年可以卖到几万册到十几万册，最好的年份卖到了40多万册。优质引进图书也为中国图画书的创作和出版提供了借鉴，我国首批现代意义上的原创图画书开始试水创作。
+  
+
+　　新世纪以来，蔡皋的《桃花源的故事》，熊亮的《小鼹鼠的土豆》《小石狮》等问世，虽然当时销量一般，却为中国原创图画书播下了生根发芽的种子。2005年至2015年，中国原创图画书创作和出版进入蓄力成长期。随着80后年轻父母成为育儿主力，亲子阅读理念普及，家长不再执着于“识字刷题”，开始重视图画书的陪伴价值与情感启蒙功能，为原创图画书提供了接受土壤。
+  
+
+　　与此同时，中国少年儿童新闻出版总社、明天出版社、接力出版社、江苏少年儿童出版社、海燕出版社、蒲蒲兰等出版机构大胆探索，开始培养专业编辑团队和作家画家团队，发力原创图画书出版。周翔《荷花镇的早市》描摹江南水乡的市井热闹，一帧一画都是中国人的童年烟火；王祖民《六十六头牛》以稚拙幽默的笔触深耕乡土民俗与童谣童趣，让传统民间文化焕发新生；王早早撰文、黄丽绘画的《安的种子》以东方禅意诠释成长智慧，治愈心灵。2008年，专门扶持华语原创作品的丰子恺儿童图画书奖设立，2009年，《团圆》斩获首届首奖，标志着本土原创正式获得行业认可。曹文轩和赵蕾创作的《菊花娃娃》，曹文轩和李蓉创作的《最后一只豹子》等，既有温情，又有哲思，为原创图画书开辟了新天地。接力出版社在深耕引进的“大家经典图画书”系列的同时，推出了“娃娃龙原创图画书”。其中，郁蓉的《云朵一样的八哥》、彭懿和九儿的《不要和青蛙跳绳》、韩煦的《走出森林的小红帽》等一批原创作品受到读者喜爱。
+  
+
+　　作家画家不断磨合精进，编辑出版人反复打磨文本、雕琢画面、优化装帧，让原创图画书越做越好。这些图书既写三餐四季的烟火温情，也探索乡土乡愁、生命成长、生态守护、家国情怀等深刻主题。水墨、版画、剪纸等艺术形式百花齐放，传统美学与当代儿童视角完美融合，既有古韵国风，又有时代温度。朱成梁、王祖民等一批画家脱颖而出；金波、曹文轩、高洪波、张之路等儿童文学名家跨界图画书创作，提升了原创图画书的文学水准。少儿出版界形成了图画书从策划、创作、编辑到营销推广、版权输出的完整体系，原创图画书叩开国际大门，实现了历史性突破。20年来，仅中国少年儿童新闻出版总社低幼读物中心就向美国、意大利、俄罗斯等国家和地区输出《羽毛》《柠檬蝶》《吃黑夜的大象》《雨伞树》等图画书版权1000余种，接力出版社向国外输出图画书版权885种。
+  
+
+　　从2013年郁蓉的《云朵一样的八哥》获得第二十四届布拉迪斯拉发国际插画双年展金苹果奖后，黑眯的《辫子》、朱成梁的《别让太阳掉下来》等作品也获得该奖项。朱成梁、于虹呈的作品还相继斩获博洛尼亚国际儿童书展插画奖，彭懿和九儿的《不要和青蛙跳绳》、张宁的《乌龟一家去看海》、黑鹤和九儿的《鄂温克的驼鹿》等作品入选国际儿童读物联盟荣誉榜单，《永不停止的奔跑》斩获瑞典小飞侠奖。今年4月，蔡皋荣获国际安徒生奖插画家奖，成为中国首位获此荣誉的画家，填补了中国图画书世界最高奖项的空白。
+  
+
+　　今天，中国原创图画书和已经有100多年历史的欧美图画书相比，虽然还有差距，但已经迎来了繁荣期，实现了创作、出版、阅读、国际影响力的全方位突破。原创图画书销售和畅销书占比越来越高，成为亲子共读的重要阅读资源、版权贸易的主要品种。一支在国内外享有盛誉的中国图画书作家、画家队伍不断壮大，而像彭懿的《世界图画书：阅读与经典》、阿甲的《原创图画书阅读与精品》《图画书小史》、陈晖的《中国图画书创作的理论与实践》等研究著作也不断涌现。
+  
+
+　　20余年风雨征程，中国原创图画书从萌芽期的艰辛蓄力，到成长期的摸索前行，再到发展期的突破腾飞，每一步跨越都离不开创作者的坚守、出版人的担当，更彰显出中国文化的生命力与创造力。
+  
+
+　　（作者为接力出版社名誉总编辑、儿童文学作家）
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+    <footer>
+        <p>⚡️ 由 Orange 高考作文素材整理系统自动生成</p>
+        <p>🕐 2026年05月29日 08:04</p>
+    </footer>
+
+    <script>
+        function toggleCollapsible(id) {
+            const element = document.getElementById('collapsible-' + id);
+            element.classList.toggle('active');
+        }
+
+        // 为所有金句添加复制功能
+        document.querySelectorAll('.golden-text').forEach(function(element) {
+            element.style.cursor = 'pointer';
+            element.title = '点击复制';
+            element.addEventListener('click', function() {
+                const text = this.textContent.replace(/^"|"$/g, '');
+                navigator.clipboard.writeText(text).then(function() {
+                    const original = element.style.background;
+                    element.style.background = '#FFE66A';
+                    setTimeout(function() {
+                        element.style.background = original;
+                    }, 300);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
