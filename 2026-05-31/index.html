@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-05-31 高考作文素材</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2D2D2D;
+            --text-light: #666;
+            --border: #2D2D2D;
+            --shadow: #B5B5B5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: white;
+            border: 2px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .article-card {
+            background: white;
+            border: 2px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+
+        .article-header {
+            padding: 30px;
+            background: var(--primary);
+            color: var(--text);
+            border-bottom: 2px solid var(--border);
+        }
+
+        .article-title {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+
+        .article-meta {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .article-content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .core-thesis {
+            background: var(--accent);
+            padding: 25px;
+            border-left: 5px solid var(--border);
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 20px 0;
+        }
+
+        .logic-diagram {
+            background: #f9f9f9;
+            padding: 25px;
+            border: 2px solid var(--border);
+            font-family: "Monaco", "Menlo", monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+
+        .golden-quotes {
+            display: grid;
+            gap: 25px;
+        }
+
+        .quote-card {
+            background: #f9f9f9;
+            border: 2px solid var(--border);
+            padding: 25px;
+            position: relative;
+        }
+
+        .quote-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 4rem;
+            line-height: 1;
+            color: var(--primary);
+            opacity: 0.3;
+        }
+
+        .quote-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin: 20px 0;
+            padding-left: 40px;
+            color: var(--text);
+        }
+
+        .quote-analysis {
+            margin-top: 20px;
+            padding: 15px;
+            background: white;
+            border-left: 4px solid var(--primary);
+        }
+
+        .quote-analysis strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            background: var(--primary);
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .template-box {
+            background: var(--accent);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+            font-family: "Monaco", "Menlo", monospace;
+            font-size: 0.9rem;
+        }
+
+        .scenarios {
+            background: #f9f9f9;
+            padding: 25px;
+            border: 2px solid var(--border);
+        }
+
+        .scenario-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .scenario-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .scenario-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .original-text {
+            background: #f5f5f5;
+            padding: 30px;
+            border: 1px solid #ddd;
+            max-height: 500px;
+            overflow-y: auto;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .original-text.collapsed {
+            max-height: 150px;
+            position: relative;
+        }
+
+        .toggle-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--primary);
+            color: var(--text);
+            border: 2px solid var(--border);
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .toggle-btn:hover {
+            background: var(--accent);
+            transform: translate(-2px, -2px);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            header {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-title {
+                font-size: 1.4rem;
+            }
+
+            .article-content {
+                padding: 25px;
+            }
+
+            .section-title {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-05-31 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+        </header>
+
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">文章1：AI浪潮下如何培养青少年的思维能力</h2>
+                <p class="article-meta">作者：黄超 | 版面：第05版（教育） | 字数：约3169字</p>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-thesis">
+                        在人工智能时代，教育的核心目标应从知识传授转向培养超越人工智能的思维能力，重点发展内驱力、批判性思维、创造性思维、伦理判断能力等人类独有的高阶素养，让人工智能成为思维的"脚手架"而非替代思考的"拐杖"。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🧠 论证逻辑</h3>
+                    <div class="logic-diagram">
+第一层：提出问题（现象引入）<br>
+├── AI技术重塑教育生态<br>
+├── 面对数字原住民一代，教育如何回应？<br>
+└── 核心问题：什么才是人工智能无法替代的能力？<br>
+<br>
+第二层：超越（概念界定与价值阐释）<br>
+├── "超越人工智能的思维能力"的具体内涵<br>
+├── 内驱力：人类独有的根本动力<br>
+├── 批判性思维与复杂问题解决能力<br>
+└── 高阶思维、共情能力、伦理判断能力<br>
+<br>
+第三层：探索（实践路径与创新案例）<br>
+├── 系统推进：顶层设计与基础设施<br>
+├── 浙江实践：贯通全学段的人工智能教育<br>
+├── 课堂转型：从"知识传授"到"思维塑造"<br>
+└── 评价改革：从"尺子"到"镜子"<br>
+<br>
+第四层：挑战（风险识别与应对策略）<br>
+├── 能力悬置：催生新的智能鸿沟<br>
+├── 认知浅表化：流畅性陷阱与认知外包<br>
+└── 应对：强化普惠性，鼓励深度认知参与<br>
+<br>
+第五层：升华（价值重塑与未来指向）<br>
+├── 技术在侧、思考在心的自主旅程<br>
+└── 将理念共识转化为生动实践
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+                    <div class="golden-quotes">
+                        <div class="quote-card">
+                            <p class="quote-text">内驱力——一个人，只要是作为碳基生物，要吃饭、要生存，内驱力是自然涌现出来的，但是一台机器不会，它所有的动力都来源于预先给它注入的规则和指令。</p>
+                            <div class="quote-analysis">
+                                <strong>🔍 好在哪：</strong>
+                                用"碳基生物"与机器的对比，深刻揭示人类内驱力的独特性。吃饭、生存是最原始也最根本的内驱力，而机器只能被动执行指令。这句话直指人之为人的本质。
+                                
+                                <div class="tags">
+                                    <span class="tag">内驱力</span>
+                                    <span class="tag">人性独特性</span>
+                                    <span class="tag">人与机器</span>
+                                    <span class="tag">教育本质</span>
+                                </div>
+
+                                <strong>💡 怎么用：</strong>
+                                适合在论证"人类独特性"或"教育本质"时使用，可以作为核心论点的支撑句。
+
+                                <div class="template-box">
+                                    可仿写：XX——一个人，只要是作为XX，要XX，XX是XX的，但是XX不会，它所有的XX都来源于XX。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">人工智能工具提升了考试成绩，但是并没有提升学习能力。</p>
+                            <div class="quote-analysis">
+                                <strong>🔍 好在哪：</strong>
+                                用转折复句揭示表面提升与内在能力的矛盾。简洁有力，直指教育评价的盲点。
+                                
+                                <div class="tags">
+                                    <span class="tag">技术与能力</span>
+                                    <span class="tag">表象与本质</span>
+                                    <span class="tag">教育评价</span>
+                                </div>
+
+                                <strong>💡 怎么用：</strong>
+                                适合在论证"技术双刃剑"或"教育本质"时使用，可以用作转折句或结论句。
+
+                                <div class="template-box">
+                                    可仿写：XX提升了XX，但是并没有提升XX。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">让人工智能成为思维的"脚手架"，而非替代思考的"拐杖"。</p>
+                            <div class="quote-analysis">
+                                <strong>🔍 好在哪：</strong>
+                                用建筑术语做比喻，脚手架是建造过程中的支撑，完成后可拆除；拐杖则是长期依赖。比喻精准，形象生动。
+                                
+                                <div class="tags">
+                                    <span class="tag">人与AI</span>
+                                    <span class="tag">工具与依赖</span>
+                                    <span class="tag">思维独立</span>
+                                </div>
+
+                                <strong>💡 怎么用：</strong>
+                                适合在论述"如何正确使用技术"时使用，可以用作核心观点的表达。
+
+                                <div class="template-box">
+                                    可仿写：让XX成为XX的"脚手架"，而非XX的"拐杖"。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">将评价从衡量结果的"尺子"，转变为看见过程、理解成长的"镜子"。</p>
+                            <div class="quote-analysis">
+                                <strong>🔍 好在哪：</strong>
+                                尺子是度量标准，镜子是自我认知。比喻揭示了评价功能的根本转变。
+                                
+                                <div class="tags">
+                                    <span class="tag">教育评价</span>
+                                    <span class="tag">过程与结果</span>
+                                    <span class="tag">成长</span>
+                                </div>
+
+                                <strong>💡 怎么用：</strong>
+                                适合在论述"教育评价改革"时使用，可以用作核心观点或总结句。
+
+                                <div class="template-box">
+                                    可仿写：将XX从衡量XX的"尺子"，转变为看见XX、理解XX的"镜子"。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="scenarios">
+                        <strong>📌 直接可用：</strong>
+                        <ul class="scenario-list">
+                            <li>2024年新课标I卷"故事的力量"（技术与人文）</li>
+                            <li>2023年新课标I卷"故事的力量"（可以用"脚手架"与"拐杖"的比喻）</li>
+                            <li>2022年全国甲卷"直接与间接"（技术与思维的关系）</li>
+                            <li>科技创新与人类未来的话题</li>
+                            <li>教育改革的话题</li>
+                            <li>人工智能与人类关系的话题</li>
+                        </ul>
+
+                        <strong style="display:block; margin-top:20px;">📝 段落模板：</strong>
+                        <div style="margin-top:15px; background:white; padding:15px; border-left:4px solid var(--accent);">
+                            <p><strong>开头段：</strong><br>
+                            "当XX技术XX时，我们是否想过：什么才是XX真正需要的且XX无法替代的XX？在XX时代，这个问题的答案变得更加迫切。"</p>
+                            
+                            <p style="margin-top:15px;"><strong>论证段：</strong><br>
+                            "然而，我们必须警惕'XX陷阱'。XX显示，XX%的XX存在XX问题。这揭示了一个深刻矛盾：XX。如何破解？答案在于XX。"</p>
+                            
+                            <p style="margin-top:15px;"><strong>结尾段：</strong><br>
+                            "XX与XX的融合已势不可挡。关键不在于XX本身，而在于我们如何运用技术，去XX、XX和XX那些XX之所以为XX的宝贵特质——XX、XX、XX以及XX。"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">📄 原文</h3>
+                    <div class="original-text collapsed" id="text1">
+                        AI（人工智能）技术的浪潮，正以前所未有的深度广度重塑教育生态。然而，技术越是强大，越应坚定将教育目标指向人的全面发展，特别是培养那些技术难以企及的人类能力。
+
+面对"数字原住民"一代，我们的教育体系如何回应AI带来的机遇和挑战？在近期举行的2026世界数字教育大会上，来自学术界、学校及地方教育主管部门的代表，围绕"培养超越人工智能的思维能力"这一议题，展开了深入探讨与实践分享。
+
+（完整原文见 Markdown 文件）
+                    </div>
+                    <button class="toggle-btn" onclick="toggleText('text1', this)">展开全文</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">文章2：越剧何以"年轻"</h2>
+                <p class="article-meta">作者：王珏 | 版面：第07版（人文） | 字数：约3949字</p>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-thesis">
+                        越剧的"年轻化"不是简单的形式创新，而是在坚守传统内核基础上的创造性转化和创新性发展。通过内容创新、形式创新、传播创新，让百年剧种与当代青年产生精神共鸣，实现传统文化与现代表达的有机融合。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+                    <div class="golden-quotes">
+                        <div class="quote-card">
+                            <p class="quote-text">越剧的"年轻"，并非刻意迎合，而是基因使然。</p>
+                            <div class="quote-analysis">
+                                <strong>🔍 好在哪：</strong>
+                                用"基因"一词深刻揭示越剧创新的内在必然性。不是外在迎合，而是内在驱使。这句话直指创新与传承的辩证关系。
+                                
+                                <div class="tags">
+                                    <span class="tag">文化传承</span>
+                                    <span class="tag">创新</span>
+                                    <span class="tag">传统与现代</span>
+                                </div>
+
+                                <strong>💡 怎么用：</strong>
+                                适合在论述"传统文化的现代化"时使用，可以用作核心论点。
+
+                                <div class="template-box">
+                                    可仿写：XX的"XX"，并非XX，而是XX。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">守正不守旧，创新不忘本。</p>
+                            <div class="quote-analysis">
+                                <strong>🔍 好在哪：</strong>
+                                对偶句式，简洁有力地阐释了守正与创新的辩证关系。"守正"与"创新"并不矛盾，关键在于"不守旧"与"不忘本"。
+                                
+                                <div class="tags">
+                                    <span class="tag">守正创新</span>
+                                    <span class="tag">传承与发展</span>
+                                    <span class="tag">文化自信</span>
+                                </div>
+
+                                <strong>💡 怎么用：</strong>
+                                适合在论述"传统与创新"时使用，可以用作分论点或总结句。
+
+                                <div class="template-box">
+                                    可仿写：XX不XX，XX不XX。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="scenarios">
+                        <strong>📌 直接可用：</strong>
+                        <ul class="scenario-list">
+                            <li>传统文化传承的话题</li>
+                            <li>文化创新的话题</li>
+                            <li>文化自信的话题</li>
+                            <li>传统与现代的关系</li>
+                            <li>青年与传统的双向奔赴</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-header">
+                <h2 class="article-title">文章3："不教而教"解锁少儿美育密码</h2>
+                <p class="article-meta">作者：谢丽芳 | 版面：第08版（副刊） | 字数：约1757字</p>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-thesis">
+                        美育的真谛在于"不教而教"——不是传授技巧，而是守护儿童天生的创造力。顺应儿童自然成长规律，以美育人，让儿童在自由的探索中释放天性、发展个性。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+                    <div class="golden-quotes">
+                        <div class="quote-card">
+                            <p class="quote-text">美，不是一种装饰，而是一种唤醒。</p>
+                            <div class="quote-analysis">
+                                <strong>🔍 好在哪：</strong>
+                                用"装饰"与"唤醒"的对比，深刻揭示美育的本质。美不是外加的，而是内在的；不是表面的，而是深层的。一句话直指美育的灵魂。
+                                
+                                <div class="tags">
+                                    <span class="tag">美育</span>
+                                    <span class="tag">唤醒</span>
+                                    <span class="tag">教育本质</span>
+                                </div>
+
+                                <strong>💡 怎么用：</strong>
+                                适合在论述"美育意义"时使用，可以用作核心论点或开头句。
+
+                                <div class="template-box">
+                                    可仿写：XX，不是一种XX，而是一种XX。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">把美种进心田，孩子自会向光而行。</p>
+                            <div class="quote-analysis">
+                                <strong>🔍 好在哪：</strong>
+                                用"种"与"长"的自然过程比喻美育的潜移默化。"向光而行"形象生动，充满希望。
+                                
+                                <div class="tags">
+                                    <span class="tag">美育</span>
+                                    <span class="tag">成长</span>
+                                    <span class="tag">希望</span>
+                                </div>
+
+                                <strong>💡 怎么用：</strong>
+                                适合在论述"美育效果"时使用，可以用作结尾句或点睛之笔。
+
+                                <div class="template-box">
+                                    可仿写：把XX种进XX，XX自会XX。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quote-card">
+                            <p class="quote-text">童年离美最近。一朵花、一束光、一声鸟鸣，都能让孩子睁大眼睛、竖起耳朵、停下脚步。</p>
+                            <div class="quote-analysis">
+                                <strong>🔍 好在哪：</strong>
+                                用排比句列举具体的审美意象，生动展现儿童对美的天然敏感。"睁大眼睛、竖起耳朵、停下脚步"三个动作细节，画面感极强。
+                                
+                                <div class="tags">
+                                    <span class="tag">童年</span>
+                                    <span class="tag">审美</span>
+                                    <span class="tag">自然</span>
+                                </div>
+
+                                <strong>💡 怎么用：</strong>
+                                适合在论述"儿童审美特点"时使用，可以用作描写段或论证支撑。
+
+                                <div class="template-box">
+                                    可仿写：XX离XX最近。一朵XX、一束XX、一声XX，都能让XX。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    <div class="scenarios">
+                        <strong>📌 直接可用：</strong>
+                        <ul class="scenario-list">
+                            <li>美育话题</li>
+                            <li>教育方法话题</li>
+                            <li>创造力话题</li>
+                            <li>自然成长规律</li>
+                            <li>儿童本位教育</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <p>📝 整理说明：本文档基于《人民日报》2026年05月31日的文章进行深度分析，<br>
+            重点关注论证逻辑、金句解析和高考应用场景，旨在为高考作文提供高质量素材储备。</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleText(id, btn) {
+            const elem = document.getElementById(id);
+            if (elem.classList.contains('collapsed')) {
+                elem.classList.remove('collapsed');
+                btn.textContent = '收起';
+            } else {
+                elem.classList.add('collapsed');
+                btn.textContent = '展开全文';
+            }
+        }
+    </script>
+</body>
+</html>
