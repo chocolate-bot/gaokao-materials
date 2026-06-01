@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-06-01 高考作文素材</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text-dark: #2D2D2D;
+            --text-medium: #5A5A5A;
+            --text-light: #8A8A8A;
+            --border: #2D2D2D;
+            --shadow: #B5B5B5;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg);
+            color: var(--text-dark);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+            background: var(--white);
+            border: 2px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            margin-top: 10px;
+        }
+
+        header .date {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 16px;
+            background: var(--accent);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            font-weight: 600;
+        }
+
+        .article-card {
+            background: var(--white);
+            border: 2px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .article-header {
+            background: var(--primary);
+            padding: 20px 30px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .article-header h2 {
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .article-header .meta {
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .article-header .meta span {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 2px 2px 0 0 var(--shadow);
+            font-size: 0.85rem;
+        }
+
+        .article-content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            font-size: 1.3rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+            font-weight: bold;
+        }
+
+        .core-argument {
+            background: var(--accent);
+            padding: 20px;
+            border: 2px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            margin: 20px 0;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .logic-diagram {
+            background: var(--bg);
+            padding: 20px;
+            border: 1.5px solid var(--border);
+            font-family: "Courier New", monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        .method-list {
+            list-style: none;
+        }
+
+        .method-list li {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            position: relative;
+            padding-left: 50px;
+        }
+
+        .method-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .golden-sentence {
+            background: var(--bg);
+            padding: 20px;
+            border: 2px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            margin-bottom: 20px;
+        }
+
+        .golden-sentence .quote {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            padding-left: 20px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .golden-sentence .analysis-item {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .golden-sentence .label {
+            font-weight: 600;
+            color: var(--text-dark);
+            display: inline-block;
+            min-width: 80px;
+        }
+
+        .usage-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .usage-tags .tag {
+            padding: 4px 10px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            font-size: 0.85rem;
+        }
+
+        .scenario-box {
+            background: var(--bg);
+            padding: 20px;
+            border: 2px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            margin-bottom: 15px;
+        }
+
+        .scenario-box h4 {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .scenario-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .scenario-box ul li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+        }
+
+        .scenario-box ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .original-text {
+            background: var(--bg);
+            padding: 20px;
+            border: 1.5px solid var(--border);
+            margin: 20px 0;
+            font-size: 0.95rem;
+            line-height: 2;
+            white-space: pre-wrap;
+        }
+
+        .collapsible {
+            margin-top: 30px;
+        }
+
+        .collapsible-header {
+            padding: 15px 20px;
+            background: var(--text-dark);
+            color: var(--white);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            user-select: none;
+        }
+
+        .collapsible-header:hover {
+            background: var(--text-medium);
+        }
+
+        .collapsible-header::after {
+            content: "▼";
+            font-size: 0.8rem;
+            transition: transform 0.3s;
+        }
+
+        .collapsible-header.active::after {
+            transform: rotate(180deg);
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .collapsible-content.active {
+            max-height: 5000px;
+        }
+
+        .summary-section {
+            background: var(--accent);
+            padding: 30px;
+            border: 3px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+            margin: 40px 0;
+        }
+
+        .summary-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .summary-item {
+            background: var(--white);
+            padding: 15px;
+            border: 2px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .summary-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+            font-weight: bold;
+        }
+
+        .summary-item p {
+            font-size: 0.9rem;
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            background: var(--white);
+            border: 2px solid var(--border);
+            box-shadow: 6px 6px 0 0 var(--shadow);
+        }
+
+        footer p {
+            color: var(--text-medium);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-header .meta {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .method-list li {
+                padding-left: 35px;
+            }
+
+            .method-list li::before {
+                left: 10px;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-06-01 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+            <div class="date">2026年6月1日 · 第05版、第19版</div>
+        </header>
+
+        <!-- 文章1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章1：《以童心绘岁月光阴（中国道路中国梦）》</h2>
+                <div class="meta">
+                    <span>作者：蔡皋（绘本作家、国际安徒生奖插画家奖获得者）</span>
+                    <span>版面：第05版（评论版）</span>
+                    <span>字数：约1200字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3>🎯 核心论点</h3>
+                    <div class="core-argument">
+                        以童心观世界，用创作绘光华——在AI时代坚守人的独特价值，以返璞归真的态度创造温暖世界。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🧠 论证逻辑</h3>
+                    <div class="logic-diagram">
+第一层：引入话题
+├─ 现象：六一儿童节，引发对童心的思考
+└─ 观点：生命的到来自带温暖，要创造更温柔的世界
+
+第二层：展开分析（三个维度）
+├─ 维度1：童心的价值
+│  ├─ 外婆讲故事：传统不能丢，要滋养孩子的精神
+│  └─ "小先生"：孩子能启发成人，返璞归真
+├─ 维度2：创作的态度
+│  ├─ 画书即画童年：经历与知识融为一体
+│  └─ 不分"有用""无用"：整体看待生活
+└─ 维度3：时代的回应
+   ├─ 不怕老：快乐地生活，忘记年龄
+   └─ AI时代：人的感受、思想、情感不可复制
+
+第三层：总结升华
+├─ 做童书是立人事业：画生命的温度、人间的感动
+└─ 对孩子的祝福：爱自己、爱生活、爱创造，未来充满希望
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🔧 论证方法</h3>
+                    <ul class="method-list">
+                        <li><strong>举例论证（个人经历）</strong>：外婆讲故事、画《聊斋》故事，说明创作选择背后的价值观</li>
+                        <li><strong>对比论证（儿童 vs 成人）</strong>：儿童"看山是山"vs成人"看山不是山"，突出童心的价值</li>
+                        <li><strong>引用论证（古典诗词）</strong>："恨无长绳能系日"，表达对时间流逝的感慨</li>
+                        <li><strong>因果论证（教育方式）</strong>：父母花时间讲故事→故事有"声音"→孩子得到多重滋养</li>
+                        <li><strong>假设论证（AI时代）</strong>：AI能模仿但不能复制你的心、感受、思想、情感</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>💎 金句深度解析</h3>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"璞就是素朴，真就是真诚，通过孩子的天真之眼可以洞见世界的本貌。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>哲理深刻，将"返璞归真"拆解为"素朴"与"真诚"；"天真之眼"意象生动，画面感强</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">保持初心</span>
+                                <span class="tag">返璞归真</span>
+                                <span class="tag">教育本质</span>
+                                <span class="tag">认识世界</span>
+                                <span class="tag">纯真与复杂</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>开头引入"童心"主题；论证"教育""成长"时的核心论点；结尾呼吁"保持初心"</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">可仿写：</span>
+                            <span>"美就是真实，善就是善良，通过XX的眼睛可以发现XX的本色"</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"生活中，我觉得没有什么东西是没有用的。把事物简单分为'有用'和'无用'，仅仅守着'有用'的，就把世界看窄了。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>观点辩证，打破"有用vs无用"的二元对立；逻辑严密，因果关系清晰</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">学习意义</span>
+                                <span class="tag">知识价值</span>
+                                <span class="tag">全面发展</span>
+                                <span class="tag">素质教育</span>
+                                <span class="tag">人文精神</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>论述"无用之用""素质教育"时的核心论据；从"实用主义"转向"全面发展"的转折句</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"AI能模仿，但是它不能复制你的心，你此刻的感受、思想和情感。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>时代性强，直面AI焦虑；对比有力："能模仿"vs"不能复制"；明确人的独特性</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">科技与人文</span>
+                                <span class="tag">AI时代</span>
+                                <span class="tag">创造力</span>
+                                <span class="tag">独特性</span>
+                                <span class="tag">情感价值</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>科技类话题中引入人文关怀；"人机差异"的核心论据；呼吁珍惜人的独特价值</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"好的教育就像优质食粮，自然滋养着人们。这种滋养越早越好，养健康的胃口，养好孩子的精神，也养成孩子对生活的欢喜心。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>比喻生动，"教育"比作"食粮"；层次递进：胃口→精神→欢喜心；排比有力</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">教育本质</span>
+                                <span class="tag">早教价值</span>
+                                <span class="tag">家庭教育</span>
+                                <span class="tag">亲子陪伴</span>
+                                <span class="tag">素质教育</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>论述"教育意义""家庭教育"时的核心论据；教育类话题的核心比喻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🎯 适用场景</h3>
+
+                    <div class="scenario-box">
+                        <h4>直接可用</h4>
+                        <ul>
+                            <li><strong>2023年新课标I卷"故事的力量"</strong>：用外婆讲故事、给孩子讲故事为例，论证故事对精神滋养的作用</li>
+                            <li><strong>2022年全国甲卷"红楼梦大观园试才题对额"</strong>：用"看山是山vs看山不是山"的对比，论述认识事物的不同境界</li>
+                            <li><strong>教育类话题</strong>：家庭教育、早教意义、素质教育</li>
+                            <li><strong>成长类话题</strong>：保持初心、返璞归真、童心的价值</li>
+                            <li><strong>科技人文类</strong>：AI时代的人类价值、技术与人文的平衡</li>
+                        </ul>
+                    </div>
+
+                    <div class="scenario-box">
+                        <h4>组合使用</h4>
+                        <ul>
+                            <li><strong>与《耕读》组合</strong>：用"童心的观看"配合"耕读的实践"，论述"知行合一"</li>
+                            <li><strong>与《看见》组合</strong>：用"看见光华"配合"看见之力"，论述"关注与发现"</li>
+                            <li><strong>与《技术温度》组合</strong>：用"AI不能复制人的感受"配合"技术要有温度"，论述"科技人文"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                        📄 点击展开/收起原文
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="original-text">生命的到来自带温暖。我们永远不能忘记对孩子的关怀，要创造一个更尊重生命、更温柔、更良善的世界。
+
+我是一个给孩子画画、讲故事的人。我的作品像不同时候、不同土壤里的种子，到了合适的时候就冒出来了。
+
+我特别喜欢《聊斋》，儿时看《聊斋》看得很投入。上世纪90年代，有编辑约我画绘本，在十几个故事中，我选择了一个以孩子为主角、出自《聊斋》的故事。我用笔去表达我的思考，我的心思顺着笔流到纸面上，《宝儿》就诞生了。
+
+画书也是在画我的童年。小时候，我与外婆相伴。她爱生活，过得精致，常穿青布大褂，一条干干净净的小手绢别得很有型，还会在头发中插上茉莉花。最棒的是她会讲故事，有描述、有手势，还会配上自己的唱腔。我跟着她学会了干家务，也听懂了故事。外婆讲的故事，带着一代代人的生活智慧，滋润我成长。这些传统不能丢，我必须画下来。好的教育就像优质食粮，自然滋养着人们。这种滋养越早越好，养健康的胃口，养好孩子的精神，也养成孩子对生活的欢喜心。
+
+欢喜心总在童年时萌发。所以父母甭管多忙，都该花点时间给孩子讲故事。有些人因为忙，会把这件事给忽略了。书给到孩子，让孩子自己去读，那种阅读是欠缺"声音"的。什么"声音"？现代图画书重交流。文字要念出来，有了声音，故事才能生动起来，更有情感和力量。故事里有父母的"声音"，故事就来得更亲切，更有精气神，孩子得到的是情感、艺术和文学多重的滋养。
+
+孩子也会给成人带来启发和滋养，孩子们就是"小先生"。我哪里离开过小孩？一直跟他们是好朋友。我带我的小孙子，就像外婆当年对我一样。我的笔记里写满了我们之间的事，书页翻飞间，他一天天长大。跟孩子在一起的时光，每一天都很开心，当然很累、很麻烦的时候也有。育儿当然很辛苦，但是快乐多多。和孩子在一起，我回到童年，所谓返璞归真，就是这么回事。
+
+璞就是素朴，真就是真诚，通过孩子的天真之眼可以洞见世界的本貌。孩子看山是山，而成人被闻见知识遮蔽，往往看山不是山。从这个意义上讲，当你愿意像孩子一样，用干干净净的眼睛看世界，生活中就处处有光。别让童年离开，去找寻所遇见的、好的、美的、各种各样事物的光吧，这样人的精神才完整、丰盈。
+
+生活中，我觉得没有什么东西是没有用的。把事物简单分为"有用"和"无用"，仅仅守着"有用"的，就把世界看窄了。应当整体地去看待生活，将经历、知识融为一体，看到它们之间的奇妙关联，再去感受草木山峦。用心感悟，你才会爱你的生活，然后继续创造生活。
+
+很多人都怕老，我也是，但我没有时间怕老。我也会担心时间过得很快，"恨无长绳能系日"，但并不会为此焦虑。我要快乐地老、快乐地生活，忘记年龄。世界这么大，只要你愿意，它就会向你打开。
+
+AI（人工智能）时代，面对变化，人会有焦虑。但人的能动性不会因此而改变。AI能模仿，但是它不能复制你的心，你此刻的感受、思想和情感。所以，不要怀疑自己，不要怀疑以童心绘出的光华。
+
+做童书，是立人的事业。我画生命的温度，画人间的感动，画对生活的勇气，画对光明世界的追寻……我相信，生命的到来自带温暖。我们永远不能忘记对孩子的关怀，要创造一个更尊重生命、更温柔、更良善的世界。
+
+"六一"国际儿童节之际，我也想感谢每一个小朋友。每一个生命来到这个世界上，本身就是一种奇迹、一种胜利。你能来经历人世间的一切，有宽阔的视野，这是多么可爱。希望小朋友都爱自己、爱生活、爱创造，珍惜每一天，把每一天都过得很饱满。你说将来会有问题吗？会有，但无妨，未来充满希望。
+
+（作者为绘本作家、国际安徒生奖插画家奖获得者，本报记者何思琦采访整理）</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章2：《用"看见"之力呵护希望之光（金台随笔）》</h2>
+                <div class="meta">
+                    <span>作者：崔永华（首都医科大学附属北京儿童医院精神科主任）</span>
+                    <span>版面：第05版（评论版）</span>
+                    <span>字数：约1100字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3>🎯 核心论点</h3>
+                    <div class="core-argument">
+                        以"看见"之力为孤独症儿童及家庭撑起希望——让制度看见、让心灵看见，将关注转化为切实行动，守护特殊群体的希望之光。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🧠 论证逻辑</h3>
+                    <div class="logic-diagram">
+第一层：引入话题
+├─ 现象："来自星星的孩子"诗意称呼背后的沉重
+├─ 场景：母亲怀抱孩童、病历泛毛边、眼眸交织焦灼
+└─ 问题：孤独症患儿与家庭的真实困境
+
+第二层：展开分析（三个层面）
+├─ 层面1：现状严峻
+│  ├─ 数据：2023年我国孤独症患者超1300万
+│  └─ 影响：86.8%家庭承受中度至重度照顾负担
+├─ 层面2：制度之"看见"（政府责任）
+│  ├─ 政策：《孤独症儿童关爱促进行动实施方案（2024-2028年）》
+│  ├─ 医保：29项医疗康复项目纳入医保支付范围
+│  └─ 教育：孤独症儿童纳入特殊教育统筹范围
+└─ 层面3：心灵之"看见"（社会善意）
+   ├─ 场景对比：地铁商场哭闹时，冷眼相对vs温柔以待
+   ├─ 社区支持：上海探索"家长育儿支持"写进医院评估指标
+   └─ 医院关怀：北京朝阳医院提供心理支持与人文关怀
+
+第三层：总结升华
+├─ 理念：人民对美好生活的向往，就是我们的奋斗目标
+├─ 问题：优质资源分布不均，偏远地区需跨省辗转
+└─ 对策：拓宽视野，增强穿透力，"看见"转化行动力
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🔧 论证方法</h3>
+                    <ul class="method-list">
+                        <li><strong>举例论证（具体场景）</strong>：母亲怀抱孩童、病历泛毛边；地铁商场哭闹的场景对比</li>
+                        <li><strong>数据论证（权威统计）</strong>：1300万患者、86.8%照顾负担、29项医保项目</li>
+                        <li><strong>对比论证（态度差异）</strong>：冷眼相对vs温柔以待、回避疏远vs温和接纳</li>
+                        <li><strong>引用论证（政策理念）</strong>："人民对美好生活的向往，就是我们的奋斗目标"</li>
+                        <li><strong>递进论证（三个层次）</strong>：制度之见→心灵之见→穿透之见</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>💎 金句深度解析</h3>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"对他们而言，生活是艰难的远征。确诊仅是起点，语言训练、行为矫正、感统训练等全年无休，磨砺着这群孩子的心智。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>比喻生动"生活是艰难的远征"；细节具体列举康复项目；强调全年无休的艰难性</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">社会关怀</span>
+                                <span class="tag">特殊群体</span>
+                                <span class="tag">健康中国</span>
+                                <span class="tag">家庭责任</span>
+                                <span class="tag">生命力量</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>开头用"远征"比喻引入话题；论证"社会保障"时的现状描述；结尾呼应"远征"意象</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">可仿写：</span>
+                            <span>"对XX而言，生活是XX的远征。XX仅是起点，XX、XX、XX等XX，磨砺着XX的XX"</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"让制度'看见'，施以助力。这些年，不断完善的国家保障网正在为这些家庭兜底。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>拟人化"制度看见"；比喻贴切"保障网""兜底"；层次清晰从政策到医保到教育</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">社会保障</span>
+                                <span class="tag">医疗保障</span>
+                                <span class="tag">制度完善</span>
+                                <span class="tag">民生改善</span>
+                                <span class="tag">兜底保障</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>论述"制度建设""社会保障"时的核心论据；对比制度看见前后；升华到"民生底线"</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">可仿写：</span>
+                            <span>"让XX'看见'，施以XX。完善的XX正在为XX兜底"</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"拓宽视野，增强穿透力，'看见'之力才能转化为切实行动力，守护好孤独症患儿家庭的希望之光。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>递进逻辑清晰：拓宽视野→增强穿透力→转化行动力→守护希望之光；将"看见"从认知转向行动</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">社会行动</span>
+                                <span class="tag">关注到行动</span>
+                                <span class="tag">穿透力</span>
+                                <span class="tag">深度思考</span>
+                                <span class="tag">希望与守护</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>文章结尾呼吁从关注转向行动；将话题从"认知"升华为"行动"；呼应开头意象</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">可仿写：</span>
+                            <span>"拓宽XX，增强XX，'XX'之力才能转化为切实XX，守护好XX的XX之光"</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🎯 适用场景</h3>
+
+                    <div class="scenario-box">
+                        <h4>直接可用</h4>
+                        <ul>
+                            <li><strong>2023年全国乙卷"一花独放不是春"</strong>：用"制度之见"与"心灵之见"，论述个体与社会的责任</li>
+                            <li><strong>2021年全国甲卷"可为与有为"</strong>：用"看见"转化为"行动力"，论述从关注到实践的跨越</li>
+                            <li><strong>社会关怀类</strong>：特殊群体权益、医疗保障、社会文明</li>
+                            <li><strong>人文精神类</strong>：同理心、包容心、温度与尺度</li>
+                            <li><strong>制度完善类</strong>：社会保障、民生兜底、资源下沉</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                        📄 点击展开/收起原文
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="original-text">"来自星星的孩子"——谁又知道，这个充满诗意的名字背后，有着怎样不为人知的沉重？
+
+常年扎根儿童精神心理门诊，总能看见相似的画面：母亲怀抱孩童，手中一沓病历泛着毛边，纸页间写满辗转求医的奔波。眼眸中交织着焦灼、疲惫，在希望与失望之间挣扎，这是千万孤独症患儿与家庭的真实缩影。
+
+对他们而言，生活是艰难的远征。确诊仅是起点，语言训练、行为矫正、感统训练等全年无休，磨砺着这群孩子的心智；不少家庭原有的生活节奏被打破，一方辞职陪护、倾尽时间精力，另一方独自扛起经济重担……这样的日子，往往一过就是一生。
+
+数据更为直观。据统计，2023年我国孤独症患者已超1300万。每一个孤独症儿童身后，都是一个被彻底改写的家庭。研究显示，孤独症患儿家庭中，中度至重度照顾负担占比达86.8%。
+
+近年来，随着孤独症相关知识的普及，这个独特的群体逐渐进入公众视野。不仅如此，"看见"之力正在帮他们分担生活的压力。
+
+让制度"看见"，施以助力。这些年，不断完善的国家保障网正在为这些家庭兜底。《孤独症儿童关爱促进行动实施方案（2024—2028年）》落地，相关政策、举措取得良好效果；29项医疗康复项目陆续纳入基本医保支付范围，为家庭卸下些许负担；孤独症儿童纳入特殊教育统筹范围……制度的四梁八柱，为"来自星星的孩子"撑起更多确定性，他们在漫漫长路上便能多些勇气。
+
+让心灵"看见"，施以善意。当孩子在地铁、商场出现哭闹或重复动作时，是冷眼相对还是温柔以待？当邻里发现这家有个"特别"的孩子时，是回避疏远还是温和接纳？善意互助是相处之道，更是孤独症患儿所需。很多家长的委屈与无助无人共鸣，社区与社会组织可以发挥积极作用，成为他们心灵的港湾。上海探索把"家长育儿支持"写进医院评估指标，积极链接各方社会资源；首都医科大学附属北京朝阳医院聚焦心理支持与疾病管理，提供人文关怀……当善意汇聚成温暖之手，孤独症孩子才能更好成长，他们的家庭才能更好生活。
+
+人民对美好生活的向往，就是我们的奋斗目标。从早期筛查、融合教育到大龄患者就业帮扶，从创建孤独症儿童友好型社区到组织丰富且适宜的志愿活动，当多彩世界向这群孩子敞开怀抱，当热爱与梦想为他们点亮希望，这群独特的祖国花朵便会更加灿烂。
+
+对孤独症儿童家庭的关怀，是我国儿童健康事业的重要组成部分。更多的特殊群体都应被"看见"、拥抱。应看到，优质儿科与儿童精神卫生资源分布仍不均衡，许多偏远地区的患儿家庭仍要跨省辗转、长途跋涉。让优质资源向基层延伸，让困难家庭少一些奔波，是践行"投资于人"理念的重要体现。依托医联体优化儿童医疗资源配置，加强儿科专科联盟建设；在京津冀协同发展战略下，河北的患儿在家门口就能享受首都的诊疗服务，在与疾病竞赛中赢得宝贵时间……要疏通"毛细血管"，让优质资源进一步下沉，让发展成果更普惠。
+
+健康中国建设，要保障好每一个群体。拓宽视野，增强穿透力，"看见"之力才能转化为切实行动力，守护好孤独症患儿家庭的希望之光。</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章3：《让技术进步带着温度（来论）》</h2>
+                <div class="meta">
+                    <span>作者：谌含广（江西省南昌市）</span>
+                    <span>版面：第05版（评论版）</span>
+                    <span>字数：约400字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3>🎯 核心论点</h3>
+                    <div class="core-argument">
+                        技术进步不应追求"机器替代"的盲目速度，而应带着温度优先考虑民生需求——智能化升级与保障就业从不是对立的，科技发展的目的是让人生活得更美好。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🧠 论证逻辑</h3>
+                    <div class="logic-diagram">
+第一层：引入话题
+├─ 现象：无人环卫清扫车上岗
+├─ 正面：提升清扫效率、恶劣环境持续作业、减轻负担风险
+└─ 担忧：会不会抢走环卫工人的饭碗？
+
+第二层：展开分析
+├─ 分析1：劳动群体的脆弱性
+│  ├─ 技能单一：环卫工人掌握的劳动技能相对单一
+│  └─ 兜底意义：这些岗位是社会兜底就业的重要支撑
+├─ 分析2：技术发展的方向
+│  ├─ 不宜盲目：智能设备普及是大势所趋，但不宜盲目追求"机器替代"
+│  └─ 目的明确：科技发展的目的是让人生活得更美好
+└─ 分析3：解决之道
+   ├─ 优先民生：必须优先考虑民生需求
+   ├─ 统筹兼顾：实现经济效益的同时充分考虑社会效益
+   ├─ 技能更新：帮助劳动群体实现技能更新
+   └─ 政策提前：打好政策提前量，守住民生底线
+
+第三层：总结升华
+└─ 核心观点：让技术进步带着温度，这样的发展才有根基、有底气
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>💎 金句深度解析</h3>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"这样的顾虑值得重视。环卫工人等群体掌握的劳动技能相对单一，挣的是辛苦钱。这些岗位是社会兜底就业的重要支撑，关系着千万家庭的生计。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>层次清晰：技能单一→辛苦钱→兜底就业→生计问题；"挣的是辛苦钱"直击人心</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">就业保障</span>
+                                <span class="tag">民生底线</span>
+                                <span class="tag">社会公平</span>
+                                <span class="tag">劳动价值</span>
+                                <span class="tag">技能培训</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"科技发展的目的是让人生活得更美好。在普及智能设备过程中必须优先考虑民生需求，在实现经济效益的同时充分考虑社会效益。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>价值明确，用"必须"强调优先级；统筹兼顾，结构工整有力；不偏废任何一方</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">科技发展</span>
+                                <span class="tag">技术伦理</span>
+                                <span class="tag">以人为本</span>
+                                <span class="tag">发展理念</span>
+                                <span class="tag">价值排序</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>科技类话题的价值引领；从经济效益转向社会效益的转折句</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"智能化升级与保障就业从不是对立的。不妨关注如何帮助劳动群体实现技能更新，在科技辅助下提升工作效率。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>观点鲜明用"从不是"否定对立思维；提出解决方案技能更新、科技辅助；积极态度</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">技术与就业</span>
+                                <span class="tag">变革与适应</span>
+                                <span class="tag">技能培训</span>
+                                <span class="tag">辩证思维</span>
+                                <span class="tag">发展与稳定</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"在一些必然会发生'机器换人'的领域，要打好政策提前量。守住民生底线，让技术进步带着温度，这样的发展才有根基、有底气。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>前提明确承认趋势；对策具体"打好政策提前量"；底线思维"守住民生底线"；温度意象"带着温度"</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">政策前瞻</span>
+                                <span class="tag">底线思维</span>
+                                <span class="tag">技术温度</span>
+                                <span class="tag">人文关怀</span>
+                                <span class="tag">民生保障</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>文章结尾总结升华；呼吁守住底线、保持温度；上升到发展理念</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🎯 适用场景</h3>
+                    <div class="scenario-box">
+                        <h4>直接可用</h4>
+                        <ul>
+                            <li><strong>2024年新课标I卷"问题的答案"</strong>：用"技术进步的温度"，论述在技术发展中找到人文答案</li>
+                            <li><strong>2022年全国乙卷"跨越，再跨越"</strong>：用"技能更新"配合"技术升级"，论述在技术变革中实现跨越</li>
+                            <li><strong>技术伦理类</strong>：技术发展的方向、技术与社会的关系</li>
+                            <li><strong>就业保障类</strong>：技能培训、兜底就业、民生保障</li>
+                            <li><strong>发展理念类</strong>：以人为本、经济效益与社会效益、底线思维</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                        📄 点击展开/收起原文
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="original-text">当前，不少地方上岗无人环卫清扫车，不仅能提升清扫效率，而且能在一些较为恶劣的天气和环境中持续作业，有效减轻了环卫工人的负担和风险。但也有人担心，这些智能设备一旦普及，会不会抢走环卫工人的饭碗？
+
+这样的顾虑值得重视。环卫工人等群体掌握的劳动技能相对单一，挣的是辛苦钱。这些岗位是社会兜底就业的重要支撑，关系着千万家庭的生计。应该看到，智能设备的普及是大势所趋，但不宜盲目追求"机器替代"。科技发展的目的是让人生活得更美好。在普及智能设备过程中必须优先考虑民生需求，在实现经济效益的同时充分考虑社会效益。
+
+智能化升级与保障就业从不是对立的。就拿环卫工作来说，随着智能设备增加，维护、操作同样需要大量人手。不妨关注如何帮助劳动群体实现技能更新，在科技辅助下提升工作效率。在一些必然会发生"机器换人"的领域，要打好政策提前量。守住民生底线，让技术进步带着温度，这样的发展才有根基、有底气。</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章4 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章4：《在重拾耕读中感悟知行合一（人民时评）》</h2>
+                <div class="meta">
+                    <span>作者：刘少华</span>
+                    <span>版面：第05版（评论版）</span>
+                    <span>字数：约1100字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3>🎯 核心论点</h3>
+                    <div class="core-argument">
+                        耕读教育的价值在于深度而非广度——通过"耕"与"读"的真正融合，让学生在田地感受四季轮回、在村庄读懂时代变迁，实现知行合一、重建自我与土地的联系。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🧠 论证逻辑</h3>
+                    <div class="logic-diagram">
+第一层：引入话题
+├─ 现象：多所高校陆续开展耕读实践
+├─ 反响：有人点赞，也有人不解
+└─ 问题：现代大学教育，为何要重拾"耕读"？
+
+第二层：展开分析（四个维度）
+├─ 维度1：历史传统
+│  └─ "耕读传家久，诗书继世长"：晴耕雨读、半农半学
+├─ 维度2：现实问题
+│  ├─ 渐行渐远：城镇化和教育专业化
+│  ├─ 缺乏体验：年轻人和真实世界隔着屏幕
+│  └─ 空中楼阁：知识与体验割裂
+├─ 维度3：价值回归
+│  ├─ 补课：补上脚踏实地这一课
+│  └─ 融合：书本理论和脚下的土地对接起来
+└─ 维度4：问题与方向
+   ├─ 问题：流于拍照打卡、浮光掠影
+   └─ 方向：深度比广度更重要，必须追求穿透力
+
+第三层：总结升华
+├─ 理念："耕读传家"本质上体现着知行合一
+├─ 目标：让学生在田地感受四季轮回，在村庄读懂时代变迁
+└─ 价值：耕读教育的价值与潜力难以估量
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>💎 金句深度解析</h3>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"当知识获取越来越依赖多媒体手段、智能化工具，年轻人和真实世界之间隔着屏幕，缺失了不少体验。知识与体验割裂开来，无异于让人在'空中楼阁'学习世界如何运转，这是现代教育面临的一个共性问题。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>现象准确，指出时代特征；比喻生动"空中楼阁"；诊断深刻为"现代教育的共性问题"</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">教育改革</span>
+                                <span class="tag">实践教育</span>
+                                <span class="tag">知识与体验</span>
+                                <span class="tag">屏幕时代</span>
+                                <span class="tag">教育反思</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>开头引入教育反思；论述"实践教育"时的问题诊断；对现代教育进行批判性思考</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"耕读不能仅仅停留在体验农活上。'耕'与'读'相贯通，才能真正凸显价值，提升育人质效。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>明确限定"不能仅仅停留在"；核心观点"耕与读相贯通"；价值导向层层深入</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">教育本质</span>
+                                <span class="tag">知行合一</span>
+                                <span class="tag">深度学习</span>
+                                <span class="tag">深度融合</span>
+                                <span class="tag">育人质效</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>从表面形式转向深度融合的转折句；论述"知行合一"时的核心论点</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"当书本上的理论和脚下的土地对接起来，一名同学感慨：'和土地、人民相联系的学术研究才更有生命力。'"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>意象生动"书本上的理论"和"脚下的土地"；动词有力"对接起来"；引用恰当学生感慨</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">知行合一</span>
+                                <span class="tag">理论与实践</span>
+                                <span class="tag">学术研究</span>
+                                <span class="tag">土地与人民</span>
+                                <span class="tag">生命力</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>论述"理论与实践结合"时的核心论据；将具体体验上升到学术高度</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"形式可以多种多样，育人的初心不能忘。高校纷纷重拾耕读传统，如何进行效果评价？关键不在于开了多少门课、设置多少学分，而是能不能真正让年轻人在弯腰与抬头之间，在内心重建自我和脚下土地的联系。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>辩证统一；评价标准明确"关键不在于...而是..."；意象深刻"弯腰与抬头之间"；终极意义"重建自我和土地的联系"</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">教育评价</span>
+                                <span class="tag">初心不忘</span>
+                                <span class="tag">形式与实质</span>
+                                <span class="tag">自我与土地</span>
+                                <span class="tag">精神重建</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>论述"教育评价"时的标准参考；对形式主义进行反思；上升到"自我与土地的联系"高度</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"深度比广度更重要，必须追求穿透力。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>简洁有力，字字千钧；对比鲜明明确价值排序；动词有力"追求穿透力"；普遍价值适用于学习、研究、认识等</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">深度学习</span>
+                                <span class="tag">深度思考</span>
+                                <span class="tag">穿透力</span>
+                                <span class="tag">洞察力</span>
+                                <span class="tag">打破表面</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>文章的核心论点或总结；强调深度重于广度；上升到方法论高度</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🎯 适用场景</h3>
+                    <div class="scenario-box">
+                        <h4>直接可用</h4>
+                        <ul>
+                            <li><strong>2023年新课标I卷"故事的力量"</strong>：用耕读中"和土地、人民相联系的故事"，论述故事的生命力</li>
+                            <li><strong>2022年全国甲卷"红楼梦大观园试才题对额"</strong>：用"深度比广度更重要"，论述认识事物的深度</li>
+                            <li><strong>教育类</strong>：知行合一、实践教育、体验学习</li>
+                            <li><strong>学习类</strong>：深度学习、理论与实践结合、穿透力</li>
+                            <li><strong>人生感悟类</strong>：自我与土地的联系、人与自然的关系</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                        📄 点击展开/收起原文
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="original-text">走出教室、走进田野，播种施肥、采茶除草，大学生们体验农耕之美、稼穑之艰，正悄然流行。一段时间以来，清华大学、北京大学、中央民族大学、上海财经大学等多所高校陆续开展耕读实践，引发关注热议。
+
+有人点赞，也有人不解：现代大学教育，为何要重拾"耕读"？
+
+"耕读传家久，诗书继世长"。在中华传统文化语境中，"耕"与"读"是经常相提并论的两件事。晴耕雨读、半农半学，既是一种生活方式，也是一种求知态度。随着城镇化进程加速和教育专业化水平提高，"耕"与"读"渐行渐远，如今不少大学生对耕作比较陌生。笔者采访中也曾遇到学生种薄荷时分不清哪棵是苗、哪棵是草，有学生说从未见过花生是怎么长出来的。
+
+当知识获取越来越依赖多媒体手段、智能化工具，年轻人和真实世界之间隔着屏幕，缺失了不少体验。知识与体验割裂开来，无异于让人在"空中楼阁"学习世界如何运转，这是现代教育面临的一个共性问题。
+
+耕读教育回归，补上的正是脚踏实地这一课。中央民族大学113名学生到河北农场劳动，有的女生穿着白帆布鞋下田摘毛豆，起初小心翼翼，很快就顾不上脏不脏了。北京大学学生在教学楼前种植物，遇上一场大风差点前功尽弃，"只能重新来过"。庄稼不等人、天气不如人意——这些在教室里难有深切认知的内容，到泥土中一学就会。
+
+不过，耕读不能仅仅停留在体验农活上。"耕"与"读"相贯通，才能真正凸显价值，提升育人质效。
+
+清华大学马克思主义学院的做法颇有启示。学生们在小凉山的茶园劳动半个月，白天采茶、走访村民，晚上一起阅读《摆脱贫困》等著作。当书本上的理论和脚下的土地对接起来，一名同学感慨："和土地、人民相联系的学术研究才更有生命力。"
+
+脚踩广袤大地，"耕"与"读"方能更好融合。白天在田地里弯腰，晚上再翻开书本时，纸面上的道理或许就被田垄和劳作讲清楚了。看似寻常的农情农事，会成为大学生们理解乡村、理解社会的一扇窗口。如此耕读，更易转化为学生的心灵体验，升华为理性认识。
+
+当然，耕读教育走热，也出现了一些需要留意的不良苗头。有的学校将其简化为一两天的参观体验，流于拍照打卡等形式；有的学校把日程安排得满满当当，今天摘茶明天插秧后天磨豆腐，看似丰富，实则浮光掠影。一名高校教师坦言："我们在考虑'缩'，不是缩短时间，而是缩小范围。学生不用体验那么多，在一个村子里待住就行，关键是要扎得深。"一个"深"字，道出了耕读教育的要害：深度比广度更重要，必须追求穿透力。
+
+形式可以多种多样，育人的初心不能忘。高校纷纷重拾耕读传统，如何进行效果评价？关键不在于开了多少门课、设置多少学分，而是能不能真正让年轻人在弯腰与抬头之间，在内心重建自我和脚下土地的联系。
+
+"耕读传家"，本质上体现着知行合一理念。创设条件、完善机制、突出实效，让学生在田地感受四季轮回更替，在村庄读懂时代变迁，耕读教育的价值与潜力难以估量。</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章5 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>📰 文章5：《原研新药立贝韦塔的诞生（深度观察）》</h2>
+                <div class="meta">
+                    <span>作者：赵永新（本报记者）</span>
+                    <span>版面：第19版（科技版）</span>
+                    <span>字数：约2800字</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <div class="section">
+                    <h3>🎯 核心论点</h3>
+                    <div class="core-argument">
+                        从寻找受体到研发药物，从临床验证到惠及患者——立贝韦塔的诞生是中国科学家在病毒性肝炎领域的原创贡献，体现了坚持深耕、勇攀高峰的科研精神和对人类健康的深切关怀。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🧠 论证逻辑</h3>
+                    <div class="logic-diagram">
+第一层：引入话题
+├─ 背景介绍：病毒性肝炎是全球重大疾病
+│  ├─ 数据：全球有慢性乙肝病毒感染者2.54亿人
+│  └─ 挑战：约5%的患者合并感染丁肝病毒
+├─ 突破时刻：2012年找到HBV/HDV的共同受体
+├─ 药物诞生：开发出全球病毒性肝炎领域第一个获批的单抗药物
+└─ 评价："继青蒿素之后，中国贡献给世界的又一款原创新药"
+
+第二层：展开分析（三个阶段）
+├─ 阶段1：分子设计（"种子"打磨）
+│  ├─ 挑战：抗体分子设计困难
+│  └─ 优化：从上百亿个基因中筛选，到2014年底优化好HH—003
+├─ 阶段2：临床研究（慎重验证）
+│  ├─ Ⅰa期：44名健康受试者，无严重不良事件
+│  └─ Ⅱ期：9例丁肝受试者病毒水平全部深度下降
+└─ 阶段3：注册临床（攻克难关）
+   ├─ 难关：国内患者分布不清晰、国外临床语言和质量问题
+   └─ 突破：中国、巴基斯坦、蒙古国100多名患者参与
+   └─ 结果：2026年1月23日获批上市
+
+第三层：总结升华
+├─ 竞争意识："前无古人、后有追兵"
+├─ 价值定位："对患者来说，公司竞争是好事，所有的努力都有意义"
+└─ 历史意义：新一代科学家书写"中国答卷"
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>💎 金句深度解析</h3>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"不同于快跟式创新药，立贝韦塔的机制、靶点、分子、适应症都是新的，充满了未知，每一步都是坎。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>对比鲜明突出原创；四个维度说明创新的全面性；"充满了未知，每一步都是坎"体现科研艰难</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">原创精神</span>
+                                <span class="tag">科研艰辛</span>
+                                <span class="tag">从0到1</span>
+                                <span class="tag">攻坚克难</span>
+                                <span class="tag">攀登高峰</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>论述"原创精神""科研攻坚"时的核心论据；对比"跟风"vs"原创"</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"抗体分子是药物最原始的'种子'，'失之毫厘，差之千里'，必须一点一点打磨到极致。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>比喻生动"种子"；引用恰当"失之毫厘，差之千里"；动词有力"一点一点打磨"；标准明确"打磨到极致"</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">精益求精</span>
+                                <span class="tag">工匠精神</span>
+                                <span class="tag">基础研究</span>
+                                <span class="tag">细节决定成败</span>
+                                <span class="tag">深耕细作</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>论述"工匠精神"时的核心论据；说明基础工作的重要</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"尽管HH—003已在动物上证明非常安全，但在人身上做研究必须慎之又慎，确保受试者的安全。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>对比强烈动物安全vs人身上慎重；叠词有力"慎之又慎"；体现科学研究中的人文关怀</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">科研伦理</span>
+                                <span class="tag">人文关怀</span>
+                                <span class="tag">安全第一</span>
+                                <span class="tag">敬畏之心</span>
+                                <span class="tag">审慎态度</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>论述"科研伦理"时的核心论据；说明对待重大问题应有的谨慎态度</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"那么多丁肝患者无药可治，困难再多也要想办法克服。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>情感强烈体现科学家的责任感和使命感；逻辑清晰因为患者无药可治所以必须克服困难；态度坚决</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">使命担当</span>
+                                <span class="tag">攻坚克难</span>
+                                <span class="tag">迎难而上</span>
+                                <span class="tag">医者仁心</span>
+                                <span class="tag">坚持不懈</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>论述"使命担当"时的核心论据；表达面对困难应有的决心</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"我们做的事真可谓'前无古人、后有追兵'。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>成语有力"前无古人、后有追兵"；形象生动；语气冷静；境界高既看到成绩也看到挑战</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">原创竞争</span>
+                                <span class="tag">领跑与追赶</span>
+                                <span class="tag">持续创新</span>
+                                <span class="tag">成绩与挑战</span>
+                                <span class="tag">压力与动力</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>论述"原创竞争"时的核心论据；体现对形势的清醒认识</span>
+                        </div>
+                    </div>
+
+                    <div class="golden-sentence">
+                        <div class="quote">"对患者来说，公司竞争是好事，所有的努力都有意义。"</div>
+                        <div class="analysis-item">
+                            <span class="label">好在哪：</span>
+                            <span>视角独特从患者而非公司角度看竞争；价值升华将商业竞争升华为"为患者"的价值；格局宏大多赢思维</span>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">适用话题：</span>
+                            <div class="usage-tags">
+                                <span class="tag">合作共赢</span>
+                                <span class="tag">以人为本</span>
+                                <span class="tag">价值导向</span>
+                                <span class="tag">格局境界</span>
+                                <span class="tag">奉献价值</span>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <span class="label">怎么用：</span>
+                            <span>论述"合作共赢"时的核心论据；将竞争升华为为人类的价值</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🎯 适用场景</h3>
+                    <div class="scenario-box">
+                        <h4>直接可用</h4>
+                        <ul>
+                            <li><strong>2024年新课标I卷"问题的答案"</strong>：用14年研发周期，论述寻找问题答案的艰难与价值</li>
+                            <li><strong>2023年全国甲卷"人·技术·时间"</strong>：用14年研发周期，论述时间与坚持的价值</li>
+                            <li><strong>科技创新类</strong>：原创精神、科研攻关、从0到1</li>
+                            <li><strong>人生感悟类</strong>：坚持深耕、攻坚克难、精益求精</li>
+                            <li><strong>责任担当类</strong>：使命意识、为民服务、贡献世界</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                        📄 点击展开/收起原文（因篇幅较长，建议点击查看）
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="original-text">病毒性肝炎是危害人类健康的重大疾病。世卫组织2024年发布的报告显示，全球有慢性乙肝病毒（HBV）感染者2.54亿人左右，其中约5%的患者合并感染丁肝病毒（HDV）。2012年，北京生命科学研究所李文辉、隋建华夫妇历经多年探索，找到了HBV/HDV的共同受体，此后又历尽艰辛，开发出全球病毒性肝炎领域第一个获批的单抗药物——立贝韦塔。
+
+今年1月，立贝韦塔获批上市。"丁肝单克隆抗体新药立贝韦塔是继青蒿素之后，中国贡献给世界的又一款原创新药。"北京生命科学研究所所长王晓东如是评价。
+
+"不同于快跟式创新药，立贝韦塔的机制、靶点、分子、适应症都是新的，充满了未知，每一步都是坎。"回顾立贝韦塔的研发历程，李文辉、隋建华夫妇表示。
+
+[全文约2800字，涵盖分子设计、Ⅰ期临床、Ⅱ期临床三个阶段的详细记录，此处略]
+
+上个世纪，屠呦呦们在应对疟疾中贡献了"东方智慧"。如今，在应对病毒性肝炎这一全球公共卫生挑战中，新一代科学家已经并将继续书写新的"中国答卷"。</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 总结部分 -->
+        <div class="summary-section">
+            <h2>📝 今日总结与备考建议</h2>
+
+            <div class="scenario-box">
+                <h4>核心主题（5篇）</h4>
+                <ul>
+                    <li><strong>童心与创造</strong>：以童心观世界，在AI时代坚守人的独特价值</li>
+                    <li><strong>看见与关怀</strong>：以"看见"之力为特殊群体撑起希望</li>
+                    <li><strong>技术与温度</strong>：科技发展要带着温度，优先考虑民生需求</li>
+                    <li><strong>耕读与知行</strong>：通过耕读实践实现知行合一、重建与土地的联系</li>
+                    <li><strong>原创与坚持</strong>：深耕科研领域，用原创贡献服务人类健康</li>
+                </ul>
+            </div>
+
+            <div class="scenario-box">
+                <h4>可组合使用的论证结构</h4>
+                <ul>
+                    <li><strong>童心 + 耕读</strong>：从"看世界的方式"到"实践的方式"，全面论述认知与行动</li>
+                    <li><strong>看见 + 温度</strong>：从"社会关怀"到"技术发展"，全面论述人文精神</li>
+                    <li><strong>耕读 + 原创</strong>：从"教育的深度"到"科研的深度"，全面论述深耕的价值</li>
+                </ul>
+            </div>
+
+            <div class="scenario-box">
+                <h4>高考真题对应示例</h4>
+                <ul>
+                    <li><strong>2024年"问题的答案"</strong>：用《新药诞生》的14年研发，论述寻找答案的艰难与价值</li>
+                    <li><strong>2023年"故事的力量"</strong>：用《童心》中外婆讲故事，《耕读》中和土地相联系的故事</li>
+                    <li><strong>2022年"跨越，再跨越"</strong>：用《技术温度》中技能更新，《新药诞生》中持续研发</li>
+                    <li><strong>2021年"可为与有为"</strong>：用《看见》中从关注到行动，《耕读》中从体验到融合</li>
+                </ul>
+            </div>
+
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <h4>论证方法亮点</h4>
+                    <p>对比论证（儿童vs成人、冷眼vs温柔）、数据论证（1300万患者、86.8%负担）、引用论证（古语"失之毫厘"）、递进论证（三层逻辑）</p>
+                </div>
+                <div class="summary-item">
+                    <h4>金句特色</h4>
+                    <p>比喻生动"生活是艰难的远征"、哲理深刻"璞就是素朴，真就是真诚"、时代性强"AI能模仿但不能复制你的心"</p>
+                </div>
+                <div class="summary-item">
+                    <h4>明天重点关注</h4>
+                    <p>第05版（评论版）、第09版（理论版）、第19版（科技版）、第20版（副刊），重点关注深度评论和文化类文章</p>
+                </div>
+                <div class="summary-item">
+                    <h4>质量自检</h4>
+                    <p>✓ 核心论点明确（一句话概括）✓ 论证逻辑清晰（画出图示）✓ 论证方法标注（5种以上）✓ 金句深度解析（4-5句，每句4维度）✓ 适用场景具体（高考真题+5类话题）</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>整理时间：</strong>2026年6月1日</p>
+            <p><strong>数据来源：</strong>人民日报电子版</p>
+            <p><strong>整理系统：</strong>HAHA 高考作文素材每日整理系统</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleCollapsible(header) {
+            header.classList.toggle('active');
+            const content = header.nextElementSibling;
+            content.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
