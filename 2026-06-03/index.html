@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{date_display} 高考作文素材</title>
+    <style>
+        /* Orange UI Design System */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2C2C2C;
+            --border: #2C2C2C;
+            --shadow: #B5B5B5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+            background: var(--primary);
+            color: var(--text);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border: 1.5px solid var(--border);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .article-card {
+            background: white;
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .article-card h2 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--accent);
+        }
+        
+        .info-box {
+            background: var(--accent);
+            padding: 15px;
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        .info-box strong {
+            font-weight: 700;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section h3 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section h3::before {
+            content: "📌";
+            margin-right: 10px;
+        }
+        
+        pre {
+            background: #f5f5f5;
+            padding: 20px;
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 4px;
+            overflow-x: auto;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .method-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .method-list li {
+            background: #f9f9f9;
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            border-left: 4px solid var(--primary);
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .gold-sentence {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff 100%);
+            padding: 20px;
+            border: 1.5px solid var(--accent);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .gold-sentence blockquote {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding: 10px;
+            background: white;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .gold-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .gold-detail-item {
+            background: white;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+        
+        .gold-detail-item strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .topic-tag {
+            background: var(--primary);
+            color: var(--text);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border);
+        }
+        
+        .application-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .application-card {
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .application-card h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .application-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .application-card li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .application-card li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        .content-box {
+            background: #f5f5f5;
+            padding: 20px;
+            border: 1.5px solid var(--border);
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        
+        .content-box h4 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .template-box {
+            background: white;
+            padding: 15px;
+            border: 1px dashed var(--border);
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        
+        .template-box code {
+            background: #f9f9f9;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: var(--primary);
+            color: var(--text);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .article-card {
+                padding: 20px;
+            }
+            
+            .gold-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .application-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 {date_display} 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》第05版（评论版）的深度解析</p>
+        </header>
+
+        <article class="article-card">
+            <h2>📰 文章1：《以“中国效率”激荡奋进活力（评论员观察）》</h2>
+            
+            <div class="info-box">
+                <strong>📋 基本信息</strong> | 
+                作者：李洪兴 | 
+                版面：第005版 | 
+                字数：约1340字
+            </div>
+            
+            <div class="section">
+                <h3>🎯 核心论点</h3>
+                <p>通过制度优势、科技创新和质量把控，"中国效率"成为推动高质量发展的重要引擎，体现了中国式现代化的独特优势。</p>
+            </div>
+            
+            <div class="section">
+                <h3>🧠 论证逻辑</h3>
+                <pre>
+```
+引入层（现象引入）
+└── 无人机配送、光伏直供、粮食运输三个场景
+    └── 提炼出"中国效率"的概念
+
+分析层1（制度支撑）
+├── 算例：中卫光伏电站年发电9.7亿千瓦时
+├── 算例：江西玉山县"人才飞地"
+└── 结论：顶层设计+政企协同=制度赋能
+
+分析层2（科技驱动）
+├── 技术层：无人机迭代升级
+├── 产业层：数字产业、现代农业、医疗技术
+└── 结论：科技+产业=新质生产力
+
+升华层（辩证统一）
+├── 速度与质量的统一
+├── 效率与效益的统一
+└── 局部与全局的统一
+```
+</pre>
+            </div>
+            
+            <div class="section">
+                <h3>🔧 论证方法</h3>
+                <ul class="method-list">
+                    <li><strong>举例论证</strong>：无人机配送船员外卖、光伏直供算力园区、北粮南运</li>
+                    <li><strong>数据论证</strong>：年发电量9.7亿千瓦时、不到10分钟送达</li>
+                    <li><strong>对比论证</strong>：从"试点探索"到"场景化应用"</li>
+                    <li><strong>因果论证</strong>：制度支撑→资源聚集→效率提升</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>💎 金句深度解析</h3>
+
+                <div class="gold-sentence">
+                    <blockquote>""中国效率"，是当下发展的缩影，也是未来征程的引擎。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            比喻精妙，将抽象的"效率"具象化为"引擎"，画面感强
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合作为结尾升华，点明主题并展望未来
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>XX，是当下XX的缩影，也是未来XX的引擎。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">中国发展</span>
+                        <span class="topic-tag">制度优势</span>
+                        <span class="topic-tag">现代化</span>
+                        <span class="topic-tag">创新驱动</span>
+                    </div>
+                </div>
+
+                <div class="gold-sentence">
+                    <blockquote>"观察发展，东西南北，跨江越海，纵横联运，要素畅通流动形成的"中国效率"，是中国式现代化奔涌向前的注脚。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            排比句式气势磅礴，"注脚"一词用得精准
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合用于论证段落，展开具体分析
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>观察XX，XX，XX，XX形成的"XX"，是XX的注脚。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">中国发展</span>
+                        <span class="topic-tag">现代化</span>
+                        <span class="topic-tag">统筹协调</span>
+                        <span class="topic-tag">要素流动</span>
+                    </div>
+                </div>
+
+                <div class="gold-sentence">
+                    <blockquote>"既有效激活科技创新的内生动力，也持续夯实产业升级的坚实根基，才能让发展活力充分迸发。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            对偶句式，"激活"与"夯实"动词精准，逻辑严密
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合用于论证段落的结论部分
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>既有效XX，也持续XX，才能让XX充分XX。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">科技创新</span>
+                        <span class="topic-tag">产业升级</span>
+                        <span class="topic-tag">高质量发展</span>
+                        <span class="topic-tag">系统思维</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>🎯 适用场景</h3>
+                <div class="application-grid">
+
+                    <div class="application-card">
+                        <h4>📌 直接可用</h4>
+                        <ul>
+                            <li>2024年全国卷"中国故事"——用"中国效率"展现现代化成就</li>
+                            <li>2023年新课标I卷"故事的力量"——讲述效率背后的制度故事</li>
+                            <li>2022年全国甲卷"直接迁移与间接迁移"——制度优势的迁移应用</li>
+                        </ul>
+                    </div>
+
+                    <div class="application-card">
+                        <h4>🔄 迁移应用</h4>
+                        <ul>
+                            <li>论证方法可以迁移到任何关于"中国式现代化"的话题</li>
+                        </ul>
+                    </div>
+
+                    <div class="application-card">
+                        <h4>📝 高考真题示例</h4>
+                        <ul>
+                            <li>2024新课标I卷"中国故事"：以"中国效率"为线索，讲述中国现代化故事</li>
+                            <li>2023新课标II卷"青少年自己的空间"：效率提升需要制度保障和个人空间</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>📄 原文</h3>
+                <div class="content-box">
+                    <h4>《以“中国效率”激荡奋进活力（评论员观察）》</h4>
+                    <p><strong>作者：李洪兴</strong></p>
+                    <p style="margin-top: 15px; line-height: 2;">守制度之优、兴科技之新、固质量之基，让发展成果更有温度、更有质感
+
+长江南京段江面，一艘货轮停在锚地，船员下单外卖；岸上，低空飞行基地内，无人机“飞手”们忙着分拣、打包炸鸡、奶茶、水果……
+
+机翼划破江面薄雾，不到10分钟，美食被“投送”到船上，船员脸上漾开笑意。
+
+这不是科幻场景，是今日中国高质量发展的“闪送”瞬间。
+
+长距离，闪送到，不止于长江。
+
+腾格里沙漠东南边缘，宁夏中卫的戈壁滩上，光伏板铺成“蓝色瀚海”，阳光落地成电，直送算力园区，让西部风光变成数字时代的“算力动能”。
+
+东北黑土地收获的粮食，搭乘物流专用线，经由“北粮南运”大通道，上了南方百姓的餐桌；西南山区的特色农产品，通过电商物流“借网出山”，销往全国乃至海外。
+
+观察发展，东西南北，跨江越海，纵横联运，要素畅通流动形成的“中国效率”，是中国式现代化奔涌向前的注脚。
+
+“中国效率”源于制度支撑。这份支撑，是“全国一盘棋”的制度优势，是集中力量办大事的创新实践。
+
+中卫云基地，中国大唐的光伏电站默默发力。年发电量达9.7亿千瓦时，不并网、直供算力园区，既能破解算力高能耗难题，也让西部清洁能源就近消纳。江西玉山县引导企业在长三角、珠三角建立“人才飞地”，打破地域壁垒。科研人才无需搬迁，通过远程协作、“借地研发”，将技术“送”至玉山的企业，助力产业升级。
+
+从“算电协同”的统筹布局，到人才跨区域合作的畅通无阻，背后都有顶层设计的引领，有政企协同的力量。机制创新、制度赋能，让分散的资源聚成合力，让跨流域、跨区域、跨领域的协作成为常态，把不可能变成可能，为高质量发展打通“动脉血管”。
+
+“中国效率”藏着发展活力。高效率源自科技创新与产业创新的深度融合，是新质生产力加速形成的体现。
+
+在技术层面，无人机技术的迭代升级，让低空配送从“试点探索”逐步走向“场景化应用”；在产业层面，数字产业让数据、技术等无形资源实现流通共享，现代农业升级促使育种技术、种植经验等快速惠及乡村，医疗技术提质推动优质诊疗资源下沉……高效场景的拓展，很大程度上推动技术转化应用、产业深度融合，进而更好蓄积发展新能量。
+
+从技术迭代赋能提质增效，到产业升级拓宽应用赛道，越是以科技为引擎，以产业为载体，推动技术突破从实验室走向实践场，越能让创新成果快速转化为发展效能。从这个意义上讲，既有效激活科技创新的内生动力，也持续夯实产业升级的坚实根基，才能让发展活力充分迸发。
+
+辩证地看，既要见效率之“快”，更要守质量之“稳”。
+
+发展不在于一味求“快”，而在于解决实际问题、提升民生福祉。无人机解决船员“购物难”，用机器人可以做跨越万里的手术，“智能秒批”让优化营商环境跑出“加速度”……“中国效率”赢得民心，是因为扎根实际需求、对接发展战略，实现速度与质量、效率与效益、局部与全局的有机统一。
+
+这启示我们，推动向新发展，能以“快”破局，突破资源要素流动的堵点难点，服务发展大局；也要以“质”筑基，实现经济运行效率与发展质量的双向跃升。这也是我们需要推动的质量变革、效率变革、动力变革。
+
+“中国效率”，是当下发展的缩影，也是未来征程的引擎。守制度之优、兴科技之新、固质量之基，让发展成果更有温度、更有质感，流动的中国永葆朝气。</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>✍️ 段落模板</h3>
+                <div class="template-box">
+                    <pre style="margin: 0; border: none; box-shadow: none;">【开头模板】
+从长江上的无人机配送，到戈壁滩的光伏电站，再到"北粮南运"的大通道，"中国效率"正在神州大地上激荡奋进活力。这背后，是制度优势的支撑，是科技创新的驱动，更是质量把控的坚守。
+
+【论证模板】
+"中国效率"源于制度支撑。XX（案例1）展现了XX；XX（案例2）体现了XX。从"XX"到"XX"，背后都有顶层设计的引领，有政企协同的力量。机制创新、制度赋能，让分散的资源聚成合力，为高质量发展打通"动脉血管"。
+
+【结尾模板】
+"中国效率"，是当下发展的缩影，也是未来征程的引擎。守XX之优、兴XX之新、固XX之基，让发展成果更有温度、更有质感，流动的中国永葆朝气。</pre>
+                </div>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <h2>📰 文章2：《体悟时代生活的美学价值（金台随笔）》</h2>
+            
+            <div class="info-box">
+                <strong>📋 基本信息</strong> | 
+                作者：李铁林 | 
+                版面：第005版 | 
+                字数：约1462字
+            </div>
+            
+            <div class="section">
+                <h3>🎯 核心论点</h3>
+                <p>美院毕业展的爆火反映了当代人审美需求的觉醒和美育传统的赓续，体现了"人文经济学"中文化与经济融合发展的深刻逻辑。</p>
+            </div>
+            
+            <div class="section">
+                <h3>🧠 论证逻辑</h3>
+                <pre>
+```
+引入层（现象呈现）
+└── 美院毕业展爆火：日均客流量过万
+    └── 提出"门槛"艺术展为何受热捧
+
+分析层1（文化线索）
+├── 审美需求释放：从奢侈到现实需要
+├── 美育传统赓续：从"人生艺术化"到日常生活
+└── 结论：美学自觉走出书斋，成为雕琢生活的实践
+
+分析层2（消费线索）
+├── 文艺与商业不对立：日常生活审美化
+├── 中国美学"出圈"：产品融入美学元素
+└── 结论：文化主体性增强，挖掘新蓝海
+
+升华层（人文经济学）
+├── 文化与经济都是目的而非手段
+├── 围绕人的需要形成良性循环
+└── 做好"人文经济学"大文章
+```
+</pre>
+            </div>
+            
+            <div class="section">
+                <h3>🔧 论证方法</h3>
+                <ul class="method-list">
+                    <li><strong>举例论证</strong>：中央美术学院毕业展、《筑魂》《30分钟废墟》等作品</li>
+                    <li><strong>引用论证</strong>：朱光潜、宗白华的"人生艺术化"理论</li>
+                    <li><strong>对比论证</strong>：从"门槛"到"爆火"的转变</li>
+                    <li><strong>因果论证</strong>：审美需求释放→美院毕业展爆火→文化价值与经济价值良性循环</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>💎 金句深度解析</h3>
+
+                <div class="gold-sentence">
+                    <blockquote>"如何度过闲暇，一定程度反映着一个人的生活格调，乃至一个社会的文化风尚。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            递进句式，从个人到社会，层层深入，哲理性强
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合作为开头引出话题，或论证段落的核心句
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>如何XX，一定程度反映着一个人的XX，乃至一个社会的XX。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">生活方式</span>
+                        <span class="topic-tag">文化风尚</span>
+                        <span class="topic-tag">审美教育</span>
+                        <span class="topic-tag">个人修养</span>
+                    </div>
+                </div>
+
+                <div class="gold-sentence">
+                    <blockquote>"随着经济社会发展，审美不再是一件奢侈的事情，而逐渐成为当代人安顿精神、丰盈内心的现实需要。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            转折句式，"安顿精神、丰盈内心"用词优美
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合用于论证段落，说明时代变化
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>随着XX，XX不再是XX，而逐渐成为XX的XX。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">审美教育</span>
+                        <span class="topic-tag">精神追求</span>
+                        <span class="topic-tag">时代发展</span>
+                        <span class="topic-tag">生活品质</span>
+                    </div>
+                </div>
+
+                <div class="gold-sentence">
+                    <blockquote>"做好"人文经济学"大文章，正确答案不在"文化搭台、经济唱戏"的老路径，二者都是目的而非手段，都是内涵而非形式。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            否定之否定，"目的而非手段，内涵而非形式"对仗工整
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合作为结尾升华，提出新观点
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>做好XX大文章，正确答案不在XX的老路径，二者都是XX而非XX，都是XX而非XX。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">人文经济学</span>
+                        <span class="topic-tag">文化发展</span>
+                        <span class="topic-tag">经济转型</span>
+                        <span class="topic-tag">融合发展</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>🎯 适用场景</h3>
+                <div class="application-grid">
+
+                    <div class="application-card">
+                        <h4>📌 直接可用</h4>
+                        <ul>
+                            <li>2024年全国卷"中国故事"——讲述中国美学"出圈"的故事</li>
+                            <li>2023年新课标I卷"故事的力量"——美学故事的文化力量</li>
+                            <li>2022年新高考I卷"本手、妙手、俗手"——美学创造中的妙手</li>
+                        </ul>
+                    </div>
+
+                    <div class="application-card">
+                        <h4>🔄 迁移应用</h4>
+                        <ul>
+                            <li>论证"日常生活审美化"的方法可用于任何文化话题</li>
+                        </ul>
+                    </div>
+
+                    <div class="application-card">
+                        <h4>📝 高考真题示例</h4>
+                        <ul>
+                            <li>2024新课标I卷"中国故事"：以中国美学"出圈"为线索</li>
+                            <li>2023全国甲卷"人·技术·时间"：技术时代的审美需求</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>📄 原文</h3>
+                <div class="content-box">
+                    <h4>《体悟时代生活的美学价值（金台随笔）》</h4>
+                    <p><strong>作者：李铁林</strong></p>
+                    <p style="margin-top: 15px; line-height: 2;">又到毕业季，各大美术院校的毕业展再度爆火。比如，今年“五一”假期，中央美术学院毕业展日均客流量过万，网络讨论热度居高不下。
+
+美院毕业展有多火，从各院校历年来涌现的“破圈”作品可见一斑。致敬建筑工人父亲的雕塑《筑魂》，探讨快节奏城市生活的作品《30分钟废墟》，反思消费主义的油画《祷》……无论赞美或争议，不可否认的是，不少毕业展不只是院校内部的教学汇报，而成了备受关注的公共文化事件。
+
+曾被视为有一定“门槛”的艺术展，为何受热捧？社交媒体的裂变传播、院校不断进步的开放运营能力是直接原因。但透过现象看本质，或许还有两条更深层的线索。
+
+一条线索关于文化。如何度过闲暇，一定程度反映着一个人的生活格调，乃至一个社会的文化风尚。越来越多人走进美术展，本身便是一种宣告——随着经济社会发展，审美不再是一件奢侈的事情，而逐渐成为当代人安顿精神、丰盈内心的现实需要。
+
+不只是艺术展。“文博热”持续升温，“为了一座馆，奔赴一座城”；歌舞剧一票难求，越来越多观众走进剧场……一系列文化热点，都反映出人们对高品质文化场域的浓厚兴趣。
+
+一面是审美需求的集中释放，一面是美育传统的赓续传承。前不久，北京大学纪念美学学科开设105周年。美学学科的发展，也伴随着公共美育的进步。上世纪，朱光潜、宗白华等学者曾探讨“人生艺术化”，倡导以美的艺术精神濡染提升人格情致与生命境界。如今，美学自觉已走出学人的书斋，成为更多人雕琢理想生活的实践。
+
+青年的艺术灵感里，有饱满的热情，有真诚的表达；通过开放参观、提供导赏等突破校园边界，让关于美的表达被更广泛地观看、倾听，美院毕业展也是公共美育的嘉年华。这是一场文化的双向奔赴。
+
+另一条线索关于消费。近年来，美院毕业展上，周边市集的“戏份”越来越足。遇到心仪作品即时购买复刻品，“收藏一个年轻人的才华与时间”，成为不少观众的选择。
+
+文艺与商业并不对立。美学和文化研究领域有一个“日常生活审美化”的说法，指的是现代社会中，审美活动与艺术元素溢出传统艺术领域，全面渗透到大众的衣食住行中。从更多实用物件被赋予设计附加值，到咖啡馆、书店等纷纷“景点化”，物的美学元素以及蕴含的情绪价值、社交资本等愈加重要。
+
+从《清明上河图》《爱莲说》等经典作品中选取意象设计创意包款，把湘绣留白美学、传统盘扣等中式元素融入服装设计……前段时间的广交会上，众多中国产品凭借独特的中国美学韵味吸引外商目光。中国美学“出圈”，根植于丰厚的文化底蕴。
+
+新时代的中国美学，是萃取千年文脉养分、融合当代设计语言、回应时代精神诉求的审美体系，是传统元素与现代创意共生、民族特色与审美潮流相融合的独特表达。这种美学觉醒，正超越文化领域，深刻重塑着市场逻辑。当文化叙事成为市场竞争的关键一环，中国品牌正随着文化主体性的增强挖掘出自己的新蓝海。
+
+以小见大，两条线索共同指向“人文经济学”的宏阔命题。“‘文化经济’的本质在于文化与经济的融合发展，说到底要突出一个‘人’字。”文化对经济的作用机制，是以经济活动、社会关系的主体——人作为载体的。
+
+在这方面，走红的美院毕业展提供了一个微观观察样本：开放的展览既是对人的文化浸润，同时也催生了爆款IP，文化价值与经济价值围绕人的需要形成良性循环。
+
+进一步而言，做好“人文经济学”大文章，正确答案不在“文化搭台、经济唱戏”的老路径，二者都是目的而非手段，都是内涵而非形式。重视人文关怀、促进人的全面发展，积淀更厚重的文化底蕴，在此基础上寻找文化与经济的结合点，这样的“互文”一定会越写越生动。</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>✍️ 段落模板</h3>
+                <div class="template-box">
+                    <pre style="margin: 0; border: none; box-shadow: none;">【开头模板】
+又到毕业季，各大美术院校的毕业展再度爆火。从致敬建筑工人父亲的雕塑《筑魂》，到探讨快节奏城市生活的《30分钟废墟》，这些"破圈"作品背后，折射出时代的文化脉动。
+
+【论证模板】
+一面是审美需求的集中释放，一面是美育传统的赓续传承。从XX到XX，一系列文化热点都反映出人们对XX的浓厚兴趣。美学自觉已走出学人的书斋，成为更多人雕琢理想生活的实践。
+
+【结尾模板】
+做好"人文经济学"大文章，正确答案不在"文化搭台、经济唱戏"的老路径，二者都是目的而非手段，都是内涵而非形式。重视人文关怀、促进人的全面发展，这样的"互文"一定会越写越生动。</pre>
+                </div>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <h2>📰 文章3：《西部小城何以成“算力先锋”（微观）》</h2>
+            
+            <div class="info-box">
+                <strong>📋 基本信息</strong> | 
+                作者：盛玉雷 | 
+                版面：第005版 | 
+                字数：约1309字
+            </div>
+            
+            <div class="section">
+                <h3>🎯 核心论点</h3>
+                <p>甘肃庆阳从传统能源城市转型为"算力先锋"的历程，展现了把握科技趋势、发挥自身优势、换道超车的高质量发展路径。</p>
+            </div>
+            
+            <div class="section">
+                <h3>🧠 论证逻辑</h3>
+                <pre>
+```
+引入层（设问引入）
+└── 西部小城庆阳何以成为"算力先锋"？
+    └── 数据：算力调用量两年增长超1000倍
+
+分析层1（转型逻辑）
+├── 传统路径：卖资源（煤炭、石油）
+├── 新兴路径：生算力（数字经济）
+└── 结论：融入国家战略，换道超车
+
+分析层2（优势发挥）
+├── 地理优势：承东启西、连南接北
+├── 气候优势：凉爽、地质稳定
+├── 能源优势：风光资源富集
+└── 结论：把发展落差的势能变成发展动能
+
+升华层（启示延伸）
+├── 没有闲置的资源，只有固化的思维
+├── 产业谋划：提高适配度，久久为功
+└── 结论：找准发力点，形成核心竞争力
+```
+</pre>
+            </div>
+            
+            <div class="section">
+                <h3>🔧 论证方法</h3>
+                <ul class="method-list">
+                    <li><strong>数据论证</strong>：日均词元调用量从1000亿到140万亿，增长超1000倍</li>
+                    <li><strong>对比论证</strong>：从"卖资源"到"生算力"的转型</li>
+                    <li><strong>举例论证</strong>：新疆于田县玫瑰、青海冷湖镇新能源</li>
+                    <li><strong>引用论证</strong>：中共中央政治局会议强调"算力网"建设</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>💎 金句深度解析</h3>
+
+                <div class="gold-sentence">
+                    <blockquote>"没有闲置的资源，只有固化的思维。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            对偶句式，简洁有力，哲理深刻
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合作为论证段落的观点句或结尾升华
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>没有XX，只有XX。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">创新思维</span>
+                        <span class="topic-tag">资源利用</span>
+                        <span class="topic-tag">转型发展</span>
+                        <span class="topic-tag">解放思想</span>
+                    </div>
+                </div>
+
+                <div class="gold-sentence">
+                    <blockquote>"发展不是线性的，机遇往往会带来"加速度"。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            比喻形象，"加速度"一词双关
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合用于论证段落，说明发展规律
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>XX不是线性的，XX往往会带来"加速度"。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">发展机遇</span>
+                        <span class="topic-tag">非线性发展</span>
+                        <span class="topic-tag">抓住时机</span>
+                        <span class="topic-tag">跨越发展</span>
+                    </div>
+                </div>
+
+                <div class="gold-sentence">
+                    <blockquote>"把发展落差的势能变成发展动能，形成自己独一无二的核心竞争力。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            物理隐喻，"势能"转"动能"的比喻精准
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合作为论证段落的结论部分
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>把XX的势能变成XX的动能，形成XX的核心竞争力。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">后发优势</span>
+                        <span class="topic-tag">核心竞争力</span>
+                        <span class="topic-tag">转型升级</span>
+                        <span class="topic-tag">区域发展</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>🎯 适用场景</h3>
+                <div class="application-grid">
+
+                    <div class="application-card">
+                        <h4>📌 直接可用</h4>
+                        <ul>
+                            <li>2024年全国卷"中国故事"——讲述西部小城转型故事</li>
+                            <li>2023年新课标I卷"故事的力量"——转型故事的启示</li>
+                            <li>2022年全国乙卷"双奥"——跨越发展的故事</li>
+                        </ul>
+                    </div>
+
+                    <div class="application-card">
+                        <h4>🔄 迁移应用</h4>
+                        <ul>
+                            <li>"换道超车"的论证方法可用于任何转型话题</li>
+                        </ul>
+                    </div>
+
+                    <div class="application-card">
+                        <h4>📝 高考真题示例</h4>
+                        <ul>
+                            <li>2024新课标I卷"中国故事"：以庆阳转型为线索</li>
+                            <li>2023新课标II卷"青少年自己的空间"：发展需要找准自己的赛道</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>📄 原文</h3>
+                <div class="content-box">
+                    <h4>《西部小城何以成“算力先锋”（微观）》</h4>
+                    <p><strong>作者：盛玉雷</strong></p>
+                    <p style="margin-top: 15px; line-height: 2;">或精修一张图片、或生成一篇文档、或定制一套出行攻略，许多人工作生活中所调用的算力，很有可能来自一座西部小城——甘肃庆阳。
+
+智能时代，算力有多重要？
+
+看需求的演变。日均词元调用量，2024年初只有1000亿，到2026年3月涨到140万亿。两年时间，增长超过1000倍。
+
+看政策的导向。前不久，中共中央政治局召开会议强调：“加强水网、新型电网、算力网、新一代通信网、城市地下管网、物流网等规划建设。”算力和水、电等公共基础设施，被放在同等重要的位置。
+
+庆阳的崛起并非偶然。2021年，获批为国家“东数西算”八大枢纽节点之一。算力基础设施从无到有、数字产业从弱到强，如今，这里已建成全国八大枢纽节点中算力增速最快、增量最大、智算占比最高、消纳最充分的标杆集群，成为算力产业版图上的重要一极。
+
+一座曾以传统农业和能源为支柱的内陆城市，何以跻身“算力先锋”？解码庆阳的蝶变，可以一窥经济高质量发展的奥秘。
+
+技术进步，对产业变革具有很强的牵引带动作用。谁能洞察趋势、抢占先机，谁就能在产业布局、生态构建、路径选择上形成独特优势。
+
+以庆阳为例，煤炭、石油储量丰富，是继续“卖资源”，在传统领域卷存量，还是尝试“生算力”，在新兴产业添增量？当地向“数”而行、聚“算”成势、借“智”腾飞，融入国家发展战略、对标科技前沿需求、孕育新质生产力，走出了一条从能源输出到算力供给的新赛道。
+
+发展不是线性的，机遇往往会带来“加速度”。从庆阳这个窗口观察今天的中国，把握发展的大势，发挥自身的优势，每个地方都有机会和舞台跃居时代前沿。
+
+当然，转型需要换道超车的底气，产业的根要深深扎进脚下的大地。
+
+承东启西、连南接北，即使是远在广东深圳的用户调用算力，也几乎感受不到延迟；气候条件凉爽、地质结构稳定，确保数据中心能耗低、安全性高；风光资源富集，落地全国首个绿电聚合直连供电方案，“瓦特之力”正在托举“比特洪流”……“东部大脑”用上西部算力，进一步诠释发展思路的转换与跃迁。
+
+纵观广袤西部，发展的飞跃并不鲜见。新疆于田县在沙漠边缘种下8万亩玫瑰，开发出20余种产品，年产值达2.37亿元；青海冷湖镇利用年均8级大风天超100天、日照超3500小时的自然条件，转型为新能源重镇……
+
+没有闲置的资源，只有固化的思维。不管是内陆变前沿，还是沙漠养鱼虾，这些故事都启示我们，找准发力点、着力点，把发展落差的势能变成发展动能，形成自己独一无二的核心竞争力，就能在高质量发展中占据一席之地。
+
+还要看到，“不断增强我国发展的确定性和可持续性”，要求产业发展不能一阵风、大呼隆，而是相互衔接、各展其长。
+
+算力的前景在应用。苹果和中药材种植户用上了AI视觉识别，病虫害预警准确率提高三成；建成西北最大苹果数字化分拣基地，让传统农业装上“数字引擎”……从算力中心向产业生态拓展、从基础设施建设向数字产业迈进，庆阳的算力还在“进化”。
+
+推动高质量、可持续的发展，“有些事要打攻坚战，有些事要久久为功”。具体到产业谋划上，势必要在提高适配度上下功夫，既不能无视短板，也不能过于超前、造成浪费。
+
+从等风来到乘风起，哪里都能蓄势而发、通往未来。</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>✍️ 段落模板</h3>
+                <div class="template-box">
+                    <pre style="margin: 0; border: none; box-shadow: none;">【开头模板】
+一座曾以传统农业和能源为支柱的内陆城市，何以跻身"算力先锋"？解码XX的蝶变，可以一窥高质量发展的奥秘。
+
+【论证模板】
+技术进步，对产业变革具有很强的牵引带动作用。谁能洞察趋势、抢占先机，谁就能在产业布局、生态构建、路径选择上形成独特优势。以XX为例，是继续XX，还是尝试XX？当地XX，走出了一条XX的新赛道。
+
+【结尾模板】
+没有闲置的资源，只有固化的思维。找准发力点、着力点，把发展落差的势能变成发展动能，形成自己独一无二的核心竞争力，就能在高质量发展中占据一席之地。</pre>
+                </div>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <h2>📰 文章4：《小切口里有治理大逻辑（纵横）》</h2>
+            
+            <div class="info-box">
+                <strong>📋 基本信息</strong> | 
+                作者：黄红英 | 
+                版面：第005版 | 
+                字数：约701字
+            </div>
+            
+            <div class="section">
+                <h3>🎯 核心论点</h3>
+                <p>新疆"救命绳"等基层治理创新体现了"致广大而尽精微"的治理智慧，展现了以小切口解决大问题、用小实事温暖大民生的治理理念。</p>
+            </div>
+            
+            <div class="section">
+                <h3>🧠 论证逻辑</h3>
+                <pre>
+```
+引入层（案例引入）
+└── "救命绳"：每隔50米一根绳子
+    └── 解决问题：落水者快速自救、方便救援
+
+分析层1（精准发力）
+├── 痛点：警示标牌难以及时发挥作用
+├── 创新："救命绳"精准解决群众安全痛点
+└── 启示：从实际生活中提炼治理巧思
+
+分析层2（真情服务）
+├── 若羌县"沙舟驿站"：戈壁暖心港湾
+├── 乌鲁木齐：议事现场搬到家门口
+└── 结论：直面急难愁盼，增强三感
+
+升华层（大逻辑）
+├── 小切口→大逻辑："救命绳"是托底，民生保障网是守护
+├── 小事→大事：柴米油盐关乎民心
+└── 结论：实事好事办到心坎上，团结就是发展的底气
+```
+</pre>
+            </div>
+            
+            <div class="section">
+                <h3>🔧 论证方法</h3>
+                <ul class="method-list">
+                    <li><strong>举例论证</strong>："救命绳""沙舟驿站""议事现场搬到家门口"</li>
+                    <li><strong>对比论证</strong>：警示标牌vs"救命绳"的效果对比</li>
+                    <li><strong>数据论证</strong>：农村自来水普及率99.4%</li>
+                    <li><strong>引用论证</strong>：《中庸》"致广大而尽精微"</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>💎 金句深度解析</h3>
+
+                <div class="gold-sentence">
+                    <blockquote>"小切口里有治理大逻辑。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            简洁凝练，对偶工整，哲理深刻
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合作为开头引出话题或论证段落的核心句
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>小XX里有XX的大逻辑。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">基层治理</span>
+                        <span class="topic-tag">民生保障</span>
+                        <span class="topic-tag">细节管理</span>
+                        <span class="topic-tag">系统思维</span>
+                    </div>
+                </div>
+
+                <div class="gold-sentence">
+                    <blockquote>"这种从实际生活中提炼出来、贴合民生需求的治理巧思，既提升了治理的精细度，也为基层治理创新提供了启示。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            递进句式，"从实际生活中提炼""贴合民生需求"精准
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合用于论证段落，分析创新案例
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>这种从XX中提炼出来、贴合XX的XX，既提升了XX，也为XX提供了启示。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">基层治理</span>
+                        <span class="topic-tag">创新思维</span>
+                        <span class="topic-tag">民生导向</span>
+                        <span class="topic-tag">精细化</span>
+                    </div>
+                </div>
+
+                <div class="gold-sentence">
+                    <blockquote>"把实事好事办到群众心坎上，团结一心的奋进合力，就是推动发展的底气。"</blockquote>
+                    <div class="gold-details">
+                        <div class="gold-detail-item">
+                            <strong>👍 好在哪</strong>
+                            层递句式，"办到心坎上"形象生动
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>📝 怎么用</strong>
+                            适合作为结尾升华，点明主旨
+                        </div>
+                        <div class="gold-detail-item">
+                            <strong>✏️ 可仿写</strong>
+                            <code>把XX办到XX，XX，就是推动XX的底气。</code>
+                        </div>
+                    </div>
+                    <div class="topics">
+                        <span class="topic-tag">民生保障</span>
+                        <span class="topic-tag">群众路线</span>
+                        <span class="topic-tag">发展动力</span>
+                        <span class="topic-tag">团结奋进</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>🎯 适用场景</h3>
+                <div class="application-grid">
+
+                    <div class="application-card">
+                        <h4>📌 直接可用</h4>
+                        <ul>
+                            <li>2024年全国卷"中国故事"——讲述基层治理创新故事</li>
+                            <li>2023年新课标I卷"故事的力量"——小故事背后的治理大逻辑</li>
+                            <li>2022年全国甲卷"直接迁移与间接迁移"——治理经验的迁移</li>
+                        </ul>
+                    </div>
+
+                    <div class="application-card">
+                        <h4>🔄 迁移应用</h4>
+                        <ul>
+                            <li>"小切口大逻辑"的论证方法可用于任何治理话题</li>
+                        </ul>
+                    </div>
+
+                    <div class="application-card">
+                        <h4>📝 高考真题示例</h4>
+                        <ul>
+                            <li>2024新课标I卷"中国故事"：以"救命绳"为线索</li>
+                            <li>2023全国乙卷"一花独放不是春"：团结就是力量</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>📄 原文</h3>
+                <div class="content-box">
+                    <h4>《小切口里有治理大逻辑（纵横）》</h4>
+                    <p><strong>作者：黄红英</strong></p>
+                    <p style="margin-top: 15px; line-height: 2;">一根绳子有多大用处？在新疆巴音郭楞蒙古自治州和硕县的一处水渠，每隔50米就有一根绳子，可以帮助落水者快速自救，也方便开展救援。网友亲切地称之为“救命绳”。
+
+新疆地域辽阔，地理环境复杂，尤其是农村、牧区等地，夏季气温升高，高山冰雪消融，渠中水流湍急。防范溺水风险，不少地方的通常做法是设立警示标牌，但很难在危险发生时发挥作用。如何更好维护群众生命安全，成为一道治理课题。
+
+基层治理，重在精准发力。和硕县的“救命绳”，精准解决群众安全痛点。这种从实际生活中提炼出来、贴合民生需求的治理巧思，既提升了治理的精细度，也为基层治理创新提供了启示。
+
+服务群众，要怀着为民解忧的真情实意。在新疆，若羌县的“沙舟驿站”，从守护道路安全的前沿哨所，升级为集应急补给、安全宣讲、便民服务于一体的“戈壁暖心港湾”；乌鲁木齐市沙依巴克区把议事现场搬到群众家门口，就地化解民生难题……一项项务实举措直面急难愁盼问题，不断增强群众获得感、幸福感、安全感。
+
+小切口里有治理大逻辑。如果说“救命绳”是危难时刻的托底，那么精细入微的民生保障网则是日常生活的守护。新疆农村自来水普及率达99.4%，村民告别“饮水难”；基本建成“农村30分钟”医疗卫生服务圈，实现在家门口就医……以“致广大而尽精微”的治理智慧，推动基层治理提质增效，用实实在在的发展成效保障民生，才能不断绘就各族群众安居乐业的幸福画卷。
+
+提供防溺水的安全绳、建好家门口的医疗点等，看似是柴米油盐的小事，其实都是关乎民心的大事。把实事好事办到群众心坎上，团结一心的奋进合力，就是推动发展的底气。
+
+（摘编自《新疆日报》，原题为《涵养“致广大而尽精微”的治理智慧》）</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>✍️ 段落模板</h3>
+                <div class="template-box">
+                    <pre style="margin: 0; border: none; box-shadow: none;">【开头模板】
+一根绳子有多大用处？在XX的一处XX，每隔XX就有XX。网友亲切地称之为"XX"。这看似XX的小事，其实都是关乎民心的大事。
+
+【论证模板】
+基层治理，重在精准发力。XX的"XX"，精准解决群众XX痛点。这种从实际生活中提炼出来、贴合民生需求的治理巧思，既提升了治理的精细度，也为基层治理创新提供了启示。
+
+【结尾模板】
+以"致广大而尽精微"的治理智慧，推动基层治理提质增效，用实实在在的发展成效保障民生，才能不断绘就各族群众安居乐业的幸福画卷。</pre>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <p><strong>📚 今日总结</strong></p>
+            <p style="margin-top: 15px;">核心主题：中国效率 | 美学价值 | 算力先锋 | 治理逻辑</p>
+            <p style="margin-top: 10px;">特点：时代性强 | 论证严密 | 金句频出 | 实用度高</p>
+            <p style="margin-top: 20px; font-size: 0.9rem;">生成时间：{date_display} | 数据来源：人民日报电子版 | 仅供学习研究使用</p>
+        </footer>
+    </div>
+</body>
+</html>
