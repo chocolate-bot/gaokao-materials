@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-06-05 高考作文素材</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2D2D2D;
+            --border: #2D2D2D;
+            --shadow: #B5B5B5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: var(--primary);
+            border: 2px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .article-card {
+            background: white;
+            border: 2px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+
+        .article-header {
+            background: var(--accent);
+            padding: 20px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .article-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+            flex-wrap: wrap;
+        }
+
+        .article-meta span {
+            background: var(--bg);
+            padding: 5px 10px;
+            border: 1.5px solid var(--border);
+        }
+
+        .article-content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .core-point {
+            background: var(--primary);
+            padding: 20px;
+            border: 2px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .logic-diagram {
+            background: var(--bg);
+            padding: 20px;
+            border: 1.5px solid var(--border);
+            font-family: "Courier New", monospace;
+            white-space: pre;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        .argument-method {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border: 1.5px solid var(--border);
+        }
+
+        .argument-method h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .golden-quote {
+            background: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 2px solid var(--accent);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+        }
+
+        .golden-quote .quote-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: var(--accent);
+            border: 1.5px solid var(--border);
+        }
+
+        .golden-quote .quote-analysis {
+            margin-top: 10px;
+        }
+
+        .golden-quote .quote-analysis h5 {
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .golden-quote .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .golden-quote .tag {
+            background: var(--primary);
+            padding: 5px 12px;
+            border: 1.5px solid var(--border);
+            font-size: 0.85rem;
+        }
+
+        .use-case {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+        }
+
+        .use-case h4 {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .original-text {
+            background: white;
+            padding: 25px;
+            border: 2px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .original-text p {
+            margin-bottom: 15px;
+            text-indent: 2em;
+            line-height: 1.8;
+        }
+
+        .collapsible {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .collapsible::after {
+            content: "▼";
+            float: right;
+            transition: transform 0.3s;
+        }
+
+        .collapsible.active::after {
+            transform: rotate(-180deg);
+        }
+
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .content.active {
+            max-height: 2000px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .article-content {
+                padding: 20px;
+            }
+
+            .logic-diagram {
+                font-size: 0.85rem;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background: var(--accent);
+            border: 2px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background: var(--primary);
+            padding: 15px;
+            border: 2px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            margin: 20px 0;
+        }
+
+        .rating {
+            display: inline-block;
+            padding: 3px 8px;
+            margin-left: 8px;
+            border: 1.5px solid var(--border);
+            font-size: 0.85rem;
+        }
+
+        .rating.high {
+            background: #FFE66A;
+        }
+
+        .rating.medium {
+            background: #7BCBFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-06-05 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析</p>
+        </header>
+
+        <!-- 文章1 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>《好创意从"地气"里来（评论员观察）》</h2>
+                <div class="article-meta">
+                    <span>作者：邹翔</span>
+                    <span>版面：第05版 评论</span>
+                    <span>字数：约1100字</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <!-- 核心论点 -->
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        文旅宣传的"好创意"从来不是凭空造梗，而是深深扎根于地方实际、文化底蕴和人民群众的"地气"之中。
+                    </div>
+                </div>
+
+                <!-- 论证逻辑 -->
+                <div class="section">
+                    <h3 class="section-title">🧠 论证逻辑</h3>
+                    <div class="logic-diagram">第一层：引入话题（现象呈现）
+├─ 案例："苏超"辛弃疾、"赣超"文天祥（正面）
+└─ 反例：虚构人物争议（反面）
+    └─ 引出问题：文旅宣传如何叫好又叫座？
+
+第二层：展开分析（分层递进）
+├─ "地气"之一：地方实际
+│   ├─ 河北案例："这么近，那么美，周末到河北"
+│   └─ 论证：精准定位+贴合现实=破圈效应
+│
+├─ "地气"之二：文化底蕴
+│   ├─ "闽超"郑成功、"苏超"项羽
+│   └─ 论证：文化"转译者"+文脉植根=城市品牌
+│
+└─ "地气"之三：深深扎根人民
+    ├─ "苏超"听劝机制
+    └─ 论证：人民主体性+共创共享=源头活水
+
+第三层：总结升华（价值提炼）
+└─ 文旅热点本质=文化自信的创新创造
+    └─ 最好故事不在别处，就在脚下这片土地</div>
+                </div>
+
+                <!-- 论证方法 -->
+                <div class="section">
+                    <h3 class="section-title">🔧 论证方法</h3>
+                    
+                    <div class="argument-method">
+                        <h4>1. 对比论证（正反对比）</h4>
+                        <p><strong>具体运用</strong>：开头并列呈现两类案例</p>
+                        <p><strong>效果</strong>：通过强烈对比，引出核心问题，增强说服力</p>
+                        <p><strong>迁移应用</strong>：可用于"传承与创新""真实与虚构""形式与内容"等话题</p>
+                    </div>
+
+                    <div class="argument-method">
+                        <h4>2. 举例论证（多维度案例）</h4>
+                        <p><strong>具体运用</strong>：从不同省份、不同角度选取案例</p>
+                        <p><strong>效果</strong>：案例覆盖面广，论证全面立体</p>
+                        <p><strong>迁移应用</strong>：论证时可从不同领域、不同层次选材，增强说服力</p>
+                    </div>
+
+                    <div class="argument-method">
+                        <h4>3. 比喻论证（形象化表达）</h4>
+                        <p><strong>具体运用</strong>："转译者"比喻</p>
+                        <p><strong>效果</strong>：将抽象的文化传播概念具象化，易于理解</p>
+                        <p><strong>迁移应用</strong>：可用比喻论证解释抽象概念（如"桥梁""镜子""钥匙"等）</p>
+                    </div>
+
+                    <div class="argument-method">
+                        <h4>4. 因果论证（层层递进）</h4>
+                        <p><strong>具体运用</strong>："三地气"层层深入</p>
+                        <p><strong>效果</strong>：论证有层次感，从现象到本质</p>
+                        <p><strong>迁移应用</strong>：可按"现象-原因-本质"或"表层-深层-根基"结构组织</p>
+                    </div>
+
+                    <div class="argument-method">
+                        <h4>5. 引用论证（权威观点）</h4>
+                        <p><strong>具体运用</strong>："脚要踩在大地上。我们干任何事情都有内在规律。"</p>
+                        <p><strong>效果</strong>：增强论证的权威性和哲理性</p>
+                        <p><strong>迁移应用</strong>：引用名人名言、经典语录提升文章格调</p>
+                    </div>
+                </div>
+
+                <!-- 金句深度解析 -->
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+                    
+                    <div class="golden-quote">
+                        <div class="quote-text">"脚要踩在大地上。我们干任何事情都有内在规律。"</div>
+                        <div class="quote-analysis">
+                            <h5>好在哪：</h5>
+                            <p>画面感强：用"脚踩大地"的动作形象化表达"实事求是"</p>
+                            <p>哲理性深："内在规律"揭示事物本质，具有普适性</p>
+                            <p>简洁有力：13个字蕴含深刻道理，易于记忆传播</p>
+                            
+                            <h5>适用话题：</h5>
+                            <div class="tag-list">
+                                <span class="tag">实事求是</span>
+                                <span class="tag">脚踏实地</span>
+                                <span class="tag">尊重规律</span>
+                                <span class="tag">务求实效</span>
+                                <span class="tag">创新</span>
+                                <span class="tag">发展</span>
+                            </div>
+                            
+                            <h5>可仿写：</h5>
+                            <p>句式模板："[动作/比喻]，我们[行为]都有[核心原则]。"</p>
+                            <p>• "根要扎在泥土里，我们培养人才都要遵循成长规律。"</p>
+                            <p>• "心要放在人民身上，我们做决策都要坚持群众路线。"</p>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"好的文旅推广，应做城市文化的'转译者'，把深埋在历史里的故事、流淌在血脉中的精神、内蕴于城市肌体的文化基因，'转译'为当代人能够理解和共情的语言。"</div>
+                        <div class="quote-analysis">
+                            <h5>好在哪：</h5>
+                            <p>比喻精妙："转译者"比喻生动贴切</p>
+                            <p>排比有力："深埋在""流淌在""内蕴于"构成排比</p>
+                            <p>层次分明：故事→精神→基因，层层递进</p>
+                            <p>时代性强：强调传承与创新结合</p>
+                            
+                            <h5>适用话题：</h5>
+                            <div class="tag-list">
+                                <span class="tag">文化传承</span>
+                                <span class="tag">文化创新</span>
+                                <span class="tag">传统与现代</span>
+                                <span class="tag">传播方式</span>
+                                <span class="tag">代际沟通</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"土生土长的故事，往往拥有跨越地域的力量。"</div>
+                        <div class="quote-analysis">
+                            <h5>好在哪：</h5>
+                            <p>哲理深刻：揭示"越是民族的越是世界的"</p>
+                            <p>对比鲜明："土生土长"与"跨越地域"形成张力</p>
+                            <p>简洁有力：16个字道出文化自信的内核</p>
+                            
+                            <h5>适用话题：</h5>
+                            <div class="tag-list">
+                                <span class="tag">文化自信</span>
+                                <span class="tag">本土特色</span>
+                                <span class="tag">民族的就是世界的</span>
+                                <span class="tag">真实性与感染力</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 适用场景 -->
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    
+                    <div class="use-case">
+                        <h4>直接可用</h4>
+                        <p><strong>话题：文化传承与创新</strong> - 论证点：文化传承需要"转译"</p>
+                        <p><strong>话题：实事求是/脚踏实地</strong> - 论证点：任何创意都要从实际出发</p>
+                        <p><strong>话题：文化自信/本土文化</strong> - 论证点：本土文化是最好的资源</p>
+                        <p><strong>话题：人民主体/群众路线</strong> - 论证点：创意来源于人民</p>
+                    </div>
+
+                    <div class="use-case">
+                        <h4>高考真题</h4>
+                        <p><strong>2023年新课标I卷《故事的力量》</strong> <span class="rating high">★★★★★</span></p>
+                        <p>具体写法：开篇引用"土生土长的故事往往拥有跨越地域的力量"，然后分三个层次论述</p>
+                        
+                        <p><strong>2022年新高考I卷《本手、妙手、俗手》</strong> <span class="rating high">★★★★☆</span></p>
+                        <p>具体写法：论证"妙手"（好创意）不是凭空而来，而是扎根于"本手"（地气）的积累</p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>考场模板</h4>
+                        <p><strong>开头模板</strong>："'脚要踩在大地上'，朴素话语道出深刻哲理。[话题]，何尝不是如此？唯有[核心观点]，方能[结果]。</p>
+                        <p><strong>论证模板</strong>："[核心观点]，至少体现在三个层面：其一，[第一层]；其二，[第二层]；其三，[第三层]。进而言之，[升华]。</p>
+                    </div>
+                </div>
+
+                <!-- 原文 -->
+                <div class="section">
+                    <h3 class="section-title collapsible">📄 原文（点击展开）</h3>
+                    <div class="content">
+                        <div class="original-text">
+                            <p>好的文旅推广，应做城市文化的"转译者"，把深埋在历史里的故事、流淌在血脉中的精神、内蕴于城市肌体的文化基因，"转译"为当代人能够理解和共情的语言</p>
+                            <p>如今，百花齐放的省级城市足球联赛，已成为展现城市形象、开展文旅宣传的绝佳窗口和契机。能否用好这流量和人气却因地而异。</p>
+                            <p>"苏超"镇江队主场，看台升起一幅"辛弃疾"的巨型画布，配以"何处望神州"的苍劲大字，收获大量关注。"赣超"赣州队主场，开赛前由演员扮演的"文天祥"亮相大型宋韵实景演绎节目，被称为体育赛事与传统文化相结合的鲜活样本。</p>
+                            <p>不过，也有城市想打情怀牌，选用的人物形象却引来不少争议。比如，一些小说和影视剧中的虚构人物，有话题性但难以代表一座城市。这不禁引人思考：城市文旅宣传如何叫好又叫座？</p>
+                            <p>"脚要踩在大地上。我们干任何事情都有内在规律。"文旅宣传也不例外。好创意、好办法，往往都是从"地气"里生发出来的。</p>
+                            <p>这个"地气"，是地方实际。</p>
+                            <p>以河北文旅宣传语"这么近，那么美，周末到河北"为例，短短11个字，看着平平无奇，为啥能产生强大的破圈效应和市场号召力？</p>
+                            <p>根本在于对游客群的精准定位，契合了周边地区游客"微度假""轻旅游"的需求。不搞华而不实的花架子，紧贴现实、简单直白、朗朗上口，就容易形成记忆点，并在社交平台上持续传播。</p>
+                            <p>不论是打造城市形象，还是创新文旅口号，都要考虑与场景的适配度、与现实的贴合度。好的文旅创意，从来不是凭空造梗的哗众取宠、千篇一律的模仿重复，而是受众需求、现实情境与情绪消费的同频共振。</p>
+                            <p>这个"地气"，是文化底蕴。</p>
+                            <p>"闽超"泉州队对阵福州队的赛前开幕式上，德化三通鼓、永春白鹤拳等非遗代表性项目精彩上演，"郑成功"带领全场高呼"振兴中华"，万人齐唱闽南语金曲《爱拼才会赢》，激昂闽南儿女敢闯敢拼的精神；"苏超"宿迁队对阵南京队前，"项羽"乘战车绕场巡游，一句"宿迁子弟何在"，唤醒的是观众对历史的记忆，也是一座城市的集体自豪感。</p>
+                            <p>城市的魅力，源自独一无二的文化气质。好的文旅推广，应做城市文化的"转译者"，把深埋在历史里的故事、流淌在血脉中的精神、内蕴于城市肌体的文化基因，"转译"为当代人能够理解和共情的语言。这个过程最忌急功近利。植根城市文脉，创新表达方式，用真诚和创意讲好在地文化的故事，才能避免"千城一面"的同质化现象，打造具有更高辨识度、更大影响力的城市品牌。</p>
+                            <p>这个"地气"，还指深深扎根于人民。</p>
+                            <p>来自群众，群众自然更有感触；共创共享，故而群众更能共情。网友点赞路边小店登上绿茵场广告牌，就把小微企业共享赛事赞助红利固定为机制；有人"吐槽"体育场指引牌上的字晚上看不清，不到两小时就收到"明天加装发光指示牌"的官方回复……"苏超"的风靡，不只因为赛事精彩，更离不开善于"接梗"汇聚民声、乐于"听劝"倾听民意。</p>
+                            <p>群众性文体活动的火爆，是人民主体性在中国式现代化征程中的有力彰显。这深刻启示我们：人民群众的生动实践是创意、创作、创造的源头活水，多听听群众怎么说、多请教群众怎么办、多邀请群众一起干，就能豁然开朗、找到答案。</p>
+                            <p>进而言之，打造文旅热点，本质上是基于文化自信的创新创造。不为流量所役，开放包容而不亦步亦趋，博采众长而不随波逐流——这何尝不是我们不断打开改革发展新天地的内在逻辑？</p>
+                            <p>土生土长的故事，往往拥有跨越地域的力量。近些年，一些小成本国产电影凭着好口碑一路逆袭，再次印证：最好的故事和创意，不在别处，就在脚下这片炙热的土地。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章2 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>《从订单回流透视"逆势增长"（人民时评）》</h2>
+                <div class="article-meta">
+                    <span>作者：罗珊珊</span>
+                    <span>版面：第05版 评论</span>
+                    <span>字数：约1000字</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        中国外贸的国际竞争力早已从"成本取胜"跃升为"韧性制胜"，凭借超大规模市场、创新驱动、产供链系统韧性的三大优势实现"逆势增长"。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🧠 论证逻辑</h3>
+                    <div class="logic-diagram">第一层：引入话题（现象呈现）
+├─ 现象：部分小家电出口订单从东南亚回流中国
+├─ 问题：为何出现订单回流？
+└─ 引出：凸显中国制造三大优势
+
+第二层：展开分析（三层论证）
+├─ 优势一：超大规模市场优势
+│   ├─ 需求侧：规模大、成长性强
+│   ├─ 供给侧：要素多、承载力强
+│   └─ 案例：宁波奉化西服"50件起订"柔性供应链
+│
+├─ 优势二：创新驱动持续赋能
+│   ├─ 传统产业微创新（面料、设计）
+│   ├─ 跨境电商开拓新订单
+│   └─ 案例：服装产业凭设计创新建立竞争优势
+│
+└─ 优势三：产供链系统韧性足
+    ├─ 全链条高效咬合
+    ├─ 稳定履约能力（能源供应、配套完善）
+    └─ 案例：东南亚工厂因电力不稳无法开工
+
+第三层：总结升华（价值提炼）
+├─ 根本性跃迁：从成本取胜→韧性制胜
+├─ 从单一优势→系统突围
+└─ 展望：为全球产供链稳定、世界经济复苏注入新动能</div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+                    
+                    <div class="golden-quote">
+                        <div class="quote-text">"从成本取胜到韧性制胜，从单一优势到系统突围，中国外贸的迭代升级是长期积累、久久为功的结果。"</div>
+                        <div class="quote-analysis">
+                            <h5>好在哪：</h5>
+                            <p>排比精妙：两个"从...到..."构成对称排比</p>
+                            <p>对比鲜明："成本"vs"韧性"、"单一"vs"系统"</p>
+                            <p>哲理深刻："迭代升级""长期积累"揭示发展规律</p>
+                            
+                            <h5>适用话题：</h5>
+                            <div class="tag-list">
+                                <span class="tag">发展方式转变</span>
+                                <span class="tag">产业升级</span>
+                                <span class="tag">高质量发展</span>
+                                <span class="tag">韧性</span>
+                                <span class="tag">系统思维</span>
+                            </div>
+                            
+                            <h5>可仿写：</h5>
+                            <p>"从数量到质量，从速度到效益，中国经济的发展转型是改革开放深化的结果。"</p>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"贸易要算综合账。除了要素成本，影响贸易竞争优势的因素还有很多，比如产供链完备性、协同性，技术创新，基础设施供应，等等。"</div>
+                        <div class="quote-analysis">
+                            <h5>好在哪：</h5>
+                            <p>观点明确："算综合账"提出系统性思维</p>
+                            <p>层次清晰："除了...还有..."列举多重要素</p>
+                            <p>思维启发性：打破单一思维，引导全面思考</p>
+                            
+                            <h5>适用话题：</h5>
+                            <div class="tag-list">
+                                <span class="tag">系统思维</span>
+                                <span class="tag">综合评价</span>
+                                <span class="tag">全面发展</span>
+                                <span class="tag">多维度分析</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    
+                    <div class="use-case">
+                        <h4>高考真题</h4>
+                        <p><strong>2023年新课标II卷《本手、妙手、俗手》</strong> <span class="rating high">★★★★★</span></p>
+                        <p>具体写法：用"从成本取胜到韧性制胜"论证发展方式的转变，强调积累的重要性</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章3 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>《以乡村发展赋能县域经济（纵横）》</h2>
+                <div class="article-meta">
+                    <span>作者：高乐乐</span>
+                    <span>版面：第05版 评论</span>
+                    <span>字数：约600字</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        乡村是县域经济的底盘和活力源泉，只有乡村活、镇村兴，县域经济才能稳、才能强。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+                    
+                    <div class="golden-quote">
+                        <div class="quote-text">"乡村活，则县域稳；镇村兴，则县域强。"</div>
+                        <div class="quote-analysis">
+                            <h5>好在哪：</h5>
+                            <p>对偶精妙："乡村活"对"镇村兴"，"县域稳"对"县域强"</p>
+                            <p>逻辑清晰：揭示乡村与县域的因果关系</p>
+                            <p>简洁有力：16个字道出乡村发展的战略价值</p>
+                            
+                            <h5>适用话题：</h5>
+                            <div class="tag-list">
+                                <span class="tag">乡村振兴</span>
+                                <span class="tag">城乡关系</span>
+                                <span class="tag">县域经济</span>
+                                <span class="tag">基础与上层</span>
+                            </div>
+                            
+                            <h5>可仿写：</h5>
+                            <p>"基础牢，则大厦稳；根本固，则枝叶茂。"</p>
+                            <p>"文化兴，则国运兴；文化强，则民族强。"</p>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"有活力的乡村，是县域经济的新增长极。"</div>
+                        <div class="quote-analysis">
+                            <h5>好在哪：</h5>
+                            <p>观点新颖：打破"乡村=落后"的刻板印象</p>
+                            <p>时代性强：契合"乡村振兴"国家战略</p>
+                            <p>启发性：引导重新认识乡村的价值</p>
+                            
+                            <h5>适用话题：</h5>
+                            <div class="tag-list">
+                                <span class="tag">乡村振兴</span>
+                                <span class="tag">城乡融合</span>
+                                <span class="tag">新增长极</span>
+                                <span class="tag">潜力挖掘</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章4 -->
+        <article class="article-card">
+            <div class="article-header">
+                <h2>《乡音不改，文脉永续（中国道路中国梦）》</h2>
+                <div class="article-meta">
+                    <span>作者：林伦伦</span>
+                    <span>版面：第05版 评论</span>
+                    <span>字数：约1000字</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <div class="section">
+                    <h3 class="section-title">🎯 核心论点</h3>
+                    <div class="core-point">
+                        方言是有声的地方标识，是情感的纽带、文化的载体。推广普通话与保护方言并不矛盾，普通话带我们奔赴山海，方言标注着我们的来处。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">💎 金句深度解析</h3>
+                    
+                    <div class="golden-quote">
+                        <div class="quote-text">"普通话带我们奔赴山海、走遍八方，而方言标注着我们的来处。"</div>
+                        <div class="quote-analysis">
+                            <h5>好在哪：</h5>
+                            <p>对比鲜明："奔赴山海"（未来/远方）vs"标注来处"（过去/故乡）</p>
+                            <p>哲理深刻：揭示普通话与方言的辩证统一关系</p>
+                            <p>情感共鸣：触发乡愁、引发对根脉的思考</p>
+                            
+                            <h5>适用话题：</h5>
+                            <div class="tag-list">
+                                <span class="tag">传统与现代</span>
+                                <span class="tag">传承与发展</span>
+                                <span class="tag">根脉与远方</span>
+                                <span class="tag">身份认同</span>
+                                <span class="tag">乡愁</span>
+                            </div>
+                            
+                            <h5>可仿写：</h5>
+                            <p>"梦想带我们奔赴远方，而初心标注着我们的来处。"</p>
+                            <p>"科技带我们展望未来，而传统标注着我们的根脉。"</p>
+                        </div>
+                    </div>
+
+                    <div class="golden-quote">
+                        <div class="quote-text">"守住乡音，就是守护心底的乡愁，守护共同的精神家园。"</div>
+                        <div class="quote-analysis">
+                            <h5>好在哪：</h5>
+                            <p>递进精妙：语言→情感→精神，层层递进</p>
+                            <p>情感充沛：触发乡愁、文化认同等情感共鸣</p>
+                            <p>哲理深刻：从表层到深层，揭示文化传承的意义</p>
+                            
+                            <h5>适用话题：</h5>
+                            <div class="tag-list">
+                                <span class="tag">文化传承</span>
+                                <span class="tag">乡愁</span>
+                                <span class="tag">精神家园</span>
+                                <span class="tag">根脉</span>
+                            </div>
+                            
+                            <h5>可仿写：</h5>
+                            <p>"守住初心，就是守护梦想，守护前进的方向。"</p>
+                            <p>"守住传统，就是守护根脉，守护文化的魂。"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">🎯 适用场景</h3>
+                    
+                    <div class="use-case">
+                        <h4>高考真题</h4>
+                        <p><strong>2023年新课标I卷《故事的力量》</strong> <span class="rating high">★★★★★</span></p>
+                        <p>具体写法：开篇引用"乡音标注来处"，然后论述方言故事如何连接历史与当下</p>
+                        
+                        <p><strong>2024年全国甲卷《守正与创新》</strong> <span class="rating high">★★★★★</span></p>
+                        <p>具体写法：用"传承方言"论证守正不是固步自封，而是守住根脉</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="footer">
+            <p><strong>📅 整理日期：</strong>2026年6月5日</p>
+            <p><strong>📰 来源：</strong>《人民日报》第05版（评论版）</p>
+            <p><strong>🔗 关键词：</strong>文化传承、实事求是、乡村振兴、县域经济、方言保护、文化自信、系统思维、高质量发展</p>
+            <p style="margin-top: 15px; font-size: 0.9rem;">深度分析 | 实用模板 | 高考真题适配</p>
+        </div>
+    </div>
+
+    <script>
+        // 折叠功能
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                content.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
