@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-06-06 高考作文素材</title>
+    <style>
+        /* Orange UI Design Tokens */
+        :root {
+            --bg: #F7F3EC;
+            --primary: #7BCBFF;
+            --accent: #FFE66A;
+            --text: #2C2C2C;
+            --text-secondary: #666;
+            --border: #2C2C2C;
+            --shadow: #B5B5B5;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--primary);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .article-card {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .article-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .article-card h3 {
+            font-size: 1.3rem;
+            margin: 25px 0 15px 0;
+            color: var(--primary);
+        }
+
+        .info-box {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .info-box ul {
+            list-style: none;
+        }
+
+        .info-box li {
+            padding: 5px 0;
+        }
+
+        .core-thesis {
+            background: var(--accent);
+            border: 1.5px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 4px;
+            padding: 20px;
+            margin: 20px 0;
+            font-weight: 500;
+            font-size: 1.05rem;
+        }
+
+        .logic-diagram {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 4px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            white-space: pre;
+            overflow-x: auto;
+        }
+
+        .method-box {
+            background: var(--white);
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .method-box strong {
+            color: var(--primary);
+        }
+
+        .quote-box {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 4px 4px 0 0 var(--shadow);
+            border-radius: 4px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .quote-text {
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding: 15px;
+            background: var(--white);
+            border-radius: 4px;
+        }
+
+        .quote-analysis {
+            margin-top: 10px;
+        }
+
+        .quote-analysis ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .quote-analysis li {
+            padding: 5px 0;
+        }
+
+        .quote-analysis strong {
+            color: var(--primary);
+        }
+
+        .topics-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0;
+        }
+
+        .topic-tag {
+            background: var(--primary);
+            color: var(--white);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .usage-box {
+            background: var(--white);
+            border: 1.5px solid var(--primary);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 4px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .collapsible {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .collapsible-header {
+            background: var(--primary);
+            padding: 15px;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 3px 3px 0 0;
+            user-select: none;
+        }
+
+        .collapsible-content {
+            padding: 20px;
+            display: none;
+            background: var(--white);
+        }
+
+        .collapsible.active .collapsible-content {
+            display: block;
+        }
+
+        .collapsible-content p {
+            margin-bottom: 15px;
+            text-indent: 2em;
+        }
+
+        .scenario-section {
+            margin: 25px 0;
+        }
+
+        .scenario-box {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 4px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .scenario-box h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .year-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--text);
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            margin: 5px 5px 5px 0;
+            font-weight: 600;
+        }
+
+        .summary-section {
+            background: var(--accent);
+            border: 1.5px solid var(--border);
+            box-shadow: 5px 5px 0 0 var(--shadow);
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .summary-section h2 {
+            color: var(--text);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .summary-item {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            box-shadow: 3px 3px 0 0 var(--shadow);
+            border-radius: 4px;
+            padding: 15px;
+        }
+
+        .summary-item h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .article-card {
+                padding: 20px;
+            }
+            
+            .article-card h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 2026-06-06 高考作文素材</h1>
+            <p class="subtitle">来自《人民日报》的深度解析 · 5篇精选文章</p>
+        </header>
+
+        <!-- 文章1 -->
+        <article class="article-card">
+            <h2>📰 文章1：《文化传承发展的生动诠释》</h2>
+            
+            <div class="info-box">
+                <h3>📋 基本信息</h3>
+                <ul>
+                    <li><strong>作者：</strong>彭小军（中国社会科学院考古研究所）</li>
+                    <li><strong>版面：</strong>第07版·文化遗产</li>
+                    <li><strong>字数：</strong>约1200字</li>
+                </ul>
+            </div>
+
+            <h3>🎯 核心论点</h3>
+            <div class="core-thesis">
+                考古学通过科技融合、范式转变、国际合作和公众参与，从不同方面生动印证了中华文明的五个突出特性（连续性、创新性、统一性、包容性、和平性），为文化传承发展写下了厚重的考古学注脚。
+            </div>
+
+            <h3>🧠 论证逻辑</h3>
+            <div class="logic-diagram">第一层：引入话题（时代背景）
+  ↓ 习近平总书记在文化传承发展座谈会上强调文化使命
+  ↓ 考古学实证了百万年人类史、五千年文明史
+
+第二层：展开分析（四个维度）
+  ├─ 科技融合：从"形态观察"转向"信息解码"
+  ├─ 范式转变：文物保护、价值阐释融入全流程
+  ├─ 国际合作：从"走出去"到"扎下来"
+  └─ 公众参与：考古成果创造性转化、创新性发展
+
+第三层：总结升华（时代价值）
+  ↓ 考古人的初心从未改变（严谨细致、求真务实）
+  ↓ 开拓新时代中国考古新局面</div>
+
+            <h3>🔧 论证方法</h3>
+            
+            <div class="method-box">
+                <strong>1. 例证论证（具体案例支撑）</strong>
+                <p>旧石器、新石器、夏商周、秦汉至明清考古的具体成果；古DNA、三维建模、实验室考古等技术应用实例；中国考古团队赴多国联合考古的案例。</p>
+                <p><strong>如何使用：</strong>适合在作文中用具体事例支撑论点，增强说服力</p>
+            </div>
+
+            <div class="method-box">
+                <strong>2. 对比论证（范式转变）</strong>
+                <p>过去 vs 现在：田野发掘→保护阐释；国内 vs 国际：走出去→扎下来；形态观察 vs 信息解码。</p>
+                <p><strong>如何使用：</strong>适合论证发展变化、进步创新的段落</p>
+            </div>
+
+            <div class="method-box">
+                <strong>3. 引用论证（权威观点）</strong>
+                <p>习近平总书记文化传承发展座谈会讲话；《中华人民共和国文物保护法》法条。</p>
+                <p><strong>如何使用：</strong>适合在文章开头或结尾，提升权威性和高度</p>
+            </div>
+
+            <h3>💎 金句深度解析</h3>
+
+            <div class="quote-box">
+                <div class="quote-text">"考古学工作范式发生多层面变化。田野发掘、修复整理、研究出版不再是考古工作的完整闭环，文物保护、价值阐释、遗产展示等深度融入考古全流程，成为考古新常态。"</div>
+                
+                <div class="quote-analysis">
+                    <ul>
+                        <li><strong>好在哪：</strong>用"闭环"这个概念，形象说明工作的完整性；"不再是……成为……"的转折，突出变化；"新常态"这个词有时代感</li>
+                        <li><strong>适用话题：</strong></li>
+                    </ul>
+                    <div class="topics-list">
+                        <span class="topic-tag">文化传承与创新</span>
+                        <span class="topic-tag">传统与现代的结合</span>
+                        <span class="topic-tag">工作理念的变化</span>
+                        <span class="topic-tag">保护与发展的关系</span>
+                        <span class="topic-tag">文物的价值挖掘</span>
+                    </div>
+                    <li><strong>怎么用：</strong></li>
+                    <div class="usage-box">
+                        <strong>论证段落：</strong>"XX工作不再是……的闭环，XX等深度融入，成为新常态"<br>
+                        <strong>转折句：</strong>"看似……其实早已……"
+                    </div>
+                    <li><strong>可仿写：</strong></li>
+                    <div class="usage-box">
+                        "教育方式发生多层面变化。知识传授、应试训练不再是教育的完整闭环，价值塑造、能力培养、人格完善等深度融入教育全流程，成为育人新常态。"
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                <div class="quote-text">"技术在革新、范式在迭代，但考古人的初心从未改变。田野发掘的严谨细致、遗存解读的审慎客观、学术探索的求真务实，始终是考古工作的底色。"</div>
+                
+                <div class="quote-analysis">
+                    <ul>
+                        <li><strong>好在哪：</strong>"革新""迭代"vs"从未改变"形成对比；排比"严谨细致、审慎客观、求真务实"节奏感强；"底色"这个词很有味道</li>
+                        <li><strong>适用话题：</strong></li>
+                    </ul>
+                    <div class="topics-list">
+                        <span class="topic-tag">变与不变的辩证关系</span>
+                        <span class="topic-tag">初心与使命</span>
+                        <span class="topic-tag">专业精神</span>
+                        <span class="topic-tag">时代与坚守</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3>🎯 适用场景</h3>
+            
+            <div class="scenario-section">
+                <div class="scenario-box">
+                    <h4>直接可用</h4>
+                    <p><span class="year-badge">2023年新课标I卷</span>"故事的力量"：考古工作者通过考古发现讲述中国故事</p>
+                    <p><span class="year-badge">2022年全国甲卷</span>"移用、化用与独创"：考古技术的革新与范式的迭代</p>
+                    <p><span class="year-badge">2021年全国乙卷</span>"对理想的追求"：考古人对文化传承使命的担当</p>
+                </div>
+            </div>
+
+            <div class="collapsible" id="article1-content">
+                <div class="collapsible-header" onclick="toggleCollapsible('article1-content')">
+                    📄 原文（点击展开）
+                </div>
+                <div class="collapsible-content">
+                    <p>2023年6月2日，习近平总书记在文化传承发展座谈会上发表重要讲话，高度凝练中华文明五个突出特性，深刻揭示"两个结合"的重大意义，特别是"第二个结合"的重大意义，发出"更好担负起新的文化使命"的时代强音。</p>
+                    <p>认识中华文明的悠久历史、感知中华文化的博大精深，离不开考古学。这三年，通过"中华文明起源与早期发展综合研究""考古中国"等重大项目，考古工作者以扎实的田野工作、严谨的学术研究，实证了我国百万年的人类史、一万年的文化史、五千多年的文明史，为文化传承发展写下了厚重的考古学注脚。</p>
+                    <p>旧石器时代考古聚焦人类起源、技术体系与环境适应，不断完善东方人类演化谱系；新石器时代考古围绕农业起源、文明起源、早期国家形成，揭示中华文明起源及演进道路；夏商周考古构建区域文化谱系，深化都邑聚落、青铜器与手工业研究，实证早期王朝文明与礼乐制度；秦汉至明清考古以城市、墓葬为重点，展现统一多民族国家的巩固与发展；边疆考古覆盖内蒙古、青藏高原、新疆等重点区域，夯实中华民族共同体历史基础……这些考古成果从不同方面生动印证了中华文明突出的连续性、创新性、统一性、包容性、和平性。</p>
+                    <p>科技与考古的融合，不仅提升工作效率，更推动考古研究从"形态观察"转向"信息解码"，让考古遗存释放更多历史信息。多学科协同研究成为考古标配，古DNA（脱氧核糖核酸）、高精度测年、三维建模、实验室考古等技术广泛应用。以考古航拍为例，从早期需人力固定、仅能飞行200米的氢气球，到科研人员手工组装、挂起相机的简易无人机，再到如今专业航拍设备、大型精密仪器进驻考古现场，技术的进步让考古信息采集更全面、遗存解读更深入。</p>
+                    <p>考古学工作范式发生多层面变化。田野发掘、修复整理、研究出版不再是考古工作的完整闭环，文物保护、价值阐释、遗产展示等深度融入考古全流程，成为考古新常态。2025年3月1日起施行的《中华人民共和国文物保护法》以法律条文的形式，规定"国家支持和规范文物价值挖掘阐释，促进中华文明起源与发展研究，传承中华优秀传统文化"。学者们立足本土实践，用硬核扎实的出土文物和研究成果不断阐释中华民族的厚重历史，让中华文明愈加闪耀。</p>
+                    <p>中国考古逐步实现从"走出去"到"扎下来"的跨越，国际合作从零星尝试走向常态化、体系化。在文明互鉴的框架下，中国考古团队赴洪都拉斯、埃及、希腊、罗马尼亚、乌兹别克斯坦、巴基斯坦等国开展联合考古，共享田野技术与研究经验；世界考古论坛等国际学术活动引发广泛关注。中国考古的国际影响力持续提升。中国考古秉持开放包容理念，既积极吸收借鉴世界考古优秀成果，也主动分享中国经验、中国方案，推动不同文明交流互鉴，为构建人类命运共同体注入考古力量。</p>
+                    <p>参观博物馆、观摩考古成果成为社会新风尚，越来越多的考古工作者走出探方、走上讲台，通过讲座、科普文章解读考古发现。考古成果借助数字化展示、纪录片、文创产品等形式，实现创造性转化、创新性发展。考古工作促进遗址保护与地方发展形成良性循环，千年遗址"开口说话"、出土文物"焕发新生"。考古学不仅拉近公众与历史的距离，更推动文化自信扎根大众心底，让文明传承成为全民共识。</p>
+                    <p>技术在革新、范式在迭代，但考古人的初心从未改变。田野发掘的严谨细致、遗存解读的审慎客观、学术探索的求真务实，始终是考古工作的底色。</p>
+                    <p>习近平总书记对考古与文化遗产事业关怀至深、寄予厚望，极大地鼓舞了广大考古工作者的使命担当与奋进豪情。我们将胸怀"国之大者"，奋发有为，勇毅前行，持续深耕，不断开拓新时代中国考古新局面，不断回应文化传承与国家发展的深层追问。</p>
+                    <p>（作者单位：中国社会科学院考古研究所）</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章2 -->
+        <article class="article-card">
+            <h2>📰 文章2：《我们如何探寻地外生命》</h2>
+            
+            <div class="info-box">
+                <h3>📋 基本信息</h3>
+                <ul>
+                    <li><strong>作者：</strong>王赤（中国科学院院士、中国科学院国家空间科学中心主任）</li>
+                    <li><strong>版面：</strong>第06版·科技·新知</li>
+                    <li><strong>字数：</strong>约1000字</li>
+                </ul>
+            </div>
+
+            <h3>🎯 核心论点</h3>
+            <div class="core-thesis">
+                探寻地外生命既是世界重大科学前沿问题，也是"我们是谁、我们从哪里来、我们要到哪里去"的科学表达。科学探索的意义不在于结果，而在于重塑我们对宇宙和自身的认知框架。
+            </div>
+
+            <h3>💎 金句深度解析</h3>
+
+            <div class="quote-box">
+                <div class="quote-text">"探寻地外生命，既是世界重大科学前沿问题，从某种意义上说，也是'我们是谁''我们从哪里来''我们要到哪里来'的科学表达。"</div>
+                
+                <div class="quote-analysis">
+                    <ul>
+                        <li><strong>好在哪：</strong>用三个终极哲学问题提升科学探索的高度；"从某种意义上说"留有余地，不绝对化；"科学表达"这个词很有味道</li>
+                        <li><strong>适用话题：</strong></li>
+                    </ul>
+                    <div class="topics-list">
+                        <span class="topic-tag">科学探索的意义</span>
+                        <span class="topic-tag">哲学与科学的关系</span>
+                        <span class="topic-tag">人类对自身存在的思考</span>
+                        <span class="topic-tag">好奇心与探索精神</span>
+                        <span class="topic-tag">终极问题的追问</span>
+                    </div>
+                    <li><strong>怎么用：</strong></li>
+                    <div class="usage-box">
+                        <strong>开头立论：</strong>适合用作文章开头，提升立意高度<br>
+                        <strong>话题升华：</strong>在论述某个科学问题时，上升到哲学层面
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                <div class="quote-text">"无论是发现地外生命遍布宇宙，抑或是证实生命在宇宙中极为罕见，每一种结果都具有颠覆性意义。这将堪比人类认识到地球并非宇宙中心，而只是浩瀚星空中一颗普通行星的那一刻——再一次重塑我们对宇宙和自身的认知框架。"</div>
+                
+                <div class="quote-analysis">
+                    <ul>
+                        <li><strong>好在哪：</strong>"遍布宇宙"vs"极为罕见"对仗工整；"堪比……那一刻"用类比增强冲击力；"重塑认知框架"点出科学探索的深层价值</li>
+                        <li><strong>适用话题：</strong></li>
+                    </ul>
+                    <div class="topics-list">
+                        <span class="topic-tag">科学探索的价值</span>
+                        <span class="topic-tag">认知的局限与突破</span>
+                        <span class="topic-tag">结果的意义</span>
+                        <span class="topic-tag">哥白尼式的革命</span>
+                    </div>
+                    <li><strong>怎么用：</strong></li>
+                    <div class="usage-box">
+                        <strong>结尾升华：</strong>适合用作文章结尾，强调探索的价值<br>
+                        <strong>论证高潮：</strong>在文章中段提出，增强说服力
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章3 -->
+        <article class="article-card">
+            <h2>📰 文章3：《小大之辨（文思）》</h2>
+            
+            <div class="info-box">
+                <h3>📋 基本信息</h3>
+                <ul>
+                    <li><strong>作者：</strong>周舒艺</li>
+                    <li><strong>版面：</strong>第08版·副刊</li>
+                    <li><strong>字数：</strong>约900字</li>
+                </ul>
+            </div>
+
+            <h3>🎯 核心论点</h3>
+            <div class="core-thesis">
+                "小"与"大"从来都是相对而言。当我们囿于自己的内心，再大的事也可"一叶障目"；当我们丰盈起自己的内心，再小的事里都能找到大天地。方寸之间，可见天地。
+            </div>
+
+            <h3>💎 金句深度解析</h3>
+
+            <div class="quote-box">
+                <div class="quote-text">"方寸之间，可见天地。"</div>
+                
+                <div class="quote-analysis">
+                    <ul>
+                        <li><strong>好在哪：</strong>"方寸"vs"天地"形成强烈对比；"可见"有发现、洞察之意；简洁有力，哲理深刻</li>
+                        <li><strong>适用话题：</strong></li>
+                    </ul>
+                    <div class="topics-list">
+                        <span class="topic-tag">小与大的辩证关系</span>
+                        <span class="topic-tag">平凡中的伟大</span>
+                        <span class="topic-tag">细节的价值</span>
+                        <span class="topic-tag">工匠精神</span>
+                        <span class="topic-tag">内心的丰盈</span>
+                    </div>
+                    <li><strong>怎么用：</strong></li>
+                    <div class="usage-box">
+                        <strong>文章标题：</strong>可直接用作标题或副标题<br>
+                        <strong>点睛句：</strong>在论证某个观点时用作点睛之笔<br>
+                        <strong>结尾升华：</strong>适合用作文章结尾
+                    </div>
+                    <li><strong>可仿写：</strong></li>
+                    <div class="usage-box">
+                        "平凡之间，可见伟大；细微之处，可见精神。"
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                <div class="quote-text">"当我们囿于自己的内心，再大的事也可'一叶障目'；当我们丰盈起自己的内心，再小的事里都能找到大天地。"</div>
+                
+                <div class="quote-analysis">
+                    <ul>
+                        <li><strong>好在哪：</strong>"囿于"vs"丰盈"对比鲜明；"一叶障目"引用成语，有文化底蕴；"再大的事……再小的事……"对比强烈，有说服力</li>
+                        <li><strong>适用话题：</strong></li>
+                    </ul>
+                    <div class="topics-list">
+                        <span class="topic-tag">心胸与格局</span>
+                        <span class="topic-tag">视角的转变</span>
+                        <span class="topic-tag">内在修养</span>
+                        <span class="topic-tag">认知的局限</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3>🎯 适用场景</h3>
+            
+            <div class="scenario-section">
+                <div class="scenario-box">
+                    <h4>直接可用</h4>
+                    <p><span class="year-badge">2024年新课标I卷</span>"问题与答案"：小问题里有大答案</p>
+                    <p><span class="year-badge">2023年全国甲卷</span>"人·技术·时间"：方寸之间的技术与广阔的时间</p>
+                    <p><span class="year-badge">2022年全国乙卷</span>"跨越"：从方寸到天地的跨越</p>
+                </div>
+            </div>
+
+            <div class="collapsible" id="article3-content">
+                <div class="collapsible-header" onclick="toggleCollapsible('article3-content')">
+                    📄 原文（点击展开）
+                </div>
+                <div class="collapsible-content">
+                    <p>今年的"世界读书日"前夕，2025年度"中国好书"揭晓。其中一本入选图书《补书》，讲述的是古籍修复这一行当。一只镊子、一把棕刷、一碗浆水、一支毛笔、一张纸……从日出到日落，方寸之间，辗转腾挪。这就是《补书》作者、古籍修复师汪帆近20年来的日常。</p>
+                    <p>冷门绝学、小众行当，工作内容单调、重复，工作空间狭小、固定。不论从哪个方面看，"补书"都是一件"小事"。可走入书中才发现，看似小小的"补书"，竟蕴含着广阔而深邃的世界。"补书"，补的是书，也是中华文脉的丝丝缕缕。那些历经千百年风霜的古籍，之所以没有被岁月湮没，正因为有人用心在守护。"补书"者伏案工作之时，也在与中华文化的精髓相伴。一刀一针、一笔一画中，都藏着中国的传统智慧和艺术之美，那是中国式的美。"补书"的人，心中的天地无限大——这天地里，见责任心、使命感，见工匠精神，见积累深耕，见热爱执着……</p>
+                    <p>放下书，想到一句话：方寸之间，可见天地。而这，也是从事古籍修复工作多年的作者，在经年累月中悟出的道理："一沙一世界""芥子纳须弥"。</p>
+                    <p>其实，细细想来，生活中的很多事情又何尝不是如此？我们时常以为，自己从事的这份工作、这项事业太过渺小，微不足道。殊不知，小如一滴水，里面的水分子数量以万亿亿计。又如雪花，小小的六边形，内部结构繁复无穷。即便一粒尘埃，都承载着难以想象的微观世界，质子、中子、电子、夸克……世上万物无不容纳乾坤万象，世间万事都能蕴藏广阔天地。</p>
+                    <p>一名教师的日常，是备课讲课、批改作业、教导学生，守着方寸讲台，守着一群孩子，看似平凡琐碎、无甚可说，可知识的传授、品格的塑造，点亮的是孩子们的前程，甚至影响着一个人的一生、一个家庭的未来。这，是关系着千秋万代的大事。</p>
+                    <p>一名民警的日常，是社区巡逻、处理纠纷、调解矛盾，多是鸡毛蒜皮之事。可小事化解了，苗头遏制了，才能防止更大危险的发生，才有整个社区的平安和一方百姓的幸福。这，连接的是社会治理的大局。</p>
+                    <p>何谓小？何谓大？从来都是相对而言。</p>
+                    <p>小与大，有时也取决于我们的内心。当我们囿于自己的内心，再大的事也可"一叶障目"；当我们丰盈起自己的内心，再小的事里都能找到大天地。正如这本书的作者那样，在"补书"这件"小事"之外，已构筑起属于自己的"大千世界"。一个人从小我走向大我，从有限的物质空间走向辽阔的精神天地，便能重新认识这个世界——它支撑着你，丰富了你，打开了你，让你于其中遨游，也让细碎的日常变得有滋味、有意义。</p>
+                    <p>"修复室外，西湖水依然平静，案头的镊子微微发亮，时光并未老去，只是安静地栖息在书叶之间。"谁能说，古籍修复师面前的那片方寸之地，没有西湖水浩瀚呢？</p>
+                    <p>愿每个人都能在"方寸之间"找到自己的"海阔天空"。在那些平凡琐碎的日常里，在看似微不足道的具体中，构筑起属于自己的辽阔。</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章4 -->
+        <article class="article-card">
+            <h2>📰 文章4：《脊椎动物的祖先竟有四只"眼睛"》</h2>
+            
+            <div class="info-box">
+                <h3>📋 基本信息</h3>
+                <ul>
+                    <li><strong>作者：</strong>徐星（中国科学院院士、中国科学院古脊椎动物与古人类研究所所长）</li>
+                    <li><strong>版面：</strong>第06版·科技·新知</li>
+                    <li><strong>字数：</strong>约1500字</li>
+                </ul>
+            </div>
+
+            <h3>🎯 核心论点</h3>
+            <div class="core-thesis">
+                通过对5.18亿年前昆明鱼类化石的研究，科学家发现早期脊椎动物拥有4只具备成像功能的"相机型眼"，这一发现为理解视觉系统的演化及脊椎动物的起源提供了全新视角，也展现了生命演化的智慧。
+            </div>
+
+            <h3>💎 金句深度解析</h3>
+
+            <div class="quote-box">
+                <div class="quote-text">"千百年来，人类一直在追问'我们从哪里来'。在物种演化的历史长河中，有诸多意想不到的奥秘藏在化石之中。"</div>
+                
+                <div class="quote-analysis">
+                    <ul>
+                        <li><strong>好在哪：</strong>"千百年来"有历史纵深感；"追问"比"思考"更有执着感；"意想不到的奥秘藏在化石之中"制造悬念</li>
+                        <li><strong>适用话题：</strong></li>
+                    </ul>
+                    <div class="topics-list">
+                        <span class="topic-tag">好奇心与科学探索</span>
+                        <span class="topic-tag">历史与当下的对话</span>
+                        <span class="topic-tag">永恒的问题</span>
+                        <span class="topic-tag">化石的价值</span>
+                    </div>
+                    <li><strong>怎么用：</strong></li>
+                    <div class="usage-box">
+                        <strong>开头引入：</strong>适合用作文章开头，营造氛围<br>
+                        <strong>话题过渡：</strong>从当下问题转向历史维度
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                <div class="quote-text">"科学研究，总能发现'意外的惊喜'。在探索化石中如何保存神经组织的过程中，我们发现，脊椎动物的始祖原来有4只'眼睛'。"</div>
+                
+                <div class="quote-analysis">
+                    <ul>
+                        <li><strong>好在哪：</strong>"意外的惊喜"用引号，有调侃和惊喜感；"在探索……的过程中，我们发现……"句式自然；"原来有4只'眼睛'"制造反常识效果</li>
+                        <li><strong>适用话题：</strong></li>
+                    </ul>
+                    <div class="topics-list">
+                        <span class="topic-tag">科学发现的偶然性</span>
+                        <span class="topic-tag">探索的过程与结果</span>
+                        <span class="topic-tag">惊喜与意外</span>
+                        <span class="topic-tag">真相的发现</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 文章5 -->
+        <article class="article-card">
+            <h2>📰 文章5：《那些交流与交融的历史见证》</h2>
+            
+            <div class="info-box">
+                <h3>📋 基本信息</h3>
+                <ul>
+                    <li><strong>作者：</strong>象多杰本（"高原丝路·瞿昙之光"展览策展人）</li>
+                    <li><strong>版面：</strong>第07版·文化遗产</li>
+                    <li><strong>字数：</strong>约800字</li>
+                </ul>
+            </div>
+
+            <h3>🎯 核心论点</h3>
+            <div class="core-thesis">
+                丝绸之路青海道和瞿昙寺是各民族共同书写悠久历史、创造灿烂文化的见证，展现了中华民族多元一体的深刻印记，诠释了文明交流互鉴的历史逻辑。
+            </div>
+
+            <h3>💎 金句深度解析</h3>
+
+            <div class="quote-box">
+                <div class="quote-text">"在青海高原的苍茫大地上，一条古老通道跨越千年，串联起农耕与游牧文明，它就是丝绸之路青海道；一座明代古刹静立河湟，以汉藏交融的建筑与壁画，镌刻中华民族多元一体的深刻印记，它就是瞿昙寺。"</div>
+                
+                <div class="quote-analysis">
+                    <ul>
+                        <li><strong>好在哪：</strong>"苍茫大地""跨越千年"有气势；"串联起"vs"镌刻"动词精准；排比句式，节奏感强</li>
+                        <li><strong>适用话题：</strong></li>
+                    </ul>
+                    <div class="topics-list">
+                        <span class="topic-tag">文明交流互鉴</span>
+                        <span class="topic-tag">民族团结</span>
+                        <span class="topic-tag">丝绸之路的历史价值</span>
+                        <span class="topic-tag">文化的多元一体</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                <div class="quote-text">"从明代皇帝7次敕建修缮，到汉藏等民族工匠共同营造，600多年岁月流转，瞿昙寺是中央与边疆同心同向、休戚与共的历史见证。"</div>
+                
+                <div class="quote-analysis">
+                    <ul>
+                        <li><strong>好在哪：</strong>"7次敕建修缮""600多年岁月流转"有数据支撑；"同心同向、休戚与共"成语运用恰当；"历史见证"点明价值</li>
+                        <li><strong>适用话题：</strong></li>
+                    </ul>
+                    <div class="topics-list">
+                        <span class="topic-tag">中央与边疆的关系</span>
+                        <span class="topic-tag">民族团结</span>
+                        <span class="topic-tag">历史的见证</span>
+                        <span class="topic-tag">文化遗产的价值</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 总结部分 -->
+        <div class="summary-section">
+            <h2>📝 今日总结</h2>
+            
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <h4>核心主题</h4>
+                    <p>1. 文化传承：考古学如何诠释中华文明的特性</p>
+                    <p>2. 科学探索：从地外生命到脊椎动物演化的好奇心驱动</p>
+                    <p>3. 哲理思考：小与大的辩证关系，方寸之间可见天地</p>
+                    <p>4. 文明互鉴：丝绸之路上的交流交融见证</p>
+                </div>
+
+                <div class="summary-item">
+                    <h4>可用的论证方法</h4>
+                    <p>1. <strong>以小见大：</strong>从一件小事/文物引出大道理</p>
+                    <p>2. <strong>多重证据：</strong>从多个角度支撑论点</p>
+                    <p>3. <strong>层层递进：</strong>由表及里、由浅入深的论证</p>
+                    <p>4. <strong>古今对话：</strong>用现代概念理解古代</p>
+                </div>
+
+                <div class="summary-item">
+                    <h4>金句储备</h4>
+                    <p>✓ "技术在革新、范式在迭代，但考古人的初心从未改变。"</p>
+                    <p>✓ "无论是……抑或是……，每一种结果都具有颠覆性意义。"</p>
+                    <p>✓ "方寸之间，可见天地。"</p>
+                    <p>✓ "当我们囿于自己的内心，再大的事也可'一叶障目'……"</p>
+                </div>
+
+                <div class="summary-item">
+                    <h4>高考真题适配</h4>
+                    <p><strong>2024年：</strong>问题与答案、技术与人类</p>
+                    <p><strong>2023年：</strong>故事的力量、文化自信</p>
+                    <p><strong>2022年：</strong>移用化用独创、科技创新</p>
+                    <p><strong>2021年：</strong>理想与追求、历史人物</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>整理日期：</strong>2026年6月6日</p>
+            <p><strong>素材来源：</strong>《人民日报》第06、07、08版</p>
+            <p><strong>整理人：</strong>HAO（高考作文素材助手）</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleCollapsible(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
